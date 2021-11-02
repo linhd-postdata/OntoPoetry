@@ -1,0 +1,1133 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#"
+     xml:base="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns1="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysis#">
+        <dc:contributors xml:lang="en">Alvaro Pérez (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributors>
+        <dc:contributors xml:lang="en">Bruno Sartini (Bolonia University)
+https://orcid.org/0000-0002-9152-4402</dc:contributors>
+        <dc:contributors xml:lang="en">Javier de la Rosa (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/versae/</dc:contributors>
+        <dc:contributors xml:lang="en">Oscar Corcho (Universidad Politécnica de Madrid)
+http://orcid.org/0000-0002-9260-0753</dc:contributors>
+        <dc:creator xml:lang="en">Mª Luisa Díez Platas 
+https://orcid.org/0000-0002-9416-3147</dc:creator>
+        <dc:description xml:lang="en">This ontology supports the information necessary for the literary analysis of a poetic work. It focuses especially on rhetorical figures or figure of speech such as tropes and schemes.</dc:description>
+        <terms:publisher>POSTDATA Project</terms:publisher>
+        <terms:publisher xml:lang="en">POSTDATA Project
+
+“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”
+Principal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812
+Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958</terms:publisher>
+        <vann:preferredNamespacePrefix>postdata</vann:preferredNamespacePrefix>
+        <owl:versionInfo>V1.0</owl:versionInfo>
+        <ns:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</ns:license>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributors -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributors"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/vc-figureCategory -->
+
+    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/vc-figureCategory"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/dataType#vc-typeOfIntertextuality -->
+
+    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/dataType#vc-typeOfIntertextuality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEndingLine -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEndingLine">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEndingLineOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:label xml:lang="en">has ending line</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStartingLine -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStartingLine">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStartingLineOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:comment xml:lang="en">This property points to the lines (instance of Line) or word (instance of Word) which contains the current item under analysis</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">has starting line</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAcrosticPresentAt -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAcrosticPresentAt">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is acrostic present at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEndingLineOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEndingLineOf">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is ending line of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFigurePresentAt -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFigurePresentAt">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsFigure"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is figure present at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isIntertextualityPresentAt -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isIntertextualityPresentAt">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsIntertextuality"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is intertextuality present at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStartingLineOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStartingLineOf">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is starting line of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedRedactionIn -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedRedactionIn">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usedAsRedaction"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:comment xml:lang="en">This property points to a cultural product (Intertextuality) which was based on the work under analysis</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">is used redaction in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:comment xml:lang="en">This property points to the text under analysis (Redaction) from which the current cultural product has derived</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">is used source in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsAcrostic -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsAcrostic">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic"/>
+        <rdfs:label xml:lang="en">presents acrostic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsFigure -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsFigure">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:label xml:lang="en">presents figure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsIntertextuality -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsIntertextuality">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:label xml:lang="en">presents intertextuality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhetoricalOperation -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhetoricalOperation">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/rhetorical-operation"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Classification categories of speech figures in relation to rhetorical operations: addition, omission, transposition and permutation</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">rethorical operation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfAcrostic -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfAcrostic">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/type-of-acrostic"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">type of acrostic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfIntertextuality -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfIntertextuality">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/type-of-intertextuality"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Categorisation of the work under analysis depending on the relationship between this work and other texts. E.g. “contrafactum”, “de seguir”, etc.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">type of intertextuality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfScheme -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfScheme">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scheme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/type-of-scheme"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">type of scheme</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfTrope -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfTrope">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Trope"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/type-of-trope"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">type of trope</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usedAsRedaction -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usedAsRedaction">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:comment xml:lang="en">This property points to the text under analysis (Redaction) which has been a source for the current cultural product</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">used as redaction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
+        <rdfs:comment xml:lang="en">This property points to a cultural product (Intertextuality) which was a source for the work under analysis</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">used as source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#text -->
+
+    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#text">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Full content of the literary resource. For example, the content of the  acrostic is  the letters that compose it.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#Redaction -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
+        <rdfs:label xml:lang="en">Acrostic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
+        <rdfs:comment xml:lang="en">A word or phrase used in a non-literal sense for rhetorical or vivid effect</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Figure Of Speech</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-16T18:37:24Z</dc:date>
+        <rdfs:comment>Shared textual materials between two or more contemporary texts; Text from which information or ideas are derived for the composition of the Opus/Redaction;Text that took information or ideas from the Opus/Redaction</rdfs:comment>
+        <rdfs:label xml:lang="en">Intertextuality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice">
+        <rdfs:label xml:lang="en">Literary Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scheme -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scheme">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:label xml:lang="en">Scheme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Trope -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Trope">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:label xml:lang="en">Trope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://postdata.linhd.uned.es/kos/rhetorical-operation -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/rhetorical-operation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/kos/type-of-acrostic -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/type-of-acrostic">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/kos/type-of-intertextuality -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/type-of-intertextuality">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/kos/type-of-scheme -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/type-of-scheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/kos/type-of-trope -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/type-of-trope">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP104_subject_to">
+        <rdfs:label xml:lang="en">subject to</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E30 Right, which applies to all exemplars of that publication, as long as they are recognised as exemplars of that publication.
+The rights covered by this property may include: acquisition or access authorisation; terms of availability; access restrictions on the Manifestation Product Type; etc.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP104i_applies_to">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">applies to</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP105_right_held_by">
+        <rdfs:label xml:lang="en">right held by</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E39 Actor, who holds an instance of E30 Right on all exemplars of that publication, as long as they are recognised as exemplars of that publication.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP105i_right_on">
+        <rdfs:label xml:lang="en">right on</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP2_should_have_type">
+        <rdfs:label xml:lang="en">should have type</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E55 Type, which all exemplars of that publication should belong to, as long as they are recognised as exemplars of that publication. Typically, this property is observed on one exemplar of a publication, and extrapolated to all other exemplars of the same publication. This logical inference is an induction along the path that can be modelled as: F3 Manifestation Product Type R7i has example F5 Item P41i was classified by E17 Type Assignment P42 assigned E55 Type.
+It can happen that a given exemplar, or subset of exemplars, originally produced, or intended to be produced, with that characteristic, accidentally lacks it. This fact should be recorded as a property of F5 Item, and not of F3 Manifestation Product Type.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP2i_should_be_type_of">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">should be type of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP43_should_have_dimension">
+        <rdfs:comment xml:lang="en">This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E54 Dimension, which all exemplars of that publication should have, as long as they are recognised as exemplars of that publication. Typically, this property is observed on one exemplar of a publication, and extrapolated to all other exemplars of the same publication. This logical inference is an induction along the path that can be modelled as: F3 Manifestation Product Type R7i has example F5 Item P39i was measured by E16 Measurement P40 observed dimension E54 Dimension.
+It can happen that a given exemplar, or subset of exemplars, originally produced, or intended to be produced, with that characteristic, accidentally lacks it. This fact should be recorded as a property of F5 Item, and not of F3 Manifestation Product Type.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">should have dimension</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP43i_should_be_dimension_of">
+        <rdfs:label xml:lang="en">should be dimension of</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP45_should_consist_of">
+        <rdfs:comment xml:lang="en">This property associates a publication, i.e. an instance of F3 Manifestation Product Type, with an instance of E57 Material, which all exemplars of that publication should consist of, as long as they are recognised as exemplars of that publication. Typically, this property is observed on one exemplar of a publication, and extrapolated to all other exemplars of the same publication. This logical inference is an induction along the path that can be modelled as: F3 Manifestation Product Type R7i has example F5 Item P41i was classified by E17 Type Assignment P42 assigned E57 Material.
+It can happen that a given exemplar, or subset of exemplars, originally produced, or intended to be produced, with that characteristic, accidentally lacks it. This fact should be recorded as a property of F5 Item, and not of F3 Manifestation Product Type.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">should consist of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP45i_should_be_incorporated_in">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">should be incorporated in</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP46_should_be_composed_of">
+        <rdfs:comment xml:lang="en">This property associates an instance of F3 Manifestation Product Type which prescribes that all its Items will contain as parts an Item of another instance of F3 Manifestation Product Type with that instance of F3 Manifestation Product Type.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">should be composed of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/CLP46i_may_form_part_of">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">may form part of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R10_has_member">
+        <rdfs:comment xml:lang="en">This property associates an instance of F15 Complex Work with an instance of F1 Work that forms part of it. 
+</rdfs:comment>
+        <rdfs:label xml:lang="en">has member</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R10i_is_member_of">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is member of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R11_has_issuing_rule">
+        <rdfs:label xml:lang="en">has issuing rule</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F18 Serial Work with the instance of E29 Design or Procedure that specifies the issuing policy planned by this Work, such as sequencing pattern, expected frequency and expected regularity.
+This property is a shortcut of the full path: F18 Serial Work R23i was realised through F30 Publication Event P16 used specific object E29 Design or Procedure.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R11i_is_issuing_rule_of">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is issuing rule of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R12_is_realised_in">
+        <rdfs:comment xml:lang="en">This property associates an instance of F20 Performance Work with an instance of F25 Performance Plan that consists of signs (words, figures, etc.) which express the directions the instance of F20 Performance Work consists of.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is realised in</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R12i_realises">
+        <rdfs:label xml:lang="en">realises</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R16_initiated">
+        <rdfs:label xml:lang="en">initiated</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates the first conception of a work and the work itself that ensued from a given initial idea.
+It marks the origin of the causality chain that results in a work’s coming into existence.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R16i_was_initiated_by">
+        <rdfs:label xml:lang="en">was initiated by</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R18_created">
+        <rdfs:comment xml:lang="en">This property associates an instance of F28 Expression Creation with the first physical objects in which the resulting instance of F2 Expression was embodied.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">created</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R18i_was_created_by">
+        <rdfs:label xml:lang="en">was created by</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R19_created_a_realization_of">
+        <rdfs:label xml:lang="en">created a realization of</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F28 Expression Creation with the corresponding instance of F14 Individual Work or an instance of F15 Complex Work of which the corresponding instance of F14 Individual Work is a member.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R19i_was_realised_through">
+        <rdfs:label xml:lang="en">was realised through</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R1_is_logical_successor_of">
+        <rdfs:comment xml:lang="en">This property associates an instance of F1 Work which logically continues the content of another instance of F1 Work with the latter.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is logical successor of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R1i_has_successor">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">has successor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R20_recorded">
+        <rdfs:label xml:lang="en">recorded</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F29 Recording Event with the instance of E2 Temporal Entity which was captured.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R20i_was_recorded_through">
+        <rdfs:label xml:lang="en">was recorded through</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R22_created_a_realization_of">
+        <rdfs:comment xml:lang="en">This property associates an instance of F29 Recording Event with the instance of F21 Recording Work it realised.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">created a realization of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R22i_was_realised_through">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was realised through</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R23_created_a_realization_of">
+        <rdfs:comment xml:lang="en">This property associates an instance of F30 Publication Event with the instance of F19 Publication Work it realised.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">created a realization of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R23i_was_realised_through">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was realised through</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R25_performed">
+        <rdfs:label xml:lang="en">performed</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F31 Performance with the instance of F25 Performance Plan to which all those participating in the performance were supposed to conform.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R25i_was_performed_in">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was performed in</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R26_produced_things_of_type">
+        <rdfs:label xml:lang="en">produced things of type</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F32 Carrier Production Event with the instance of F3 Manifestation Product Type it produced items of.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R26i_was_produced_by">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was produced by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R28_produced">
+        <rdfs:label xml:lang="en">produced</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F32 Carrier Production Event with any one of the produced items (i.e., the instances of F5 Item or F53 Material Copy).
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R28i_was_produced_by">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was produced by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R29_reproduced">
+        <rdfs:label xml:lang="en">reproduced</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F33 Reproduction Event with an instance of E84 Information Carrier it reproduces.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R29i_was_reproduced_by">
+        <rdfs:label xml:lang="en">was reproduced by</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R2_is_derivative_of">
+        <rdfs:comment xml:lang="en">This property associates an instance of F1 Work which modifies the content of another instance of F1 Work with the latter. The property R2.1 has type of this property allows for specifying the kind of derivation, such as adaptation, summarisation etc.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is derivative of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R2i_has_derivative">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">has derivative</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R30_produced">
+        <rdfs:label xml:lang="en">produced</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F33 Reproduction Event with an instance of E84 Information Carrier it produces.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R30i_was_produced_by">
+        <rdfs:label xml:lang="en">was produced by</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R31_is_reproduction_of">
+        <rdfs:label xml:lang="en">is reproduction of</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of E84 Information Carrier which is a reproduction of another instance of E84 Information Carrier with the latter. It is considered that a reproduction of multiple originals resulting in a single product requires a merging of those objects prior to the reproduction. Therefore an Information Carrier is regarded to be a reproduction of one and only one original. This property is a shortcut of the more fully developed path from E84 Information Carrier through R30 produced (was produced by), F33 Reproduction Event R29 reproduced (was reproduced by) to E84 Information Carrier.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R31i_has_reproduction">
+        <rdfs:label xml:lang="en">has reproduction</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R32_is_warranted_by">
+        <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with an instance of F52 Name Use Activity which provides evidence for the use of the particular nomen in the stated sense. The association between this name use activity and a source for it may be described by the property P70 documents (is documented in).
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is warranted by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R32i_warrants">
+        <rdfs:label xml:lang="en">warrants</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R34_has_validity_period">
+        <rdfs:comment xml:lang="en">This property associates an instance of F34 KOS with the instance of E52 Time-Span describing the period for which the particular KOS Expression was regarded as valid by its maintainers. Each change of validity status of a nomen use statement within a KOS should be associated with a release change of the KOS. The individual time-span of a validity state of a nomen would be the union of the time-spans of the KOS in which the Nomen was declared to have the particular validity status (provisional, accepted, obsolete etc...).
+</rdfs:comment>
+        <rdfs:label xml:lang="en">has validity period</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R34i_is_validity_period_of">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is validity period of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R35_specified_by">
+        <rdfs:label xml:lang="en">specified by</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with an instance of F34 KOS in which the Nomen Use Statement has a given status. The property R35.1 allows for specifying the particular status of the nomen use statement within the KOS. An instance of R35 is specified by should have only one status.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R35i_specifies">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">specifies</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R36_uses_script_conversion">
+        <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with the instance of F36 Script Conversion that was used to create the Nomen referred to in the Nomen Use Statement. The source of this conversion may or may not be explicitly mentioned. Is shortcut of: F35 Nomen Use Statement R17 was created by (created) F28 Expression Creation P33 used specific technique (was used by) E29 Design or Procedure.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">uses script conversion</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R36i_is_script_conversion_used_in">
+        <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with the instance of F12 Nomen for which it declares usage.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is script conversion used in</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R37_states_as_nomen">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">states as nomen</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R37i_is_stated_as_nomen_in">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is stated as nomen in</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R38_refers_to_thema">
+        <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with the instance of E1 CRM Entity for which it declares the usage of a nomen.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">refers to thema</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R38i_is_thema_of">
+        <rdfs:label xml:lang="en">is thema of</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R39_is_intended_for">
+        <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with an instance of E74 Group which is the target audience for which the associated nomen use is intended. To indicate that the associated nomen is declared as preferred in all contexts, the instance of E74 Group is ‘mankind’.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is intended for</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R39i_is_target_audience_in">
+        <rdfs:label xml:lang="en">is target audience in</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R43_carried_out_by">
+        <rdfs:comment xml:lang="en">This property associates a bibliographic agency (represented by one or more of its cataloguers) and the assigning of which Manifestation (i.e., which instance of F3 Manifestation Product Type or F4 Manifestation Singleton) is representative for a given expression.
+In cataloguing practice, such a relationship is usually just implicit. However, it can become explicit, for example when a bibliographic agency creates an authority record for a given work and fills the “Source” field with information about the publication that contains the expression that was used by the bibliographic agency to establish the controlled access point for the work realised in that expression.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">carried out by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R43i_performed">
+        <rdfs:label xml:lang="en">performed</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R44_carried_out_by">
+        <rdfs:comment xml:lang="en">This property associates a bibliographic agency (represented by one or more of its cataloguers) and the assigning of which expression is representative for a given Work.
+In cataloguing practice, such a relationship is usually just implicit. However, it can become explicit, for example when a bibliographic agency creates an authority record for a given work and fills the “Source” field with information about the publication that contains the expression that was used by the bibliographic agency to establish the controlled access point for the work realised in that expression.
+
+</rdfs:comment>
+        <rdfs:label xml:lang="en">carried out by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R44i_performed">
+        <rdfs:label xml:lang="en">performed</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R45_assigned_to">
+        <rdfs:comment xml:lang="en">This property identifies the entity to which an actor, such as a bibliographic agency, assigned an instance of F13 Identifier.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">assigned to</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R45i_was_assigned_by">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was assigned by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R46_assigned_to">
+        <rdfs:comment xml:lang="en">This property associates the instance of F13 Identifier assigned to an instance of E1 CRM Entity and the event of assigning it.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">assigned to</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R46i_was_assigned_by">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was assigned by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R49_assigned">
+        <rdfs:label xml:lang="en">assigned</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates the event of assigning a representative instance of F3 Manifestation Product Type with the F3 Manifestation Product Type which has been assigned.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R49i_was_assigned_by">
+        <rdfs:label xml:lang="en">was assigned by</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R50_assigned_to">
+        <rdfs:comment xml:lang="en">This property associates the event of assigning a representative instance of F2 Expression with the instance of F15 Complex Work to which it was assigned.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">assigned to</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R50i_was_assigned_by">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was assigned by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule">
+        <rdfs:comment xml:lang="en">This property associates the event of assigning an instance of F13 Identifier with the instructions followed by an actor, such as a Bibliographic Agency, in creating that identifier.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">used rule</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_in">
+        <rdfs:label xml:lang="en">was the rule used in</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R53_assigned">
+        <rdfs:label xml:lang="en">assigned</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates the event of assigning a representative instance of F4 Manifestation Singleton with the F4 Manifestation Singleton which has been assigned.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R53i_was_assigned_by">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was assigned by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R54_has_nomen_language">
+        <rdfs:label xml:lang="en">has nomen language</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with an instance of E56 Language which is a target language for the associated nomen use.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R54i_is_language_of_nomen_in">
+        <rdfs:label xml:lang="en">is language of nomen in</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55_has_nomen_form">
+        <rdfs:label xml:lang="en">has nomen form</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with the instance of E55 Type that characterizes the Nomen referred to in the Nomen Use Statement, such as abbreviation, full name etc. In the case of abbreviations, the source of this form may or may not be explicitly mentioned.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55i_is_nomen_form_in">
+        <rdfs:label xml:lang="en">is nomen form in</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R56_has_related_use">
+        <rdfs:label xml:lang="en">has related use</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with another instance of F35 Nomen Use Statement which has a related use in some context, such as alternative, lexical variant, replacing former use etc. The property R56.1 allows for specifying the particular kind of the nomen use statement relationship.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R56i_is_related_use_for">
+        <rdfs:label xml:lang="en">is related use for</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R57_is_based_on">
+        <rdfs:comment xml:lang="en">This property associates an instance of F38 Character with an instance of E39 Actor that the character is motivated by or is intended to represent. An instance of F38 Character may be based on a combination of features taken from several actors. This property is a shortcut of the more fully developed path from E28 Conceptual Object, restricted to F38 Character, through the inverse of P94 has created (was created by), E65 Creation P17 was motivated by (motivated) to E1 CRM Entity restricted to E39 Actor.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">is based on</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R57i_is_basis_for">
+        <rdfs:label xml:lang="en">is basis for</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R58_has_fictional_member">
+        <rdfs:comment xml:lang="en">This property associates an instance of F38 Character representing a group with another instance of F38 Character that is presented in relevant fiction as a member of the fictional group.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">has fictional member</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R58i_is_fictional_member_of">
+        <rdfs:label xml:lang="en">is fictional member of</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R59_had_typical_subject">
+        <rdfs:label xml:lang="en">had typical subject</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F51 Pursuit with the instance of E1 CRM Entity that is the typical subject of the associated activity, such as an area of expertise in which the actor is engaged or was engaged.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R59i_was_typical_subject_of">
+        <rdfs:label xml:lang="en">was typical subject of</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R60_used_to_use_language">
+        <rdfs:label xml:lang="en">used to use language</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F51 Pursuit with the instance of E56 Language that was characteristically used for the products of the associated activity.
+The property R60.1 has type of use allows for specifying a particular form of use.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R60i_was_language_used_by">
+        <rdfs:label xml:lang="en">was language used by</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R61_occured_in_kind_of_context">
+        <rdfs:comment xml:lang="en">This property associates an instance of F52 Name Use Activity with the instance of E55 Type that characterises the kind of role or context within which the associated name was used.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">occured in kind of context</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R61i_was_kind_of_context_for">
+        <rdfs:label xml:lang="en">was kind of context for</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R62_was_used_for_membership_in">
+        <rdfs:label xml:lang="en">was used for membership in</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F52 Name Use Activity with the instance of E74 Group that characterises the context within which the associated name was used for membership in that group.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R62i_was_context_for">
+        <rdfs:label xml:lang="en">was context for</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R63_named">
+        <rdfs:label xml:lang="en">named</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F52 Name Use Activity with the instance of E1 CRM Entity that the associated name was used for.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R63i_was_named_by">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was named by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R64_used_name">
+        <rdfs:comment xml:lang="en">This property associates an instance of F52 Name Use Activity with the instance of E41 Appellation that was used for the associated entity.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">used name</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R64i_was_name_used_by">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">was name used by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R65_recorded_aspects_of">
+        <rdfs:comment xml:lang="en">This property associates an instance of F29 Recording Event with an instance of E18 Physical Thing some of whose features, at the time of recording, were recorded in that process.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">recorded aspects of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R65i_had_aspects_recorded_through">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">had aspects recorded through</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R66_included_performed_version_of">
+        <rdfs:label xml:lang="en">included performed version of</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F31 Performance with a product of the mind that was performed in the course of that instance of F31 Performance.
+According to the level of knowledge available about the performance, the range of this property can actually be specialised as either an instance of F1 Work (if nothing is known as to which specific expression of the work was performed), or of F2 Expression (if there is a reasonable amount of certainty as to which specific expression—e.g., a well identified translation of a play—of the work was performed).
+In addition to being a subproperty of P16 used specific object (was used for), this property also is a shortcut of the fully developed path that goes from F31 Performance to F1 Work through: R25 performed F25 Performance Plan P165 incorporates F22 Self-Contained Expression R3i realises. In this fully developed path, the specific instance of F22 Self-Contained Expression can be precisely identified and described for its own sake, or it can just be known to have necessarily existed.
+
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R66i_had_a_performed_version_through">
+        <rdfs:label xml:lang="en">had a performed version through</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R7_is_example_of">
+        <rdfs:label xml:lang="en">is example of</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates a publication with one of its exemplars.
+It is a shortcut of the more developed path: F5 Item R28i was produced by F32 Carrier Production R26 produced things of type (was produced by): F3 Manifestation Product Type.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R7i_has_example">
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+        <rdfs:label xml:lang="en">has example</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R8_consists_of">
+        <rdfs:label xml:lang="en">consists of</rdfs:label>
+        <rdfs:comment xml:lang="en">This property associates an instance of F13 Identifier with one of the non-syntactic instances of E90 Symbolic Object which form part of it.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R8i_forms_part_of">
+        <rdfs:label xml:lang="en">forms part of</rdfs:label>
+        <rdfs:comment xml:lang="en">
+</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
