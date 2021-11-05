@@ -618,7 +618,7 @@
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#editionNumber">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource"/>
     </owl:DatatypeProperty>
     
 
