@@ -142,6 +142,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature"/>
     </owl:ObjectProperty>
     
 
@@ -176,8 +177,8 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"/>
+                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"/>
+                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -214,6 +215,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile"/>
     </owl:ObjectProperty>
     
 
@@ -323,8 +325,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"/>
+                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"/>
+                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -424,14 +426,7 @@
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#language">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:ObjectProperty>
     
@@ -807,6 +802,7 @@
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/F3 -->
 
     <owl:Class rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
+        <owl:equivalentClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
         <rdfs:label>F3 Manifestation</rdfs:label>
     </owl:Class>
     
@@ -866,14 +862,16 @@
 
     <!-- http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition -->
 
-    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition"/>
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition">
+        <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"/>
+    </owl:Class>
     
 
 
     <!-- http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier"/>
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"/>
     </owl:Class>
     
 
@@ -886,10 +884,18 @@
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">
+        <owl:equivalentClass rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier"/>
+    </owl:Class>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-transmission#Item -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier"/>
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"/>
     </owl:Class>
     
 
@@ -897,8 +903,14 @@
     <!-- http://postdata.linhd.uned.es/ontology/postdata-transmission#Location -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">
-        <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F3"/>
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
     </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
     
 
 
@@ -937,7 +949,7 @@
     <!-- http://postdata.linhd.uned.es/ontology/postdata-transmission#Source -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">
-        <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/F3"/>
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
     </owl:Class>
     
 

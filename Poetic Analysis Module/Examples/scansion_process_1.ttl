@@ -1,0 +1,37 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pdc: <http://postdata.linhd.uned.es/ontology/postdata-core#> .
+@prefix pdp: <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> .
+@prefix pd: <http://postdata.linhd.uned.es/resource/> .
+@prefix pdk: <http://postdata.linhd.uned.es/kos/> .
+
+pd:SP a pdp:ScansionProcess;
+	pdp:employedTechnique pdk:SPA;
+	pdp:hasAgentRole pd:AR1, pd:AR2;
+	pdp:usedAsInput pd:RED;
+	pdp:generated pd:SC.
+
+pdk:SPA a skos:Concept;
+	rdfs:label "Spanish Syllabic Meter Analysis".
+
+pd:AR1 a pdc:AgentRole;
+	pdc:hasAgent pd:AG1;
+	pdc:roleFunction pdk:Annotator.
+
+pd:AR2 a pdc:AgentRole;
+	pdc:hasAgent pd:AG2;
+	pdc:roleFunction pdk:Tagger.
+
+pd:AG1 a pdc:Agent;
+	rdfs:label "Rantanplan v.0.7.1".
+
+pd:AG2 a pdc:Agent;
+	rdfs:label "Spacy v.2.2.4".
+
+pd:RED a pdc:Redaction;
+	pdc:title "Sonnet XI".
+
+pd:SC a pdp:Scansion;
+	pdp:typeOfScansion pdk:AutomaticScansion.

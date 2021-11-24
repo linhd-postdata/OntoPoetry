@@ -1,0 +1,34 @@
+@prefix mv: <http://eccenca.com/mobivoc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pdc:   <http://postdata.linhd.uned.es/ontology/postdata-core#> .
+@prefix pdp: <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> .
+@prefix pd: <http://postdata.linhd.uned.es/resource/> .
+@prefix pdk: <http://postdata.linhd.uned.es/kos/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+pd:Stanza_1 a pdp:Stanza;
+	pdp:hasRhyme pd:Rhyme_1;
+	pdp:content """Suspiro y pruebo ... """.
+
+pd:Rhyme_1 a pdp:Rhyme;
+	pdp:hasRhymeWord pd:Word_1_7;
+	pdp:hasRhymeWord pd:Word_4_7;
+	pdp:typeOfRhymeMatching pdk:Consonant;
+	pdp:rhymePhoneme "/ente/";
+	pdp:rhymeLabel "A";
+	pdp:rhymeGrapheme "ente".
+
+pdk:Consonant a skos:Concept;
+	rdfs:label "Consonant rhyme".
+
+pd:Word_1_7 a pdp:Word;
+	pdp:content "doliente";
+	pdp:isCallOf pd:Word_4_7.
+
+pd:Word_4_7 a pdp:Word;
+	pdp:content "accidente";
+	pdp:isEchoOf pd:Word_1_7.

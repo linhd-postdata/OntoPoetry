@@ -1,0 +1,48 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pdc:   <http://postdata.linhd.uned.es/ontology/postdata-core#> .
+@prefix pdp: <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> .
+@prefix pd: <http://postdata.linhd.uned.es/resource/> .
+@prefix pdk: <http://postdata.linhd.uned.es/kos/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pd:Line_1 a pdp:Line;
+	pdp:hasWordList pd:WordList_1;
+	pdp:hasPunctuationList pd:PunctuationList_1;
+	pdp:hasGrammaticalSyllableList pd:GrammaticalSyllableList_1;
+	pdp:hasMetricalSyllableList pd:MetricalSyllableList_1;
+	pdp:hasMoraList pd:MoraList_1;
+	pdp:hasFootList pd:FootList_1.
+
+pd:WordList_1 a pdp:WordList;
+	pdp:word pd:Word_1.
+
+pd:Word_1 a pdp:Word.
+
+pd:PunctuationList_1 a pdp:PunctuationList;
+	pdp:punctuation pd:Punctuation_1.
+
+pd:Punctuation_1 a pdp:Punctuation.
+
+pd:GrammaticalSyllableList_1 a pdp:GrammaticalSyllableList;
+	pdp:grammaticalSyllable pd:GrammaticalSyllable_1.
+
+pd:GrammaticalSyllable_1 a pdp:GrammaticalSyllable.
+
+pd:MetricalSyllableList_1 a pdp:MetricalSyllableList;
+	pdp:metricalSyllable pd:MetricalSyllable_1.
+
+pd:MetricalSyllable_1 a pdp:MetricalSyllable.
+
+pd:MoraList_1 a pdp:MoraList;
+	pdp:mora pd:Mora_1.
+
+pd:Mora_1 a pdp:Mora.
+
+pd:FootList_1 a pdp:FootList;
+	pdp:foot pd:Foot_1.
+
+pd:Foot_1 a pdp:Foot.
+

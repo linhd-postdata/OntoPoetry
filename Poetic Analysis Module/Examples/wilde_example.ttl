@@ -1,0 +1,26 @@
+@prefix mv: <http://eccenca.com/mobivoc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pdc:   <http://postdata.linhd.uned.es/ontology/postdata-core#> .
+@prefix pdp: <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> .
+@prefix pd: <http://postdata.linhd.uned.es/resource/> .
+@prefix pdk: <http://postdata.linhd.uned.es/kos/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pd:Redaction_1 pdp:hasStanza pd:Stanza_1, pd:Stanza_2, pd:Stanza_3;
+	a pdc:Redaction;
+	pdc:title "Les silhouettes".
+
+pd:Stanza_1 pdp:stanzaNumber "1"^^xsd:nonNegativeInteger;
+	a pdc:Stanza;
+	pdp:hasLine pd:Line_1, pd:Line_2, pd:Line_3, pd:Line_4.
+
+pd:Stanza_2 pdp:stanzaNumber "2"^^xsd:nonNegativeInteger;
+	a pdc:Stanza;
+	pdp:hasLine pd:Line_5, pd:Line_6, pd:Line_7, pd:Line_8.
+
+pd:Line_1 pdp:absolutelineNumber "1"^^xsd:nonNegativeInteger;
+	pdp:relativeLineNumber "1"^^xsd:nonNegativeInteger;
+	pdp:content "The sea is flecked with bars of grey".

@@ -1,0 +1,16 @@
+@prefix mv: <http://eccenca.com/mobivoc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pdc:   <http://postdata.linhd.uned.es/ontology/postdata-core#> .
+@prefix pdp: <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> .
+@prefix pd: <http://postdata.linhd.uned.es/resource/> .
+@prefix pdk: <http://postdata.linhd.uned.es/kos/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pd:Line_81 a pdp:Line;
+	pdp:content "Palomas de los valles, prestadme vuestro arrullo;";
+	pdp:firstHemistich "Palomas de los valles,";
+	pdp:secondHemistich ", prestadme vuestro arrullo;";
+	pdp:isRefrain "False"^^xsd:Boolean.

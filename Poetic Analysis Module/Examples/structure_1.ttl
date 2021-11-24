@@ -1,0 +1,22 @@
+@prefix mv: <http://eccenca.com/mobivoc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pdc:   <http://postdata.linhd.uned.es/ontology/postdata-core#> .
+@prefix pdp: <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> .
+@prefix pd: <http://postdata.linhd.uned.es/resource/> .
+@prefix pdk: <http://postdata.linhd.uned.es/kos/> .
+
+pd:Redaction_1 a pdc:Redaction;
+	pdp:hasStanza pd:Stanza_1.
+
+pd:Stanza_1 a pdp:Stanza;
+	pdp:hasLine pd:Line_1.
+
+pd:Line_1 a pdp:Line;
+	pdp:hasPunctuation pd:Punctuation_1;
+	pdp:hasWord pd:Word_1.
+
+pd:Word_1 a pdp:Word.
+pd:Punctuation_1 a pdp:Punctuation.

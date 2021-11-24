@@ -18,31 +18,40 @@ https://www.linkedin.com/in/aitordiazmedina/</dc:contributor>
 https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributor>
         <dc:contributor xml:lang="en">Bruno Sartini (Bolonia University)
 https://orcid.org/0000-0002-9152-4402</dc:contributor>
+        <dc:contributor xml:lang="en">Helena Bermúdez Sabel 
+https://orcid.org/0000-0001-7782-206X</dc:contributor>
         <dc:contributor xml:lang="en">Javier de la Rosa (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/versae/</dc:contributor>
         <dc:contributor xml:lang="en">Laura Hernández (LINHD_POSTDATA-UNED)
 https://orcid.org/0000-0003-3489-2193</dc:contributor>
         <dc:contributor xml:lang="en">Mirella De Sisto (LINHD_POSTDATA-UNED)
 mdesisto@scc.uned.es</dc:contributor>
+        <dc:contributor xml:lang="en">Mª Luisa Díez Platas 
+https://orcid.org/0000-0002-9416-3147</dc:contributor>
         <dc:contributor xml:lang="en">Omar Khalil Gómez
 http://www.linkedin.com/in/omar-k-0959a8129</dc:contributor>
         <dc:contributor xml:lang="en">Oscar Corcho (Universidad Politécnica de Madrid)
 http://orcid.org/0000-0002-9260-0753</dc:contributor>
         <dc:contributor xml:lang="en">Salvador Ros Muñoz (LINHD_POSTDATA-UNED)
 srosmu@gmail.com</dc:contributor>
-        <dc:creator xml:lang="en">Helena Bermúdez Sabel 
-https://orcid.org/0000-0001-7782-206X</dc:creator>
-        <dc:creator xml:lang="en">Mª Luisa Díez Platas 
-https://orcid.org/0000-0002-9416-3147</dc:creator>
+        <dc:contributors xml:lang="en">Alvaro Pérez (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributors>
+        <dc:contributors xml:lang="en">Bruno Sartini (Bolonia University)
+https://orcid.org/0000-0002-9152-4402</dc:contributors>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <dc:date>2020-20-01</dc:date>
-        <dc:description xml:lang="en">This ontology contains the classes and properties necessary to structure the information of a prosodic analysis, that is to say, the information obtained from the study of the meters and the forms of versification.
-In poetry, the metric is the basic rhythmic structure of the verses of a poetic work.</dc:description>
-        <dc:description xml:lang="en">This ontology module provides classes and properties to describe the structure of a Redaction in the context of POSTDATA project. The structure of a Redaction follows a logical break down of its elements: stanzas, lines, words and syllables. It can be useful in applications that require the annotation or retrieval of specific structural elements, which can be characterised by their own features or by their positions in relation to other elements.</dc:description>
-        <dc:title xml:lang="en">postdata-metrical-analysis ontology</dc:title>
-        <terms:publisher>POSTDATA Project</terms:publisher>
-        <vann:preferredNamespacePrefix>pdma</vann:preferredNamespacePrefix>
-        <owl:versionInfo>V1.0</owl:versionInfo>
+        <dc:description xml:lang="en">This ontology module provides classes and properties to describe the structure of a Redaction in the context of POSTDATA project. The structure of a Redaction follows a logical break down of its elements: stanzas, lines, words and syllables. It can be useful in applications that require the annotation or retrieval of specific structural elements, which can be characterised by their own features or by their positions in relation to other elements.
+This ontology also contains the classes and properties necessary to structure the information of a prosodic analysis, that is to say, the information obtained from the study of the meters and the forms of versification. In poetry, the metric is the basic rhythmic structure of the verses of a poetic work.
+Finally, the ontology also provides classes and properties to support the annotation of different literary devices such acrostics, schemes or tropes.</dc:description>
+        <dc:description xml:lang="en">This ontology supports the information necessary for the literary analysis of a poetic work. It focuses especially on rhetorical figures or figure of speech such as tropes and schemes.</dc:description>
+        <dc:title xml:lang="en">postdata-poetic-analysis ontology</dc:title>
+        <terms:publisher xml:lang="en">POSTDATA Project
+
+“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”
+Principal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812
+Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958</terms:publisher>
+        <vann:preferredNamespacePrefix>pdp</vann:preferredNamespacePrefix>
+        <owl:versionInfo>V2.0</owl:versionInfo>
         <ns:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</ns:license>
     </owl:Ontology>
     
@@ -122,269 +131,6 @@ In poetry, the metric is the basic rhythmic structure of the verses of a poetic 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-audience -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-audience"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-audienceEducationLevel -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-audienceEducationLevel"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-authorEducationLevel -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-authorEducationLevel"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-birthDateCertainty -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-birthDateCertainty"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-birthPlaceCertainty -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-birthPlaceCertainty"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-certainty -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-certainty"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-clausula -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-clausula"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-clausulaSchemaType -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-clausulaSchemaType"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-dateCertainty -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-dateCertainty"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-feetType -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-feetType"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-figureCategory -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-figureCategory"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-footType -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-footType"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-function -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-function"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-gender -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-gender"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-genre -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-genre"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-metricalCategory -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-metricalCategory"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-metricalComplexity -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-metricalComplexity"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-metricalContext -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-metricalContext"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-metricalType -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-metricalType"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-poeticType -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-poeticType"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-religiousAffiliation -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-religiousAffiliation"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-rhymeCategory -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-rhymeCategory"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-rhymeDispositionType -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-rhymeDispositionType"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-roleFunction -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-roleFunction"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-script -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-script"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-socialStatus -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-socialStatus"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfBibliographicItem -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfBibliographicItem"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfCharacter -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfCharacter"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfDesignation -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfDesignation"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfEdition -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfEdition"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfEvent -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfEvent"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfIntertextuality -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfIntertextuality"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfMusicalNotation -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfMusicalNotation"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfParatext -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfParatext"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfPlace -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfPlace"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfRedaction -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfRedaction"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfRhymeMatching -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfRhymeMatching"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfStanza -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfStanza"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfStanzaEdition -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-typeOfStanzaEdition"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-unitType -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-unitType"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-versificationType -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-versificationType"/>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-writingTechnique -->
-
-    <rdfs:Datatype rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vc-writingTechnique"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -393,16 +139,71 @@ In poetry, the metric is the basic rhythmic structure of the verses of a poetic 
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsFirst -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasAgent -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsFirst">
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasAgent">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"/>
+        <rdfs:label xml:lang="en">has agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasAgentRole -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasAgentRole">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isAgentRoleOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole"/>
+        <rdfs:comment xml:lang="en">This property points to the agent that participated in the scansion event.</rdfs:comment>
+        <rdfs:label xml:lang="en">has agent role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole"/>
+        <rdfs:label xml:lang="en">is agent of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isAgentRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isAgentRoleOf">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess"/>
+        <rdfs:label xml:lang="en">is agent role of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsFirstWord -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsFirstWord">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstWordAffectedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Metaplasm"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
         <rdfs:comment xml:lang="en">This property points to the first of the words affected by a metaplasm.
 
 For example, if we consider the words &quot;sparse il&quot; in the line from the sonnet I from the Canzoniere by Petrarca, namely &quot;Voi ch&apos;ascoltate in rime sparse il suono&quot;, the first of the words being affected by a metaplasm (synaloepha in this case) is &quot;sparse&quot;.</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">affects first</rdfs:label>
+        <rdfs:label xml:lang="en">affects first word</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsLine -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsLine">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLineAffectedBy"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Enjambment"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:label>affects line</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -436,6 +237,7 @@ For example, if we consider the words &quot;sparse il&quot; in the line from the
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFootAnalysedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#BasicAnalyticalUnit"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
+        <rdfs:label xml:lang="en">analyses foot</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -445,8 +247,9 @@ For example, if we consider the words &quot;sparse il&quot; in the line from the
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#analysesGrammaticalSyllable">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#analyses"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGrammaticalSyllableAnalysedBy"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#BasicAnalyticalUnit"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
+        <rdfs:label xml:lang="en">analyses grammatical syllable</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -458,6 +261,7 @@ For example, if we consider the words &quot;sparse il&quot; in the line from the
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMetricalSyllableAnalysedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Mora"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllable"/>
+        <rdfs:label xml:lang="en">analyses metrical syllable</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -469,6 +273,7 @@ For example, if we consider the words &quot;sparse il&quot; in the line from the
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isWordAnalysedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
+        <rdfs:label xml:lang="en">analyses word</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -528,9 +333,10 @@ For example, if we consider the first stanza of the sonnet I of Canzoniere by Pe
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#employedTechnique -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#employedTechnique">
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">Indicates which methodology or analytical technique has been applied to perform the scansion.</rdfs:comment>
+        <rdfs:label xml:lang="en">employed technique</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -574,7 +380,7 @@ For example, if we consider the first line of the sonnet I by Shakespeare &quot;
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstFoot">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_first_slot"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstFootOf"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstFootOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FootList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
@@ -588,11 +394,26 @@ For example, if we consider the first line of the sonnet I by Shakespeare &quot;
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstFootOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstFootOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FootList"/>
+        <rdfs:comment xml:lang="en">This property points to the LinePattern whose feet description begins with the current item under analysis.
+
+For example, if we consider the first line of the sonnet I by Shakespeare &quot;From fairest creatures we desire increase&quot;, |from fai| is its first foot.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">first foot of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstGrammaticalSyllable -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstGrammaticalSyllable">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_first_slot"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstGrammaticalSyllableOf"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstGrammaticalSyllableOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllableList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
         <rdfs:comment xml:lang="en">This property points to the first Syllable of a Word.
@@ -604,11 +425,27 @@ For instance, the first syllable of the word &quot;derrota&quot; is &quot;der&qu
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstGrammaticalSyllableOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstGrammaticalSyllableOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllableList"/>
+        <rdfs:comment xml:lang="en">This property points to an instance of Word of which a given Syllable is its first element.
+
+For example, &quot;ar&quot; isFirstSyllable of the word &quot;árbol&quot;.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">first grammatical syllable of</rdfs:label>
+        <rdfs:label xml:lang="en">is first syllable of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstLine -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstLine">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_first_slot"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstLineOf"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstLineOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LineList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property points to the first Line which forms part of a given Line List.
@@ -620,14 +457,40 @@ For example, if we consider the second stanza of the poem &quot;Calle de Arrabal
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstLineOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstLineOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LineList"/>
+        <rdfs:comment xml:lang="en">This property points to the Line List of which the current Line under analysis is its first item.
+
+For example, &quot;Voi ch&apos;ascoltate in rime sparse il suono&quot; is the first line of the first stanza of the first sonnet of the &quot;Canzoniere&quot; by Francesco Petrarca.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">first line of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMetricalSyllable -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMetricalSyllable">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_first_slot"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstMetricalSyllableOf"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMetricalSyllableOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllableList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllable"/>
         <rdfs:label xml:lang="en">first metrical syllable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMetricalSyllableOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMetricalSyllableOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllable"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllableList"/>
+        <rdfs:label xml:lang="en">first metrical syllable of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -636,7 +499,7 @@ For example, if we consider the second stanza of the poem &quot;Calle de Arrabal
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMora">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_first_slot"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstMoraOf"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMoraOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MoraList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Mora"/>
         <rdfs:comment xml:lang="en">This property points to the firt unit in which the foot is divided (an instance of FootDivision).
@@ -648,11 +511,26 @@ For example, if we consider the first foot of the first line of the sonnet I by 
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMoraOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMoraOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Mora"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MoraList"/>
+        <rdfs:comment xml:lang="en">This property points to the Foot that contains the item at hand as its first element.
+
+For example, if we consider the first foot of the first line of the sonnet I by Shakespeare &quot;From fairest creatures we desire increase&quot;, namely |from fai|, its first unit  is &quot;from&quot;.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">first mora of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstPunctuation -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstPunctuation">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_first_slot"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstPunctuationOf"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstPunctuationOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#PunctuationList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Punctuation"/>
         <rdfs:comment xml:lang="en">This property points to the first Punctuation which forms part of a given Punctuation List.</rdfs:comment>
@@ -662,11 +540,24 @@ For example, if we consider the first foot of the first line of the sonnet I by 
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstPunctuationOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstPunctuationOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Punctuation"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#PunctuationList"/>
+        <rdfs:comment xml:lang="en">This property points to the Punctuation List for which a given Punctuation is its first element.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">first punctuation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstStanza -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstStanza">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_first_slot"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstStanzaOf"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstStanzaOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
         <rdfs:comment xml:lang="en">This property points to the first Stanza which forms part of a given Stanza List.
@@ -678,11 +569,26 @@ For example, the poem &quot;Poema 20&quot; by Pablo Neruda has as first stanza &
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstStanzaOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstStanzaOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaList"/>
+        <rdfs:comment xml:lang="en">This property points to the Stanza List of which the current Stanza under analysis is its first line grouping.
+
+For example, &quot;Señor Don Juan, quedito, que me enfado:/ besar la mano es mucho atrevimiento; / abrazarme... no, Juan, no lo consiento.  / Cosquillas... ay Juanito... ¿y el pecado?&quot; is the first stanza of the poem &quot;El mismo&quot; by Tomás de Iriarte.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">first stanza of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWord -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWord">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_first_slot"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstWordOf"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWordOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#WordList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
         <rdfs:comment xml:lang="en">This property points to the first Word of a given Line.
@@ -690,6 +596,21 @@ For example, the poem &quot;Poema 20&quot; by Pablo Neruda has as first stanza &
 For example, &quot;voi&quot; is the first token of the line &quot;Voi ch&apos;ascoltate in rime sparse il suono&quot; from the first sonnet of the &quot;Canzoniere&quot; by Francesco Petrarca.</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">first word</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWordOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWordOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#WordList"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property points to an instance of Line of which a given Word is its first element.
+
+For example, if we consider the fifth stanza of the poem &quot;Ho bisogno di silenzio&quot; by Alda Merini, &quot;Chi di parole da me ne ha avute tante&quot; is the first token.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">first word of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -741,29 +662,8 @@ For example, if we consider the final foot of the verse from sonnet I by Shakesp
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#generated">
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGeneratedBy"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#generatedList -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#generatedList">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#generated"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListGeneratedBy"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/olo/core#OrderedList"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#generatedPattern -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#generatedPattern">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#generated"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternGeneratedBy"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Pattern"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
     </owl:ObjectProperty>
     
 
@@ -797,13 +697,35 @@ For example, the syllable &quot;ma&quot; belongs to the word &quot;Lágrima&quot
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAgent -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnnotation -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAgent">
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAgentOf"/>
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnnotation">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"/>
-        <rdfs:comment xml:lang="en">This property points to the agent that participated in the scansion event.</rdfs:comment>
+        <rdfs:label xml:lang="en">has annotation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnnotation"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
+        <rdfs:label xml:lang="en">has device annotation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEndingLine -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEndingLine">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEndingLineOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:label xml:lang="en">has ending line</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -837,7 +759,7 @@ For example, the syllable &quot;ma&quot; belongs to the word &quot;Lágrima&quot
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasGrammaticalSyllable">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPart"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGrammaticalSyllableOf"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
         <rdfs:label xml:lang="en">has grammatical syllable</rdfs:label>
     </owl:ObjectProperty>
@@ -849,7 +771,7 @@ For example, the syllable &quot;ma&quot; belongs to the word &quot;Lágrima&quot
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasGrammaticalSyllableList">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasList"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGrammaticalSyllableListOf"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllableList"/>
         <rdfs:label xml:lang="en">has grammatical syllable list</rdfs:label>
     </owl:ObjectProperty>
@@ -882,12 +804,40 @@ For example, the syllable &quot;ma&quot; belongs to the word &quot;Lágrima&quot
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasLinePattern -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasLinePattern">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPattern"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLinePatternOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LinePattern"/>
+        <rdfs:comment xml:lang="en">This property points to an instance of Line about which the item at hand presents analytical information.
+
+For example, the Line Pattern &quot;---+-+---+-&quot; analyses the first line of the poem &quot;Osé y temí, mas pudo la osadía tanto&quot; by Fernando de Herrera.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">has line pattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasList -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasList">
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListOf"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/olo/core#OrderedList"/>
         <rdfs:label xml:lang="en">has list</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasListAnnotation -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasListAnnotation">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnnotation"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListAnnotationOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/olo/core#OrderedList"/>
+        <rdfs:label xml:lang="en">has list annotation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -909,7 +859,7 @@ For example, the syllable &quot;ma&quot; belongs to the word &quot;Lágrima&quot
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasMetricalSyllableList">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasList"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMetricalSyllableListOf"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LinePattern"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllableList"/>
         <rdfs:label xml:lang="en">has metrical syllable list</rdfs:label>
     </owl:ObjectProperty>
@@ -965,6 +915,18 @@ For example, all the metrical information contained in the WorkPattern, the Stan
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPatternAnnotation -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPatternAnnotation">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnnotation"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternAnnotationOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Pattern"/>
+        <rdfs:label xml:lang="en">has pattern annotation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPunctuation -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPunctuation">
@@ -995,8 +957,8 @@ For example, all the metrical information contained in the WorkPattern, the Stan
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRedactionPattern">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPattern"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isWorkPatternOf"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRedactionPatternOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RedactionPattern"/>
         <rdfs:label xml:lang="en">has redaction pattern</rdfs:label>
     </owl:ObjectProperty>
@@ -1044,7 +1006,7 @@ For example, the line &quot;From fairest creatures we desire increase,&quot; fro
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanza">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPart"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStanzaOf"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
         <rdfs:label xml:lang="en">has stanza</rdfs:label>
     </owl:ObjectProperty>
@@ -1056,11 +1018,40 @@ For example, the line &quot;From fairest creatures we desire increase,&quot; fro
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanzaList">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasList"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStanzaListOf"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaList"/>
         <rdfs:comment xml:lang="en">This property points to the Stanza List that conforms a Redaction.</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">has stanza list</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanzaPattern -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanzaPattern">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPattern"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStanzaPatternOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaPattern"/>
+        <rdfs:comment xml:lang="en">This property points to an instance of Stanza about which the item at hand presents analytical information.
+
+The Stanza Pattern &quot;ABBA&quot; analyses the first stanza of the poem &quot;Osé y temí, mas pudo la osadía&quot; by Fernando de Herrera.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">has stanza pattern</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStartingLine -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStartingLine">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStartingLineOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:comment xml:lang="en">This property points to the lines (instance of Line) or word (instance of Word) which contains the current item under analysis</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">has starting line</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1089,11 +1080,25 @@ For example, the line &quot;From fairest creatures we desire increase,&quot; fro
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAgentOf -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAcrosticPresentAt -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAgentOf">
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAcrosticPresentAt">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsAcrostic"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is acrostic present at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAgentMentionedIn -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAgentMentionedIn">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMentionedIn"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentionsAgent"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label>is agent mentioned in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1103,6 +1108,15 @@ For example, the line &quot;From fairest creatures we desire increase,&quot; fro
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnalysedBy">
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit"/>
         <rdfs:label>is analysed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:label xml:lang="en">is annotation of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1118,6 +1132,17 @@ For example, &quot;escriba&quot; is call of &quot;arriba&quot;, if we consider t
 Érase una nariz sayón y escriba&quot; from the poem &quot;A un hombre de gran nariz&quot; by Quevedo.</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">is call of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:label xml:lang="en">is device annotation of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1150,117 +1175,48 @@ For example, if we consider the LinePattern &quot;-+-+-+-+-+&quot; of the line &
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstFootOf -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEncodingUsedBy -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstFootOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FootList"/>
-        <rdfs:comment xml:lang="en">This property points to the LinePattern whose feet description begins with the current item under analysis.
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEncodingUsedBy">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesEncoding"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalEncoding"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess"/>
+        <rdfs:comment xml:lang="en">This property points to an instance of LinePattern, StanzaPattern or WorkPattern which uses the convention defined in the current instance of MetricalEncoding.
 
-For example, if we consider the first line of the sonnet I by Shakespeare &quot;From fairest creatures we desire increase&quot;, |from fai| is its first foot.</rdfs:comment>
+For example, if we consider the LinePattern &quot;-+-+-+-+-+&quot; of the line &quot;From fairest creatures we desire increase,&quot; from the first sonnet by Shakespeare, In the first line, the MetricalEncoding using &quot;+&quot; and &quot;-&quot; symbols for stressed and unstressed syllables, is used for containing the information of the pattern.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is first foot of</rdfs:label>
+        <rdfs:label xml:lang="en">is encoding used by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstGrammaticalSyllableOf -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEndingLineOf -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstGrammaticalSyllableOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllableList"/>
-        <rdfs:comment xml:lang="en">This property points to an instance of Word of which a given Syllable is its first element.
-
-For example, &quot;ar&quot; isFirstSyllable of the word &quot;árbol&quot;.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is first grammatical syllable of</rdfs:label>
-        <rdfs:label xml:lang="en">is first syllable of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstLineOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstLineOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEndingLineOf">
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LineList"/>
-        <rdfs:comment xml:lang="en">This property points to the Line List of which the current Line under analysis is its first item.
-
-For example, &quot;Voi ch&apos;ascoltate in rime sparse il suono&quot; is the first line of the first stanza of the first sonnet of the &quot;Canzoniere&quot; by Francesco Petrarca.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is first line of</rdfs:label>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is ending line of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstMetricalSyllableOf -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFigurePresentAt -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstMetricalSyllableOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllable"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllableList"/>
-        <rdfs:label xml:lang="en">is first metrical syllable of</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFigurePresentAt">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsFigure"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is figure present at</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstMoraOf -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstWordAffectedBy -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstMoraOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Mora"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MoraList"/>
-        <rdfs:comment xml:lang="en">This property points to the Foot that contains the item at hand as its first element.
-
-For example, if we consider the first foot of the first line of the sonnet I by Shakespeare &quot;From fairest creatures we desire increase&quot;, namely |from fai|, its first unit  is &quot;from&quot;.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is first mora of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstPunctuationOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstPunctuationOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Punctuation"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#PunctuationList"/>
-        <rdfs:comment xml:lang="en">This property points to the Punctuation List for which a given Punctuation is its first element.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is first punctuation of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstStanzaOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstStanzaOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaList"/>
-        <rdfs:comment xml:lang="en">This property points to the Stanza List of which the current Stanza under analysis is its first line grouping.
-
-For example, &quot;Señor Don Juan, quedito, que me enfado:/ besar la mano es mucho atrevimiento; / abrazarme... no, Juan, no lo consiento.  / Cosquillas... ay Juanito... ¿y el pecado?&quot; is the first stanza of the poem &quot;El mismo&quot; by Tomás de Iriarte.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is first stanza of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstWordOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstWordOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_first_slot_of"/>
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstWordAffectedBy">
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#WordList"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property points to an instance of Line of which a given Word is its first element.
-
-For example, if we consider the fifth stanza of the poem &quot;Ho bisogno di silenzio&quot; by Alda Merini, &quot;Chi di parole da me ne ha avute tante&quot; is the first token.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is first word of</rdfs:label>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Metaplasm"/>
+        <rdfs:label>is first word affected by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1271,6 +1227,7 @@ For example, if we consider the fifth stanza of the poem &quot;Ho bisogno di sil
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnalysedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#BasicAnalyticalUnit"/>
+        <rdfs:label xml:lang="en">is foot analysed by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1300,7 +1257,9 @@ For example, if we consider the fifth stanza of the poem &quot;Ho bisogno di sil
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGeneratedBy -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGeneratedBy">
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess"/>
+        <rdfs:label xml:lang="en">is generated by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1310,7 +1269,8 @@ For example, if we consider the fifth stanza of the poem &quot;Ho bisogno di sil
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGrammaticalSyllableAnalysedBy">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnalysedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#BasicAnalyticalUnit"/>
+        <rdfs:label xml:lang="en">is grammatical syllable analysed by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1331,7 +1291,7 @@ For example, if we consider the fifth stanza of the poem &quot;Ho bisogno di sil
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGrammaticalSyllableOf">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPartOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
         <rdfs:label xml:lang="en">is gramamtical syllable of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1353,116 +1313,13 @@ For example, in the poem &quot;Rojo Sol, que con hacha luminosa&quot; by Fernand
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastFootOf -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isIntertextualityPresentAt -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastFootOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastFoot"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FootList"/>
-        <rdfs:label xml:lang="en">is last foot of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastGrammaticalSyllableOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastGrammaticalSyllableOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastGrammaticalSyllable"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllableList"/>
-        <rdfs:comment xml:lang="en">This property points to Word of which the current Syllable under analysis is its last item.
-
-For example, &quot;bla&quot; is the last syllable of the word &quot;niebla&quot;.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is last grammatical syllable of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastLineOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastLineOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastLine"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LineList"/>
-        <rdfs:comment xml:lang="en">This property points to the Line List of which the current Line under analysis is its last item.
-
-For example, &quot;Attaccato alla vita&quot; is the last line of the poem &quot;Veglia&quot; by Giuseppe Ungaretti.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is last line of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastMetricalSyllableOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastMetricalSyllableOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMetricalSyllable"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllable"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllableList"/>
-        <rdfs:label xml:lang="en">is last metrical syllable of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastMoraOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastMoraOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMora"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Mora"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MoraList"/>
-        <rdfs:label xml:lang="en">is last mora of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastPunctuationOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastPunctuationOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastPunctuation"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Punctuation"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#PunctuationList"/>
-        <rdfs:comment xml:lang="en">This property points to the Punctuation List for which a given Punctuation is its last element.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is last punctuation of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastStanzaOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastStanzaOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastStanza"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaList"/>
-        <rdfs:comment xml:lang="en">This property points to the Stanza List of which the current Stanza under analysis is its last item.
-
-For example, if we take the poem &quot;Un soneto me manda hacer Violante&quot; by Lope de Vega, the fourth stanza (&quot;Ya estoy en el segundo, y aún sospecho / que voy los trece versos acabando; / contad si son catorce, y está hecho.&quot;) is the last stanza.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is last stanza of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastWordOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLastWordOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastWord"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#WordList"/>
-        <rdfs:comment xml:lang="en">This property points to Line of which the current Word is its last element.
-
-For example, the token &quot;breeding&quot; is the last token of the line &quot;April is the cruellest month, breeding&quot; from the poem &quot;The Waste Land&quot; by T. S. Eliot.</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is last word of</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isIntertextualityPresentAt">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsIntertextuality"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is intertextuality present at</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1481,12 +1338,22 @@ For example, &quot;tampoco&quot; isLemma in the line &quot;Si no eres par, tampo
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLineAffectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLineAffectedBy">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Enjambment"/>
+        <rdfs:label xml:lang="en">is line affected by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLineListOf -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLineListOf">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LineList"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
         <rdfs:comment xml:lang="en">This property relates a Line List with the Redaction it breaks down into lines.</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">is line list of</rdfs:label>
@@ -1509,7 +1376,6 @@ For example, &quot;tampoco&quot; isLemma in the line &quot;Si no eres par, tampo
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLinePatternOf">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternOf"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasLinePattern"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LinePattern"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
         <rdfs:label xml:lang="en">is line pattern of</rdfs:label>
@@ -1517,12 +1383,13 @@ For example, &quot;tampoco&quot; isLemma in the line &quot;Si no eres par, tampo
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListGeneratedBy -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListAnnotationOf -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListGeneratedBy">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGeneratedBy"/>
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListAnnotationOf">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/olo/core#OrderedList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:label xml:lang="en">is list annotation of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1536,12 +1403,34 @@ For example, &quot;tampoco&quot; isLemma in the line &quot;Si no eres par, tampo
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMentionedIn -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMentionedIn">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentions"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label>is mentioned in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMetaplasmPresentedAt -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMetaplasmPresentedAt">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsMetaplasm"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Metaplasm"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:label xml:lang="en">is metaplasm presented at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMetricalSyllableAnalysedBy -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMetricalSyllableAnalysedBy">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnalysedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllable"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Mora"/>
+        <rdfs:label xml:lang="en">is metrical syllable analysed by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1551,7 +1440,7 @@ For example, &quot;tampoco&quot; isLemma in the line &quot;Si no eres par, tampo
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMetricalSyllableListOf">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllableList"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LinePattern"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
         <rdfs:label xml:lang="en">is metrical syllable list of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1600,12 +1489,13 @@ For example, &quot;tampoco&quot; isLemma in the line &quot;Si no eres par, tampo
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternGeneratedBy -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternAnnotationOf -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternGeneratedBy">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGeneratedBy"/>
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternAnnotationOf">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Pattern"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:label xml:lang="en">is pattern annotation of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1621,6 +1511,18 @@ For example, &quot;tampoco&quot; isLemma in the line &quot;Si no eres par, tampo
 
 For example, the metrical Pattern of the poem &quot;Amadís de Gaula a don Quijote de La Mancha&quot; by Cervantes can be analysed, for instance, using the Redaction provided by the Corpus of Golden-Age Spanish Sonnets.</rdfs:comment>
         <rdfs:label xml:lang="en">is pattern of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPlaceMentionedIn -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPlaceMentionedIn">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMentionedIn"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentionsPlace"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label>is place mentioned in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1645,6 +1547,17 @@ For example, the metrical Pattern of the poem &quot;Amadís de Gaula a don Quijo
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Punctuation"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
         <rdfs:label xml:lang="en">is punctuation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRedactionPatternOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRedactionPatternOf">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RedactionPattern"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
+        <rdfs:label xml:lang="en">is redaction pattern of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1677,12 +1590,23 @@ For example, if we consider the poem &quot;Elegía a Ramón Sijé&quot; by Migue
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isSchemePresentAt -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isSchemePresentAt">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFigurePresentAt"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsScheme"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scheme"/>
+        <rdfs:label xml:lang="en">is scheme present at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStanzaListOf -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStanzaListOf">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaList"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
         <rdfs:comment xml:lang="en">This property relates a given Stanza List with the Redaction it breaks down into stanzas.</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">is stanza list of</rdfs:label>
@@ -1695,7 +1619,7 @@ For example, if we consider the poem &quot;Elegía a Ramón Sijé&quot; by Migue
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStanzaOf">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPartOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
         <rdfs:label xml:lang="en">is stanza of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1705,7 +1629,6 @@ For example, if we consider the poem &quot;Elegía a Ramón Sijé&quot; by Migue
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStanzaPatternOf">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternOf"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanzaPattern"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaPattern"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
         <rdfs:label xml:lang="en">is stanza pattern of</rdfs:label>
@@ -1713,17 +1636,50 @@ For example, if we consider the poem &quot;Elegía a Ramón Sijé&quot; by Migue
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedBy -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStartingLineOf -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedBy">
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#uses"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalEncoding"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Pattern"/>
-        <rdfs:comment xml:lang="en">This property points to an instance of LinePattern, StanzaPattern or WorkPattern which uses the convention defined in the current instance of MetricalEncoding.
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStartingLineOf">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is starting line of</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-For example, if we consider the LinePattern &quot;-+-+-+-+-+&quot; of the line &quot;From fairest creatures we desire increase,&quot; from the first sonnet by Shakespeare, In the first line, the MetricalEncoding using &quot;+&quot; and &quot;-&quot; symbols for stressed and unstressed syllables, is used for containing the information of the pattern.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">is used by</rdfs:label>
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isTropePresentAt -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isTropePresentAt">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFigurePresentAt"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsTrope"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Trope"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:label xml:lang="en">is trope present at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedRedactionIn -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedRedactionIn">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usedAsRedaction"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:comment xml:lang="en">This property points to a cultural product (Intertextuality) which was based on the work under analysis</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">is used redaction in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:comment xml:lang="en">This property points to the text under analysis (Redaction) from which the current cultural product has derived</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">is used source in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1734,6 +1690,7 @@ For example, if we consider the LinePattern &quot;-+-+-+-+-+&quot; of the line &
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnalysedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit"/>
+        <rdfs:label xml:lang="en">is word analysed by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1760,24 +1717,25 @@ For example, if we consider the LinePattern &quot;-+-+-+-+-+&quot; of the line &
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isWorkPatternOf -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isWorkPatternOf">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternOf"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RedactionPattern"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
-        <rdfs:label xml:lang="en">is work pattern of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastFoot -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastFoot">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_last_slot"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastFootOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FootList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
         <rdfs:label xml:lang="en">last foot</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastFootOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastFootOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FootList"/>
+        <rdfs:label xml:lang="en">last foot of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1786,6 +1744,7 @@ For example, if we consider the LinePattern &quot;-+-+-+-+-+&quot; of the line &
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastGrammaticalSyllable">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_last_slot"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastGrammaticalSyllableOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllableList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
         <rdfs:comment xml:lang="en">This property points to the last Syllable which forms part of a given Word.
@@ -1797,10 +1756,26 @@ For example, if we consider the word &quot;amor&quot;, the last syllable is &quo
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastGrammaticalSyllableOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastGrammaticalSyllableOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllableList"/>
+        <rdfs:comment xml:lang="en">This property points to Word of which the current Syllable under analysis is its last item.
+
+For example, &quot;bla&quot; is the last syllable of the word &quot;niebla&quot;.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">last grammatical syllable of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastLine -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastLine">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_last_slot"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastLineOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LineList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
         <rdfs:comment xml:lang="en">This property points to the last Line which forms part of a given Line List.
@@ -1812,13 +1787,40 @@ For example, for the poem &quot;Fábula de Polifemo y Galatea&quot;, last line w
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastLineOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastLineOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LineList"/>
+        <rdfs:comment xml:lang="en">This property points to the Line List of which the current Line under analysis is its last item.
+
+For example, &quot;Attaccato alla vita&quot; is the last line of the poem &quot;Veglia&quot; by Giuseppe Ungaretti.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">last line of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMetricalSyllable -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMetricalSyllable">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_last_slot"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMetricalSyllableOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllableList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllable"/>
         <rdfs:label xml:lang="en">last metrical syllable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMetricalSyllableOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMetricalSyllableOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllable"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalSyllableList"/>
+        <rdfs:label xml:lang="en">last metrical syllable of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1827,9 +1829,21 @@ For example, for the poem &quot;Fábula de Polifemo y Galatea&quot;, last line w
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMora">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_last_slot"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMoraOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MoraList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Mora"/>
         <rdfs:label xml:lang="en">last mora</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMoraOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMoraOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Mora"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MoraList"/>
+        <rdfs:label xml:lang="en">last mora of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1838,6 +1852,7 @@ For example, for the poem &quot;Fábula de Polifemo y Galatea&quot;, last line w
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastPunctuation">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_last_slot"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastPunctuationOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#PunctuationList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Punctuation"/>
         <rdfs:comment xml:lang="en">This property points to the last Punctuation which forms part of a given Punctuation List.</rdfs:comment>
@@ -1847,10 +1862,24 @@ For example, for the poem &quot;Fábula de Polifemo y Galatea&quot;, last line w
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastPunctuationOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastPunctuationOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Punctuation"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#PunctuationList"/>
+        <rdfs:comment xml:lang="en">This property points to the Punctuation List for which a given Punctuation is its last element.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">last punctuation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastStanza -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastStanza">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_last_slot"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastStanzaOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
         <rdfs:comment xml:lang="en">This property points to the last Stanza which forms part of the current Stanza List.
@@ -1862,10 +1891,26 @@ For example, The last stanza of el poema &quot;Diamante&quot; by Federico Garcí
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastStanzaOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastStanzaOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaList"/>
+        <rdfs:comment xml:lang="en">This property points to the Stanza List of which the current Stanza under analysis is its last item.
+
+For example, if we take the poem &quot;Un soneto me manda hacer Violante&quot; by Lope de Vega, the fourth stanza (&quot;Ya estoy en el segundo, y aún sospecho / que voy los trece versos acabando; / contad si son catorce, y está hecho.&quot;) is the last stanza.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">last stanza of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastWord -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastWord">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#has_last_slot"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastWordOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#WordList"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
         <rdfs:comment xml:lang="en">This property points to the last Word which form part of a given Line.
@@ -1873,6 +1918,21 @@ For example, The last stanza of el poema &quot;Diamante&quot; by Federico Garcí
 For example, &quot;suono&quot; is the last token of the line &quot;Voi ch&apos;ascoltate in rime sparse il suono&quot; from the first sonnet of the &quot;Canzoniere&quot; by Francesco Petrarca.</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">last word</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastWordOf -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastWordOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/olo/core#is_last_slot_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#WordList"/>
+        <rdfs:comment xml:lang="en">This property points to Line of which the current Word is its last element.
+
+For example, the token &quot;breeding&quot; is the last token of the line &quot;April is the cruellest month, breeding&quot; from the poem &quot;The Waste Land&quot; by T. S. Eliot.</rdfs:comment>
+        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">last word of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1911,7 +1971,7 @@ For example, in the poem &quot;Mientras por competir por tu cabello&quot;, the l
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentions -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentions">
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
         <rdfs:comment xml:lang="en">Agent or Place that is mentioned on the line
 
 Example: The line from the poem &quot;Piedra negra sobre una piedra blanca&quot; by César Vallejo &quot;Me moriré en París con aguacero,&quot; has mention to the Place &quot;Paris&quot;</rdfs:comment>
@@ -1925,6 +1985,7 @@ Example: The line from the poem &quot;Piedra negra sobre una piedra blanca&quot;
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentionsAgent">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentions"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"/>
         <rdfs:comment xml:lang="en">This property points to the Place that is mentioned in a given Line.
 
@@ -1939,6 +2000,7 @@ Example: The following line from the Purgatorio of Divina Commedia by Dante Alig
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentionsPlace">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentions"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
         <rdfs:comment xml:lang="en">This property points to the Place that is mentioned in a given Line.
 
@@ -2239,6 +2301,36 @@ For example, if we take the poem &quot;Autorretrato&quot; by Antonio Machado, th
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsAcrostic -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsAcrostic">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic"/>
+        <rdfs:label xml:lang="en">presents acrostic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsFigure -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsFigure">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:label xml:lang="en">presents figure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsIntertextuality -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsIntertextuality">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:label xml:lang="en">presents intertextuality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsMetaplasm -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsMetaplasm">
@@ -2252,29 +2344,24 @@ For example, the line from the sonnet I from the Canzoniere by Petrarca, namely 
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsRhymeMatching -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsScheme -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsRhymeMatching">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/rhymeMatching-type"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:comment xml:lang="en">Categorisation of the stanza or  work according to the degree in which the different rhyming sounds match (e.g. assonant, consonant...).
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsScheme">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsFigure"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scheme"/>
+        <rdfs:label xml:lang="en">presents scheme</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-For example, if we consider the first stanza of the sonnet XXIII by Garcilaso: &quot;En tanto que de rosa y de azucena\ se muestra la color en vuestro gesto,\ y que vuestro mirar ardiente, honesto,\con clara luz la tempestad serena;&quot; rhymeMatching is &quot;perfect rhyme&quot;.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">presents rhyme matching</rdfs:label>
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsTrope -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsTrope">
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsFigure"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Trope"/>
+        <rdfs:label xml:lang="en">presents trope</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2298,13 +2385,6 @@ For example, if we consider the second foot of the first line of the sonnet I by
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#previousFootBeforeCaesura">
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#previousFootBeforeCaesura"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
-            </owl:Restriction>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Foot"/>
         <rdfs:comment xml:lang="en">This property points to the previous instance of Foot when this is positioned before a caesura.
 
@@ -2441,6 +2521,24 @@ For example, if we consider the token &quot;month&quot;, the line &quot;April is
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhetoricalOperation -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhetoricalOperation">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/rhetorical-operation"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Classification categories of speech figures in relation to rhetorical operations: addition, omission, transposition and permutation</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">rethorical operation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeDispositionType -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeDispositionType">
@@ -2461,25 +2559,32 @@ For example, if we consider the first stanza of the sonnet XXIII by Garcilaso: &
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeMatchingType -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeMatchingType">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/rhymeMatching-type"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Categorisation of the stanza or  work according to the degree in which the different rhyming sounds match (e.g. assonant, consonant...).
+
+For example, if we consider the first stanza of the sonnet XXIII by Garcilaso: &quot;En tanto que de rosa y de azucena\ se muestra la color en vuestro gesto,\ y que vuestro mirar ardiente, honesto,\con clara luz la tempestad serena;&quot; rhymeMatching is &quot;perfect rhyme&quot;.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">presents rhyme matching</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymesWith -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymesWith">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit"/>
         <rdfs:comment xml:lang="en">This property points to an instance of Line that rhymes with the current Line under analysis.
 
 For example, if we consider the line in the sonnet III from Petrarch&apos;s &quot;Canzoniere&quot;, &quot;Era il giorno ch’al sol si scoloraro&quot;, rhymesWith is the line &quot;ché i be&apos; vostr&apos;occhi, Donna, mi legaro&quot;.</rdfs:comment>
@@ -2516,6 +2621,56 @@ For instance, the redaction of Divina Commedia edited by Raffaele Andreoli publi
 For example, the line &quot;veo llegar la corta vida mía&quot; from the poem &quot;A la pequeña luz del breve dia&quot; by Fernando de Herrera belongs to the Redaction of the poem in Algunas obras (1582).</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">stanza list</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfAcrostic -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfAcrostic">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/type-of-acrostic"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">type of acrostic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfEnjambment -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfEnjambment">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Enjambment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#type-of-enjambment"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label>type of enjambment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfIntertextuality -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfIntertextuality">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/type-of-intertextuality"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Categorisation of the work under analysis depending on the relationship between this work and other texts. E.g. “contrafactum”, “de seguir”, etc.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">type of intertextuality</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2584,7 +2739,30 @@ For example, if we consider the rhyme &quot;scoloraro-legaro&quot; in the sonnet
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfScansion">
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#scansion-type"/>
+            </owl:Restriction>
+        </rdfs:range>
         <rdfs:comment>Specifies if the annotation is manual or automatic.</rdfs:comment>
+        <rdfs:label>type of scansion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfScheme -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfScheme">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scheme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/type-of-scheme"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">type of scheme</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2630,11 +2808,62 @@ For instance, if we consider the first stanza of the Inferno of the Divina Comme
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#uses -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfTrope -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#uses">
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfTrope">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Trope"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/type-of-trope"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">type of trope</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usedAsInput -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usedAsInput">
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#wasInputFor"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:label>used as input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usedAsRedaction -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usedAsRedaction">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:comment xml:lang="en">This property points to the text under analysis (Redaction) which has been a source for the current cultural product</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">used as redaction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"/>
+        <rdfs:comment xml:lang="en">This property points to a cultural product (Intertextuality) which was a source for the work under analysis</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">used as source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesEncoding -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesEncoding">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Pattern"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#MetricalEncoding"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-16T20:30:43Z</dc:date>
@@ -2642,7 +2871,7 @@ For instance, if we consider the first stanza of the Inferno of the Divina Comme
 
 For example, in the poem &quot;Amadís de Gaula a don Quijote de La Mancha&quot;, the presented metrical Pattern uses the following MetricalEncoding: the symbol &quot;+&quot; for stressed syllables and the symbol &quot;-&quot; for unstressed ones.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">uses</rdfs:label>
+        <rdfs:label xml:lang="en">uses encoding</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2663,6 +2892,16 @@ For example, in the poem &quot;Amadís de Gaula a don Quijote de La Mancha&quot;
 For example, if we consider the sonnet I from &quot;L&apos;olive&quot; by Du Bellay, versificationType is &quot;syllabic verse&quot; because its type of versification is based on the number of syllables per line only.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">versification type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#wasInputFor -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#wasInputFor">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess"/>
+        <rdfs:label>was input for</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2694,36 +2933,6 @@ For example, the line &quot;Bruscamente la tarde se ha aclarado&quot; from the p
 For example, the token &quot;April&quot; belongs to the line &quot;April is the cruellest month, breeding&quot; from the poem &quot;The Waste Land&quot; by T. S. Eliot.</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">word list</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasLinePattern -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasLinePattern">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPattern"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LinePattern"/>
-        <rdfs:comment xml:lang="en">This property points to an instance of Line about which the item at hand presents analytical information.
-
-For example, the Line Pattern &quot;---+-+---+-&quot; analyses the first line of the poem &quot;Osé y temí, mas pudo la osadía tanto&quot; by Fernando de Herrera.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">has line pattern</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanzaPattern -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanzaPattern">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPattern"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaPattern"/>
-        <rdfs:comment xml:lang="en">This property points to an instance of Stanza about which the item at hand presents analytical information.
-
-The Stanza Pattern &quot;ABBA&quot; analyses the first stanza of the poem &quot;Osé y temí, mas pudo la osadía&quot; by Fernando de Herrera.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">has stanza pattern</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2825,13 +3034,12 @@ The Stanza Pattern &quot;ABBA&quot; analyses the first stanza of the poem &quot;
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#notes -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#text -->
 
-    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#notes">
+    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#text">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Comment or explanations</rdfs:comment>
-        <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-core</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">notes</rdfs:label>
+        <rdfs:comment>Full content of the literary resource. For example, the content of the  acrostic is  the letters that compose it.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -3428,15 +3636,7 @@ For example, for the verbal forms &quot;querer&quot;, &quot;querremos&quot; and 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalNotes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LinePattern"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RedactionPattern"/>
-                    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaPattern"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Pattern"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mluisadiez</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-16T18:39:21Z</dc:date>
@@ -3555,8 +3755,8 @@ If we consider the first line of the first sonnet by Shakespeare, namely &quot;F
         <rdfs:comment xml:lang="en">The exact number of syllables, that is, without paying attention to any metrical phenomena that may affect the counting.
 
 If we consider the first hendecasyllable line of the sonnet I by Petrarca, namely &quot;Voi ch&apos;ascoltate in rime sparse il suono&quot;, and disregard any metrical phenomena (e.g. synaloepha), numberOfSyllables is: 13.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">number of grammatical syllables</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -3574,8 +3774,8 @@ If we consider the first hendecasyllable line of the sonnet I by Petrarca, namel
 
 If we consider the second stanza from the poem &quot;Acaso...&quot; by Antonio Machado:     &quot;Brotaban verdes hojas \ de las hinchadas yemas del ramaje, \ y flores amarillas, blancas, rojas, /\alegraban la mancha del paisaje.&quot; numberOFLines is: 4.</rdfs:comment>
         <rdfs:comment xml:lang="en">The total number of lines of a Line List</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">number of lines</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -3641,8 +3841,8 @@ Tras de tanto camino es la primera \ vez que miro brotar la primavera, \ dije, y
 
 ¿¡Cuán tarde ya para la dicha mía!? \ Y luego, al caminar, como quien siente \ alas de otra ilusión: Y todavía \ ¡yo alcanzaré mi juventud un día!&quot; Number of stanza is: 5.</rdfs:comment>
         <rdfs:comment xml:lang="en">The total number of stanzas of a Stanza List</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">number of stanzas</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -3756,8 +3956,8 @@ For example, in the case of the Spanish word &quot;novio&quot;, the phonetic tra
         <rdfs:comment xml:lang="en">Phonetic transcription.
 
 If we consider, as an example, the line &quot;Soñar la muerte no es matar el sueño&quot; from the poem &quot;Morir soñando&quot; by Unamuno, phoneticTranscription is: /so&apos;ɲar la &apos;mwerte no es ma&apos;tar el &apos;sweɲo/.</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">phonetic transcription</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -4108,6 +4308,36 @@ For example, in the poem &quot;Suspiro y pruebo con la voz doliente&quot; by Fer
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole">
+        <rdfs:label xml:lang="en">Agent Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#Event -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Event"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject">
+        <rdfs:label xml:lang="en">Linguistic Object</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#Place -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
@@ -4126,7 +4356,7 @@ For example, in the poem &quot;Suspiro y pruebo con la voz doliente&quot; by Fer
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsRhymeMatching"/>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeMatchingType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass>
                     <owl:Class>
@@ -4145,9 +4375,20 @@ For example, in the poem &quot;Suspiro y pruebo con la voz doliente&quot; by Fer
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
+        <rdfs:label xml:lang="en">Acrostic</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit -->
 
-    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit"/>
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit">
+        <rdfs:label xml:lang="en">Analytical Unit</rdfs:label>
+    </owl:Class>
     
 
 
@@ -4155,6 +4396,26 @@ For example, in the poem &quot;Suspiro y pruebo con la voz doliente&quot; by Fer
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#BasicAnalyticalUnit">
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit"/>
+        <rdfs:label xml:lang="en">Basic Analytical Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Enjambment -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Enjambment">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
+        <rdfs:comment xml:lang="en">A word or phrase used in a non-literal sense for rhetorical or vivid effect</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Figure Of Speech</rdfs:label>
     </owl:Class>
     
 
@@ -4201,9 +4462,8 @@ For example, in the poem &quot;Suspiro y pruebo con la voz doliente&quot; by Fer
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllable">
-        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit"/>
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/olo/core#Slot"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#weight"/>
@@ -4249,6 +4509,17 @@ Eg.: The word ignite is composed of two syllables: ig and nite.</rdfs:comment>
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#GrammaticalSyllableList">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/olo/core#OrderedList"/>
         <rdfs:label xml:lang="en">Grammatical Syllable List</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-16T18:37:24Z</dc:date>
+        <rdfs:comment>Shared textual materials between two or more contemporary texts; Text from which information or ideas are derived for the composition of the Opus/Redaction;Text that took information or ideas from the Opus/Redaction</rdfs:comment>
+        <rdfs:label xml:lang="en">Intertextuality</rdfs:label>
     </owl:Class>
     
 
@@ -4401,9 +4672,18 @@ Eg.: The number of syllables of the Line</rdfs:comment>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice">
+        <rdfs:label xml:lang="en">Literary Device</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Metaplasm -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Metaplasm">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice"/>
         <rdfs:comment xml:lang="en">A figure of transformation or metaplasm is a figure of diction that consists of altering the writing or pronunciation of words without altering their meaning.
 Some examples are dieresis, syneresis, sinalefa or hiatus.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
@@ -4534,7 +4814,7 @@ Eg.: the colon &quot;:&quot;</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsRhymeMatching"/>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeMatchingType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass>
                     <owl:Class>
@@ -4646,6 +4926,24 @@ Eg.: The complete distribution of accented syllables of a work</rdfs:comment>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Event"/>
+        <rdfs:label xml:lang="en">Scansion Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scheme -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scheme">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:label xml:lang="en">Scheme</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza -->
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Stanza">
@@ -4675,7 +4973,7 @@ Eg.: The complete distribution of accented syllables of a work</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsRhymeMatching"/>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeMatchingType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass>
                     <owl:Class>
@@ -4789,7 +5087,7 @@ Novo Reino, que tanto sublimaram;</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsRhymeMatching"/>
+                <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeMatchingType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass>
                     <owl:Class>
@@ -4870,7 +5168,10 @@ Eg.: The number of lines of a Stanza or its categorisation according to metrics 
 
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit -->
 
-    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit"/>
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject"/>
+        <rdfs:label xml:lang="en">Structural Unit</rdfs:label>
+    </owl:Class>
     
 
 
@@ -4880,6 +5181,15 @@ Eg.: The number of lines of a Stanza or its categorisation according to metrics 
         <rdfs:comment xml:lang="en">Each element of the notation used to describe a metrical pattern</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Symbol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Trope -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Trope">
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech"/>
+        <rdfs:label xml:lang="en">Trope</rdfs:label>
     </owl:Class>
     
 
@@ -4940,6 +5250,14 @@ Eg.: The word “life”</rdfs:comment>
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#WordList">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/olo/core#OrderedList"/>
         <rdfs:label xml:lang="en">Word List</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation -->
+
+    <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">
+        <rdfs:label xml:lang="en">Manifestation</rdfs:label>
     </owl:Class>
     
 
@@ -5075,6 +5393,14 @@ Eg.: The word “life”</rdfs:comment>
     
 
 
+    <!-- http://postdata.linhd.uned.es/kos/rhetorical-operation -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/rhetorical-operation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://postdata.linhd.uned.es/kos/rhymeDisposition-type -->
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/rhymeDisposition-type">
@@ -5107,9 +5433,57 @@ Eg.: The word “life”</rdfs:comment>
     
 
 
+    <!-- http://postdata.linhd.uned.es/kos/type-of-acrostic -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/type-of-acrostic">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/kos/type-of-intertextuality -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/type-of-intertextuality">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/kos/type-of-scheme -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/type-of-scheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/kos/type-of-trope -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/type-of-trope">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://postdata.linhd.uned.es/kos/versification-type -->
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/versification-type">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#scansion-type -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#scansion-type">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#type-of-enjambment -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#type-of-enjambment">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -5655,9 +6029,9 @@ This property is a shortcut of: F2 Expression P165i is incorporated in F24 Publi
         <rdfs:label xml:lang="en">was assigned by</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule">
+        <rdfs:label xml:lang="en">used rule</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates the event of assigning an instance of F13 Identifier with the instructions followed by an actor, such as a Bibliographic Agency, in creating that identifier.
 </rdfs:comment>
-        <rdfs:label xml:lang="en">used rule</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_in">
         <rdfs:label xml:lang="en">was the rule used in</rdfs:label>
@@ -5685,9 +6059,9 @@ This property is a shortcut of: F2 Expression P165i is incorporated in F24 Publi
 </rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55_has_nomen_form">
-        <rdfs:label xml:lang="en">has nomen form</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with the instance of E55 Type that characterizes the Nomen referred to in the Nomen Use Statement, such as abbreviation, full name etc. In the case of abbreviations, the source of this form may or may not be explicitly mentioned.
 </rdfs:comment>
+        <rdfs:label xml:lang="en">has nomen form</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55i_is_nomen_form_in">
         <rdfs:label xml:lang="en">is nomen form in</rdfs:label>
