@@ -1,0 +1,666 @@
+@prefix : <http://postdata.linhd.uned.es/ontology/postdata-transmission#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://postdata.linhd.uned.es/ontology/postdata-transmission#> .
+
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/R4
+<http://iflastandards.info/ns/fr/frbr/frbroo/R4> rdf:type owl:ObjectProperty ;
+                                                 rdfs:label "embodies" .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/R4i
+<http://iflastandards.info/ns/fr/frbr/frbroo/R4i> rdf:type owl:ObjectProperty ;
+                                                  rdfs:label "is embodied in" .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/R7
+<http://iflastandards.info/ns/fr/frbr/frbroo/R7> rdf:type owl:ObjectProperty .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/R7i
+<http://iflastandards.info/ns/fr/frbr/frbroo/R7i> rdf:type owl:ObjectProperty .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo
+:appliesTo rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to> ;
+           owl:inverseOf :isSubjectTo ;
+           rdfs:domain :Right ;
+           rdfs:range :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#editionCriteria
+:editionCriteria rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+                 rdfs:domain :PrimarySource ;
+                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#editionType
+:editionType rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+             rdfs:domain :BibliographicSource ;
+             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression
+:embodiesExpression rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://iflastandards.info/ns/fr/frbr/frbroo/R4> ;
+                    owl:inverseOf :isEmbodiedInSource ;
+                    rdfs:domain :Source ;
+                    rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction
+:embodiesRedaction rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://iflastandards.info/ns/fr/frbr/frbroo/R4> ;
+                   owl:inverseOf :isEmobidedInLocation ;
+                   rdfs:domain :Location ;
+                   rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#foliationType
+:foliationType rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+               rdfs:domain :PrimarySource ;
+               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#function
+:function rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Location
+                                      :Source
+                                    )
+                      ] ;
+          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph
+:hasAutograph rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> ;
+              owl:inverseOf :isAutographOf ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :Item
+                                          :PrimarySource
+                                        )
+                          ] ;
+              rdfs:range :Feature .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource
+:hasCreatedSource rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> ;
+                  owl:inverseOf :isCreatedSourceOf ;
+                  rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> ;
+                  rdfs:range :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar
+:hasExemplar rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://iflastandards.info/ns/fr/frbr/frbroo/R7i> ;
+             owl:inverseOf :isExemplarOf ;
+             rdfs:domain :BibliographicSource ;
+             rdfs:range :Item .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus
+:hasIntegrityStatus rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P44_has_condition> ;
+                    owl:inverseOf :isIntegrityStatusOf ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :InformationCarrier
+                                                :Manifestation
+                                              )
+                                ] ;
+                    rdfs:range :Condition .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout
+:hasLayout rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> ;
+           owl:inverseOf :isLayoutOf ;
+           rdfs:domain :Source ;
+           rdfs:range :Feature .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> ;
+             owl:inverseOf :isLocationOf ;
+             rdfs:domain :Source ;
+             rdfs:range :Location .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction
+:hasLocationReproduction rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> ;
+                         owl:inverseOf :isReproductionOfLocation ;
+                         rdfs:domain :Location ;
+                         rdfs:range :Facsimile .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMaterial
+:hasMaterial rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P45_consists_of> ;
+             owl:inverseOf :isMaterialOf ;
+             rdfs:domain :Source ;
+             rdfs:range :Material .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation
+:hasMusicalNotation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> ;
+                    owl:inverseOf :isMusicalNotationOf ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Location
+                                                :Source
+                                              )
+                                ] ;
+                    rdfs:range :Feature .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction
+:hasSourceReproduction rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> ;
+                       owl:inverseOf :isReproductionOfSource ;
+                       rdfs:domain :PrimarySource ;
+                       rdfs:range :Facsimile .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf
+:isAutographOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> ;
+               rdfs:domain :Feature ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( :Item
+                                          :PrimarySource
+                                        )
+                          ] .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf
+:isCreatedSourceOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by> ;
+                   rdfs:domain :Source ;
+                   rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource
+:isEmbodiedInSource rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://iflastandards.info/ns/fr/frbr/frbroo/R4i> ;
+                    rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> ;
+                    rdfs:range :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation
+:isEmobidedInLocation rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <http://iflastandards.info/ns/fr/frbr/frbroo/R4i> ;
+                      rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> ;
+                      rdfs:range :Location .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf
+:isExemplarOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://iflastandards.info/ns/fr/frbr/frbroo/R7> ;
+              rdfs:domain :Item ;
+              rdfs:range :BibliographicSource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf
+:isIntegrityStatusOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of> ;
+                     rdfs:domain :Condition ;
+                     rdfs:range [ rdf:type owl:Class ;
+                                  owl:unionOf ( :InformationCarrier
+                                                :Manifestation
+                                              )
+                                ] .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf
+:isLayoutOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> ;
+            rdfs:domain :Feature ;
+            rdfs:range :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf
+:isLocationOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> ;
+              rdfs:domain :Location ;
+              rdfs:range :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isMaterialOf
+:isMaterialOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P45i_is_incorporated_in> ;
+              rdfs:domain :Material ;
+              rdfs:range :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf
+:isMusicalNotationOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> ;
+                     rdfs:domain :Feature ;
+                     rdfs:range [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Location
+                                                :Source
+                                              )
+                                ] .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isPossessedBy
+:isPossessedBy rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P75i_is_possessed_by> ;
+               owl:inverseOf :possesses ;
+               rdfs:domain :Right ;
+               rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation
+:isReproductionOfLocation rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> ;
+                          rdfs:domain :Facsimile ;
+                          rdfs:range :Location .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource
+:isReproductionOfSource rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> ;
+                        rdfs:domain :Facsimile ;
+                        rdfs:range :PrimarySource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo
+:isSubjectTo rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to> ;
+             rdfs:domain :Source ;
+             rdfs:range :Right .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#language
+:language rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+          rdfs:domain :Manifestation ;
+          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#possesses
+:possesses rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P75_possesses> ;
+           rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> ;
+           rdfs:range :Right .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType
+:sourceType rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+            rdfs:domain :Source ;
+            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#writingMethod
+:writingMethod rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+               rdfs:domain :Source ;
+               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#writingStyle
+:writingStyle rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> ;
+              rdfs:domain :PrimarySource ;
+              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to
+<http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to
+<http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P108_has_produced
+<http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by
+<http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of
+<http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on
+<http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P2_has_type
+<http://www.cidoc-crm.org/cidoc-crm/P2_has_type> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P44_has_condition
+<http://www.cidoc-crm.org/cidoc-crm/P44_has_condition> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of
+<http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P45_consists_of
+<http://www.cidoc-crm.org/cidoc-crm/P45_consists_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P45i_is_incorporated_in
+<http://www.cidoc-crm.org/cidoc-crm/P45i_is_incorporated_in> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of
+<http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of
+<http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P75_possesses
+<http://www.cidoc-crm.org/cidoc-crm/P75_possesses> rdf:type owl:ObjectProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P75i_is_possessed_by
+<http://www.cidoc-crm.org/cidoc-crm/P75i_is_possessed_by> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#additionalFile
+:additionalFile rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+                rdfs:domain :Facsimile .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#alternativeTitle
+:alternativeTitle rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> ;
+                  rdfs:domain :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#catalogueNumber
+:catalogueNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+                 rdfs:domain :PrimarySource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#dimensions
+:dimensions rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> ;
+            rdfs:domain :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#editionNumber
+:editionNumber rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+               rdfs:domain :BibliographicSource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+            rdfs:domain :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#issueNumber
+:issueNumber rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+             rdfs:domain :BibliographicSource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#locus
+:locus rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+       rdfs:domain :Location .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#notes
+:notes rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfFolios
+:numberOfFolios rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts> ;
+                rdfs:domain :PrimarySource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfHands
+:numberOfHands rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts> ;
+               rdfs:domain :PrimarySource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfPages
+:numberOfPages rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts> ;
+               rdfs:domain :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfVolumes
+:numberOfVolumes rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts> ;
+                 rdfs:domain :BibliographicSource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfWorks
+:numberOfWorks rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts> ;
+               rdfs:domain :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber
+:sectionNumber rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+               rdfs:domain :Location .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#series
+:series rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+        rdfs:domain :BibliographicSource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#siglum
+:siglum rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by> ;
+        rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> ;
+       rdfs:domain :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#volumeNumber
+:volumeNumber rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+              rdfs:domain :BibliographicSource .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber
+:workNumber rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> ;
+            rdfs:domain :Location .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P102_has_title
+<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by
+<http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P3_has_note
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension
+<http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts
+<http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by
+<http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F3
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> rdf:type owl:Class ;
+                                                 owl:equivalentClass :Manifestation ;
+                                                 rdfs:label "F3 Manifestation" .
+
+
+###  http://iflastandards.info/ns/fr/frbr/frbroo/F5
+<http://iflastandards.info/ns/fr/frbr/frbroo/F5> rdf:type owl:Class ;
+                                                 rdfs:label "F5 Item" .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-core#Agent
+<http://postdata.linhd.uned.es/ontology/postdata-core#Agent> rdf:type owl:Class .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole
+<http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole> rdf:type owl:Class .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-core#Expression
+<http://postdata.linhd.uned.es/ontology/postdata-core#Expression> rdf:type owl:Class .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation
+<http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> rdf:type owl:Class .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-core#Redaction
+<http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> rdf:type owl:Class .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan
+<http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> rdf:type owl:Class .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource
+:BibliographicSource rdf:type owl:Class ;
+                     rdfs:subClassOf :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition
+:Condition rdf:type owl:Class ;
+           owl:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile
+:Facsimile rdf:type owl:Class ;
+           rdfs:subClassOf :InformationCarrier .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature
+:Feature rdf:type owl:Class ;
+         owl:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier
+:InformationCarrier rdf:type owl:Class ;
+                    owl:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Item
+:Item rdf:type owl:Class ;
+      rdfs:subClassOf :InformationCarrier .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :Manifestation .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation
+:Manifestation rdf:type owl:Class .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Material
+:Material rdf:type owl:Class ;
+          owl:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E57_Material> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource
+:PrimarySource rdf:type owl:Class ;
+               rdfs:subClassOf :Source .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Procedure
+:Procedure rdf:type owl:Class ;
+           owl:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Right
+:Right rdf:type owl:Class ;
+       owl:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Source
+:Source rdf:type owl:Class ;
+        rdfs:subClassOf :Manifestation .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature
+<http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E30_Right
+<http://www.cidoc-crm.org/cidoc-crm/E30_Right> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State
+<http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E57_Material
+<http://www.cidoc-crm.org/cidoc-crm/E57_Material> rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier
+<http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier> rdf:type owl:Class ;
+                                                             rdfs:label "E84 Information Carrier" .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
