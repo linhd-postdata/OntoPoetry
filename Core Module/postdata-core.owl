@@ -22,26 +22,34 @@
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#">
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dc:contributor>Aitor Díaz Medina (LINHD_POSTDATA-UNED) nhttps://www.linkedin.com/in/aitordiazmedina/</dc:contributor>
-        <dc:contributor>Alvaro Pérez (LINHD_POSTDATA-UNED) nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributor>
-        <dc:contributor>Bruno Sartini (Bolonia University)nhttps://orcid.org/0000-0002-9152-4402</dc:contributor>
-        <dc:contributor>Elena González Blanco
+        <dc:contributor>Aitor Díaz Medina (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/aitordiazmedina/</dc:contributor>
+        <dc:contributor>Alvaro Pérez (LINHD_POSTDATA-UNED) 
+https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributor>
+        <dc:contributor>Elena González-Blanco
 https://orcid.org/0000-0002-0448-1812</dc:contributor>
-        <dc:contributor>Helena Bermúdez Sabelnhttps://orcid.org/0000-0001-7782-206X</dc:contributor>
-        <dc:contributor>Javier de la Rosa (LINHD_POSTDATA-UNED)nhttps://www.linkedin.com/in/versae/</dc:contributor>
-        <dc:contributor>Laura Hernández Lorenzo (LINHD_POSTDATA-UNED) nhttps://orcid.org/0000-0003-3489-2193</dc:contributor>
+        <dc:contributor>Helena Bermúdez Sabel
+https://orcid.org/0000-0001-7782-206X</dc:contributor>
+        <dc:contributor>Javier de la Rosa (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/versae/</dc:contributor>
+        <dc:contributor>Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)
+https://orcid.org/0000-0003-3489-2193</dc:contributor>
         <dc:contributor xml:lang="scc.uned.es">Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto</dc:contributor>
-        <dc:contributor>Mª Luisa Díez Platasnhttps://orcid.org/0000-0002-9416-3147</dc:contributor>
-        <dc:contributor>Omar Khalil Gómez (LINHD_POSTDATA-UNED) nhttp://www.linkedin.com/in/omar-k-0959a8129</dc:contributor>
-        <dc:contributor>Oscar Corcho (Universidad Politécnica de Madrid)nhttp://orcid.org/0000-0002-9260-0753</dc:contributor>
-        <dc:contributor>Salvador Ros Muñoz (UNED)nsrosmugmail.com</dc:contributor>
+        <dc:contributor>Mª Luisa Díez Platas
+https://orcid.org/0000-0002-9416-3147</dc:contributor>
+        <dc:contributor>Omar Khalil Gómez (LINHD_POSTDATA-UNED)
+http://www.linkedin.com/in/omar-k-0959a8129</dc:contributor>
+        <dc:contributor>Oscar Corcho (Universidad Politécnica de Madrid)
+http://orcid.org/0000-0002-9260-0753</dc:contributor>
+        <dc:contributor>Salvador Ros Muñoz (UNED)
+srosmu@gmail.com</dc:contributor>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
-        <dc:date>2020-02-22</dc:date>
+        <dc:date>2021-11-26</dc:date>
         <dc:description xml:lang="en">This ontology is the core of the POSTDATA network of ontologies. As such, it contains the most relevant classes and properties that allow representing poetic works and their characteristics. Besides, it contains common classes and properties that are used in many other ontologies in the network, such as those related to the representation of persons, organisations, events, places and roles that persons and organisations play in poetic works.</dc:description>
         <dc:title xml:lang="en">POSTDATA core ontology</dc:title>
         <terms:publisher xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”n        Principal Investigator. Elena González Blanco -- &lt;https://orcid.org/0000-0002-0448-1812&gt;n        Technical Director. Salvador Ros Muñoz -- &lt;https://orcid.org/0000-0001-6330-4958&gt;</terms:publisher>
         <vann:preferredNamespacePrefix>pdc</vann:preferredNamespacePrefix>
-        <owl:versionInfo>V1.3</owl:versionInfo>
+        <owl:versionInfo>V2.0</owl:versionInfo>
     </owl:Ontology>
     
 

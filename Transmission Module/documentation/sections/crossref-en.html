@@ -1,13 +1,19 @@
-<h2 id="crossreference" class="list">Cross reference for Transmission Ontology Module classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by Transmission Ontology Module.
+<h2 id="crossreference" class="list">Cross reference for postdata-transmission-elements ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by postdata-transmission-elements ontology.
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#BibliographicSource"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">
-            <span>bibliographic source</span>
-         </a>
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
+      </li>
+      <li>
+         <a href="#CarrierProduction"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction">Carrier Production</a>
+      </li>
+      <li>
+         <a href="#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5">Collection</a>
       </li>
       <li>
          <a href="#Condition"
@@ -20,22 +26,12 @@ This section provides details for each class and property defined by Transmissio
             title="http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier">E84 Information Carrier</a>
       </li>
       <li>
-         <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/F3" title="http://iflastandards.info/ns/fr/frbr/frbroo/F3">F3 Manifestation</a>
-      </li>
-      <li>
-         <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/F5" title="http://iflastandards.info/ns/fr/frbr/frbroo/F5">F5 Item</a>
-      </li>
-      <li>
          <a href="#Facsimile"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">
-            <span>facsimile</span>
-         </a>
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">Facsimile</a>
       </li>
       <li>
          <a href="#Feature"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">
-            <span>feature</span>
-         </a>
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">Feature</a>
       </li>
       <li>
          <a href="#InformationCarrier"
@@ -45,59 +41,55 @@ This section provides details for each class and property defined by Transmissio
       </li>
       <li>
          <a href="#Item"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">
-            <span>item</span>
-         </a>
-      </li>
-      <li>
-         <a href="#Location"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">
-            <span>location</span>
-         </a>
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">Item</a>
       </li>
       <li>
          <a href="#Material"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Material">
-            <span>material</span>
-         </a>
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Material">Material</a>
       </li>
       <li>
          <a href="#PrimarySource"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">
-            <span>primary source</span>
-         </a>
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
       </li>
       <li>
          <a href="#Procedure"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Procedure">
-            <span>procedure</span>
-         </a>
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Procedure">Procedure</a>
+      </li>
+      <li>
+         <a href="#Reproduction"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction">Reproduction</a>
       </li>
       <li>
          <a href="#Right"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">
-            <span>right</span>
-         </a>
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">Right</a>
       </li>
       <li>
          <a href="#Source"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">
-            <span>source</span>
-         </a>
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
       </li>
    </ul>
    <div class="entity" id="BibliographicSource">
-      <h3>bibliographic source<sup class="type-c" title="class">c</sup>
+      <h3>Bibliographic Source<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource</p>
+      <div class="comment">
+         <span class="markdown">A Bibliographic Source is a conceptual entity representing bibliographic products that are generated following a publication process. Instances of pdt:BibliographicSource represent the ideal physical properties of all the exemplars. Despite Bibliographic Sources are not physical objects per se (are not accessible), they encapsulate design properties of the physical carriers (layout, pages, desired material, etc.) and hence they can be "physically" described.
+
+An object of type pdt:BibliographicSource embodies one or more textual editions (instances of pdc:Redaction). They mostly represent books that may gather several redactions or poems. In order to represent all the physical copies of the ideal manifestation, we associate this kind of source with instances of pdt:Item.
+
+pdt:BibliographicSource is then considered an E73 Informatio Object, which is subclass of E90 Symbolic Object which represents conceptual objects subjected to rights and ownership. Instances of pdt:Item are aligned to E84 Information Carrier.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#Source"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+               target="_blank"
+               title="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">e73 information object</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -108,6 +100,10 @@ This section provides details for each class and property defined by Transmissio
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#editionType">edition type</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasExemplar"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar">has exemplar</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSection"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection">has section</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSectionOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf">is section of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#issueNumber"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#issueNumber">issue number</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOfVolumes"
@@ -120,8 +116,101 @@ This section provides details for each class and property defined by Transmissio
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#isExemplarOf"
+            <a href="#hasSection"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection">has section</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isExemplarOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf">is exemplar of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSectionOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf">is section of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CarrierProduction">
+      <h3>Carrier Production<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction</p>
+      <div class="comment">
+         <span class="markdown">Instances of pdt:CarrierProduction describe the activity performed by some agent when giving rise to a physical carrier for a textual edition of a poem.
+
+A Carrier Production has a set of pdc:AgentRole structures associated indicating the actors and the roles they performed during the participation in the event. The Carrier Production is then carried by taking a textual edition as input (an instance of pdc:Redaction) and generates an Information Carrier (an instance of pdt:InformationCarrier)
+
+As a Carrier Production is an activity with input and output objects and participants, it is a subclass of E7 Activity. In addition, being it a type of event involving the creation of a carrier, it is also subclass of E63 Beginning of Existence.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Activity"
+               target="_blank"
+               title="http://postdata.linhd.uned.es/ontology/postdata-core#Activity">activity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence"
+               target="_blank"
+               title="http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence">e63 beginning of existence</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#produced"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#produced">produced</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedRedaction"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction">used redaction</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#wasProducedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy">was produced by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasRedactionUsedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy">was redaction used by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5">
+      <h3>Collection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5</p>
+      <div class="comment">
+         <span class="markdown">A pdt:Collection is an aggregation of instances of pdt:InformationCarrier that are curated and preserved by some pdc:Agent.
+
+A Collection can be a set of physical manuscripts or exemplars (i.e. a corpus, a personal collection of books). For example, "Gongocorpus" is a pdt:Collection that collects physical electronic editions of Gongora's Poems.
+
+Being a collection a physical aggregation, it has been aligned as a subclass of CIDOC CRM E78 Collection</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.cidoc-crm.org/cidoc-crm/E78_Collection"
+               target="_blank"
+               title="http://www.cidoc-crm.org/cidoc-crm/E78_Collection">e78 collection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#collectionType"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType">collection type</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasCollected"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected">has collected</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCollectionOwnedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy">is collection owned by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCuratorOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf">is curator of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasCurator"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator">has curator</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCollectedIn"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn">is collected in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ownsCollection"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection">owns collection</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -133,6 +222,11 @@ This section provides details for each class and property defined by Transmissio
       </h3>
       <p>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition</p>
+      <div class="comment">
+         <span class="markdown">A Condition is a state of a physical edition of a poem subjected to a period or time span. Hence, instances of pdt:Condition are related to pdt:InformationCarrier and pdc:TimeSpan.
+
+pdt:Condition is aligned with CIDOC CRM E3 Condition State.</span>
+      </div>
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
@@ -143,7 +237,11 @@ This section provides details for each class and property defined by Transmissio
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#isIntegrityStatusOf"
+            <a href="#conditionType"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType">condition type</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasTimeSpan"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan">has time span</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isIntegrityStatusOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf">is integrity status of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -151,6 +249,8 @@ This section provides details for each class and property defined by Transmissio
          <dd>
             <a href="#hasIntegrityStatus"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus">has integrity status</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isTimeSpanOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf">is time span of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -164,33 +264,8 @@ This section provides details for each class and property defined by Transmissio
          <strong>IRI:</strong> http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier</p>
       <dl class="description"/>
    </div>
-   <div class="entity" id="http://iflastandards.info/ns/fr/frbr/frbroo/F3">
-      <h3>F3 Manifestation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://iflastandards.info/ns/fr/frbr/frbroo/F3</p>
-      <dl class="description">
-         <dt>is equivalent to</dt>
-         <dd>
-            <a href="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-               target="_blank"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">manifestation</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://iflastandards.info/ns/fr/frbr/frbroo/F5">
-      <h3>F5 Item<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://iflastandards.info/ns/fr/frbr/frbroo/F5</p>
-   </div>
    <div class="entity" id="Facsimile">
-      <h3>facsimile<sup class="type-c" title="class">c</sup>
+      <h3>Facsimile<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -205,26 +280,22 @@ This section provides details for each class and property defined by Transmissio
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#additionalFile"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#additionalFile">additional file</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#isReproductionOfLocation"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation">is reproduction of location</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isReproductionOfSource"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource">is reproduction of source</a>
+            <a href="#facsimileNumber"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#facsimileNumber">facsimile number</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isReproductionOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf">is reproduction of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasLocationReproduction"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction">has location reproduction</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasSourceReproduction"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction">has source reproduction</a>
+            <a href="#hasReproduction"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction">has reproduction</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Feature">
-      <h3>feature<sup class="type-c" title="class">c</sup>
+      <h3>Feature<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -244,8 +315,6 @@ This section provides details for each class and property defined by Transmissio
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf">is autograph of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isLayoutOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf">is layout of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isMusicalNotationOf"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf">is musical notation of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -254,8 +323,6 @@ This section provides details for each class and property defined by Transmissio
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph">has autograph</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasLayout"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout">has layout</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasMusicalNotation"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation">has musical notation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -277,15 +344,69 @@ This section provides details for each class and property defined by Transmissio
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Facsimile"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">facsimile</a>
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">Facsimile</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Item"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">item</a>
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">Item</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PrimarySource"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#accessIdentifier"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#accessIdentifier">access identifier</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#carries"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#carries">carries</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#format"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#format">format</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasIntegrityStatus"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus">has integrity status</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasReproduction"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction">has reproduction</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCarrierOwnedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy">is carrier owned by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCollectedIn"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn">is collected in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isKeeperOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf">is keeper of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSubjectTo"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo">is subject to</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasCarriedUsedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy">was carried used by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasGeneratedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy">was generated by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasProducedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy">was produced by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#appliesTo"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo">applies to</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#generated"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#generated">generated</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasCollected"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected">has collected</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasKeeper"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper">has keeper</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCarriedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy">is carried by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isIntegrityStatusOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf">is integrity status of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isReproductionOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf">is reproduction of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ownsCarrier"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier">owns carrier</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#produced"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#produced">produced</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedCarrier"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier">used carrier</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Item">
-      <h3>item<sup class="type-c" title="class">c</sup>
+      <h3>Item<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -302,7 +423,9 @@ This section provides details for each class and property defined by Transmissio
          <dd>
             <a href="#isExemplarOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf">is exemplar of</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#itemIdentifier"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier">item identifier</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -312,51 +435,8 @@ This section provides details for each class and property defined by Transmissio
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Location">
-      <h3>location<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#Location</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-               target="_blank"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">manifestation</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#embodiesRedaction"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction">embodies redaction</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLocationReproduction"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction">has location reproduction</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isLocationOf"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf">is location of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#locus"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#locus">locus</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#sectionNumber"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber">section number</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#workNumber"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber">work number</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasLocation"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation">has location</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isEmobidedInLocation"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation">is emobided in location</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isReproductionOfLocation"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation">is reproduction of location</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Material">
-      <h3>material<sup class="type-c" title="class">c</sup>
+      <h3>Material<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -385,7 +465,7 @@ This section provides details for each class and property defined by Transmissio
       </dl>
    </div>
    <div class="entity" id="PrimarySource">
-      <h3>primary source<sup class="type-c" title="class">c</sup>
+      <h3>Primary Source<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -395,7 +475,9 @@ This section provides details for each class and property defined by Transmissio
          <dt>has super-classes</dt>
          <dd>
             <a href="#Source"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InformationCarrier"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -406,8 +488,10 @@ This section provides details for each class and property defined by Transmissio
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#editionCriteria">edition criteria</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#foliationType"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#foliationType">foliation type</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasSourceReproduction"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction">has source reproduction</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasAutograph"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph">has autograph</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCreatedSourceBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy">is created source by</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#numberOfFolios"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfFolios">number of folios</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOfHands"
@@ -418,14 +502,16 @@ This section provides details for each class and property defined by Transmissio
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#isReproductionOfSource"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource">is reproduction of source</a>
+            <a href="#createdSource"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource">created source</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isAutographOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf">is autograph of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="Procedure">
-      <h3>procedure<sup class="type-c" title="class">c</sup>
+      <h3>Procedure<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -441,8 +527,53 @@ This section provides details for each class and property defined by Transmissio
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Reproduction">
+      <h3>Reproduction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction</p>
+      <div class="comment">
+         <span class="markdown">A Reproduction is an activity in which some actor performs a copy of a physical edition to produce a facsimile. A reproduction of a facsimile is also another facsimile. 
+
+Instances of pdt:Reproduction have agent-role structures associated (pdc:AgentRole) to indicate the type of role performed by an actor during the reproduction. Reproductions are associated to the carrier being reproduced (of type pdt:InformationCarrier) and generate the copy (instance of pdt:Facsimile) following a specific technique.
+
+pdt:Reproduction is aligned to E7 Activity and to E63 Beginning of Existence to indicate that it has input/output objects and it gices rise to a new object.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Activity"
+               target="_blank"
+               title="http://postdata.linhd.uned.es/ontology/postdata-core#Activity">activity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence"
+               target="_blank"
+               title="http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence">e63 beginning of existence</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#generated"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#generated">generated</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#reproductionType"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType">reproduction type</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedCarrier"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier">used carrier</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#wasCarriedUsedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy">was carried used by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasGeneratedBy"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy">was generated by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Right">
-      <h3>right<sup class="type-c" title="class">c</sup>
+      <h3>Right<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -475,26 +606,19 @@ This section provides details for each class and property defined by Transmissio
       </dl>
    </div>
    <div class="entity" id="Source">
-      <h3>source<sup class="type-c" title="class">c</sup>
+      <h3>Source<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#Source</p>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-               target="_blank"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">manifestation</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#BibliographicSource"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">bibliographic source</a>
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PrimarySource"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -503,44 +627,42 @@ This section provides details for each class and property defined by Transmissio
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#alternativeTitle">alternative title</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#dimensions"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#dimensions">dimensions</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#embodiesExpression"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression">embodies expression</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#embodies"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies">embodies</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#function"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#function">function</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasLayout"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout">has layout</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation">has location</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasMaterial"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMaterial">has material</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#identifier"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#identifier">identifier</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#isCreatedSourceOf"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf">is created source of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isSubjectTo"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo">is subject to</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#numberOfPages"
+            <sup class="type-op" title="object property">op</sup>, <a href="#language"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#language">language</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#locus"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#locus">locus</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOfPages"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfPages">number of pages</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOfWorks"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfWorks">number of works</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#sectionNumber"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber">section number</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#sourceIdentifier"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier">source identifier</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#sourceType"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType">source type</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#title"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#title">title</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#workNumber"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber">work number</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#writingMethod"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#writingMethod">writing method</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#appliesTo"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo">applies to</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasCreatedSource"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource">has created source</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isEmbodiedInSource"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource">is embodied in source</a>
+            <a href="#isEmbodiedIn"
+               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn">is embodied in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isLayoutOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf">is layout of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isLocationOf"
-               title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf">is location of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isMaterialOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isMaterialOf">is material of</a>
             <sup class="type-op" title="object property">op</sup>
@@ -557,6 +679,28 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
+         <a href="#carries"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#carries">
+            <span>carries</span>
+         </a>
+      </li>
+      <li>
+         <a href="#collectionType"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType">collection type</a>
+      </li>
+      <li>
+         <a href="#conditionType"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType">
+            <span>condition type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#createdSource"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource">
+            <span>created source</span>
+         </a>
+      </li>
+      <li>
          <a href="#editionCriteria"
             title="http://postdata.linhd.uned.es/ontology/postdata-transmission#editionCriteria">
             <span>edition criteria</span>
@@ -569,18 +713,9 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
-         <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/R4" title="http://iflastandards.info/ns/fr/frbr/frbroo/R4">embodies</a>
-      </li>
-      <li>
-         <a href="#embodiesExpression"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression">
-            <span>embodies expression</span>
-         </a>
-      </li>
-      <li>
-         <a href="#embodiesRedaction"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction">
-            <span>embodies redaction</span>
+         <a href="#embodies"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies">
+            <span>embodies</span>
          </a>
       </li>
       <li>
@@ -590,9 +725,21 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
+         <a href="#format"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#format">
+            <span>format</span>
+         </a>
+      </li>
+      <li>
          <a href="#function"
             title="http://postdata.linhd.uned.es/ontology/postdata-transmission#function">
             <span>function</span>
+         </a>
+      </li>
+      <li>
+         <a href="#generated"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#generated">
+            <span>generated</span>
          </a>
       </li>
       <li>
@@ -602,9 +749,15 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
-         <a href="#hasCreatedSource"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource">
-            <span>has created source</span>
+         <a href="#hasCollected"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected">
+            <span>has collected</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasCurator"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator">
+            <span>has curator</span>
          </a>
       </li>
       <li>
@@ -620,21 +773,15 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
+         <a href="#hasKeeper"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper">
+            <span>has keeper</span>
+         </a>
+      </li>
+      <li>
          <a href="#hasLayout"
             title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout">
             <span>has layout</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasLocation"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation">
-            <span>has location</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasLocationReproduction"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction">
-            <span>has location reproduction</span>
          </a>
       </li>
       <li>
@@ -644,15 +791,21 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
-         <a href="#hasMusicalNotation"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation">
-            <span>has musical notation</span>
+         <a href="#hasReproduction"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction">
+            <span>has reproduction</span>
          </a>
       </li>
       <li>
-         <a href="#hasSourceReproduction"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction">
-            <span>has source reproduction</span>
+         <a href="#hasSection"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection">
+            <span>has section</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasTimeSpan"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan">
+            <span>has time span</span>
          </a>
       </li>
       <li>
@@ -662,24 +815,45 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
-         <a href="#isCreatedSourceOf"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf">
-            <span>is created source of</span>
+         <a href="#isCarriedBy"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy">
+            <span>is carried by</span>
          </a>
       </li>
       <li>
-         <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/R4i" title="http://iflastandards.info/ns/fr/frbr/frbroo/R4i">is embodied in</a>
-      </li>
-      <li>
-         <a href="#isEmbodiedInSource"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource">
-            <span>is embodied in source</span>
+         <a href="#isCarrierOwnedBy"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy">
+            <span>is carrier owned by</span>
          </a>
       </li>
       <li>
-         <a href="#isEmobidedInLocation"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation">
-            <span>is emobided in location</span>
+         <a href="#isCollectedIn"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn">
+            <span>is collected in</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isCollectionOwnedBy"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy">
+            <span>is collection owned by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isCreatedSourceBy"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy">
+            <span>is created source by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isCuratorOf"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf">
+            <span>is curator of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isEmbodiedIn"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn">
+            <span>is embodied in</span>
          </a>
       </li>
       <li>
@@ -695,15 +869,15 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
-         <a href="#isLayoutOf"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf">
-            <span>is layout of</span>
+         <a href="#isKeeperOf"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf">
+            <span>is keeper of</span>
          </a>
       </li>
       <li>
-         <a href="#isLocationOf"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf">
-            <span>is location of</span>
+         <a href="#isLayoutOf"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf">
+            <span>is layout of</span>
          </a>
       </li>
       <li>
@@ -713,27 +887,21 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
-         <a href="#isMusicalNotationOf"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf">
-            <span>is musical notation of</span>
-         </a>
-      </li>
-      <li>
          <a href="#isPossessedBy"
             title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isPossessedBy">
             <span>is possessed by</span>
          </a>
       </li>
       <li>
-         <a href="#isReproductionOfLocation"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation">
-            <span>is reproduction of location</span>
+         <a href="#isReproductionOf"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf">
+            <span>is reproduction of</span>
          </a>
       </li>
       <li>
-         <a href="#isReproductionOfSource"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource">
-            <span>is reproduction of source</span>
+         <a href="#isSectionOf"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf">
+            <span>is section of</span>
          </a>
       </li>
       <li>
@@ -743,9 +911,27 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
+         <a href="#isTimeSpanOf"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf">
+            <span>is time span of</span>
+         </a>
+      </li>
+      <li>
          <a href="#language"
             title="http://postdata.linhd.uned.es/ontology/postdata-transmission#language">
             <span>language</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ownsCarrier"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier">
+            <span>owns carrier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ownsCollection"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection">
+            <span>owns collection</span>
          </a>
       </li>
       <li>
@@ -755,9 +941,57 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
+         <a href="#produced"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#produced">
+            <span>produced</span>
+         </a>
+      </li>
+      <li>
+         <a href="#reproductionType"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType">
+            <span>reproduction type</span>
+         </a>
+      </li>
+      <li>
          <a href="#sourceType"
             title="http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType">
             <span>source type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#usedCarrier"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier">
+            <span>used carrier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#usedRedaction"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction">
+            <span>used redaction</span>
+         </a>
+      </li>
+      <li>
+         <a href="#wasCarriedUsedBy"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy">
+            <span>was carried used by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#wasGeneratedBy"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy">
+            <span>was generated by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#wasProducedBy"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy">
+            <span>was produced by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#wasRedactionUsedBy"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy">
+            <span>was redaction used by</span>
          </a>
       </li>
       <li>
@@ -792,19 +1026,162 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Right"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">right</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">Right</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#isSubjectTo"
                   title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo">is subject to</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="carries">
+      <h3>carries<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#carries</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P128_carries"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P128_carries">p128 carries</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCarriedBy"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy">is carried by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="collectionType">
+      <h3>collection type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P2_has_type">p2 has type</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5">Collection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="conditionType">
+      <h3>condition type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType</p>
+      <div class="comment">
+         <span class="markdown">Ex: Burned pages, highligthed text, included notes, etc.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P2_has_type">p2 has type</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Condition"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition">condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="createdSource">
+      <h3>created source<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence">p92 brought into existence</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation">expression creation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PrimarySource"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCreatedSourceBy"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy">is created source by</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -829,7 +1206,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -861,7 +1238,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#BibliographicSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">bibliographic source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -874,80 +1251,26 @@ This section provides details for each class and property defined by Transmissio
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://iflastandards.info/ns/fr/frbr/frbroo/R4">
+   <div class="entity" id="embodies">
       <h3>embodies<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://iflastandards.info/ns/fr/frbr/frbroo/R4</p>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#embodiesExpression"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression">embodies expression</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#embodiesRedaction"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction">embodies redaction</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="embodiesExpression">
-      <h3>embodies expression<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/R4" title="http://iflastandards.info/ns/fr/frbr/frbroo/R4">embodies</a>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of">p130 shows features of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Expression"
-                  target="_blank"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Expression">expression</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isEmbodiedInSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource">is embodied in source</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="embodiesRedaction">
-      <h3>embodies redaction<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/R4" title="http://iflastandards.info/ns/fr/frbr/frbroo/R4">embodies</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -959,8 +1282,8 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isEmobidedInLocation"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation">is emobided in location</a>
+               <a href="#isEmbodiedIn"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn">is embodied in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -985,7 +1308,39 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="format">
+      <h3>format<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#format</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P2_has_type">p2 has type</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1016,12 +1371,8 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1030,6 +1381,43 @@ This section provides details for each class and property defined by Transmissio
                   target="_blank"
                   title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="generated">
+      <h3>generated<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#generated</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence">p92 brought into existence</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Reproduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction">Reproduction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#wasGeneratedBy"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy">was generated by</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1052,18 +1440,14 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Item"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">item</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Feature"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">feature</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">Feature</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1075,39 +1459,76 @@ This section provides details for each class and property defined by Transmissio
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasCreatedSource">
-      <h3>has created source<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasCollected">
+      <h3>has collected<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/P108_has_produced"
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"
                   target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/P108_has_produced">p108 has produced</a>
+                  title="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of">p46 is composed of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"
-                  target="_blank"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation">expression creation</a>
+               <a href="#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5">Collection</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isCreatedSourceOf"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf">is created source of</a>
+               <a href="#isCollectedIn"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn">is collected in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCurator">
+      <h3>has curator<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper">p49 has former or current keeper</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5">Collection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCuratorOf"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf">is curator of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1124,21 +1545,21 @@ This section provides details for each class and property defined by Transmissio
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://iflastandards.info/ns/fr/frbr/frbroo/R7i"
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
                   target="_blank"
-                  title="http://iflastandards.info/ns/fr/frbr/frbroo/R7i">r7i</a>
+                  title="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on">p130i features are also found on</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#BibliographicSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">bibliographic source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Item"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">item</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">Item</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1170,11 +1591,6 @@ This section provides details for each class and property defined by Transmissio
             <dd>
                <a href="#InformationCarrier"
                   title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-                  target="_blank"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">manifestation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1187,6 +1603,44 @@ This section provides details for each class and property defined by Transmissio
             <dd>
                <a href="#isIntegrityStatusOf"
                   title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf">is integrity status of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasKeeper">
+      <h3>has keeper<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper">p49 has former or current keeper</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isKeeperOf"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf">is keeper of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1211,93 +1665,19 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Feature"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">feature</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">Feature</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#isLayoutOf"
                   title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf">is layout of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasLocation">
-      <h3>has location<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"
-                  target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of">p46 is composed of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isLocationOf"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf">is location of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasLocationReproduction">
-      <h3>has location reproduction<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
-                  target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on">p130i features are also found on</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Facsimile"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">facsimile</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isReproductionOfLocation"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation">is reproduction of location</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1322,13 +1702,13 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Material"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Material">material</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Material">Material</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1340,54 +1720,13 @@ This section provides details for each class and property defined by Transmissio
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasMusicalNotation">
-      <h3>has musical notation<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasReproduction">
+      <h3>has reproduction<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"
-                  target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of">p46 is composed of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Feature"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">feature</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isMusicalNotationOf"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf">is musical notation of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSourceReproduction">
-      <h3>has source reproduction<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1399,20 +1738,95 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Facsimile"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">facsimile</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">Facsimile</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isReproductionOfSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource">is reproduction of source</a>
+               <a href="#isReproductionOf"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf">is reproduction of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSection">
+      <h3>has section<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of">p46 is composed of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#BibliographicSource"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BibliographicSource"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isSectionOf"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf">is section of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTimeSpan">
+      <h3>has time span<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span">p4 has time span</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Condition"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition">condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan">time span</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isTimeSpanOf"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf">is time span of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1437,17 +1851,13 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Feature"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">feature</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">Feature</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Item"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">item</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1459,112 +1869,20 @@ This section provides details for each class and property defined by Transmissio
          </dl>
       </div>
    </div>
-   <div class="entity" id="isCreatedSourceOf">
-      <h3>is created source of<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="isCarriedBy">
+      <h3>is carried by<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by"
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by"
                   target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by">p108i was produced by</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"
-                  target="_blank"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation">expression creation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasCreatedSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource">has created source</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://iflastandards.info/ns/fr/frbr/frbroo/R4i">
-      <h3>is embodied in<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://iflastandards.info/ns/fr/frbr/frbroo/R4i</p>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#isEmbodiedInSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource">is embodied in source</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isEmobidedInLocation"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation">is emobided in location</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isEmbodiedInSource">
-      <h3>is embodied in source<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/R4i" title="http://iflastandards.info/ns/fr/frbr/frbroo/R4i">is embodied in</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Expression"
-                  target="_blank"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Expression">expression</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#embodiesExpression"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression">embodies expression</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isEmobidedInLocation">
-      <h3>is emobided in location<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#http://iflastandards.info/ns/fr/frbr/frbroo/R4i" title="http://iflastandards.info/ns/fr/frbr/frbroo/R4i">is embodied in</a>
+                  title="http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by">p128i is carried by</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -1576,14 +1894,241 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#embodiesRedaction"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction">embodies redaction</a>
+               <a href="#carries"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#carries">carries</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCarrierOwnedBy">
+      <h3>is carrier owned by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner">p52 has current owner</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#ownsCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier">owns carrier</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCollectedIn">
+      <h3>is collected in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of">p46i forms part of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5">Collection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasCollected"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected">has collected</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCollectionOwnedBy">
+      <h3>is collection owned by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner">p52 has current owner</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5">Collection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#ownsCollection"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection">owns collection</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCreatedSourceBy">
+      <h3>is created source by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by">p92i was brought into existence by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PrimarySource"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation">expression creation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#createdSource"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource">created source</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isCuratorOf">
+      <h3>is curator of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of">p49i is former or current keeper of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5">Collection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasCurator"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator">has curator</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEmbodiedIn">
+      <h3>is embodied in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on">p130i features are also found on</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Source"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#embodies"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies">embodies</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1600,21 +2145,21 @@ This section provides details for each class and property defined by Transmissio
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://iflastandards.info/ns/fr/frbr/frbroo/R7"
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
                   target="_blank"
-                  title="http://iflastandards.info/ns/fr/frbr/frbroo/R7">r7</a>
+                  title="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of">p130 shows features of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Item"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">item</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">Item</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#BibliographicSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">bibliographic source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1652,17 +2197,50 @@ This section provides details for each class and property defined by Transmissio
             <dd>
                <a href="#InformationCarrier"
                   title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-                  target="_blank"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">manifestation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasIntegrityStatus"
                   title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus">has integrity status</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isKeeperOf">
+      <h3>is keeper of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of">p49i is former or current keeper of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasKeeper"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper">has keeper</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1687,56 +2265,19 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Feature"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">feature</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">Feature</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasLayout"
                   title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout">has layout</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isLocationOf">
-      <h3>is location of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"
-                  target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of">p46i forms part of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasLocation"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation">has location</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1761,60 +2302,19 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Material"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Material">material</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Material">Material</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasMaterial"
                   title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMaterial">has material</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isMusicalNotationOf">
-      <h3>is musical notation of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"
-                  target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of">p46i forms part of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Feature"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature">feature</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasMusicalNotation"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation">has musical notation</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1839,7 +2339,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Right"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">right</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">Right</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1858,13 +2358,13 @@ This section provides details for each class and property defined by Transmissio
          </dl>
       </div>
    </div>
-   <div class="entity" id="isReproductionOfLocation">
-      <h3>is reproduction of location<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="isReproductionOf">
+      <h3>is reproduction of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1877,56 +2377,56 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Facsimile"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">facsimile</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">Facsimile</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasLocationReproduction"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction">has location reproduction</a>
+               <a href="#hasReproduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction">has reproduction</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="isReproductionOfSource">
-      <h3>is reproduction of source<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="isSectionOf">
+      <h3>is section of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"
                   target="_blank"
-                  title="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of">p130 shows features of</a>
+                  title="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of">p46i forms part of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Facsimile"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">facsimile</a>
+               <a href="#BibliographicSource"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+               <a href="#BibliographicSource"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasSourceReproduction"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction">has source reproduction</a>
+               <a href="#hasSection"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection">has section</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1950,20 +2450,58 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Right"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">right</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">Right</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#appliesTo"
                   title="http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo">applies to</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isTimeSpanOf">
+      <h3>is time span of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of">p4i is time span of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan">time span</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Condition"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition">condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasTimeSpan"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan">has time span</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1987,9 +2525,8 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-                  target="_blank"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">manifestation</a>
+               <a href="#Source"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1998,6 +2535,82 @@ This section provides details for each class and property defined by Transmissio
                   target="_blank"
                   title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ownsCarrier">
+      <h3>owns carrier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of">p52i is current owner of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCarrierOwnedBy"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy">is carrier owned by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ownsCollection">
+      <h3>owns collection<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of">p52i is current owner of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5">Collection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCollectionOwnedBy"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy">is collection owned by</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -2028,7 +2641,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has range</dt>
             <dd>
                <a href="#Right"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">right</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Right">Right</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -2040,6 +2653,75 @@ This section provides details for each class and property defined by Transmissio
          </dl>
       </div>
    </div>
+   <div class="entity" id="produced">
+      <h3>produced<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#produced</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence">p92 brought into existence</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CarrierProduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction">Carrier Production</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#wasProducedBy"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy">was produced by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="reproductionType">
+      <h3>reproduction type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P2_has_type">p2 has type</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Reproduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction">Reproduction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="sourceType">
       <h3>source type<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2047,6 +2729,9 @@ This section provides details for each class and property defined by Transmissio
       </h3>
       <p>
          <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType</p>
+      <div class="comment">
+         <span class="markdown">Example: Section, Chapter, Location</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2059,7 +2744,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2068,6 +2753,230 @@ This section provides details for each class and property defined by Transmissio
                   target="_blank"
                   title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedCarrier">
+      <h3>used carrier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object">p16 used specific object</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Reproduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction">Reproduction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#wasCarriedUsedBy"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy">was carried used by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedRedaction">
+      <h3>used redaction<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object">p16 used specific object</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CarrierProduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction">Carrier Production</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#wasRedactionUsedBy"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy">was redaction used by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wasCarriedUsedBy">
+      <h3>was carried used by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for">p16i was used for</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Reproduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction">Reproduction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#usedCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier">used carrier</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wasGeneratedBy">
+      <h3>was generated by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by">p92i was brought into existence by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Reproduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction">Reproduction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#generated"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#generated">generated</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wasProducedBy">
+      <h3>was produced by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by">p92i was brought into existence by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CarrierProduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction">Carrier Production</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#produced"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#produced">produced</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wasRedactionUsedBy">
+      <h3>was redaction used by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for">p16i was used for</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction">redaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CarrierProduction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction">Carrier Production</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#usedRedaction"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction">used redaction</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -2091,7 +3000,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2123,7 +3032,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2140,9 +3049,9 @@ This section provides details for each class and property defined by Transmissio
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#additionalFile"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#additionalFile">
-            <span>additional file</span>
+         <a href="#accessIdentifier"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#accessIdentifier">
+            <span>access identifier</span>
          </a>
       </li>
       <li>
@@ -2170,15 +3079,21 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
-         <a href="#identifier"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#identifier">
-            <span>identifier</span>
+         <a href="#facsimileNumber"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#facsimileNumber">
+            <span>facsimile number</span>
          </a>
       </li>
       <li>
          <a href="#issueNumber"
             title="http://postdata.linhd.uned.es/ontology/postdata-transmission#issueNumber">
             <span>issue number</span>
+         </a>
+      </li>
+      <li>
+         <a href="#itemIdentifier"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier">
+            <span>item identifier</span>
          </a>
       </li>
       <li>
@@ -2242,6 +3157,12 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
       <li>
+         <a href="#sourceIdentifier"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier">
+            <span>source identifier</span>
+         </a>
+      </li>
+      <li>
          <a href="#title"
             title="http://postdata.linhd.uned.es/ontology/postdata-transmission#title">
             <span>title</span>
@@ -2260,13 +3181,13 @@ This section provides details for each class and property defined by Transmissio
          </a>
       </li>
    </ul>
-   <div class="entity" id="additionalFile">
-      <h3>additional file<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="accessIdentifier">
+      <h3>access identifier<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#additionalFile</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#accessIdentifier</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2278,8 +3199,8 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Facsimile"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">facsimile</a>
+               <a href="#InformationCarrier"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier">information carrier</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2304,7 +3225,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2329,7 +3250,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2354,7 +3275,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2379,19 +3300,19 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#BibliographicSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">bibliographic source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="identifier">
-      <h3>identifier<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="facsimileNumber">
+      <h3>facsimile number<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#identifier</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#facsimileNumber</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2403,8 +3324,8 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+               <a href="#Facsimile"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile">Facsimile</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2429,8 +3350,39 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#BibliographicSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">bibliographic source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="itemIdentifier">
+      <h3>item identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by">p149 is identified by</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Item"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Item">Item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -2453,8 +3405,8 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
+               <a href="#Source"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2498,7 +3450,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2523,7 +3475,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#PrimarySource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">primary source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource">Primary Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2548,7 +3500,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2573,7 +3525,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#BibliographicSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">bibliographic source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2598,7 +3550,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2622,8 +3574,8 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
+               <a href="#Source"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2648,7 +3600,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#BibliographicSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">bibliographic source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2672,10 +3624,41 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan"
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan"
                   target="_blank"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan">time span</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan">time span</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sourceIdentifier">
+      <h3>source identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
+                  target="_blank"
+                  title="http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by">p149 is identified by</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Source"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -2699,7 +3682,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#Source"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2724,7 +3707,7 @@ This section provides details for each class and property defined by Transmissio
             <dt>has domain</dt>
             <dd>
                <a href="#BibliographicSource"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">bibliographic source</a>
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource">Bibliographic Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2748,8 +3731,8 @@ This section provides details for each class and property defined by Transmissio
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Location"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Location">location</a>
+               <a href="#Source"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

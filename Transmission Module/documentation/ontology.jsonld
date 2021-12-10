@@ -1,111 +1,8 @@
 [ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
-    }, {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
-    }, {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Item"
-    }, {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
-    }, {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
-    }, {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Item"
-    }, {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
-    }, {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-    } ]
-  } ]
-}, {
-  "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "F3 Manifestation"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-  } ]
-}, {
-  "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "F5 Item"
-  } ]
-}, {
-  "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "embodies"
-  } ]
-}, {
-  "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R4i",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is embodied in"
-  } ]
-}, {
-  "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R7i",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Expression",
@@ -117,32 +14,132 @@
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@language" : "en",
+    "@value" : "Aitor Díaz Medina  (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/aitordiazmedina/"
+  }, {
+    "@language" : "en",
+    "@value" : "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"
+  }, {
+    "@language" : "en",
+    "@value" : "Elena González-Blanco\nhttps://orcid.org/0000-0002-0448-1812"
+  }, {
+    "@language" : "en",
+    "@value" : "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X"
+  }, {
+    "@language" : "en",
+    "@value" : "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/"
+  }, {
+    "@language" : "en",
+    "@value" : "Laura Hernández (LINHD_POSTDATA-UNED)\nhttps://orcid.org/0000-0003-3489-2193"
+  }, {
+    "@language" : "en",
+    "@value" : "Mirella De Sisto (LINHD_POSTDATA-UNED)\nmdesisto@scc.uned.es"
+  }, {
+    "@language" : "en",
+    "@value" : "Mª Luisa Díez Platas \nhttps://orcid.org/0000-0002-9416-3147"
+  }, {
+    "@language" : "en",
+    "@value" : "Omar Khalil Gómez  (LINHD_POSTDATA-UNED)\nhttp://www.linkedin.com/in/omar-k-0959a8129"
+  }, {
+    "@language" : "en",
+    "@value" : "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753"
+  }, {
+    "@language" : "en",
+    "@value" : "Salvador Ros Muñoz (LINHD_POSTDATA-UNED)\nsrosmu@gmail.com"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@language" : "en",
+    "@value" : "2021-10-12"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "This ontology module enables the description of the different sources or manifestations of the textual editions of poetic works. It provides classes and properties to represent the ideal characteristics of publication products (bibliographic sources) as well as other unique physical editions of a poetic work such manuscripts (primary sources).\nThe ontology can be used to decribe the physical characteristics (material, condition, style, etc.) of sources, but also parts of sources corresponding to specific locations or sections. The physical objects described include specific bibliographic products (items) and reproductions (facsimiles). These, in addition to primary sources, may have certain rights, curators, and owners assigned."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "postdata-transmission-elements ontology"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@language" : "en",
+    "@value" : "POSTDATA Project\n\n“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”\nPrincipal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812\nTechnical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@language" : "en",
+    "@value" : "pdt"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "V2.0"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#license" : [ {
+    "@language" : "en",
+    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Bibliographic Source is a conceptual entity representing bibliographic products that are generated following a publication process. Instances of pdt:BibliographicSource represent the ideal physical properties of all the exemplars. Despite Bibliographic Sources are not physical objects per se (are not accessible), they encapsulate design properties of the physical carriers (layout, pages, desired material, etc.) and hence they can be \"physically\" described.\n\nAn object of type pdt:BibliographicSource embodies one or more textual editions (instances of pdc:Redaction). They mostly represent books that may gather several redactions or poems. In order to represent all the physical copies of the ideal manifestation, we associate this kind of source with instances of pdt:Item.\n\npdt:BibliographicSource is then considered an E73 Informatio Object, which is subclass of E90 Symbolic Object which represents conceptual objects subjected to rights and ownership. Instances of pdt:Item are aligned to E84 Information Carrier."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bibliographic Source"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+  }, {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Instances of pdt:CarrierProduction describe the activity performed by some agent when giving rise to a physical carrier for a textual edition of a poem.\n\nA Carrier Production has a set of pdc:AgentRole structures associated indicating the actors and the roles they performed during the participation in the event. The Carrier Production is then carried by taking a textual edition as input (an instance of pdc:Redaction) and generates an Information Carrier (an instance of pdt:InformationCarrier)\n\nAs a Carrier Production is an activity with input and output objects and participants, it is a subclass of E7 Activity. In addition, being it a type of event involving the creation of a carrier, it is also subclass of E63 Beginning of Existence."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Carrier Production"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Activity"
+  }, {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Condition is a state of a physical edition of a poem subjected to a period or time span. Hence, instances of pdt:Condition are related to pdt:InformationCarrier and pdc:TimeSpan.\n\npdt:Condition is aligned with CIDOC CRM E3 Condition State."
+  } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Facsimile"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature"
   } ]
@@ -155,53 +152,97 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Item",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Item"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Material",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material"
+  } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E57_Material"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A pdt:Collection is an aggregation of instances of pdt:InformationCarrier that are curated and preserved by some pdc:Agent.\n\nA Collection can be a set of physical manuscripts or exemplars (i.e. a corpus, a personal collection of books). For example, \"Gongocorpus\" is a pdt:Collection that collects physical electronic editions of Gongora's Poems.\n\nBeing a collection a physical aggregation, it has been aligned as a subclass of CIDOC CRM E78 Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E78_Collection"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Primary Source"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  }, {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Procedure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Procedure"
+  } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Reproduction is an activity in which some actor performs a copy of a physical edition to produce a facsimile. A reproduction of a facsimile is also another facsimile. \n\nInstances of pdt:Reproduction have agent-role structures associated (pdc:AgentRole) to indicate the type of role performed by an actor during the reproduction. Reproductions are associated to the carrier being reproduced (of type pdt:InformationCarrier) and generate the copy (instance of pdt:Facsimile) following a specific technique.\n\npdt:Reproduction is aligned to E7 Activity and to E63 Beginning of Existence to indicate that it has input/output objects and it gices rise to a new object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reproduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Activity"
+  }, {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Right",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Right"
+  } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Source"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#additionalFile",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#accessIdentifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
@@ -222,13 +263,28 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Right"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#carries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P128_carries"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#catalogueNumber",
@@ -238,6 +294,53 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "collection type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ex: Burned pages, highligthed text, included notes, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#dimensions",
@@ -282,34 +385,28 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Expression"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R4"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R4"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#facsimileNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#foliationType",
@@ -324,10 +421,10 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#function",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#format",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -336,10 +433,37 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#generated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid4"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature"
@@ -351,19 +475,34 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P108_has_produced"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar",
@@ -375,7 +514,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Item"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R7i"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf"
@@ -384,7 +523,7 @@
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid7"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition"
@@ -394,6 +533,21 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout",
@@ -411,36 +565,6 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation"
-  } ]
-}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -456,25 +580,10 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isMaterialOf"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid10"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile"
@@ -483,16 +592,37 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#identifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf",
@@ -501,46 +631,100 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid13"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Expression"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R4i"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R4i"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf",
@@ -552,7 +736,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R7"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf",
@@ -561,28 +745,28 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid16"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
@@ -603,18 +787,6 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P45i_is_incorporated_in"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid19"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"
-  } ]
-}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isPossessedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -630,40 +802,52 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#possesses"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Right"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#issueNumber",
@@ -675,10 +859,22 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#language",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -690,7 +886,7 @@
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#locus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
@@ -747,6 +943,30 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#possesses",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -759,10 +979,37 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P75_possesses"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#produced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
@@ -780,14 +1027,30 @@
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#siglum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Example: Section, Chapter, Location"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
   } ],
@@ -807,6 +1070,36 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P102_has_title"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#volumeNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -816,10 +1109,58 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Location"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
@@ -849,6 +1190,27 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -862,6 +1224,15 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/E57_Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/E78_Collection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier",
@@ -879,10 +1250,10 @@
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P108_has_produced",
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P128_carries",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by",
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of",
@@ -893,6 +1264,12 @@
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
@@ -921,6 +1298,24 @@
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
@@ -932,6 +1327,15 @@
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]

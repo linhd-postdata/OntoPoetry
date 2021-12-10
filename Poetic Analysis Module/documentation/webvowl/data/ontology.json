@@ -15,7 +15,7 @@
       "date" : [ {
         "identifier" : "date",
         "language" : "undefined",
-        "value" : "2020-20-01",
+        "value" : "2021-26-11",
         "type" : "label"
       } ],
       "license" : [ {
@@ -33,17 +33,7 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "en",
-        "value" : "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "en",
-        "value" : "Salvador Ros Muñoz (LINHD_POSTDATA-UNED)\nsrosmu@gmail.com",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Aitor Díaz Medina\nhttps://www.linkedin.com/in/aitordiazmedina/",
+        "value" : "Mª Luisa Díez Platas \nhttps://orcid.org/0000-0002-9416-3147",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -53,17 +43,7 @@
       }, {
         "identifier" : "contributor",
         "language" : "en",
-        "value" : "Mª Luisa Díez Platas \nhttps://orcid.org/0000-0002-9416-3147",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "en",
-        "value" : "Mirella De Sisto (LINHD_POSTDATA-UNED)\nmdesisto@scc.uned.es",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "en",
-        "value" : "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/",
+        "value" : "Elena González-Blanco\nhttps://orcid.org/0000-0002-0448-1812",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -73,12 +53,17 @@
       }, {
         "identifier" : "contributor",
         "language" : "en",
-        "value" : "Elena González Blanco\nhttps://orcid.org/0000-0002-0448-1812",
+        "value" : "Omar Khalil Gómez  (LINHD_POSTDATA-UNED)\nhttp://www.linkedin.com/in/omar-k-0959a8129",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Aitor Díaz Medina  (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/aitordiazmedina/",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "en",
-        "value" : "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402",
+        "value" : "Salvador Ros Muñoz (LINHD_POSTDATA-UNED)\nsrosmu@gmail.com",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -88,7 +73,17 @@
       }, {
         "identifier" : "contributor",
         "language" : "en",
-        "value" : "Omar Khalil Gómez\nhttp://www.linkedin.com/in/omar-k-0959a8129",
+        "value" : "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Mirella De Sisto (LINHD_POSTDATA-UNED)\nmdesisto@scc.uned.es",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -134,7 +129,7 @@
     "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
     "id" : "86",
@@ -206,7 +201,7 @@
     "id" : "199",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
     "id" : "74",
@@ -224,7 +219,7 @@
     "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "44",
@@ -248,10 +243,10 @@
     "id" : "254",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
+    "id" : "50",
     "type" : "owl:Class"
   }, {
     "id" : "96",
@@ -281,13 +276,13 @@
     "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
     "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
     "type" : "owl:Class"
   }, {
     "id" : "8",
@@ -320,7 +315,7 @@
     "id" : "306",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "213",
+    "id" : "212",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "269",
@@ -369,7 +364,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "instances" : 0,
-    "id" : "51",
+    "id" : "49",
     "superClasses" : [ "28", "74" ]
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#AnalyticalUnit",
@@ -466,7 +461,7 @@
     "iri" : "http://purl.org/ontology/olo/core#Slot",
     "baseIri" : "http://purl.org/ontology/olo/core",
     "instances" : 0,
-    "subClasses" : [ "66", "24", "51", "44", "20", "61", "3", "79" ],
+    "subClasses" : [ "66", "24", "49", "44", "20", "61", "3", "79" ],
     "id" : "28"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaList",
@@ -484,13 +479,13 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "instances" : 0,
-    "id" : "13",
+    "id" : "16",
     "superClasses" : [ "58" ]
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "instances" : 0,
-    "subClasses" : [ "66", "24", "51", "44" ],
+    "subClasses" : [ "66", "24", "49", "44" ],
     "id" : "74",
     "superClasses" : [ "1" ]
   }, {
@@ -521,7 +516,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "instances" : 0,
-    "id" : "17"
+    "id" : "14"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Punctuation",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -566,12 +561,12 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "instances" : 0,
-    "id" : "16"
+    "id" : "13"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "instances" : 0,
-    "id" : "52"
+    "id" : "50"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -622,25 +617,25 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "instances" : 0,
-    "subClasses" : [ "89", "254", "13", "39", "57" ],
+    "subClasses" : [ "89", "254", "16", "39", "57" ],
     "id" : "58"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
     "instances" : 0,
-    "id" : "14"
-  }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LineList",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "instances" : 0,
-    "id" : "49",
-    "superClasses" : [ "27" ]
+    "id" : "17"
   }, {
     "iri" : "http://purl.org/ontology/olo/core#OrderedList",
     "baseIri" : "http://purl.org/ontology/olo/core",
     "instances" : 0,
-    "subClasses" : [ "70", "4", "45", "7", "60", "19", "121", "49" ],
+    "subClasses" : [ "70", "4", "45", "7", "60", "19", "121", "52" ],
     "id" : "27"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LineList",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "instances" : 0,
+    "id" : "52",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -692,7 +687,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "213"
+    "id" : "212"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -750,7 +745,7 @@
     "id" : "48",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "50",
+    "id" : "51",
     "type" : "owl:objectProperty"
   }, {
     "id" : "53",
@@ -828,10 +823,10 @@
     "id" : "32",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "115",
+    "id" : "104",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "104",
+    "id" : "115",
     "type" : "owl:objectProperty"
   }, {
     "id" : "117",
@@ -894,10 +889,10 @@
     "id" : "152",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "132",
+    "id" : "146",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "146",
+    "id" : "132",
     "type" : "owl:objectProperty"
   }, {
     "id" : "157",
@@ -1018,10 +1013,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "211",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "212",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "213",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "214",
     "type" : "owl:objectProperty"
@@ -1029,10 +1024,10 @@
     "id" : "216",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "46",
+    "id" : "217",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "219",
+    "id" : "46",
     "type" : "owl:objectProperty"
   }, {
     "id" : "90",
@@ -1053,7 +1048,7 @@
     "id" : "222",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "218",
+    "id" : "221",
     "type" : "owl:objectProperty"
   }, {
     "id" : "227",
@@ -1176,10 +1171,10 @@
     "id" : "274",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "275",
+    "id" : "257",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "257",
+    "id" : "275",
     "type" : "owl:objectProperty"
   }, {
     "id" : "126",
@@ -1266,10 +1261,10 @@
     "id" : "287",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "55",
+    "id" : "220",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "217",
+    "id" : "55",
     "type" : "owl:objectProperty"
   }, {
     "id" : "288",
@@ -1281,7 +1276,7 @@
     "id" : "64",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "220",
+    "id" : "218",
     "type" : "owl:objectProperty"
   }, {
     "id" : "130",
@@ -1308,10 +1303,10 @@
     "id" : "249",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "116",
+    "id" : "296",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "296",
+    "id" : "116",
     "type" : "owl:objectProperty"
   }, {
     "id" : "297",
@@ -1326,10 +1321,10 @@
     "id" : "225",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "62",
+    "id" : "298",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "298",
+    "id" : "62",
     "type" : "owl:objectProperty"
   }, {
     "id" : "299",
@@ -1377,10 +1372,10 @@
     "id" : "311",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "308",
+    "id" : "255",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "255",
+    "id" : "308",
     "type" : "owl:objectProperty"
   }, {
     "id" : "312",
@@ -1434,15 +1429,15 @@
     "attributes" : [ "datatype" ],
     "id" : "10"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfAcrostic",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "range" : "14",
     "domain" : "13",
     "attributes" : [ "object" ],
     "id" : "12"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfAcrostic",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "17",
     "domain" : "16",
     "attributes" : [ "object" ],
@@ -1498,20 +1493,20 @@
     "attributes" : [ "object" ],
     "id" : "43"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLineListOf",
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "24",
-    "superproperty" : [ "9" ],
+    "range" : "50",
     "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "48"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn",
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLineListOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "52",
-    "domain" : "51",
+    "range" : "24",
+    "superproperty" : [ "9" ],
+    "domain" : "52",
     "attributes" : [ "object" ],
-    "id" : "50"
+    "id" : "51"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRedactionPattern",
     "inverse" : "55",
@@ -1566,7 +1561,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#word",
     "inverse" : "71",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "superproperty" : [ "22" ],
     "domain" : "70",
     "attributes" : [ "object" ],
@@ -1575,7 +1570,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasWord",
     "inverse" : "76",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "superproperty" : [ "77" ],
     "domain" : "66",
     "attributes" : [ "object" ],
@@ -1590,14 +1585,14 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalType",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "73",
     "attributes" : [ "object" ],
     "id" : "81"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeMatchingType",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "74",
     "attributes" : [ "object" ],
     "id" : "82"
@@ -1671,14 +1666,14 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsAcrostic",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "13",
+    "range" : "16",
     "domain" : "0",
     "attributes" : [ "object" ],
     "id" : "105"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfNucleus",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "79",
     "attributes" : [ "object" ],
     "id" : "107"
@@ -1686,7 +1681,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isAgentRoleOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "range" : "109",
-    "domain" : "17",
+    "domain" : "14",
     "attributes" : [ "object" ],
     "id" : "108"
   }, {
@@ -1711,17 +1706,9 @@
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "66",
     "superproperty" : [ "26" ],
-    "domain" : "49",
+    "domain" : "52",
     "attributes" : [ "object" ],
     "id" : "32"
-  }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastStanzaOf",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "7",
-    "superproperty" : [ "116" ],
-    "domain" : "24",
-    "attributes" : [ "object" ],
-    "id" : "115"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isWordListOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -1730,6 +1717,14 @@
     "domain" : "70",
     "attributes" : [ "object" ],
     "id" : "104"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastStanzaOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "range" : "7",
+    "superproperty" : [ "116" ],
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "115"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastMetricalSyllableOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -1744,7 +1739,7 @@
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "66",
     "superproperty" : [ "63" ],
-    "domain" : "49",
+    "domain" : "52",
     "attributes" : [ "object" ],
     "id" : "118"
   }, {
@@ -1784,7 +1779,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfScheme",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "106",
     "attributes" : [ "object" ],
     "id" : "128"
@@ -1809,22 +1804,22 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsFirstWord",
     "inverse" : "134",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "domain" : "57",
     "attributes" : [ "object" ],
     "id" : "133"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
-    "domain" : "51",
+    "range" : "49",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "135"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord",
     "inverse" : "137",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "superproperty" : [ "98" ],
     "domain" : "96",
     "attributes" : [ "object" ],
@@ -1842,7 +1837,7 @@
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "70",
     "superproperty" : [ "116" ],
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "139"
   }, {
@@ -1899,14 +1894,6 @@
     "attributes" : [ "object" ],
     "id" : "152"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPartOf",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "28",
-    "domain" : "28",
-    "subproperty" : [ "154", "130", "155", "156", "76", "151", "131", "111" ],
-    "attributes" : [ "object" ],
-    "id" : "132"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasLine",
     "inverse" : "154",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -1915,6 +1902,14 @@
     "domain" : "24",
     "attributes" : [ "object" ],
     "id" : "146"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPartOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "range" : "28",
+    "domain" : "28",
+    "subproperty" : [ "154", "130", "155", "156", "76", "151", "131", "111" ],
+    "attributes" : [ "object" ],
+    "id" : "132"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasMetaplasm",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -1952,7 +1947,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfMetaplasm",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "57",
     "attributes" : [ "object" ],
     "id" : "165"
@@ -2039,17 +2034,17 @@
     "attributes" : [ "datatype" ],
     "id" : "186"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeDispositionType",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
-    "domain" : "73",
-    "attributes" : [ "object" ],
-    "id" : "187"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGeneratedBy",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "109",
     "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeDispositionType",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "range" : "17",
+    "domain" : "73",
     "attributes" : [ "object" ],
     "id" : "188"
   }, {
@@ -2073,7 +2068,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#before",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "domain" : "44",
     "attributes" : [ "object" ],
     "id" : "192"
@@ -2081,16 +2076,16 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasAgentRole",
     "inverse" : "108",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "17",
+    "range" : "14",
     "domain" : "109",
     "attributes" : [ "object" ],
     "id" : "193"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord",
-    "inverse" : "50",
+    "inverse" : "48",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
-    "domain" : "52",
+    "range" : "49",
+    "domain" : "50",
     "attributes" : [ "object" ],
     "id" : "194"
   }, {
@@ -2104,7 +2099,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#after",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "domain" : "44",
     "attributes" : [ "object" ],
     "id" : "197"
@@ -2128,7 +2123,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#versificationType",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "54",
     "attributes" : [ "object" ],
     "id" : "198"
@@ -2154,21 +2149,21 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "171",
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "datatype" ],
     "id" : "202"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord",
     "inverse" : "204",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
-    "domain" : "52",
+    "range" : "49",
+    "domain" : "50",
     "attributes" : [ "object" ],
     "id" : "203"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#feetType",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "42",
     "attributes" : [ "object" ],
     "id" : "205"
@@ -2184,7 +2179,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastWord",
     "inverse" : "139",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "superproperty" : [ "26" ],
     "domain" : "70",
     "attributes" : [ "object" ],
@@ -2213,14 +2208,14 @@
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "66",
     "superproperty" : [ "22" ],
-    "domain" : "49",
+    "domain" : "52",
     "attributes" : [ "object" ],
     "id" : "182"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "96",
-    "domain" : "52",
+    "domain" : "50",
     "attributes" : [ "object" ],
     "id" : "209"
   }, {
@@ -2232,20 +2227,20 @@
     "attributes" : [ "object" ],
     "id" : "155"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfIntertextuality",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
-    "domain" : "39",
-    "attributes" : [ "object" ],
-    "id" : "211"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#altPatterningMetricalScheme",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "213",
+    "range" : "212",
     "maxCardinality" : "1",
     "domain" : "42",
     "attributes" : [ "datatype" ],
-    "id" : "212"
+    "id" : "211"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfIntertextuality",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "range" : "17",
+    "domain" : "39",
+    "attributes" : [ "object" ],
+    "id" : "213"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentionsPlace",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -2263,22 +2258,22 @@
     "attributes" : [ "object" ],
     "id" : "216"
   }, {
-    "iri" : "http://purl.org/ontology/olo/core#is_first_slot_of",
-    "baseIri" : "http://purl.org/ontology/olo/core",
-    "range" : "27",
-    "domain" : "28",
-    "subproperty" : [ "177", "119", "62", "217", "201", "87", "43", "218" ],
-    "attributes" : [ "object" ],
-    "id" : "46"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFigurePresentAt",
     "inverse" : "88",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "0",
     "domain" : "89",
-    "subproperty" : [ "220", "221" ],
+    "subproperty" : [ "218", "219" ],
     "attributes" : [ "object" ],
-    "id" : "219"
+    "id" : "217"
+  }, {
+    "iri" : "http://purl.org/ontology/olo/core#is_first_slot_of",
+    "baseIri" : "http://purl.org/ontology/olo/core",
+    "range" : "27",
+    "domain" : "28",
+    "subproperty" : [ "177", "119", "62", "220", "201", "87", "43", "221" ],
+    "attributes" : [ "object" ],
+    "id" : "46"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsTrope",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -2308,7 +2303,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "96",
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "137"
   }, {
@@ -2316,7 +2311,7 @@
     "inverse" : "105",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "0",
-    "domain" : "13",
+    "domain" : "16",
     "attributes" : [ "object" ],
     "id" : "226"
   }, {
@@ -2334,7 +2329,7 @@
     "superproperty" : [ "46" ],
     "domain" : "20",
     "attributes" : [ "object" ],
-    "id" : "218"
+    "id" : "221"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -2382,37 +2377,37 @@
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "70",
     "superproperty" : [ "5" ],
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "71"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch",
     "inverse" : "209",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "52",
+    "range" : "50",
     "domain" : "96",
     "attributes" : [ "object" ],
     "id" : "239"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#previousWord",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "superproperty" : [ "173" ],
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "240"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfTrope",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "210",
     "attributes" : [ "object" ],
     "id" : "241"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasLineList",
-    "inverse" : "48",
+    "inverse" : "51",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "49",
+    "range" : "52",
     "superproperty" : [ "85" ],
     "domain" : "24",
     "attributes" : [ "object" ],
@@ -2437,16 +2432,16 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isInflectedForm",
     "inverse" : "245",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "superproperty" : [ "98" ],
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "244"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLemmaOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
-    "domain" : "51",
+    "range" : "49",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "245"
   }, {
@@ -2467,7 +2462,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalComplexity",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "54",
     "attributes" : [ "object" ],
     "id" : "248"
@@ -2514,7 +2509,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#footType",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "61",
     "attributes" : [ "object" ],
     "id" : "260"
@@ -2586,7 +2581,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#analysesWord",
     "inverse" : "265",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "superproperty" : [ "208" ],
     "domain" : "86",
     "attributes" : [ "object" ],
@@ -2594,7 +2589,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentionsAgent",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "16",
+    "range" : "13",
     "superproperty" : [ "215" ],
     "domain" : "0",
     "attributes" : [ "object" ],
@@ -2618,7 +2613,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#clausula",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "61",
     "attributes" : [ "object" ],
     "id" : "270"
@@ -2649,21 +2644,12 @@
     "id" : "273"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#generated",
-    "inverse" : "188",
+    "inverse" : "187",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "8",
     "domain" : "109",
     "attributes" : [ "object" ],
     "id" : "274"
-  }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasListAnnotation",
-    "inverse" : "247",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "27",
-    "superproperty" : [ "161" ],
-    "domain" : "8",
-    "attributes" : [ "object" ],
-    "id" : "275"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#nextPunctuation",
     "inverse" : "243",
@@ -2673,6 +2659,15 @@
     "domain" : "44",
     "attributes" : [ "object" ],
     "id" : "257"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasListAnnotation",
+    "inverse" : "247",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "range" : "27",
+    "superproperty" : [ "161" ],
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "275"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#punctuationList",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -2684,9 +2679,9 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#partOfSpeech",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "superproperty" : [ "98" ],
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "276"
   }, {
@@ -2729,7 +2724,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#clausulaSchemeType",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "73",
     "attributes" : [ "object" ],
     "id" : "277"
@@ -2783,7 +2778,7 @@
     "id" : "280"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstMora",
-    "inverse" : "218",
+    "inverse" : "221",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "20",
     "superproperty" : [ "63" ],
@@ -2808,10 +2803,10 @@
     "id" : "154"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasAgent",
-    "inverse" : "15",
+    "inverse" : "12",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "16",
-    "domain" : "17",
+    "range" : "13",
+    "domain" : "14",
     "attributes" : [ "object" ],
     "id" : "281"
   }, {
@@ -2824,7 +2819,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lastLineOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "49",
+    "range" : "52",
     "superproperty" : [ "116" ],
     "domain" : "66",
     "attributes" : [ "object" ],
@@ -2859,13 +2854,13 @@
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "0",
     "superproperty" : [ "272" ],
-    "domain" : "16",
+    "domain" : "13",
     "attributes" : [ "object" ],
     "id" : "285"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstLineOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "49",
+    "range" : "52",
     "superproperty" : [ "46" ],
     "domain" : "66",
     "attributes" : [ "object" ],
@@ -2873,7 +2868,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lineList",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "49",
+    "range" : "52",
     "superproperty" : [ "5" ],
     "domain" : "66",
     "attributes" : [ "object" ],
@@ -2881,7 +2876,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfStanza",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "24",
     "attributes" : [ "object" ],
     "id" : "286"
@@ -2893,6 +2888,14 @@
     "attributes" : [ "object" ],
     "id" : "287"
   }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWordOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "range" : "70",
+    "superproperty" : [ "46" ],
+    "domain" : "49",
+    "attributes" : [ "object" ],
+    "id" : "220"
+  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRedactionPatternOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "8",
@@ -2901,18 +2904,10 @@
     "attributes" : [ "object" ],
     "id" : "55"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWordOf",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "70",
-    "superproperty" : [ "46" ],
-    "domain" : "51",
-    "attributes" : [ "object" ],
-    "id" : "217"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
-    "domain" : "51",
+    "range" : "49",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "288"
   }, {
@@ -2920,7 +2915,7 @@
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "86",
     "superproperty" : [ "68" ],
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "265"
   }, {
@@ -2936,10 +2931,10 @@
     "inverse" : "90",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "0",
-    "superproperty" : [ "219" ],
+    "superproperty" : [ "217" ],
     "domain" : "210",
     "attributes" : [ "object" ],
-    "id" : "220"
+    "id" : "218"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPunctuationOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -2967,7 +2962,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalCategory",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "54",
     "attributes" : [ "object" ],
     "id" : "291"
@@ -2982,15 +2977,15 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfEnjambment",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "254",
     "attributes" : [ "object" ],
     "id" : "294"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
-    "domain" : "52",
+    "range" : "17",
+    "domain" : "50",
     "attributes" : [ "object" ],
     "id" : "295"
   }, {
@@ -3002,14 +2997,6 @@
     "attributes" : [ "object" ],
     "id" : "249"
   }, {
-    "iri" : "http://purl.org/ontology/olo/core#is_last_slot_of",
-    "baseIri" : "http://purl.org/ontology/olo/core",
-    "range" : "27",
-    "domain" : "28",
-    "subproperty" : [ "114", "147", "273", "117", "115", "222", "64", "139" ],
-    "attributes" : [ "object" ],
-    "id" : "116"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsLine",
     "inverse" : "289",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -3017,6 +3004,14 @@
     "domain" : "254",
     "attributes" : [ "object" ],
     "id" : "296"
+  }, {
+    "iri" : "http://purl.org/ontology/olo/core#is_last_slot_of",
+    "baseIri" : "http://purl.org/ontology/olo/core",
+    "range" : "27",
+    "domain" : "28",
+    "subproperty" : [ "114", "147", "273", "117", "115", "222", "64", "139" ],
+    "attributes" : [ "object" ],
+    "id" : "116"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation",
     "inverse" : "227",
@@ -3039,9 +3034,9 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#nextWord",
     "inverse" : "240",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "superproperty" : [ "150" ],
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "258"
   }, {
@@ -3053,14 +3048,6 @@
     "attributes" : [ "object" ],
     "id" : "225"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstFootOf",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "60",
-    "superproperty" : [ "46" ],
-    "domain" : "61",
-    "attributes" : [ "object" ],
-    "id" : "62"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStartingLine",
     "inverse" : "287",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -3068,6 +3055,14 @@
     "domain" : "0",
     "attributes" : [ "object" ],
     "id" : "298"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstFootOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "range" : "60",
+    "superproperty" : [ "46" ],
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "62"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#coda",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -3085,7 +3080,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#employedTechnique",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "109",
     "attributes" : [ "object" ],
     "id" : "300"
@@ -3100,8 +3095,8 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "52",
-    "domain" : "51",
+    "range" : "50",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "204"
   }, {
@@ -3115,14 +3110,14 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfScansion",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "8",
     "attributes" : [ "object" ],
     "id" : "302"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalContext",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "54",
     "attributes" : [ "object" ],
     "id" : "303"
@@ -3165,13 +3160,13 @@
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "310",
     "domain" : "79",
-    "attributes" : [ "someValues", "datatype" ],
+    "attributes" : [ "datatype", "someValues" ],
     "id" : "309"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWord",
-    "inverse" : "217",
+    "inverse" : "220",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "51",
+    "range" : "49",
     "superproperty" : [ "63" ],
     "domain" : "70",
     "attributes" : [ "object" ],
@@ -3179,18 +3174,10 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfStanzaEdition",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "24",
     "attributes" : [ "object" ],
     "id" : "311"
-  }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGrammaticalSyllableAnalysedBy",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "47",
-    "superproperty" : [ "68" ],
-    "domain" : "79",
-    "attributes" : [ "object" ],
-    "id" : "308"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#nextMora",
     "inverse" : "250",
@@ -3200,6 +3187,14 @@
     "domain" : "20",
     "attributes" : [ "object" ],
     "id" : "255"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isGrammaticalSyllableAnalysedBy",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
+    "range" : "47",
+    "superproperty" : [ "68" ],
+    "domain" : "79",
+    "attributes" : [ "object" ],
+    "id" : "308"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#accentedVowelsPattern",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
@@ -3212,7 +3207,7 @@
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "66",
     "superproperty" : [ "132" ],
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "76"
   }, {
@@ -3227,7 +3222,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhetoricalOperation",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
-    "range" : "14",
+    "range" : "17",
     "domain" : "89",
     "attributes" : [ "object" ],
     "id" : "313"
@@ -3235,7 +3230,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstWordAffectedBy",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis",
     "range" : "57",
-    "domain" : "51",
+    "domain" : "49",
     "attributes" : [ "object" ],
     "id" : "134"
   }, {

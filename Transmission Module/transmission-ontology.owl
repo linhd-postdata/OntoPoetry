@@ -1,12 +1,110 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://postdata.linhd.uned.es/ontology/postdata-transmission#"
      xml:base="http://postdata.linhd.uned.es/ontology/postdata-transmission"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-transmission#">
+        <dc:contributor xml:lang="en">Aitor Díaz Medina  (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/aitordiazmedina/</dc:contributor>
+        <dc:contributor xml:lang="en">Alvaro Pérez (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributor>
+        <dc:contributor xml:lang="en">Elena González-Blanco
+https://orcid.org/0000-0002-0448-1812</dc:contributor>
+        <dc:contributor xml:lang="en">Helena Bermúdez Sabel 
+https://orcid.org/0000-0001-7782-206X</dc:contributor>
+        <dc:contributor xml:lang="en">Javier de la Rosa (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/versae/</dc:contributor>
+        <dc:contributor xml:lang="en">Laura Hernández (LINHD_POSTDATA-UNED)
+https://orcid.org/0000-0003-3489-2193</dc:contributor>
+        <dc:contributor xml:lang="en">Mirella De Sisto (LINHD_POSTDATA-UNED)
+mdesisto@scc.uned.es</dc:contributor>
+        <dc:contributor xml:lang="en">Mª Luisa Díez Platas 
+https://orcid.org/0000-0002-9416-3147</dc:contributor>
+        <dc:contributor xml:lang="en">Omar Khalil Gómez  (LINHD_POSTDATA-UNED)
+http://www.linkedin.com/in/omar-k-0959a8129</dc:contributor>
+        <dc:contributor xml:lang="en">Oscar Corcho (Universidad Politécnica de Madrid)
+http://orcid.org/0000-0002-9260-0753</dc:contributor>
+        <dc:contributor xml:lang="en">Salvador Ros Muñoz (LINHD_POSTDATA-UNED)
+srosmu@gmail.com</dc:contributor>
+        <dc:date xml:lang="en">2021-10-12</dc:date>
+        <dc:description xml:lang="en">This ontology module enables the description of the different sources or manifestations of the textual editions of poetic works. It provides classes and properties to represent the ideal characteristics of publication products (bibliographic sources) as well as other unique physical editions of a poetic work such manuscripts (primary sources).
+The ontology can be used to decribe the physical characteristics (material, condition, style, etc.) of sources, but also parts of sources corresponding to specific locations or sections. The physical objects described include specific bibliographic products (items) and reproductions (facsimiles). These, in addition to primary sources, may have certain rights, curators, and owners assigned.</dc:description>
+        <dc:title xml:lang="en">postdata-transmission-elements ontology</dc:title>
+        <terms:publisher xml:lang="en">POSTDATA Project
+
+“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”
+Principal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812
+Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958</terms:publisher>
+        <vann:preferredNamespacePrefix xml:lang="en">pdt</vann:preferredNamespacePrefix>
+        <owl:versionInfo xml:lang="en">V2.0</owl:versionInfo>
+        <ns:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</ns:license>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#license"/>
     
 
 

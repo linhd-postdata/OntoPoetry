@@ -9,25 +9,33 @@
 <http://postdata.linhd.uned.es/ontology/postdata-core#> rdf:type owl:Ontology ;
                                                          <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                          <http://purl.org/dc/elements/1.1/contributor> "Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto"@scc.uned.es ,
-                                                                                                       "Aitor Díaz Medina (LINHD_POSTDATA-UNED) nhttps://www.linkedin.com/in/aitordiazmedina/" ,
-                                                                                                       "Alvaro Pérez (LINHD_POSTDATA-UNED) nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/" ,
-                                                                                                       "Bruno Sartini (Bolonia University)nhttps://orcid.org/0000-0002-9152-4402" ,
-                                                                                                       """Elena González Blanco
+                                                                                                       """Aitor Díaz Medina (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/aitordiazmedina/""" ,
+                                                                                                       """Alvaro Pérez (LINHD_POSTDATA-UNED) 
+https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/""" ,
+                                                                                                       """Elena González-Blanco
 https://orcid.org/0000-0002-0448-1812""" ,
-                                                                                                       "Helena Bermúdez Sabelnhttps://orcid.org/0000-0001-7782-206X" ,
-                                                                                                       "Javier de la Rosa (LINHD_POSTDATA-UNED)nhttps://www.linkedin.com/in/versae/" ,
-                                                                                                       "Laura Hernández Lorenzo (LINHD_POSTDATA-UNED) nhttps://orcid.org/0000-0003-3489-2193" ,
-                                                                                                       "Mª Luisa Díez Platasnhttps://orcid.org/0000-0002-9416-3147" ,
-                                                                                                       "Omar Khalil Gómez (LINHD_POSTDATA-UNED) nhttp://www.linkedin.com/in/omar-k-0959a8129" ,
-                                                                                                       "Oscar Corcho (Universidad Politécnica de Madrid)nhttp://orcid.org/0000-0002-9260-0753" ,
-                                                                                                       "Salvador Ros Muñoz (UNED)nsrosmugmail.com" ;
+                                                                                                       """Helena Bermúdez Sabel
+https://orcid.org/0000-0001-7782-206X""" ,
+                                                                                                       """Javier de la Rosa (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/versae/""" ,
+                                                                                                       """Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)
+https://orcid.org/0000-0003-3489-2193""" ,
+                                                                                                       """Mª Luisa Díez Platas
+https://orcid.org/0000-0002-9416-3147""" ,
+                                                                                                       """Omar Khalil Gómez (LINHD_POSTDATA-UNED)
+http://www.linkedin.com/in/omar-k-0959a8129""" ,
+                                                                                                       """Oscar Corcho (Universidad Politécnica de Madrid)
+http://orcid.org/0000-0002-9260-0753""" ,
+                                                                                                       """Salvador Ros Muñoz (UNED)
+srosmu@gmail.com""" ;
                                                          <http://purl.org/dc/elements/1.1/creator> "POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”"@en ;
-                                                         <http://purl.org/dc/elements/1.1/date> "2020-02-22" ;
+                                                         <http://purl.org/dc/elements/1.1/date> "2021-11-26" ;
                                                          <http://purl.org/dc/elements/1.1/description> "This ontology is the core of the POSTDATA network of ontologies. As such, it contains the most relevant classes and properties that allow representing poetic works and their characteristics. Besides, it contains common classes and properties that are used in many other ontologies in the network, such as those related to the representation of persons, organisations, events, places and roles that persons and organisations play in poetic works."@en ;
                                                          <http://purl.org/dc/elements/1.1/title> "POSTDATA core ontology"@en ;
                                                          <http://purl.org/dc/terms/publisher> "POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”n        Principal Investigator. Elena González Blanco -- <https://orcid.org/0000-0002-0448-1812>n        Technical Director. Salvador Ros Muñoz -- <https://orcid.org/0000-0001-6330-4958>"@en ;
                                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "pdc" ;
-                                                         owl:versionInfo "V1.3" .
+                                                         owl:versionInfo "V2.0" .
 
 #################################################################
 #    Annotation properties

@@ -2755,10 +2755,7 @@
     "@value" : "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"
   }, {
     "@language" : "en",
-    "@value" : "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402"
-  }, {
-    "@language" : "en",
-    "@value" : "Elena González Blanco\nhttps://orcid.org/0000-0002-0448-1812"
+    "@value" : "Elena González-Blanco\nhttps://orcid.org/0000-0002-0448-1812"
   }, {
     "@language" : "en",
     "@value" : "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X"
@@ -2776,7 +2773,7 @@
     "@value" : "Mª Luisa Díez Platas \nhttps://orcid.org/0000-0002-9416-3147"
   }, {
     "@language" : "en",
-    "@value" : "Omar Khalil Gómez\nhttp://www.linkedin.com/in/omar-k-0959a8129"
+    "@value" : "Omar Khalil Gómez  (LINHD_POSTDATA-UNED)\nhttp://www.linkedin.com/in/omar-k-0959a8129"
   }, {
     "@language" : "en",
     "@value" : "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753"
@@ -2784,14 +2781,14 @@
     "@language" : "en",
     "@value" : "Salvador Ros Muñoz (LINHD_POSTDATA-UNED)\nsrosmu@gmail.com"
   }, {
-    "@value" : "Aitor Díaz Medina\nhttps://www.linkedin.com/in/aitordiazmedina/"
+    "@value" : "Aitor Díaz Medina  (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/aitordiazmedina/"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@language" : "en",
     "@value" : "POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”"
   } ],
   "http://purl.org/dc/elements/1.1/date" : [ {
-    "@value" : "2020-20-01"
+    "@value" : "2021-26-11"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",

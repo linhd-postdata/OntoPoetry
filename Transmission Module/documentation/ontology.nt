@@ -1,4 +1,55 @@
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Aitor Díaz Medina  (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/aitordiazmedina/"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Elena González-Blanco\nhttps://orcid.org/0000-0002-0448-1812"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Laura Hernández (LINHD_POSTDATA-UNED)\nhttps://orcid.org/0000-0003-3489-2193"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Mirella De Sisto (LINHD_POSTDATA-UNED)\nmdesisto@scc.uned.es"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Mª Luisa Díez Platas \nhttps://orcid.org/0000-0002-9416-3147"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Omar Khalil Gómez  (LINHD_POSTDATA-UNED)\nhttp://www.linkedin.com/in/omar-k-0959a8129"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/contributor> "Salvador Ros Muñoz (LINHD_POSTDATA-UNED)\nsrosmu@gmail.com"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/date> "2021-10-12"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/description> "This ontology module enables the description of the different sources or manifestations of the textual editions of poetic works. It provides classes and properties to represent the ideal characteristics of publication products (bibliographic sources) as well as other unique physical editions of a poetic work such manuscripts (primary sources).\nThe ontology can be used to decribe the physical characteristics (material, condition, style, etc.) of sources, but also parts of sources corresponding to specific locations or sections. The physical objects described include specific bibliographic products (items) and reproductions (facsimiles). These, in addition to primary sources, may have certain rights, curators, and owners assigned."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/elements/1.1/title> "postdata-transmission-elements ontology"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/dc/terms/publisher> "POSTDATA Project\n\n“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”\nPrincipal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812\nTechnical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "pdt"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://www.w3.org/2002/07/owl#versionInfo> "V2.0"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#> <http://www.w3.org/2003/06/sw-vocab-status/ns#license> "https://creativecommons.org/licenses/by/4.0/"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#license
+<http://www.w3.org/2003/06/sw-vocab-status/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -8,26 +59,40 @@
 # #################################################################
 # 
 # 
-# http://iflastandards.info/ns/fr/frbr/frbroo/R4
-<http://iflastandards.info/ns/fr/frbr/frbroo/R4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://iflastandards.info/ns/fr/frbr/frbroo/R4> <http://www.w3.org/2000/01/rdf-schema#label> "embodies" .
-# 
-# http://iflastandards.info/ns/fr/frbr/frbroo/R4i
-<http://iflastandards.info/ns/fr/frbr/frbroo/R4i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://iflastandards.info/ns/fr/frbr/frbroo/R4i> <http://www.w3.org/2000/01/rdf-schema#label> "is embodied in" .
-# 
-# http://iflastandards.info/ns/fr/frbr/frbroo/R7
-<http://iflastandards.info/ns/fr/frbr/frbroo/R7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://iflastandards.info/ns/fr/frbr/frbroo/R7i
-<http://iflastandards.info/ns/fr/frbr/frbroo/R7i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Right> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#carries
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#carries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#carries> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P128_carries> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#carries> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#carries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#carries> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType> <http://www.w3.org/2000/01/rdf-schema#label> "collection type"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Ex: Burned pages, highligthed text, included notes, etc."@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#editionCriteria
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#editionCriteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -41,19 +106,12 @@
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#editionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#editionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://iflastandards.info/ns/fr/frbr/frbroo/R4> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesExpression> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://iflastandards.info/ns/fr/frbr/frbroo/R4> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodiesRedaction> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#embodies> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#foliationType
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#foliationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -61,45 +119,49 @@
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#foliationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#foliationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#format
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#format> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#format> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#format> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#function
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#function> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#function> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#function> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#function> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#generated
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#generated> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#generated> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#generated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#generated> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Item> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasAutograph> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCreatedSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://iflastandards.info/ns/fr/frbr/frbroo/R7i> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Item> .
@@ -108,16 +170,15 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P44_has_condition> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasIntegrityStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -126,20 +187,6 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLayout> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasLocationReproduction> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> .
-# 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMaterial
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P45_consists_of> .
@@ -147,63 +194,80 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Material> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasMusicalNotation> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSourceReproduction> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasSection> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Item> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isAutographOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://iflastandards.info/ns/fr/frbr/frbroo/R4i> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedInSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://iflastandards.info/ns/fr/frbr/frbroo/R4i> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmobidedInLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isEmbodiedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://iflastandards.info/ns/fr/frbr/frbroo/R7> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Item> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> .
 # 
@@ -211,15 +275,13 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isIntegrityStatusOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -227,31 +289,11 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isLayoutOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isLocationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
-# 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#isMaterialOf
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isMaterialOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isMaterialOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P45i_is_incorporated_in> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isMaterialOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Material> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isMaterialOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isMusicalNotationOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#isPossessedBy
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isPossessedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -260,29 +302,47 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isPossessedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Right> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isPossessedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOfSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isSectionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Right> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#language
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#language> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#possesses
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#possesses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -290,11 +350,63 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#possesses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#possesses> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Right> .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#produced
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#produced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#produced> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#produced> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#produced> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#produced> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Example: Section, Chapter, Location"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#writingMethod
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#writingMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -314,17 +426,23 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to
 <http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# http://www.cidoc-crm.org/cidoc-crm/P108_has_produced
-<http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# http://www.cidoc-crm.org/cidoc-crm/P128_carries
+<http://www.cidoc-crm.org/cidoc-crm/P128_carries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by
-<http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by
+<http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of
 <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on
 <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object
+<http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for
+<http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/P2_has_type
 <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -347,11 +465,35 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of
 <http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper
+<http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of
+<http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span
+<http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of
+<http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner
+<http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of
+<http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://www.cidoc-crm.org/cidoc-crm/P75_possesses
 <http://www.cidoc-crm.org/cidoc-crm/P75_possesses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/P75i_is_possessed_by
 <http://www.cidoc-crm.org/cidoc-crm/P75i_is_possessed_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence
+<http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by
+<http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # 
 # 
@@ -362,10 +504,10 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#additionalFile
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#additionalFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#additionalFile> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#additionalFile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#accessIdentifier
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#accessIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#accessIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#accessIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#alternativeTitle
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#alternativeTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -387,20 +529,26 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#editionNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#editionNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#identifier
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#facsimileNumber
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#facsimileNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#facsimileNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#facsimileNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#issueNumber
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#issueNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#issueNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#issueNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Item> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#locus
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#locus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#locus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#locus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#locus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#notes
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#notes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -434,7 +582,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#series
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -444,7 +592,13 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#siglum
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#siglum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#siglum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#siglum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#siglum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan> .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#title
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -459,7 +613,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/P102_has_title
 <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -488,20 +642,11 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
-# http://iflastandards.info/ns/fr/frbr/frbroo/F3
-<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/2002/07/owl#equivalentClass> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> .
-<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/2000/01/rdf-schema#label> "F3 Manifestation" .
-# 
-# http://iflastandards.info/ns/fr/frbr/frbroo/F5
-<http://iflastandards.info/ns/fr/frbr/frbroo/F5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://iflastandards.info/ns/fr/frbr/frbroo/F5> <http://www.w3.org/2000/01/rdf-schema#label> "F5 Item" .
+# http://postdata.linhd.uned.es/ontology/postdata-core#Activity
+<http://postdata.linhd.uned.es/ontology/postdata-core#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Agent
 <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole
-<http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Expression
 <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -512,24 +657,37 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://postdata.linhd.uned.es/ontology/postdata-core#Redaction
 <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan
-<http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan
+<http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> <http://www.w3.org/2000/01/rdf-schema#comment> "A Bibliographic Source is a conceptual entity representing bibliographic products that are generated following a publication process. Instances of pdt:BibliographicSource represent the ideal physical properties of all the exemplars. Despite Bibliographic Sources are not physical objects per se (are not accessible), they encapsulate design properties of the physical carriers (layout, pages, desired material, etc.) and hence they can be \"physically\" described.\n\nAn object of type pdt:BibliographicSource embodies one or more textual editions (instances of pdc:Redaction). They mostly represent books that may gather several redactions or poems. In order to represent all the physical copies of the ideal manifestation, we associate this kind of source with instances of pdt:Item.\n\npdt:BibliographicSource is then considered an E73 Informatio Object, which is subclass of E90 Symbolic Object which represents conceptual objects subjected to rights and ownership. Instances of pdt:Item are aligned to E84 Information Carrier."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliographic Source"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction> <http://www.w3.org/2000/01/rdf-schema#comment> "Instances of pdt:CarrierProduction describe the activity performed by some agent when giving rise to a physical carrier for a textual edition of a poem.\n\nA Carrier Production has a set of pdc:AgentRole structures associated indicating the actors and the roles they performed during the participation in the event. The Carrier Production is then carried by taking a textual edition as input (an instance of pdc:Redaction) and generates an Information Carrier (an instance of pdt:InformationCarrier)\n\nAs a Carrier Production is an activity with input and output objects and participants, it is a subclass of E7 Activity. In addition, being it a type of event involving the creation of a carrier, it is also subclass of E63 Beginning of Existence."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction> <http://www.w3.org/2000/01/rdf-schema#label> "Carrier Production"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Condition is a state of a physical edition of a poem subjected to a period or time span. Hence, instances of pdt:Condition are related to pdt:InformationCarrier and pdc:TimeSpan.\n\npdt:Condition is aligned with CIDOC CRM E3 Condition State."@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile> <http://www.w3.org/2000/01/rdf-schema#label> "Facsimile"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -538,33 +696,45 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#Item
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#Location
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Item> <http://www.w3.org/2000/01/rdf-schema#label> "Item"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#Material
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Material> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E78_Collection> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> <http://www.w3.org/2000/01/rdf-schema#comment> "A pdt:Collection is an aggregation of instances of pdt:InformationCarrier that are curated and preserved by some pdc:Agent.\n\nA Collection can be a set of physical manuscripts or exemplars (i.e. a corpus, a personal collection of books). For example, \"Gongocorpus\" is a pdt:Collection that collects physical electronic editions of Gongora's Poems.\n\nBeing a collection a physical aggregation, it has been aligned as a subclass of CIDOC CRM E78 Collection"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5> <http://www.w3.org/2000/01/rdf-schema#label> "Collection"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource> <http://www.w3.org/2000/01/rdf-schema#label> "Primary Source"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#Procedure
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Procedure> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Procedure> <http://www.w3.org/2000/01/rdf-schema#label> "Procedure"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> <http://www.w3.org/2000/01/rdf-schema#comment> "A Reproduction is an activity in which some actor performs a copy of a physical edition to produce a facsimile. A reproduction of a facsimile is also another facsimile. \n\nInstances of pdt:Reproduction have agent-role structures associated (pdc:AgentRole) to indicate the type of role performed by an actor during the reproduction. Reproductions are associated to the carrier being reproduced (of type pdt:InformationCarrier) and generate the copy (instance of pdt:Facsimile) following a specific technique.\n\npdt:Reproduction is aligned to E7 Activity and to E63 Beginning of Existence to indicate that it has input/output objects and it gices rise to a new object."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction> <http://www.w3.org/2000/01/rdf-schema#label> "Reproduction"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#Right
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Right> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Right> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E30_Right> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Right> <http://www.w3.org/2000/01/rdf-schema#label> "Right"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-transmission#Source
 <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature
 <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -580,6 +750,15 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://www.cidoc-crm.org/cidoc-crm/E57_Material
 <http://www.cidoc-crm.org/cidoc-crm/E57_Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence
+<http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object
+<http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E78_Collection
+<http://www.cidoc-crm.org/cidoc-crm/E78_Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier
 <http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

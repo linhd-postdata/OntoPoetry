@@ -2227,34 +2227,32 @@
     "@language" : "scc.uned.es",
     "@value" : "Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto"
   }, {
-    "@value" : "Aitor Díaz Medina (LINHD_POSTDATA-UNED) nhttps://www.linkedin.com/in/aitordiazmedina/"
+    "@value" : "Aitor Díaz Medina (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/aitordiazmedina/"
   }, {
-    "@value" : "Alvaro Pérez (LINHD_POSTDATA-UNED) nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"
+    "@value" : "Alvaro Pérez (LINHD_POSTDATA-UNED) \nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"
   }, {
-    "@value" : "Bruno Sartini (Bolonia University)nhttps://orcid.org/0000-0002-9152-4402"
+    "@value" : "Elena González-Blanco\nhttps://orcid.org/0000-0002-0448-1812"
   }, {
-    "@value" : "Elena González Blanco\nhttps://orcid.org/0000-0002-0448-1812"
+    "@value" : "Helena Bermúdez Sabel\nhttps://orcid.org/0000-0001-7782-206X"
   }, {
-    "@value" : "Helena Bermúdez Sabelnhttps://orcid.org/0000-0001-7782-206X"
+    "@value" : "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/"
   }, {
-    "@value" : "Javier de la Rosa (LINHD_POSTDATA-UNED)nhttps://www.linkedin.com/in/versae/"
+    "@value" : "Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)\nhttps://orcid.org/0000-0003-3489-2193"
   }, {
-    "@value" : "Laura Hernández Lorenzo (LINHD_POSTDATA-UNED) nhttps://orcid.org/0000-0003-3489-2193"
+    "@value" : "Mª Luisa Díez Platas\nhttps://orcid.org/0000-0002-9416-3147"
   }, {
-    "@value" : "Mª Luisa Díez Platasnhttps://orcid.org/0000-0002-9416-3147"
+    "@value" : "Omar Khalil Gómez (LINHD_POSTDATA-UNED)\nhttp://www.linkedin.com/in/omar-k-0959a8129"
   }, {
-    "@value" : "Omar Khalil Gómez (LINHD_POSTDATA-UNED) nhttp://www.linkedin.com/in/omar-k-0959a8129"
+    "@value" : "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753"
   }, {
-    "@value" : "Oscar Corcho (Universidad Politécnica de Madrid)nhttp://orcid.org/0000-0002-9260-0753"
-  }, {
-    "@value" : "Salvador Ros Muñoz (UNED)nsrosmugmail.com"
+    "@value" : "Salvador Ros Muñoz (UNED)\nsrosmu@gmail.com"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@language" : "en",
     "@value" : "POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”"
   } ],
   "http://purl.org/dc/elements/1.1/date" : [ {
-    "@value" : "2020-02-22"
+    "@value" : "2021-11-26"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
@@ -2272,7 +2270,7 @@
     "@value" : "pdc"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "V1.3"
+    "@value" : "V2.0"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Activity",
