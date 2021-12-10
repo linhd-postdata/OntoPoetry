@@ -39,7 +39,7 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Oscar Corcho (Universidad Politécnica de Madrid)nhttp://orcid.org/0000-0002-9260-0753",
+        "value" : "Helena Bermúdez Sabelnhttps://orcid.org/0000-0001-7782-206X",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -54,7 +54,7 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Helena Bermúdez Sabelnhttps://orcid.org/0000-0001-7782-206X",
+        "value" : "Omar Khalil Gómez (LINHD_POSTDATA-UNED) nhttp://www.linkedin.com/in/omar-k-0959a8129",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -64,12 +64,7 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Omar Khalil Gómez (LINHD_POSTDATA-UNED) nhttp://www.linkedin.com/in/omar-k-0959a8129",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "scc.uned.es",
-        "value" : "Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto",
+        "value" : "Mª Luisa Díez Platasnhttps://orcid.org/0000-0002-9416-3147",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -79,7 +74,17 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Mª Luisa Díez Platasnhttps://orcid.org/0000-0002-9416-3147",
+        "value" : "Elena González Blanco\nhttps://orcid.org/0000-0002-0448-1812",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "scc.uned.es",
+        "value" : "Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Oscar Corcho (Universidad Politécnica de Madrid)nhttp://orcid.org/0000-0002-9260-0753",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -127,13 +132,13 @@
     "id" : "22",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "31",
+    "id" : "29",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "40",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "49",
+    "id" : "47",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "60",
@@ -142,10 +147,10 @@
     "id" : "61",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "32",
+    "id" : "30",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "56",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
     "id" : "73",
@@ -157,7 +162,7 @@
     "id" : "85",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "35",
+    "id" : "33",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "89",
@@ -175,7 +180,7 @@
     "id" : "120",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "47",
+    "id" : "49",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "126",
@@ -232,7 +237,7 @@
     "id" : "1",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "198",
+    "id" : "196",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "2",
@@ -244,7 +249,7 @@
     "id" : "230",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "166",
+    "id" : "165",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "221",
@@ -328,7 +333,7 @@
     "id" : "278",
     "type" : "owl:Thing"
   }, {
-    "id" : "34",
+    "id" : "32",
     "type" : "owl:Class"
   }, {
     "id" : "253",
@@ -349,16 +354,16 @@
     "id" : "248",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "243",
+    "id" : "242",
     "type" : "owl:Thing"
   }, {
     "id" : "232",
     "type" : "owl:Thing"
   }, {
-    "id" : "33",
+    "id" : "31",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "175",
+    "id" : "174",
     "type" : "rdfs:Literal"
   }, {
     "id" : "106",
@@ -397,7 +402,7 @@
     "id" : "159",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "55",
+    "id" : "56",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "206",
@@ -415,7 +420,7 @@
     "id" : "149",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "283",
+    "id" : "284",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "81",
@@ -462,7 +467,7 @@
     "label" : {
       "IRI-based" : "E89_Propositional_Object"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "10"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
@@ -471,7 +476,7 @@
     "label" : {
       "IRI-based" : "E7_Activity"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "11"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole",
@@ -497,20 +502,20 @@
     "id" : "22"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#IndividualWork",
-    "equivalent" : [ "35" ],
+    "equivalent" : [ "33" ],
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "instances" : 0,
     "label" : {
       "IRI-based" : "IndividualWork",
       "en" : "Individual Work"
     },
-    "subClasses" : [ "33", "34" ],
+    "subClasses" : [ "31", "32" ],
     "comment" : {
       "en" : "This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts.\n\nThis class has been cloned from F14 Individual Work."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "31",
-    "superClasses" : [ "32" ]
+    "id" : "29",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F23",
     "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
@@ -518,7 +523,7 @@
     "label" : {
       "IRI-based" : "F23"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "40"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F22",
@@ -527,8 +532,8 @@
     "label" : {
       "IRI-based" : "F22"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "49"
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "47"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F28",
     "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
@@ -536,7 +541,7 @@
     "label" : {
       "IRI-based" : "F28"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "60"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F27",
@@ -545,7 +550,7 @@
     "label" : {
       "IRI-based" : "F27"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "61"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Work",
@@ -556,12 +561,12 @@
       "IRI-based" : "Work",
       "en" : "Work"
     },
-    "subClasses" : [ "71", "31" ],
+    "subClasses" : [ "71", "29" ],
     "comment" : {
       "en" : "This class comprises the sums of concepts which appear in the course of the coherent evolution of an original idea into one or more expressions that are dominated by the original idea.\n\nThis class has been cloned from F1 Work."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "32",
+    "id" : "30",
     "superClasses" : [ "6" ]
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction",
@@ -582,7 +587,7 @@
     "comment" : {
       "en" : "The textual signs of a poetic work. Each version and edition of a work is realised by its own redaction.\n\nEg.: The palaeographic edition of A solis ortu usque ad occidua preserved in Lat. 1154 (BNF) and its critical edition are two Redaction of the same Poetic Work."
     },
-    "id" : "56",
+    "id" : "57",
     "superClasses" : [ "1", "8" ]
   }, {
     "iri" : "http://www.co-ode.org/ontologies/ont.owl#Excerpt",
@@ -605,7 +610,7 @@
     "label" : {
       "IRI-based" : "F10"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "84"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object",
@@ -614,7 +619,7 @@
     "label" : {
       "IRI-based" : "E33_Linguistic_Object"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "85"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F14",
@@ -623,8 +628,8 @@
     "label" : {
       "IRI-based" : "F14"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "35"
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "33"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F17",
     "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
@@ -632,7 +637,7 @@
     "label" : {
       "IRI-based" : "F17"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "89"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F15",
@@ -641,7 +646,7 @@
     "label" : {
       "IRI-based" : "F15"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "93"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
@@ -668,7 +673,7 @@
     },
     "attributes" : [ "equivalent" ],
     "id" : "80",
-    "superClasses" : [ "47" ]
+    "superClasses" : [ "49" ]
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object",
     "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
@@ -676,7 +681,7 @@
     "label" : {
       "IRI-based" : "E28_Conceptual_Object"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "120"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent",
@@ -700,7 +705,7 @@
       "en" : "Any agentive Object , either physical or social. In the context of the POSTDATA ontology network it will mostly refer to organisations or persons.nnThis class it is based on CIDOC CRM E39 Actor Class."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "47",
+    "id" : "49",
     "superClasses" : [ "108" ]
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole",
@@ -732,7 +737,7 @@
     "label" : {
       "IRI-based" : "E52_Time-Span"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "127"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Birth",
@@ -756,7 +761,7 @@
     "label" : {
       "IRI-based" : "F9"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "132"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F2",
@@ -765,7 +770,7 @@
     "label" : {
       "IRI-based" : "F2"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "9"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/PC14_Carried_Out_By",
@@ -774,7 +779,7 @@
     "label" : {
       "IRI-based" : "PC14_Carried_Out_By"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "23"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F1",
@@ -783,7 +788,7 @@
     "label" : {
       "IRI-based" : "F1"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "72"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan",
@@ -805,7 +810,7 @@
     "comment" : {
       "en" : "This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration.\n\nThis class has been cloned from E52 Time-Span."
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "19",
     "superClasses" : [ "108" ]
   }, {
@@ -817,7 +822,7 @@
       "IRI-based" : "CRM_Entity",
       "en" : "CRM Entity"
     },
-    "subClasses" : [ "18", "51", "47", "158", "19" ],
+    "subClasses" : [ "18", "51", "49", "158", "19" ],
     "attributes" : [ "equivalent" ],
     "id" : "108"
   }, {
@@ -879,17 +884,17 @@
         "hasTopConcept" : [ {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/textual-element-type/chapter",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
           "value" : "http://postdata.linhd.uned.es/kos/textual-element-type/prologue",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
           "value" : "http://postdata.linhd.uned.es/kos/textual-element-type/epilogue",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
+          "value" : "http://postdata.linhd.uned.es/kos/textual-element-type/chapter",
           "type" : "iri"
         } ],
         "definition" : [ {
@@ -906,13 +911,13 @@
         } ],
         "title" : [ {
           "identifier" : "title",
-          "language" : "en",
-          "value" : "Thesaurus about type of textual element",
+          "language" : "es",
+          "value" : "Tesauro sobre tipos de elementos textuales",
           "type" : "label"
         }, {
           "identifier" : "title",
-          "language" : "es",
-          "value" : "Tesauro sobre tipos de elementos textuales",
+          "language" : "en",
+          "value" : "Thesaurus about type of textual element",
           "type" : "label"
         } ]
       },
@@ -992,13 +997,13 @@
         } ],
         "title" : [ {
           "identifier" : "title",
-          "language" : "en",
-          "value" : "Thesaurus about the socialstatus of a person",
+          "language" : "es",
+          "value" : "Tesauro sobre el statuus social de una persona",
           "type" : "label"
         }, {
           "identifier" : "title",
-          "language" : "es",
-          "value" : "Tesauro sobre el statuus social de una persona",
+          "language" : "en",
+          "value" : "Thesaurus about the socialstatus of a person",
           "type" : "label"
         } ]
       },
@@ -1027,21 +1032,10 @@
           "value" : "Role Function Scheme",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Thesaurus about specific function performed by some agent on a work",
-          "type" : "label"
-        } ],
         "hasTopConcept" : [ {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/role-function/singer",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/role-function/collector",
+          "value" : "http://postdata.linhd.uned.es/kos/role-function/actor",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
@@ -1051,18 +1045,29 @@
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/role-function/transcriptor",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
           "value" : "http://postdata.linhd.uned.es/kos/role-function/arranger",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/role-function/actor",
+          "value" : "http://postdata.linhd.uned.es/kos/role-function/collector",
           "type" : "iri"
+        }, {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
+          "value" : "http://postdata.linhd.uned.es/kos/role-function/transcriptor",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
+          "value" : "http://postdata.linhd.uned.es/kos/role-function/singer",
+          "type" : "iri"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Thesaurus about specific function performed by some agent on a work",
+          "type" : "label"
         } ],
         "wasAttributedTo" : [ {
           "identifier" : "wasAttributedTo",
@@ -1072,13 +1077,13 @@
         } ],
         "title" : [ {
           "identifier" : "title",
-          "language" : "en",
-          "value" : "Thesaurus about specific function performed by some agent on a work",
+          "language" : "es",
+          "value" : "Tesauro sobre el papel específico representado por un agente en una obra",
           "type" : "label"
         }, {
           "identifier" : "title",
-          "language" : "es",
-          "value" : "Tesauro sobre el papel específico representado por un agente en una obra",
+          "language" : "en",
+          "value" : "Thesaurus about specific function performed by some agent on a work",
           "type" : "label"
         } ]
       },
@@ -1159,12 +1164,12 @@
         "hasTopConcept" : [ {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/certainty/probably-not",
+          "value" : "http://postdata.linhd.uned.es/kos/certainty/definitely-not",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/certainty/definitely-not",
+          "value" : "http://postdata.linhd.uned.es/kos/certainty/probably-not",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
@@ -1288,13 +1293,13 @@
         } ],
         "title" : [ {
           "identifier" : "title",
-          "language" : "es",
-          "value" : "Tesauro sobre tipos de rol",
+          "language" : "en",
+          "value" : "Thesaurus about character types",
           "type" : "label"
         }, {
           "identifier" : "title",
-          "language" : "en",
-          "value" : "Thesaurus about character types",
+          "language" : "es",
+          "value" : "Tesauro sobre tipos de rol",
           "type" : "label"
         } ]
       },
@@ -1323,21 +1328,15 @@
           "value" : "Gender Scheme",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Thesaurus about genders",
-          "type" : "label"
-        } ],
         "hasTopConcept" : [ {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/gender/other",
+          "value" : "http://postdata.linhd.uned.es/kos/gender/unknown",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/gender/transgender",
+          "value" : "http://postdata.linhd.uned.es/kos/gender/other",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
@@ -1347,13 +1346,19 @@
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/gender/unknown",
+          "value" : "http://postdata.linhd.uned.es/kos/gender/female",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/gender/female",
+          "value" : "http://postdata.linhd.uned.es/kos/gender/transgender",
           "type" : "iri"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Thesaurus about genders",
+          "type" : "label"
         } ],
         "wasAttributedTo" : [ {
           "identifier" : "wasAttributedTo",
@@ -1401,22 +1406,22 @@
         "hasTopConcept" : [ {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/designation-type/pseudonym",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/certainty/designation-type/allonym",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
           "value" : "http://postdata.linhd.uned.es/kos/designation-type/heteronym",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
+          "value" : "http://postdata.linhd.uned.es/kos/designation-type/pseudonym",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
           "value" : "http://postdata.linhd.uned.es/kos/designation-type/orthonym",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
+          "value" : "http://postdata.linhd.uned.es/kos/certainty/designation-type/allonym",
           "type" : "iri"
         } ],
         "definition" : [ {
@@ -1433,18 +1438,78 @@
         } ],
         "title" : [ {
           "identifier" : "title",
-          "language" : "es",
-          "value" : "Tesauro sobre tipos de nombre",
+          "language" : "en",
+          "value" : "Thesaurus about type of name",
           "type" : "label"
         }, {
           "identifier" : "title",
-          "language" : "en",
-          "value" : "Thesaurus about type of name",
+          "language" : "es",
+          "value" : "Tesauro sobre tipos de nombre",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "designation-type"
+      }
+    }, {
+      "iri" : "http://postdata.linhd.uned.es/kos/religious-affiliation",
+      "baseIri" : "http://postdata.linhd.uned.es/kos",
+      "annotations" : {
+        "date" : [ {
+          "identifier" : "date",
+          "language" : "undefined",
+          "value" : "2019-04-29",
+          "type" : "label"
+        } ],
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "en",
+          "value" : "POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Religious Affiliation Scheme",
+          "type" : "label"
+        } ],
+        "hasTopConcept" : [ {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
+          "value" : "http://postdata.linhd.uned.es/kos/religious-affiliation/unaffiliated",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
+          "value" : "http://postdata.linhd.uned.es/kos/religious-affiliation/christian",
+          "type" : "iri"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Thesaurus about religious affiliations",
+          "type" : "label"
+        } ],
+        "wasAttributedTo" : [ {
+          "identifier" : "wasAttributedTo",
+          "language" : "undefined",
+          "value" : "http://www.linkedin.com/in/ocorcho",
+          "type" : "iri"
+        } ],
+        "title" : [ {
+          "identifier" : "title",
+          "language" : "es",
+          "value" : "Thesaurus about religious affiliations",
+          "type" : "label"
+        }, {
+          "identifier" : "title",
+          "language" : "es",
+          "value" : "Tesauro sobre afiliaciones religiosas",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "religious-affiliation"
       }
     }, {
       "iri" : "http://postdata.linhd.uned.es/kos/education-level",
@@ -1495,66 +1560,6 @@
       "labels" : {
         "IRI-based" : "education-level"
       }
-    }, {
-      "iri" : "http://postdata.linhd.uned.es/kos/religious-affiliation",
-      "baseIri" : "http://postdata.linhd.uned.es/kos",
-      "annotations" : {
-        "date" : [ {
-          "identifier" : "date",
-          "language" : "undefined",
-          "value" : "2019-04-29",
-          "type" : "label"
-        } ],
-        "creator" : [ {
-          "identifier" : "creator",
-          "language" : "en",
-          "value" : "POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Religious Affiliation Scheme",
-          "type" : "label"
-        } ],
-        "hasTopConcept" : [ {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/religious-affiliation/unaffiliated",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
-          "value" : "http://postdata.linhd.uned.es/kos/religious-affiliation/christian",
-          "type" : "iri"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Thesaurus about religious affiliations",
-          "type" : "label"
-        } ],
-        "wasAttributedTo" : [ {
-          "identifier" : "wasAttributedTo",
-          "language" : "undefined",
-          "value" : "http://www.linkedin.com/in/ocorcho",
-          "type" : "iri"
-        } ],
-        "title" : [ {
-          "identifier" : "title",
-          "language" : "es",
-          "value" : "Tesauro sobre afiliaciones religiosas",
-          "type" : "label"
-        }, {
-          "identifier" : "title",
-          "language" : "es",
-          "value" : "Thesaurus about religious affiliations",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "religious-affiliation"
-      }
     } ],
     "attributes" : [ "external" ],
     "id" : "101"
@@ -1591,7 +1596,7 @@
     "label" : {
       "IRI-based" : "E67_Birth"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "131"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment",
@@ -1615,7 +1620,7 @@
     "label" : {
       "IRI-based" : "E69_Death"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "217"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Organisation",
@@ -1637,7 +1642,7 @@
       "en" : "Named collection of people regarded as a single unit. Typical examples include institutions such as ‘UNED’ or ‘the BBC’ and businesses such as ‘Google’ but also racial or ethnic groupings or political factions where these are regarded as forming a single agency such as ‘the Carthaginians’ or ‘the Communists’.nnThis class is defined as a subclass of pdcore:Agent and it is based on CIDOC CRM E74 Group Class."
     },
     "id" : "124",
-    "superClasses" : [ "192", "47" ]
+    "superClasses" : [ "192", "49" ]
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F38",
     "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
@@ -1645,7 +1650,7 @@
     "label" : {
       "IRI-based" : "F38"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "222"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject",
@@ -1656,7 +1661,7 @@
       "IRI-based" : "LinguisticObject",
       "en" : "Linguistic Object"
     },
-    "subClasses" : [ "56", "73" ],
+    "subClasses" : [ "57", "73" ],
     "comment" : {
       "en" : "This class comprises identifiable immaterial items, such as a poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units.\nThe encoding structure known as a \"named graph\" also falls under this class, so that each \"named graph\" is an instance of an E73 Information Object.\n\nThis class has been cloned from E33 Linguistic Object"
     },
@@ -1666,7 +1671,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "198",
+    "id" : "196",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1730,13 +1735,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Sin afiliación",
+          "language" : "en",
+          "value" : "Unaffiliated",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Unaffiliated",
+          "language" : "es",
+          "value" : "Sin afiliación",
           "type" : "label"
         } ]
       },
@@ -1774,8 +1779,18 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Educación de la primera infancia",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "ru",
           "value" : "Раннее детское образование",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Early childhood education",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -1786,16 +1801,6 @@
           "identifier" : "prefLabel",
           "language" : "ar",
           "value" : "تعليم في مرحلة الطفولة المبكرة",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Early childhood education",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Educación de la primera infancia",
           "type" : "label"
         } ]
       },
@@ -1808,13 +1813,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Villain",
+          "language" : "es",
+          "value" : "Agresor",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Agresor",
+          "language" : "en",
+          "value" : "Villain",
           "type" : "label"
         } ]
       },
@@ -1858,13 +1863,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Coleccionista",
+          "language" : "en",
+          "value" : "Collector",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Collector",
+          "language" : "es",
+          "value" : "Coleccionista",
           "type" : "label"
         } ]
       },
@@ -1877,13 +1882,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Cargo público",
+          "language" : "en",
+          "value" : "Public position",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Public position",
+          "language" : "es",
+          "value" : "Cargo público",
           "type" : "label"
         } ]
       },
@@ -1896,13 +1901,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Transgénero",
+          "language" : "en",
+          "value" : "Transgender",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Transgender",
+          "language" : "es",
+          "value" : "Transgénero",
           "type" : "label"
         } ]
       },
@@ -1915,13 +1920,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Auxiliar",
+          "language" : "en",
+          "value" : "Helper",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Helper",
+          "language" : "es",
+          "value" : "Auxiliar",
           "type" : "label"
         } ]
       },
@@ -1959,13 +1964,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "pseudónimo",
+          "language" : "en",
+          "value" : "pseudonym",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "pseudonym",
+          "language" : "es",
+          "value" : "pseudónimo",
           "type" : "label"
         } ]
       },
@@ -1978,13 +1983,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Servant",
+          "language" : "es",
+          "value" : "Criado",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Criado",
+          "language" : "en",
+          "value" : "Servant",
           "type" : "label"
         } ]
       },
@@ -1997,13 +2002,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Realism",
+          "language" : "es",
+          "value" : "Realismo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Realismo",
+          "language" : "en",
+          "value" : "Realism",
           "type" : "label"
         } ]
       },
@@ -2016,13 +2021,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Female",
+          "language" : "es",
+          "value" : "Mujer",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Mujer",
+          "language" : "en",
+          "value" : "Female",
           "type" : "label"
         } ]
       },
@@ -2085,13 +2090,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Caballero",
+          "language" : "en",
+          "value" : "Knight",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Knight",
+          "language" : "es",
+          "value" : "Caballero",
           "type" : "label"
         } ]
       },
@@ -2135,13 +2140,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Definitely not",
+          "language" : "es",
+          "value" : "Definitivamente no",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Definitivamente no",
+          "language" : "en",
+          "value" : "Definitely not",
           "type" : "label"
         } ]
       },
@@ -2179,13 +2184,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Prologue",
+          "language" : "es",
+          "value" : "Prólogo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Prólogo",
+          "language" : "en",
+          "value" : "Prologue",
           "type" : "label"
         } ]
       },
@@ -2212,6 +2217,25 @@
         "IRI-based" : "writer"
       }
     }, {
+      "iri" : "http://postdata.linhd.uned.es/kos/textual-element-type/stanza",
+      "baseIri" : "http://postdata.linhd.uned.es/kos/textual-element-type",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Stanza",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Estrofa",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "stanza"
+      }
+    }, {
       "iri" : "http://postdata.linhd.uned.es/kos/social-status/priest",
       "baseIri" : "http://postdata.linhd.uned.es/kos/social-status",
       "annotations" : {
@@ -2231,32 +2255,13 @@
         "IRI-based" : "priest"
       }
     }, {
-      "iri" : "http://postdata.linhd.uned.es/kos/textual-element-type/stanza",
-      "baseIri" : "http://postdata.linhd.uned.es/kos/textual-element-type",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Estrofa",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Stanza",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "stanza"
-      }
-    }, {
       "iri" : "http://vocabularies.unesco.org/thesaurus/concept4979",
       "baseIri" : "http://vocabularies.unesco.org/thesaurus",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "زعماء دينيون",
+          "language" : "es",
+          "value" : "Jefe religioso",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2265,18 +2270,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "Религиозные лидеры",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "fr",
           "value" : "Chef religieux",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Jefe religioso",
+          "language" : "ar",
+          "value" : "زعماء دينيون",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ru",
+          "value" : "Религиозные лидеры",
           "type" : "label"
         } ]
       },
@@ -2289,43 +2294,18 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Edad Media",
+          "language" : "en",
+          "value" : "Middle Ages",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Middle Ages",
+          "language" : "es",
+          "value" : "Edad Media",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "middle-ages"
-      }
-    }, {
-      "iri" : "http://postdata.linhd.uned.es/kos/certainty/possibily",
-      "baseIri" : "http://postdata.linhd.uned.es/kos/certainty",
-      "annotations" : {
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "possibily",
-          "type" : "label"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Possibily",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Posiblemente",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "possibily"
       }
     }, {
       "iri" : "http://postdata.linhd.uned.es/kos/gender/other",
@@ -2345,6 +2325,31 @@
       },
       "labels" : {
         "IRI-based" : "other"
+      }
+    }, {
+      "iri" : "http://postdata.linhd.uned.es/kos/certainty/possibily",
+      "baseIri" : "http://postdata.linhd.uned.es/kos/certainty",
+      "annotations" : {
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "possibily",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Posiblemente",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Possibily",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "possibily"
       }
     }, {
       "iri" : "http://postdata.linhd.uned.es/kos/role-function/arranger",
@@ -2441,13 +2446,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Noble",
+          "language" : "en",
+          "value" : "Nobleman",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Nobleman",
+          "language" : "es",
+          "value" : "Noble",
           "type" : "label"
         } ]
       },
@@ -2479,13 +2484,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Saints",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "Святые",
+          "language" : "fr",
+          "value" : "Saint",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2494,13 +2494,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Saint",
+          "language" : "ru",
+          "value" : "Святые",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "ar",
           "value" : "قديسون",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Saints",
           "type" : "label"
         } ]
       },
@@ -2508,42 +2513,23 @@
         "IRI-based" : "concept4777"
       }
     }, {
-      "iri" : "http://postdata.linhd.uned.es/kos/literary-period/enlightenment",
-      "baseIri" : "http://postdata.linhd.uned.es/kos/literary-period",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Ilustración",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Enlightenment",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "enlightenment"
-      }
-    }, {
       "iri" : "http://vocabularies.unesco.org/thesaurus/concept5426",
       "baseIri" : "http://vocabularies.unesco.org/thesaurus",
       "annotations" : {
         "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Clero",
+          "type" : "label"
+        }, {
           "identifier" : "prefLabel",
           "language" : "ru",
           "value" : "Духовенство",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Clergé",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Clero",
+          "language" : "ar",
+          "value" : "رجال الدين",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2552,8 +2538,8 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "رجال الدين",
+          "language" : "fr",
+          "value" : "Clergé",
           "type" : "label"
         } ]
       },
@@ -2561,29 +2547,23 @@
         "IRI-based" : "concept5426"
       }
     }, {
-      "iri" : "http://postdata.linhd.uned.es/kos/religious-affiliation/jehovah-witness",
-      "baseIri" : "http://postdata.linhd.uned.es/kos/religious-affiliation",
+      "iri" : "http://postdata.linhd.uned.es/kos/literary-period/enlightenment",
+      "baseIri" : "http://postdata.linhd.uned.es/kos/literary-period",
       "annotations" : {
-        "notation" : [ {
-          "identifier" : "notation",
-          "language" : "undefined",
-          "value" : "jehovah-witness",
-          "type" : "label"
-        } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Jehova's Witness",
+          "value" : "Enlightenment",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "es",
-          "value" : "Testigo de Jehová",
+          "value" : "Ilustración",
           "type" : "label"
         } ]
       },
       "labels" : {
-        "IRI-based" : "jehovah-witness"
+        "IRI-based" : "enlightenment"
       }
     }, {
       "iri" : "http://postdata.linhd.uned.es/kos/character-type/princess",
@@ -2605,18 +2585,43 @@
         "IRI-based" : "princess"
       }
     }, {
+      "iri" : "http://postdata.linhd.uned.es/kos/religious-affiliation/jehovah-witness",
+      "baseIri" : "http://postdata.linhd.uned.es/kos/religious-affiliation",
+      "annotations" : {
+        "notation" : [ {
+          "identifier" : "notation",
+          "language" : "undefined",
+          "value" : "jehovah-witness",
+          "type" : "label"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Testigo de Jehová",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Jehova's Witness",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "jehovah-witness"
+      }
+    }, {
       "iri" : "http://postdata.linhd.uned.es/kos/literary-period/romanticism",
       "baseIri" : "http://postdata.linhd.uned.es/kos/literary-period",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Romanticismo",
+          "language" : "en",
+          "value" : "Romanticism",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Romanticism",
+          "language" : "es",
+          "value" : "Romanticismo",
           "type" : "label"
         } ]
       },
@@ -2635,13 +2640,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Chapter",
+          "language" : "es",
+          "value" : "Capítulo",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Capítulo",
+          "language" : "en",
+          "value" : "Chapter",
           "type" : "label"
         } ]
       },
@@ -2660,13 +2665,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Epílogo",
+          "language" : "en",
+          "value" : "Epilogue",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Epilogue",
+          "language" : "es",
+          "value" : "Epílogo",
           "type" : "label"
         } ]
       },
@@ -2685,13 +2690,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Catholic",
+          "language" : "es",
+          "value" : "Católico",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Católico",
+          "language" : "en",
+          "value" : "Catholic",
           "type" : "label"
         } ]
       },
@@ -2710,13 +2715,13 @@
         } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Definitely",
+          "language" : "es",
+          "value" : "Definitivamente",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Definitivamente",
+          "language" : "en",
+          "value" : "Definitely",
           "type" : "label"
         } ]
       },
@@ -2729,13 +2734,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Mechanical arts",
+          "language" : "es",
+          "value" : "Oficial",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Oficial",
+          "language" : "en",
+          "value" : "Mechanical arts",
           "type" : "label"
         } ]
       },
@@ -2748,13 +2753,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Soldier",
+          "language" : "es",
+          "value" : "Soldado",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Soldado",
+          "language" : "en",
+          "value" : "Soldier",
           "type" : "label"
         } ]
       },
@@ -2792,13 +2797,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Hero",
+          "language" : "es",
+          "value" : "Héroe",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Héroe",
+          "language" : "en",
+          "value" : "Hero",
           "type" : "label"
         } ]
       },
@@ -2818,6 +2823,25 @@
       },
       "labels" : {
         "IRI-based" : "Editor"
+      }
+    }, {
+      "iri" : "http://postdata.linhd.uned.es/kos/literary-period/modernism",
+      "baseIri" : "http://postdata.linhd.uned.es/kos/literary-period",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Modernismo",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Modernism",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "modernism"
       }
     }, {
       "iri" : "http://postdata.linhd.uned.es/kos/religious-affiliation/christian",
@@ -2845,37 +2869,18 @@
         "IRI-based" : "christian"
       }
     }, {
-      "iri" : "http://postdata.linhd.uned.es/kos/literary-period/modernism",
-      "baseIri" : "http://postdata.linhd.uned.es/kos/literary-period",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Modernismo",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Modernism",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "modernism"
-      }
-    }, {
       "iri" : "http://postdata.linhd.uned.es/kos/literary-period-renaissance",
       "baseIri" : "http://postdata.linhd.uned.es/kos",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Renaissance",
+          "language" : "es",
+          "value" : "Renacimiento",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Renacimiento",
+          "language" : "en",
+          "value" : "Renaissance",
           "type" : "label"
         } ]
       },
@@ -2912,6 +2917,11 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Enseignement primaire",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "ar",
           "value" : "تعليم ابتدائي",
           "type" : "label"
@@ -2925,11 +2935,6 @@
           "language" : "en",
           "value" : "Primary education",
           "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Enseignement primaire",
-          "type" : "label"
         } ]
       },
       "labels" : {
@@ -2941,13 +2946,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Scholar",
+          "language" : "es",
+          "value" : "Letrado",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Letrado",
+          "language" : "en",
+          "value" : "Scholar",
           "type" : "label"
         } ]
       },
@@ -2960,13 +2965,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Secondary education",
+          "language" : "ar",
+          "value" : "تعليم ثانوي",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Enseñanza secundaria",
+          "language" : "fr",
+          "value" : "Enseignement secondaire",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -2975,13 +2980,13 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "تعليم ثانوي",
+          "language" : "en",
+          "value" : "Secondary education",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Enseignement secondaire",
+          "language" : "es",
+          "value" : "Enseñanza secundaria",
           "type" : "label"
         } ]
       },
@@ -2994,13 +2999,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Moslems",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "مسلمون",
+          "language" : "es",
+          "value" : "Musulmán",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -3009,13 +3009,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "ar",
+          "value" : "مسلمون",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "fr",
           "value" : "Musulman",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Musulmán",
+          "language" : "en",
+          "value" : "Moslems",
           "type" : "label"
         } ]
       },
@@ -3028,8 +3033,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Poésie",
+          "language" : "ar",
+          "value" : "شعر",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -3038,18 +3043,18 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Poesía",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "شعر",
+          "language" : "fr",
+          "value" : "Poésie",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
           "language" : "en",
           "value" : "Poetry",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Poesía",
           "type" : "label"
         } ]
       },
@@ -3183,13 +3188,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Beggar",
+          "language" : "es",
+          "value" : "Pobre",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Pobre",
+          "language" : "en",
+          "value" : "Beggar",
           "type" : "label"
         } ]
       },
@@ -3202,8 +3207,8 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "يهود",
+          "language" : "en",
+          "value" : "Jews",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
@@ -3212,42 +3217,23 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "Евреи",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
           "language" : "es",
           "value" : "Judío",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Jews",
+          "language" : "ar",
+          "value" : "يهود",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ru",
+          "value" : "Евреи",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "concept2533"
-      }
-    }, {
-      "iri" : "http://postdata.linhd.uned.es/kos/literary-period/baroque",
-      "baseIri" : "http://postdata.linhd.uned.es/kos/literary-period",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Baroque",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Barroco",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "baroque"
       }
     }, {
       "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Creator",
@@ -3269,18 +3255,71 @@
         "IRI-based" : "Creator"
       }
     }, {
+      "iri" : "http://postdata.linhd.uned.es/kos/literary-period/baroque",
+      "baseIri" : "http://postdata.linhd.uned.es/kos/literary-period",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Baroque",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Barroco",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "baroque"
+      }
+    }, {
+      "iri" : "http://vocabularies.unesco.org/thesaurus/concept8399",
+      "baseIri" : "http://vocabularies.unesco.org/thesaurus",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "ru",
+          "value" : "Драма",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "fr",
+          "value" : "Drame",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "es",
+          "value" : "Drama",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "ar",
+          "value" : "دراما",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Drama",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "concept8399"
+      }
+    }, {
       "iri" : "http://postdata.linhd.uned.es/kos/textual-element-type/poem",
       "baseIri" : "http://postdata.linhd.uned.es/kos/textual-element-type",
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Poem",
+          "language" : "es",
+          "value" : "Poema",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Poema",
+          "language" : "en",
+          "value" : "Poem",
           "type" : "label"
         } ]
       },
@@ -3303,6 +3342,11 @@
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
+          "language" : "ar",
+          "value" : "تعليم عالي",
+          "type" : "label"
+        }, {
+          "identifier" : "prefLabel",
           "language" : "es",
           "value" : "Enseñanza superior",
           "type" : "label"
@@ -3311,49 +3355,10 @@
           "language" : "fr",
           "value" : "Enseignement supérieur",
           "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "تعليم عالي",
-          "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "concept1485"
-      }
-    }, {
-      "iri" : "http://vocabularies.unesco.org/thesaurus/concept8399",
-      "baseIri" : "http://vocabularies.unesco.org/thesaurus",
-      "annotations" : {
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "ru",
-          "value" : "Драма",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "fr",
-          "value" : "Drame",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Drama",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Drama",
-          "type" : "label"
-        }, {
-          "identifier" : "prefLabel",
-          "language" : "ar",
-          "value" : "دراما",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "concept8399"
       }
     }, {
       "iri" : "http://postdata.linhd.uned.es/kos/character-type/donor",
@@ -3361,13 +3366,13 @@
       "annotations" : {
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Donor",
+          "language" : "es",
+          "value" : "Donante del objeto mágico",
           "type" : "label"
         }, {
           "identifier" : "prefLabel",
-          "language" : "es",
-          "value" : "Donante del objeto mágico",
+          "language" : "en",
+          "value" : "Donor",
           "type" : "label"
         } ]
       },
@@ -3395,7 +3400,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "166",
+    "id" : "165",
     "label" : {
       "IRI-based" : "string"
     }
@@ -3517,14 +3522,14 @@
     }
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression",
-    "equivalent" : [ "49" ],
+    "equivalent" : [ "47" ],
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "instances" : 0,
     "label" : {
       "IRI-based" : "SelfContainedExpression",
       "en" : "Self Contained Expression"
     },
-    "subClasses" : [ "56" ],
+    "subClasses" : [ "57" ],
     "comment" : {
       "en" : "This class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole.\n\nThis class has been cloned from F22 Self Contained Expression."
     },
@@ -3580,7 +3585,7 @@
     },
     "attributes" : [ "equivalent" ],
     "id" : "71",
-    "superClasses" : [ "32" ]
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation",
     "equivalent" : [ "60" ],
@@ -3656,8 +3661,8 @@
     "comment" : {
       "en" : "Abstract concept of an artistic creation. In the POSTDATA ontology network these creations must be in verse (e.g., poem, play, song). \n\nFor example, Os Lusíadas by Luis Vaz de Camões; La Commedia by Dante; the poem Ad te deus by an Anonymous author written in between the 7th and 9th centuries."
     },
-    "id" : "34",
-    "superClasses" : [ "31" ]
+    "id" : "32",
+    "superClasses" : [ "29" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -3719,7 +3724,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "243",
+    "id" : "242",
     "label" : {
       "undefined" : "Thing"
     }
@@ -3744,11 +3749,11 @@
       "en" : "This class comprises works whose essence is the selection and/or arrangement of expressions of one or more other works. This does not make the contents of the aggregated expressions part of this work, but only part of the resulting expression. F17 Aggregation Work may include additional original parts. An expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. A new version of an aggregate work does not make the resulting complex work an aggregate work as well. The inclusion of expressions from a complex work in an aggregation work does not make the aggregation work itself complex.\n\nThis class has been cloned from F17 Aggregation Work."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "33",
-    "superClasses" : [ "31" ]
+    "id" : "31",
+    "superClasses" : [ "29" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "175",
+    "id" : "174",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -3811,7 +3816,7 @@
       "IRI-based" : "PropositionalObject",
       "en" : "Propositional Object"
     },
-    "subClasses" : [ "5", "1", "32" ],
+    "subClasses" : [ "5", "1", "30" ],
     "comment" : {
       "en" : "This class comprises immaterial items, including but not limited to stories, plots, procedural prescriptions, algorithms, laws of physics or images that are, or represent in some sense, sets of propositions about real or imaginary things and that are documented as single units or serve as topic of discourse.\nThis class also comprises items that are \"about\" something in the sense of a subject. In the wider sense, this class includes expressions of psychological value such as non-figural art and musical themes. However, conceptual items such as types and classes are not instances of E89 Propositional Object. This should not be confused with the definition of a type, which is indeed an instance of E89 Propositional Object.\n\nThis class has been cloned from E89 Propositional Object"
     },
@@ -3879,7 +3884,7 @@
     "label" : {
       "IRI-based" : "E1_CRM_Entity"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "159"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Character",
@@ -3894,7 +3899,7 @@
       "en" : "This class comprises fictional or iconographic individuals or groups of individual appearing in works in a way relevant as subjects.\n\nThis class has been cloned from F38 Character"
     },
     "attributes" : [ "equivalent" ],
-    "id" : "55",
+    "id" : "56",
     "superClasses" : [ "158" ]
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment",
@@ -3903,7 +3908,7 @@
     "label" : {
       "IRI-based" : "E13_Attribute_Assignment"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "206"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble",
@@ -3925,7 +3930,7 @@
       "en" : "An abstract work that contains more than one Poetic Work. An Ensemble might be conceived as a collection of works, organized by author, by book song, by book of poems; or as a work mainly written in prose that contains more than one poetic pieces (each one of them being its own Poetic Work). For example, Les fleurs du mal.nnThis class is based on CIDOC FRBR F17 Aggregation Work Class, ant it is subclass of edm:providedCHO to keep alignement with Europeana Data Model."
     },
     "id" : "115",
-    "superClasses" : [ "33" ]
+    "superClasses" : [ "31" ]
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject",
     "equivalent" : [ "120" ],
@@ -3935,7 +3940,7 @@
       "IRI-based" : "ConceptualObject",
       "en" : "Conceptual Object"
     },
-    "subClasses" : [ "55", "6", "2" ],
+    "subClasses" : [ "56", "6", "2" ],
     "comment" : {
       "en" : "This class comprises non-material products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation or historical implication. The production of such information may have been supported by the use of technical devices such as cameras or computers.\n\nThis class has been cloned from E28 Conceptual Object"
     },
@@ -3949,7 +3954,7 @@
     "label" : {
       "IRI-based" : "E16_Measurement"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "194"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -3961,7 +3966,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "283",
+    "id" : "284",
     "label" : {
       "IRI-based" : "string"
     }
@@ -4009,7 +4014,7 @@
     "label" : {
       "IRI-based" : "E5_Event"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "298"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/E4_Period",
@@ -4018,7 +4023,7 @@
     "label" : {
       "IRI-based" : "E4_Period"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "334"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
@@ -4027,7 +4032,7 @@
     "label" : {
       "IRI-based" : "E39_Actor"
     },
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "external", "equivalent" ],
     "id" : "125"
   } ],
   "property" : [ {
@@ -4046,7 +4051,7 @@
     "id" : "26",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "29",
+    "id" : "34",
     "type" : "owl:objectProperty"
   }, {
     "id" : "36",
@@ -4070,7 +4075,7 @@
     "id" : "54",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "59",
+    "id" : "55",
     "type" : "owl:objectProperty"
   }, {
     "id" : "62",
@@ -4206,10 +4211,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "164",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "165",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "166",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "167",
     "type" : "owl:datatypeProperty"
@@ -4223,11 +4228,11 @@
     "id" : "163",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "173",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "140",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "174",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "176",
     "type" : "owl:datatypeProperty"
@@ -4250,13 +4255,13 @@
     "id" : "185",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "58",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "188",
+    "id" : "59",
     "type" : "owl:objectProperty"
   }, {
     "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "188",
     "type" : "owl:objectProperty"
   }, {
     "id" : "3",
@@ -4271,16 +4276,16 @@
     "id" : "83",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "28",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "197",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "199",
+    "id" : "20",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "20",
+    "id" : "199",
     "type" : "owl:objectProperty"
   }, {
     "id" : "97",
@@ -4310,13 +4315,13 @@
     "id" : "208",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "37",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "219",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "195",
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
     "type" : "owl:objectProperty"
   }, {
     "id" : "112",
@@ -4325,7 +4330,7 @@
     "id" : "220",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "196",
+    "id" : "198",
     "type" : "owl:objectProperty"
   }, {
     "id" : "223",
@@ -4376,10 +4381,10 @@
     "id" : "241",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "226",
+    "id" : "35",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "30",
+    "id" : "226",
     "type" : "owl:objectProperty"
   }, {
     "id" : "244",
@@ -4422,10 +4427,10 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "264",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "265",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "266",
     "type" : "rdfs:SubClassOf"
@@ -4475,23 +4480,23 @@
     "id" : "282",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "284",
+    "id" : "283",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "285",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "286",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "287",
     "type" : "owl:objectProperty"
   }, {
     "id" : "288",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "289",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "290",
     "type" : "rdfs:SubClassOf"
@@ -4577,10 +4582,10 @@
     "id" : "129",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "313",
+    "id" : "153",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "153",
+    "id" : "313",
     "type" : "owl:objectProperty"
   }, {
     "id" : "187",
@@ -4589,11 +4594,11 @@
     "id" : "314",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "173",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "315",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "175",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "53",
     "type" : "owl:objectProperty"
@@ -4610,10 +4615,10 @@
     "id" : "322",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "170",
+    "id" : "44",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "44",
+    "id" : "170",
     "type" : "owl:objectProperty"
   }, {
     "id" : "204",
@@ -4640,10 +4645,10 @@
     "id" : "327",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "274",
+    "id" : "16",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "16",
+    "id" : "274",
     "type" : "owl:objectProperty"
   }, {
     "id" : "328",
@@ -4688,13 +4693,13 @@
     "id" : "216",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "57",
+    "id" : "58",
     "type" : "owl:objectProperty"
   }, {
     "id" : "337",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "242",
+    "id" : "243",
     "type" : "owl:objectProperty"
   }, {
     "id" : "338",
@@ -4830,7 +4835,7 @@
     "comment" : {
       "undefined" : "A secondary, usually explanatory title"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "24"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R15i",
@@ -4851,9 +4856,9 @@
       "IRI-based" : "P14.1_in_the_role_of"
     },
     "domain" : "27",
-    "subproperty" : [ "30" ],
+    "subproperty" : [ "35" ],
     "attributes" : [ "external", "object" ],
-    "id" : "29"
+    "id" : "34"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrower",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -4925,6 +4930,16 @@
     "attributes" : [ "external", "object" ],
     "id" : "41"
   }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R39i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "R39i"
+    },
+    "domain" : "27",
+    "attributes" : [ "external", "object" ],
+    "id" : "46"
+  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "range" : "22",
@@ -4940,21 +4955,11 @@
       "IRI-based" : "isAgentOf",
       "en" : "is agent of"
     },
-    "domain" : "47",
+    "domain" : "49",
     "comment" : {
       "en" : "This property relates an Agent with the Agent Role entity that describes a role for that Agent in the context of a Poetic Work, Redaction or Ensemble.nnThis property emerges by reusing the agent-role Ontology Design Pattern:n- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owln- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"
     },
     "attributes" : [ "object" ],
-    "id" : "46"
-  }, {
-    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R39i",
-    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "R39i"
-    },
-    "domain" : "27",
-    "attributes" : [ "external", "object" ],
     "id" : "48"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#typeOfPlace",
@@ -4972,10 +4977,20 @@
     "attributes" : [ "object" ],
     "id" : "50"
   }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "P148i_is_component_of"
+    },
+    "domain" : "27",
+    "attributes" : [ "external", "object" ],
+    "id" : "54"
+  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#characterIn",
-    "inverse" : "57",
+    "inverse" : "58",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -4988,23 +5003,13 @@
       "IRI-based" : "characterIn",
       "en" : "character In"
     },
-    "superproperty" : [ "58" ],
-    "domain" : "55",
+    "superproperty" : [ "59" ],
+    "domain" : "56",
     "comment" : {
       "en" : "This property points to the text in which the current instance of Person or Organisation is a character."
     },
     "attributes" : [ "object" ],
-    "id" : "54"
-  }, {
-    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of",
-    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "P148i_is_component_of"
-    },
-    "domain" : "27",
-    "attributes" : [ "external", "object" ],
-    "id" : "59"
+    "id" : "55"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of",
     "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
@@ -5049,7 +5054,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "label" : {
       "IRI-based" : "isExplicitOf",
       "en" : "is explicit of"
@@ -5113,8 +5118,8 @@
       "IRI-based" : "isTargetAudienceIn",
       "en" : "is target audience in"
     },
-    "superproperty" : [ "58" ],
-    "domain" : "47",
+    "superproperty" : [ "59" ],
+    "domain" : "49",
     "comment" : {
       "en" : "Inverse property of pdc:isIntendedFor."
     },
@@ -5148,7 +5153,7 @@
     "comment" : {
       "en" : "skos:related is disjoint with skos:broaderTransitive"
     },
-    "attributes" : [ "symmetric", "external", "object" ],
+    "attributes" : [ "external", "symmetric", "object" ],
     "id" : "15"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasRepresentativeExpression",
@@ -5160,7 +5165,7 @@
       "IRI-based" : "hasRepresentativeExpression",
       "en" : "has representative expression"
     },
-    "domain" : "32",
+    "domain" : "30",
     "comment" : {
       "en" : "This property identifies an instance of F22 Self-Contained Expression that has been chosen as the most characteristic expression of the instance of F1 Work of which it is an expression."
     },
@@ -5302,7 +5307,7 @@
       "en" : "poetic type"
     },
     "superproperty" : [ "53" ],
-    "domain" : "34",
+    "domain" : "32",
     "comment" : {
       "en" : "Major literary genre of a Poetic Work, that is, drama or poetry. The values of this property are defined in a controlled vocabulary about poetic types"
     },
@@ -5311,7 +5316,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#realises",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "34",
+    "range" : "32",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -5325,7 +5330,7 @@
       "en" : "realises"
     },
     "superproperty" : [ "112", "113" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "This property points to the work (an instance of Poetic Work) of which the text at hand (the current Redaction) is a materialisation.nnThis property is subproperty of edm:aggregatedCHO to keep alignments with Europeana Data Model."
     },
@@ -5411,7 +5416,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasDedication",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -5424,7 +5429,7 @@
       "IRI-based" : "hasDedication",
       "en" : "has dedication"
     },
-    "superproperty" : [ "58" ],
+    "superproperty" : [ "59" ],
     "domain" : "80",
     "comment" : {
       "en" : "This property points to the text (an instance of Redaction) which was dedicated to the current Person."
@@ -5448,7 +5453,7 @@
       "en" : "type of character"
     },
     "superproperty" : [ "53" ],
-    "domain" : "55",
+    "domain" : "56",
     "comment" : {
       "en" : "Type of character (eg. “main”, “antagonist”, etc.). The values are specified in a controlled vocabulary"
     },
@@ -5481,7 +5486,7 @@
     "comment" : {
       "en" : "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch."
     },
-    "attributes" : [ "symmetric", "transitive", "external", "object" ],
+    "attributes" : [ "external", "symmetric", "object", "transitive" ],
     "id" : "134"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#wasDeathOf",
@@ -5553,7 +5558,7 @@
       "en" : "has commentary"
     },
     "superproperty" : [ "144" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "An explanatory series of notes or comments; an explanatory essay or treatise on a Poetic Work or Redaction.nnTaking the Poetic Work example \"Versos\" by Fernando de Herrera, the comments Francisco de Quevedo wrote on his own edition along the text of the poems would form the \"commentary\"."
     },
@@ -5673,7 +5678,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#incorporates",
     "inverse" : "157",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "label" : {
       "IRI-based" : "incorporates",
       "en" : "incorporates"
@@ -5712,19 +5717,9 @@
     "attributes" : [ "external", "object" ],
     "id" : "162"
   }, {
-    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P148_has_component",
-    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "P148_has_component"
-    },
-    "domain" : "27",
-    "attributes" : [ "external", "object" ],
-    "id" : "164"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#positionName",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "166",
+    "range" : "165",
     "label" : {
       "IRI-based" : "positionName",
       "undefined" : "position name"
@@ -5734,7 +5729,17 @@
       "undefined" : "Contains a name component which indicates that a referent Person has a particular role or position in society, such as an official title or rank.nnFor example, if we consider the poet \"Sir Philip Sidney\", his position name is \"sir\"."
     },
     "attributes" : [ "datatype" ],
-    "id" : "165"
+    "id" : "164"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P148_has_component",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "P148_has_component"
+    },
+    "domain" : "27",
+    "attributes" : [ "external", "object" ],
+    "id" : "166"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#originalName",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
@@ -5797,6 +5802,16 @@
     "attributes" : [ "object" ],
     "id" : "163"
   }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "174",
+    "label" : {
+      "IRI-based" : "P78_is_identified_by"
+    },
+    "domain" : "27",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "173"
+  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isMemberOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "range" : "124",
@@ -5812,23 +5827,13 @@
       "IRI-based" : "isMemberOf",
       "en" : "is member of"
     },
-    "superproperty" : [ "173" ],
+    "superproperty" : [ "175" ],
     "domain" : "80",
     "comment" : {
       "en" : "This property points to the instance of Organisation to which the Person at hand belongs"
     },
     "attributes" : [ "object" ],
     "id" : "140"
-  }, {
-    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by",
-    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
-    "range" : "175",
-    "label" : {
-      "IRI-based" : "P78_is_identified_by"
-    },
-    "domain" : "27",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "174"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#name",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
@@ -5852,7 +5857,7 @@
       "IRI-based" : "narratedBy",
       "en" : "narrated by"
     },
-    "superproperty" : [ "58" ],
+    "superproperty" : [ "59" ],
     "domain" : "96",
     "comment" : {
       "en" : "Inverse property of pdc:narrates."
@@ -5910,7 +5915,7 @@
       "en" : "has explicit"
     },
     "superproperty" : [ "144" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "Relates a Redaction with its closing words (usually, the last verse). There is only one explicit per Redaction.nnTaking as example the poem \"Canary\" by Rita Dove, the last verse, \"If you can't be free, be a mystery\", would be the \"explicit\"."
     },
@@ -5954,19 +5959,9 @@
       "IRI-based" : "P67i_is_referred_to_by"
     },
     "domain" : "27",
-    "subproperty" : [ "178", "130", "186", "54", "187", "82" ],
+    "subproperty" : [ "178", "130", "186", "55", "187", "82" ],
     "attributes" : [ "external", "object" ],
-    "id" : "58"
-  }, {
-    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P141_assigned",
-    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "P141_assigned"
-    },
-    "domain" : "27",
-    "attributes" : [ "external", "object" ],
-    "id" : "188"
+    "id" : "59"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P98i_was_born",
     "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
@@ -5977,6 +5972,16 @@
     "domain" : "27",
     "attributes" : [ "external", "object" ],
     "id" : "92"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P141_assigned",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "P141_assigned"
+    },
+    "domain" : "27",
+    "attributes" : [ "external", "object" ],
+    "id" : "188"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isLanguageOf",
     "equivalent" : [ "189" ],
@@ -6054,28 +6059,12 @@
     },
     "superproperty" : [ "15", "16" ],
     "domain" : "27",
-    "attributes" : [ "symmetric", "external", "object" ],
+    "attributes" : [ "external", "symmetric", "object" ],
     "id" : "83"
-  }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isFragmentOf",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
-    "label" : {
-      "IRI-based" : "isFragmentOf",
-      "en" : "is fragment of"
-    },
-    "superproperty" : [ "26" ],
-    "domain" : "7",
-    "subproperty" : [ "195", "74", "143", "196" ],
-    "comment" : {
-      "en" : "Inverse property of pdc:isFragmentOf"
-    },
-    "attributes" : [ "object" ],
-    "id" : "28"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#title",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "198",
+    "range" : "196",
     "label" : {
       "IRI-based" : "title",
       "en" : "title"
@@ -6085,7 +6074,38 @@
       "en" : "The title of a Poetic Work or a Redaction"
     },
     "attributes" : [ "datatype" ],
-    "id" : "197"
+    "id" : "195"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isFragmentOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "isFragmentOf",
+      "en" : "is fragment of"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "7",
+    "subproperty" : [ "197", "74", "143", "198" ],
+    "comment" : {
+      "en" : "Inverse property of pdc:isFragmentOf"
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isTimeSpanOf",
+    "equivalent" : [ "103" ],
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "isTimeSpanOf",
+      "en" : "is time span of"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Inverse property for pdc:hasTimeSpan."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isAbout",
     "inverse" : "200",
@@ -6103,21 +6123,6 @@
     "attributes" : [ "object" ],
     "id" : "199"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isTimeSpanOf",
-    "equivalent" : [ "103" ],
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "isTimeSpanOf",
-      "en" : "is time span of"
-    },
-    "domain" : "19",
-    "comment" : {
-      "en" : "Inverse property for pdc:hasTimeSpan."
-    },
-    "attributes" : [ "object" ],
-    "id" : "20"
-  }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to",
     "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
     "range" : "27",
@@ -6125,7 +6130,7 @@
       "IRI-based" : "P67_refers_to"
     },
     "domain" : "27",
-    "subproperty" : [ "202", "203", "204", "205", "57", "95" ],
+    "subproperty" : [ "202", "203", "204", "205", "58", "95" ],
     "attributes" : [ "external", "object" ],
     "id" : "97"
   }, {
@@ -6164,7 +6169,7 @@
       "IRI-based" : "isRealisedInSelfContainedExpression",
       "en" : "is realised in self contained expression"
     },
-    "domain" : "32",
+    "domain" : "30",
     "subproperty" : [ "208" ],
     "comment" : {
       "en" : "This property associates an instance of F22 Self-Contained Expression with an instance of F1 Work."
@@ -6250,7 +6255,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isRealisedThrough",
     "inverse" : "111",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -6264,12 +6269,23 @@
       "en" : "is realised through"
     },
     "superproperty" : [ "218", "207" ],
-    "domain" : "34",
+    "domain" : "32",
     "comment" : {
       "en" : "This property points to a text (an instance of Redaction) which is one of the materialisations of the work under analysis"
     },
     "attributes" : [ "object" ],
     "id" : "208"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R14i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "R14i"
+    },
+    "domain" : "27",
+    "subproperty" : [ "157" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "219"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#narrowMatch",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -6297,20 +6313,9 @@
     "attributes" : [ "external", "object" ],
     "id" : "37"
   }, {
-    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R14i",
-    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "R14i"
-    },
-    "domain" : "27",
-    "subproperty" : [ "157" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "219"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIncipitOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "label" : {
       "IRI-based" : "isIncipitOf",
       "en" : "is incipit of"
@@ -6321,7 +6326,7 @@
       "en" : "Inverse property of pdc:hasIncipit."
     },
     "attributes" : [ "object" ],
-    "id" : "195"
+    "id" : "197"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R9i",
     "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
@@ -6350,7 +6355,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isSampleOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "label" : {
       "IRI-based" : "isSampleOf",
       "en" : "is sample of"
@@ -6361,7 +6366,7 @@
       "en" : "Inverse property of pdc:hasSample."
     },
     "attributes" : [ "object" ],
-    "id" : "196"
+    "id" : "198"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by",
     "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
@@ -6407,7 +6412,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isRepresentativeExpressionFor",
     "equivalent" : [ "228" ],
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "32",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isRepresentativeExpressionFor",
       "en" : "is representative expression for"
@@ -6427,7 +6432,7 @@
       "en" : "audience"
     },
     "superproperty" : [ "53" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "The meant readership, viewers or listeners of a Redaction. There is at most one possible value for audience.nnTaking as example the play \"La segunda Celestina\", \"audience\" would be the Spanish Queen and the people in the court attending the Queen's birthday celebrations."
     },
@@ -6442,7 +6447,7 @@
       "en" : "type of redaction"
     },
     "superproperty" : [ "53" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "The type of the text provided in the RedactionnEg.: Diplomatic edition, critical edition, translation"
     },
@@ -6492,7 +6497,7 @@
       "IRI-based" : "wasInitiatedBy",
       "en" : "was initiated by"
     },
-    "domain" : "32",
+    "domain" : "30",
     "comment" : {
       "en" : "Inverse property of pdc:initiated."
     },
@@ -6555,9 +6560,9 @@
     "id" : "240"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasAgent",
-    "inverse" : "46",
+    "inverse" : "48",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "47",
+    "range" : "49",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -6577,32 +6582,9 @@
     "attributes" : [ "object" ],
     "id" : "241"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isSynthesisOf",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "34",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://postdata.linhd.uned.es/ontology/postdata-core/",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isSynthesisOf",
-      "en" : "is synthesis of"
-    },
-    "superproperty" : [ "242", "225" ],
-    "domain" : "34",
-    "comment" : {
-      "en" : "This property points to another text (an instance of Redaction) of which this version (Redaction) is a synthesis"
-    },
-    "attributes" : [ "object" ],
-    "id" : "226"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#roleFunction",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "243",
+    "range" : "242",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -6615,13 +6597,36 @@
       "IRI-based" : "roleFunction",
       "en" : "role function"
     },
-    "superproperty" : [ "29" ],
+    "superproperty" : [ "34" ],
     "domain" : "22",
     "comment" : {
       "en" : "Specific function performed by some Agent on a Poetic Work (e.g. sponsor, actor, collector, singer, arranger, transcriptor). This is connected to the Agent Role class."
     },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "35"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isSynthesisOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://postdata.linhd.uned.es/ontology/postdata-core/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSynthesisOf",
+      "en" : "is synthesis of"
+    },
+    "superproperty" : [ "243", "225" ],
+    "domain" : "32",
+    "comment" : {
+      "en" : "This property points to another text (an instance of Redaction) of which this version (Redaction) is a synthesis"
+    },
+    "attributes" : [ "object" ],
+    "id" : "226"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on",
     "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
@@ -6698,7 +6703,7 @@
       "en" : "This property is used to give the possiblity to explicitly state that the authorship of a Poetic Work is anonymous."
     },
     "superproperty" : [ "53" ],
-    "domain" : "34",
+    "domain" : "32",
     "attributes" : [ "object" ],
     "id" : "252"
   }, {
@@ -6710,7 +6715,7 @@
       "en" : "is incorporated in"
     },
     "superproperty" : [ "219" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "Inverse property of pdc:incroporates."
     },
@@ -6720,7 +6725,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasSynthesis",
     "inverse" : "226",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "34",
+    "range" : "32",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -6734,7 +6739,7 @@
       "en" : "has synthesis"
     },
     "superproperty" : [ "256", "257" ],
-    "domain" : "34",
+    "domain" : "32",
     "comment" : {
       "en" : "This property points to one of the texts (an instance of Redaction) which is an analytical version of the text at hand (the current Redaction)"
     },
@@ -6778,11 +6783,26 @@
   }, {
     "range" : "5",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "263"
   }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "range" : "254",
+    "label" : {
+      "IRI-based" : "numberOfPlays",
+      "undefined" : "number of plays"
+    },
+    "maxCardinality" : "1",
+    "domain" : "115",
+    "comment" : {
+      "undefined" : "Number of plays of an Ensemble"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "264"
+  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasSample",
-    "inverse" : "196",
+    "inverse" : "198",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "range" : "73",
     "annotations" : {
@@ -6798,36 +6818,21 @@
       "en" : "has sample"
     },
     "superproperty" : [ "144" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "Excerpt of a Redaction."
     },
     "attributes" : [ "object" ],
-    "id" : "264"
-  }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "254",
-    "label" : {
-      "IRI-based" : "numberOfPlays",
-      "undefined" : "number of plays"
-    },
-    "maxCardinality" : "1",
-    "domain" : "115",
-    "comment" : {
-      "undefined" : "Number of plays of an Ensemble"
-    },
-    "attributes" : [ "datatype" ],
     "id" : "265"
   }, {
-    "range" : "31",
-    "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "29",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "266"
   }, {
     "range" : "5",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "267"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#closeMatch",
@@ -6854,7 +6859,7 @@
     "superproperty" : [ "16" ],
     "domain" : "27",
     "subproperty" : [ "134" ],
-    "attributes" : [ "symmetric", "external", "object" ],
+    "attributes" : [ "external", "symmetric", "object" ],
     "id" : "135"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isMentionedIn",
@@ -6873,7 +6878,7 @@
       "IRI-based" : "isMentionedIn",
       "en" : "is mentioned In"
     },
-    "superproperty" : [ "58" ],
+    "superproperty" : [ "59" ],
     "domain" : "108",
     "comment" : {
       "en" : "This  property points to the text (an instance of Redaction) that records the current item (Event, Place, Organization or Person) under analysis"
@@ -6933,7 +6938,7 @@
       "en" : "literary tradition"
     },
     "superproperty" : [ "53" ],
-    "domain" : "34",
+    "domain" : "32",
     "comment" : {
       "en" : "The literary tradition assigned to a Poetic Work. There might be several values for this property.nnTaking as example the theatre play \"La vida es sueño\" by Calderón de la Barca, \"literary Tradition\" is \"Baroque\"."
     },
@@ -7017,7 +7022,7 @@
       "en" : "realised through expression creation"
     },
     "superproperty" : [ "281" ],
-    "domain" : "32",
+    "domain" : "30",
     "comment" : {
       "en" : "Inverse property of pdc:createdWorkByExpressionCreation"
     },
@@ -7027,7 +7032,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIntendedFor",
     "inverse" : "82",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "47",
+    "range" : "49",
     "label" : {
       "IRI-based" : "isIntendedFor",
       "en" : "is intended for"
@@ -7039,20 +7044,6 @@
     },
     "attributes" : [ "object" ],
     "id" : "202"
-  }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#address",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "283",
-    "label" : {
-      "IRI-based" : "address",
-      "undefined" : "address"
-    },
-    "domain" : "51",
-    "comment" : {
-      "undefined" : "Contains a postal address for an organisation. There can only be one address per Organization.nnTaking as example Cervantes' poem \"Amadís de Gaula a Don Quijote de la Mancha\", TEI-annotated in the ADSO corpus, the publisher would be \"Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)\", and its address would be \"carretera San Vicente s/n 03690 San Vicente del Raspeig, Alicante (Spain)\"."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "282"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#biography",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
@@ -7074,17 +7065,21 @@
       "en" : "An account of a Person's life written, composed, or produced by another.nnTaking as example the poet Antonio Machado, \"biography\" could be: \"Antonio Cipriano José María y Francisco de Santa Ana Machado y Ruiz (26 July 1875 – 22 February 1939), known as Antonio Machado, was a Spanish poet and one of the leading figures of the Spanish literary movement known as the Generation of '98. His work, initially modernist, evolved towards an intimate form of symbolism with romantic traits. He gradually developed a style characterised by both an engagement with humanity on one side and an almost Taoist contemplation of existence on the other, a synthesis that according to Machado echoed the most ancient popular wisdom. In Gerardo Diego's words, Machado \"spoke in verse and lived in poetry.\"\" (example extracted from Wikipedia)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "284"
+    "id" : "282"
   }, {
-    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P41i_was_classified_by",
-    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
-    "range" : "27",
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#address",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "range" : "284",
     "label" : {
-      "IRI-based" : "P41i_was_classified_by"
+      "IRI-based" : "address",
+      "undefined" : "address"
     },
-    "domain" : "27",
-    "attributes" : [ "external", "object" ],
-    "id" : "285"
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "Contains a postal address for an organisation. There can only be one address per Organization.nnTaking as example Cervantes' poem \"Amadís de Gaula a Don Quijote de la Mancha\", TEI-annotated in the ADSO corpus, the publisher would be \"Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)\", and its address would be \"carretera San Vicente s/n 03690 San Vicente del Raspeig, Alicante (Spain)\"."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "283"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#penName",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
@@ -7099,6 +7094,16 @@
       "undefined" : "A fictitious name, especially a pen name. A variant name.nnThis property is used to describe an Agent Role entity as the pen name may vary for the same Agent in different Redactions."
     },
     "attributes" : [ "datatype" ],
+    "id" : "285"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P41i_was_classified_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "P41i_was_classified_by"
+    },
+    "domain" : "27",
+    "attributes" : [ "external", "object" ],
     "id" : "286"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#typeOfTextualElement",
@@ -7124,6 +7129,20 @@
     "attributes" : [ "object" ],
     "id" : "287"
   }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#coordinates",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "range" : "262",
+    "label" : {
+      "IRI-based" : "coordinates",
+      "undefined" : "coordinates"
+    },
+    "domain" : "51",
+    "comment" : {
+      "en" : "The specific gedesic coordinates of a place."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "288"
+  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#religiousAffiliation",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "range" : "2",
@@ -7145,35 +7164,21 @@
       "en" : "Association of a Person with a religion, denomination or sub–denominational religious group. The values of this property are defined in a controlled vocabulary about religious affiliation"
     },
     "attributes" : [ "object" ],
-    "id" : "288"
-  }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#coordinates",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "262",
-    "label" : {
-      "IRI-based" : "coordinates",
-      "undefined" : "coordinates"
-    },
-    "domain" : "51",
-    "comment" : {
-      "en" : "The specific gedesic coordinates of a place."
-    },
-    "attributes" : [ "datatype" ],
     "id" : "289"
   }, {
     "range" : "7",
     "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "290"
   }, {
     "range" : "172",
     "domain" : "236",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "291"
   }, {
-    "range" : "33",
+    "range" : "31",
     "domain" : "115",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "292"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P41_classified",
@@ -7187,8 +7192,8 @@
     "id" : "293"
   }, {
     "range" : "8",
-    "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "294"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P81b_begin_of_the_end",
@@ -7213,7 +7218,7 @@
   }, {
     "range" : "172",
     "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "297"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf",
@@ -7232,15 +7237,15 @@
     "id" : "200"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasDerivative",
-    "inverse" : "242",
+    "inverse" : "243",
     "equivalent" : [ "257" ],
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "32",
+    "range" : "30",
     "label" : {
       "IRI-based" : "hasDerivative",
       "en" : "has derivative"
     },
-    "domain" : "32",
+    "domain" : "30",
     "subproperty" : [ "255" ],
     "comment" : {
       "en" : "Inverse property of pdc:isDerivativeOf."
@@ -7251,7 +7256,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasTranslation",
     "inverse" : "129",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -7265,7 +7270,7 @@
       "en" : "has translation"
     },
     "superproperty" : [ "300" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "This property points to another work (an instance of Redaction) which is a translation of this one"
     },
@@ -7314,7 +7319,7 @@
     "superproperty" : [ "12" ],
     "domain" : "27",
     "subproperty" : [ "153" ],
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "external", "object", "transitive" ],
     "id" : "14"
   }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P73_has_translation",
@@ -7330,37 +7335,37 @@
   }, {
     "range" : "172",
     "domain" : "193",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "301"
   }, {
     "range" : "172",
     "domain" : "161",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "302"
   }, {
     "range" : "193",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "303"
   }, {
     "range" : "192",
     "domain" : "124",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "304"
   }, {
     "range" : "1",
     "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "305"
   }, {
     "range" : "1",
-    "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "306"
   }, {
     "range" : "108",
-    "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "307"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R40i",
@@ -7375,7 +7380,7 @@
   }, {
     "range" : "108",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "308"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#surname",
@@ -7394,11 +7399,11 @@
   }, {
     "range" : "108",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "310"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasIncipit",
-    "inverse" : "195",
+    "inverse" : "197",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "range" : "73",
     "annotations" : {
@@ -7414,7 +7419,7 @@
       "en" : "has incipit"
     },
     "superproperty" : [ "144" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "Relates a Redaction with the textual ecerpt that is the first line of a Redaction. nnTaking as example the \"Soledades\" by Góngora, the \"incipit\" is \"Pasos de un peregrino son errante\"."
     },
@@ -7423,12 +7428,12 @@
   }, {
     "range" : "108",
     "domain" : "158",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "312"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isTranslationOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -7442,27 +7447,12 @@
       "en" : "is translation of"
     },
     "superproperty" : [ "128" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "This property points to another version (an instance of Redaction) of which this one is a translation"
     },
     "attributes" : [ "object" ],
     "id" : "129"
-  }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#audicenceEducationLevel",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "audicenceEducationLevel",
-      "en" : "audience education level"
-    },
-    "superproperty" : [ "53" ],
-    "domain" : "56",
-    "comment" : {
-      "en" : "Level of education of the recipients of a Redaction.nnTaking as example the play \"La segunda Celestina\" (Agustín de Salazar), \"audienceEducationLevel\" would be a learned audience."
-    },
-    "attributes" : [ "object" ],
-    "id" : "313"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#broader",
     "inverse" : "36",
@@ -7501,14 +7491,29 @@
     "attributes" : [ "external", "object" ],
     "id" : "153"
   }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#audicenceEducationLevel",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "audicenceEducationLevel",
+      "en" : "audience education level"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "57",
+    "comment" : {
+      "en" : "Level of education of the recipients of a Redaction.nnTaking as example the play \"La segunda Celestina\" (Agustín de Salazar), \"audienceEducationLevel\" would be a learned audience."
+    },
+    "attributes" : [ "object" ],
+    "id" : "313"
+  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isNarrativeLocationOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "34",
+    "range" : "32",
     "label" : {
       "IRI-based" : "isNarrativeLocationOf",
       "en" : "is narrative location of"
     },
-    "superproperty" : [ "58" ],
+    "superproperty" : [ "59" ],
     "domain" : "51",
     "comment" : {
       "en" : "Inverse property of pdc:hasNarrativeLocation."
@@ -7531,17 +7536,6 @@
     "attributes" : [ "datatype" ],
     "id" : "314"
   }, {
-    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of",
-    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "P107i_is_current_or_former_member_of"
-    },
-    "domain" : "27",
-    "subproperty" : [ "140" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "173"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#date",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
     "range" : "261",
@@ -7556,6 +7550,17 @@
     "attributes" : [ "datatype" ],
     "id" : "315"
   }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "P107i_is_current_or_former_member_of"
+    },
+    "domain" : "27",
+    "subproperty" : [ "140" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "175"
+  }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
     "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
     "range" : "27",
@@ -7563,7 +7568,7 @@
       "IRI-based" : "P2_has_type"
     },
     "domain" : "27",
-    "subproperty" : [ "316", "313", "317", "133", "105", "190", "110", "318", "171", "191", "270", "319", "179", "229", "271", "252", "231", "287", "50", "210", "288" ],
+    "subproperty" : [ "316", "313", "317", "133", "105", "190", "110", "318", "171", "191", "270", "319", "179", "229", "271", "252", "231", "287", "50", "210", "289" ],
     "attributes" : [ "external", "object" ],
     "id" : "53"
   }, {
@@ -7593,7 +7598,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#createdWorkByExpressionCreation",
     "inverse" : "280",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "32",
+    "range" : "30",
     "label" : {
       "IRI-based" : "createdWorkByExpressionCreation",
       "en" : "created work by expression creation"
@@ -7610,7 +7615,7 @@
     "inverse" : "321",
     "equivalent" : [ "258" ],
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "32",
+    "range" : "30",
     "label" : {
       "IRI-based" : "hasWork",
       "en" : "has work"
@@ -7632,16 +7637,6 @@
     "attributes" : [ "external", "object" ],
     "id" : "322"
   }, {
-    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P100i_died_in",
-    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "P100i_died_in"
-    },
-    "domain" : "27",
-    "attributes" : [ "external", "object" ],
-    "id" : "170"
-  }, {
     "iri" : "http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed",
     "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
     "range" : "27",
@@ -7652,6 +7647,16 @@
     "domain" : "27",
     "attributes" : [ "external", "object" ],
     "id" : "44"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P100i_died_in",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "P100i_died_in"
+    },
+    "domain" : "27",
+    "attributes" : [ "external", "object" ],
+    "id" : "170"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#dedicatedTo",
     "inverse" : "130",
@@ -7670,7 +7675,7 @@
       "en" : "dedicated to"
     },
     "superproperty" : [ "97" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "This property points to a Person to whom the current text was dedicated. This means that a Redaction includes a dedicated text to another person in an explicit way (frequently at the beginning of the text)."
     },
@@ -7679,7 +7684,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isCommentaryOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "label" : {
       "IRI-based" : "isCommentaryOf",
       "en" : "is commentary of"
@@ -7692,25 +7697,25 @@
     "attributes" : [ "object" ],
     "id" : "143"
   }, {
-    "range" : "47",
+    "range" : "49",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "323"
   }, {
-    "range" : "47",
+    "range" : "49",
     "domain" : "124",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "324"
   }, {
     "range" : "108",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "325"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#realisesWork",
     "equivalent" : [ "322" ],
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "32",
+    "range" : "30",
     "label" : {
       "IRI-based" : "realisesWork",
       "en" : "realises work"
@@ -7723,26 +7728,15 @@
     "attributes" : [ "object" ],
     "id" : "113"
   }, {
-    "range" : "32",
+    "range" : "30",
     "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "326"
   }, {
-    "range" : "31",
-    "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "29",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "327"
-  }, {
-    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P40i_was_observed_in",
-    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "P40i_was_observed_in"
-    },
-    "domain" : "27",
-    "subproperty" : [ "272" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "274"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#mappingRelation",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -7774,14 +7768,25 @@
     "attributes" : [ "external", "object" ],
     "id" : "16"
   }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P40i_was_observed_in",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "P40i_was_observed_in"
+    },
+    "domain" : "27",
+    "subproperty" : [ "272" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "274"
+  }, {
     "range" : "98",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "328"
   }, {
-    "range" : "32",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "329"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#socialStatus",
@@ -7817,32 +7822,9 @@
     "attributes" : [ "external", "object" ],
     "id" : "119"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isTranslationOf",
-    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://postdata.linhd.uned.es/ontology/postdata-core/",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isTranslationOf",
-      "en" : "is translation of"
-    },
-    "superproperty" : [ "128" ],
-    "domain" : "56",
-    "comment" : {
-      "en" : "This property points to another version (an instance of Redaction) of which this one is a translation"
-    },
-    "attributes" : [ "allValues", "object" ],
-    "id" : "330"
-  }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isSynthesisOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -7855,17 +7837,41 @@
       "IRI-based" : "isSynthesisOf",
       "en" : "is synthesis of"
     },
-    "superproperty" : [ "242", "225" ],
-    "domain" : "56",
+    "superproperty" : [ "243", "225" ],
+    "domain" : "57",
     "comment" : {
       "en" : "This property points to another text (an instance of Redaction) of which this version (Redaction) is a synthesis"
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "330"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasSynthesis",
+    "inverse" : "226",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://postdata.linhd.uned.es/ontology/postdata-core/",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSynthesis",
+      "en" : "has synthesis"
+    },
+    "superproperty" : [ "256", "257" ],
+    "domain" : "57",
+    "comment" : {
+      "en" : "This property points to one of the texts (an instance of Redaction) which is an analytical version of the text at hand (the current Redaction)"
     },
     "attributes" : [ "allValues", "object" ],
     "id" : "331"
   }, {
     "range" : "101",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "332"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#authorEducationLevel",
@@ -7915,7 +7921,7 @@
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isMentionedIn",
     "inverse" : "203",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -7928,18 +7934,17 @@
       "IRI-based" : "isMentionedIn",
       "en" : "is mentioned In"
     },
-    "superproperty" : [ "58" ],
-    "domain" : "47",
+    "superproperty" : [ "59" ],
+    "domain" : "49",
     "comment" : {
       "en" : "This  property points to the text (an instance of Redaction) that records the current item (Event, Place, Organization or Person) under analysis"
     },
     "attributes" : [ "allValues", "object" ],
     "id" : "335"
   }, {
-    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasSynthesis",
-    "inverse" : "226",
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isTranslationOf",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "56",
+    "range" : "57",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -7949,13 +7954,13 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasSynthesis",
-      "en" : "has synthesis"
+      "IRI-based" : "isTranslationOf",
+      "en" : "is translation of"
     },
-    "superproperty" : [ "256", "257" ],
-    "domain" : "56",
+    "superproperty" : [ "128" ],
+    "domain" : "57",
     "comment" : {
-      "en" : "This property points to one of the texts (an instance of Redaction) which is an analytical version of the text at hand (the current Redaction)"
+      "en" : "This property points to another version (an instance of Redaction) of which this one is a translation"
     },
     "attributes" : [ "allValues", "object" ],
     "id" : "336"
@@ -7996,7 +8001,7 @@
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasCharacter",
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "55",
+    "range" : "56",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8010,42 +8015,42 @@
       "en" : "has character"
     },
     "superproperty" : [ "97" ],
-    "domain" : "56",
+    "domain" : "57",
     "comment" : {
       "en" : "This property points to a character depicted in the text of a Redaction, if any. The character is an instance of Agent (Organisation or Person)."
     },
     "attributes" : [ "object" ],
-    "id" : "57"
+    "id" : "58"
   }, {
     "range" : "158",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "337"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isDerivativeOf",
     "equivalent" : [ "225" ],
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "32",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isDerivativeOf",
       "en" : "is derivative of"
     },
-    "domain" : "32",
+    "domain" : "30",
     "subproperty" : [ "226" ],
     "comment" : {
       "en" : "This property associates an instance of F1 Work which modifies the content of another instance of F1 Work with the latter."
     },
     "attributes" : [ "object" ],
-    "id" : "242"
+    "id" : "243"
   }, {
     "range" : "158",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "338"
   }, {
     "range" : "18",
     "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "339"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R39",
@@ -8074,13 +8079,13 @@
     "id" : "317"
   }, {
     "range" : "158",
-    "domain" : "55",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "341"
   }, {
     "range" : "96",
     "domain" : "137",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "342"
   }, {
     "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#isWorkOf",
@@ -8091,7 +8096,7 @@
       "IRI-based" : "isWorkOf",
       "en" : "is work of"
     },
-    "domain" : "32",
+    "domain" : "30",
     "comment" : {
       "en" : "Inverse property of pdc:hasWork."
     },
@@ -8107,7 +8112,7 @@
       "en" : "has narrative location"
     },
     "superproperty" : [ "97" ],
-    "domain" : "34",
+    "domain" : "32",
     "comment" : {
       "en" : "Location of the narrative. There is at most one possible location for a Poetic Work.nnTaking as example the Poetic Work “Cantar de Mio Cid”, the “narrativeLocation” would be “Spain”."
     },
@@ -8122,8 +8127,8 @@
       "en" : "has fragment"
     },
     "superproperty" : [ "240" ],
-    "domain" : "56",
-    "subproperty" : [ "264", "311", "182", "142" ],
+    "domain" : "57",
+    "subproperty" : [ "265", "311", "182", "142" ],
     "comment" : {
       "en" : "This property associates the fragment of an expression and the expression of which it is a fragment."
     },
@@ -8187,7 +8192,7 @@
     "superproperty" : [ "12" ],
     "domain" : "27",
     "subproperty" : [ "36" ],
-    "attributes" : [ "transitive", "external", "object" ],
+    "attributes" : [ "external", "object", "transitive" ],
     "id" : "13"
   }, {
     "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R9",
@@ -8205,7 +8210,7 @@
     "inverse" : "235",
     "equivalent" : [ "239" ],
     "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
-    "range" : "32",
+    "range" : "30",
     "label" : {
       "IRI-based" : "initiated",
       "en" : "initiated"
@@ -8219,27 +8224,27 @@
   }, {
     "range" : "96",
     "domain" : "172",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "344"
   }, {
     "range" : "6",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "345"
   }, {
     "range" : "6",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "346"
   }, {
     "range" : "96",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "347"
   }, {
     "range" : "6",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "348"
   } ]
 }

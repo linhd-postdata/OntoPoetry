@@ -76,10 +76,6 @@ This section provides details for each class and property defined by postdata-po
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice">Literary Device</a>
       </li>
       <li>
-         <a href="#http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">Manifestation</a>
-      </li>
-      <li>
          <a href="#Metaplasm"
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Metaplasm">Metaplasm</a>
       </li>
@@ -138,6 +134,10 @@ This section provides details for each class and property defined by postdata-po
       <li>
          <a href="#Scheme"
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scheme">Scheme</a>
+      </li>
+      <li>
+         <a href="#http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+            title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
       </li>
       <li>
          <a href="#Stanza"
@@ -1064,28 +1064,6 @@ Eg.: The number of syllables of the Line</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">
-      <h3>Manifestation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation</p>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#isUsedSourceIn"
-               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn">is used source in</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#usesAsSource"
-               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource">used as source</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Metaplasm">
       <h3>Metaplasm<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1604,20 +1582,15 @@ Eg.: The complete distribution of accented syllables of a work</span>
       <div class="comment">
          <span class="markdown">Repetition of similar sounding words occurring at the end of lines in poems or songs</span>
       </div>
-      <dl>
-         <dt>Authors:
-                    </dt>
-         <dd>mluisadiez</dd>
-      </dl>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#ending"
-               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending">ending</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#finalConsonant"
+            <a href="#finalConsonant"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#finalConsonant">final consonant</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRhymeWord"
-               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord">has rhyme word</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRhymeMatch"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch">has rhyme match</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRhymingWord"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord">has rhyming word</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isEcho"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEcho">is echo</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#isRhymeOf"
@@ -1630,16 +1603,16 @@ Eg.: The complete distribution of accented syllables of a work</span>
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeLabel">rhyme label</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#rhymePhoneme"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymePhoneme">rhyme phoneme</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#typeOfRhymeMatching"
-               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching">type of rhyme matching</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasRhyme"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhyme">has rhyme</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isRhymeWord"
-               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord">is rhyme word</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isRhymeMatchOf"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf">is rhyme match of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isRhymingWordIn"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn">is rhyming word in</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1768,6 +1741,28 @@ Eg.: The complete distribution of accented syllables of a work</span>
          <dd>
             <a href="#presentsScheme"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsScheme">presents scheme</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">
+      <h3>Source<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-transmission#Source</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isUsedSourceIn"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn">is used source in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#usesAsSource"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource">used as source</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -2107,20 +2102,26 @@ Eg.: The word “life”</span>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#firstWordOf"
+            <a href="#ending"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending">ending</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#firstWordOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWordOf">first word of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isInflectedForm"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isInflectedForm">inflected form</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isCallIn"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn">is call in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isCallOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallOf">is call of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEchoIn"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn">is echo in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isEchoOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoOf">is echo of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isFirstWordAffectedBy"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstWordAffectedBy">is first word affected by</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isLemmaOf"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLemmaOf">is lemma of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isRhymeWord"
-               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord">is rhyme word</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isRhymingWordIn"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn">is rhyming word in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isWordAnalysedBy"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isWordAnalysedBy">is word analysed by</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isWordOf"
@@ -2159,8 +2160,12 @@ Eg.: The word “life”</span>
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#before">before</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#firstWord"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#firstWord">first word</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasRhymeWord"
-               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord">has rhyme word</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasCallWord"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord">has call word</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasEchoWord"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord">has echo word</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRhymingWord"
+               title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord">has rhyming word</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasWord"
                title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasWord">has word</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isInflectedForm"
@@ -2388,8 +2393,16 @@ Eg.: The word “life”</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnnotation">has annotation</a>
       </li>
       <li>
+         <a href="#hasCallWord"
+            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord">has call word</a>
+      </li>
+      <li>
          <a href="#hasDeviceAnnotation"
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation">has device annotation</a>
+      </li>
+      <li>
+         <a href="#hasEchoWord"
+            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord">has echo word</a>
       </li>
       <li>
          <a href="#hasEndingLine"
@@ -2487,8 +2500,12 @@ Eg.: The word “life”</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhyme">has rhyme</a>
       </li>
       <li>
-         <a href="#hasRhymeWord"
-            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord">has rhyme word</a>
+         <a href="#hasRhymeMatch"
+            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch">has rhyme match</a>
+      </li>
+      <li>
+         <a href="#hasRhymingWord"
+            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord">has rhyming word</a>
       </li>
       <li>
          <a href="#hasStanza"
@@ -2543,12 +2560,20 @@ Eg.: The word “life”</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf">is annotation of</a>
       </li>
       <li>
+         <a href="#isCallIn"
+            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn">is call in</a>
+      </li>
+      <li>
          <a href="#isCallOf"
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallOf">is call of</a>
       </li>
       <li>
          <a href="#isDeviceAnnotationOf"
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf">is device annotation of</a>
+      </li>
+      <li>
+         <a href="#isEchoIn"
+            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn">is echo in</a>
       </li>
       <li>
          <a href="#isEchoOf"
@@ -2703,12 +2728,16 @@ Eg.: The word “life”</span>
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRedactionPatternOf">is redaction pattern of</a>
       </li>
       <li>
+         <a href="#isRhymeMatchOf"
+            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf">is rhyme match of</a>
+      </li>
+      <li>
          <a href="#isRhymeOf"
             title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf">is rhyme of</a>
       </li>
       <li>
-         <a href="#isRhymeWord"
-            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord">is rhyme word</a>
+         <a href="#isRhymingWordIn"
+            title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn">is rhyming word in</a>
       </li>
       <li>
          <a href="#isSchemePresentAt"
@@ -4638,6 +4667,37 @@ For example, the syllable "ma" belongs to the word "Lágrima".</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasCallWord">
+      <h3>has call word<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch">rhyme match</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word">Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isCallIn"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn">is call in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasDeviceAnnotation">
       <h3>has device annotation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4669,6 +4729,37 @@ For example, the syllable "ma" belongs to the word "Lágrima".</span>
             <dd>
                <a href="#isDeviceAnnotationOf"
                   title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf">is device annotation of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEchoWord">
+      <h3>has echo word<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch">rhyme match</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word">Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isEchoIn"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn">is echo in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -5591,13 +5682,44 @@ Let's take as example the first stanza of the sonnet XXIII by Garcilaso: "En tan
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasRhymeWord">
-      <h3>has rhyme word<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasRhymeMatch">
+      <h3>has rhyme match<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme">Rhyme</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch">rhyme match</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isRhymeMatchOf"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf">is rhyme match of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRhymingWord">
+      <h3>has rhyming word<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord</p>
       <div class="comment">
          <span class="markdown">This property points to the instance of Word for a further linguistic analysis/division by words.
 
@@ -5639,8 +5761,8 @@ For example, the line "From fairest creatures we desire increase," from the firs
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#isRhymeWord"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord">is rhyme word</a>
+               <a href="#isRhymingWordIn"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn">is rhyming word in</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -6122,6 +6244,37 @@ For example, in the poem "Rojo Sol, que con hacha luminosa" by Fernando de Herre
          </dl>
       </div>
    </div>
+   <div class="entity" id="isCallIn">
+      <h3>is call in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word">Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch">rhyme match</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasCallWord"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord">has call word</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="isCallOf">
       <h3>is call of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -6187,6 +6340,37 @@ For example, "escriba" is call of "arriba", if we consider the lines "Érase un 
             <dd>
                <a href="#hasDeviceAnnotation"
                   title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation">has device annotation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEchoIn">
+      <h3>is echo in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word">Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch">rhyme match</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasEchoWord"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord">has echo word</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7574,6 +7758,37 @@ For example, the metrical Pattern of the poem "Amadís de Gaula a don Quijote de
          </dl>
       </div>
    </div>
+   <div class="entity" id="isRhymeMatchOf">
+      <h3>is rhyme match of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch">rhyme match</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Rhyme"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme">Rhyme</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasRhymeMatch"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch">has rhyme match</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="isRhymeOf">
       <h3>is rhyme of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -7613,13 +7828,13 @@ For example, if we consider the poem "Elegía a Ramón Sijé" by Miguel Hernánd
          </dl>
       </div>
    </div>
-   <div class="entity" id="isRhymeWord">
-      <h3>is rhyme word<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="isRhymingWordIn">
+      <h3>is rhyming word in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord</p>
+         <strong>IRI:</strong> http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn</p>
       <div class="comment">
          <span class="markdown">This property points to the instance of Rhyme that contains the item at hand as its rhyme word.
 
@@ -7645,8 +7860,8 @@ For example, if we consider the poem "Elegía a Ramón Sijé" by Miguel Hernánd
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#hasRhymeWord"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord">has rhyme word</a>
+               <a href="#hasRhymingWord"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord">has rhyming word</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -7918,8 +8133,8 @@ For example, if we consider the poem "Elegía a Ramón Sijé" by Miguel Hernánd
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">Manifestation</a>
+               <a href="#http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11007,8 +11222,9 @@ For example, if we consider the rhyme "scoloraro-legaro" in the sonnet III from 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Rhyme"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme">Rhyme</a>
+               <a href="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+                  target="_blank"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch">rhyme match</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11311,8 +11527,8 @@ For instance, if we consider the first stanza of the Inferno of the Divina Comme
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation">Manifestation</a>
+               <a href="#http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-transmission#Source">Source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -12307,8 +12523,8 @@ For instance, if we consider the rhyme word "vida" from the poem "Morir soñando
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Rhyme"
-                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme">Rhyme</a>
+               <a href="#Word"
+                  title="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word">Word</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

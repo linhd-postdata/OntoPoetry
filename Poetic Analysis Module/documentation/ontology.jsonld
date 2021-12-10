@@ -2758,6 +2758,9 @@
     "@value" : "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402"
   }, {
     "@language" : "en",
+    "@value" : "Elena González Blanco\nhttps://orcid.org/0000-0002-0448-1812"
+  }, {
+    "@language" : "en",
     "@value" : "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X"
   }, {
     "@language" : "en",
@@ -2782,13 +2785,6 @@
     "@value" : "Salvador Ros Muñoz (LINHD_POSTDATA-UNED)\nsrosmu@gmail.com"
   }, {
     "@value" : "Aitor Díaz Medina\nhttps://www.linkedin.com/in/aitordiazmedina/"
-  } ],
-  "http://purl.org/dc/elements/1.1/contributors" : [ {
-    "@language" : "en",
-    "@value" : "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"
-  }, {
-    "@language" : "en",
-    "@value" : "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@language" : "en",
@@ -3248,10 +3244,6 @@
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@language" : "en",
-    "@value" : "mluisadiez"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Repetition of similar sounding words occurring at the end of lines in poems or songs"
@@ -3260,6 +3252,9 @@
     "@language" : "en",
     "@value" : "Rhyme"
   } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3974,7 +3969,7 @@
     "@value" : "Contents from the last stressed vowel of the rhyme to its end.\n\nFor instance, if we consider the rhyme word \"vida\" from the poem \"Morir soñando\" by Unamuno, ending is \"ida\"."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -4706,6 +4701,21 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has call word"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -4723,6 +4733,21 @@
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has echo word"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEndingLine",
@@ -5200,7 +5225,22 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has rhyme match"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "mluisadiez"
@@ -5222,7 +5262,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has rhyme word"
+    "@value" : "has rhyming word"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"
@@ -5231,7 +5271,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanza",
@@ -5501,6 +5541,18 @@
     "@value" : "is annotation of"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is call in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5593,6 +5645,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is echo in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoOf",
@@ -6451,6 +6515,18 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is rhyme match of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -6472,7 +6548,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -6487,7 +6563,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "is rhyme word"
+    "@value" : "is rhyming word in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme"
@@ -6681,7 +6757,7 @@
     "@value" : "This property points to the text under analysis (Redaction) from which the current cultural product has derived"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -9203,7 +9279,7 @@
     "@value" : "Explain the degree in which the different rhyming sounds match (e.g. assonant, consonant, perfect, imperfect, half-rhyme...).\n\nFor example, if we consider the rhyme \"scoloraro-legaro\" in the sonnet III from Petrarch's \"Canzoniere\", typeofRhymeMatching is \"perfect rhyme\". See the example lines:  \"Era il giorno ch’al sol si scoloraro \\ per la pietà del suo factore i rai,\\ quando i' fui preso, et non me ne guardai, \\ché i be' vostr'occhi, Donna, mi legaro\"."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
@@ -9364,7 +9440,7 @@
     "@value" : "used as source"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesEncoding",
@@ -9581,11 +9657,11 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Manifestation"
+    "@value" : "Source"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/contributor",

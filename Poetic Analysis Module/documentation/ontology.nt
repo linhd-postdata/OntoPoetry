@@ -1,6 +1,7 @@
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributor> "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributor> "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributor> "Elena González Blanco\nhttps://orcid.org/0000-0002-0448-1812"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributor> "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributor> "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributor> "Laura Hernández (LINHD_POSTDATA-UNED)\nhttps://orcid.org/0000-0003-3489-2193"@en .
@@ -10,8 +11,6 @@
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributor> "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributor> "Salvador Ros Muñoz (LINHD_POSTDATA-UNED)\nsrosmu@gmail.com"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributor> "Aitor Díaz Medina\nhttps://www.linkedin.com/in/aitordiazmedina/" .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributors> "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/contributors> "Bruno Sartini (Bolonia University)\nhttps://orcid.org/0000-0002-9152-4402"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/creator> "POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/date> "2020-20-01" .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> <http://purl.org/dc/elements/1.1/description> "This ontology module provides classes and properties to describe the structure of a Redaction in the context of POSTDATA project. The structure of a Redaction follows a logical break down of its elements: stanzas, lines, words and syllables. It can be useful in applications that require the annotation or retrieval of specific structural elements, which can be characterised by their own features or by their positions in relation to other elements.\nThis ontology also contains the classes and properties necessary to structure the information of a prosodic analysis, that is to say, the information obtained from the study of the meters and the forms of versification. In poetry, the metric is the basic rhythmic structure of the verses of a poetic work.\nFinally, the ontology also provides classes and properties to support the annotation of different literary devices such acrostics, schemes or tropes."@en .
@@ -427,6 +426,13 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnnotation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "has annotation"@en .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord> <http://www.w3.org/2000/01/rdf-schema#label> "has call word" .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnnotation> .
@@ -434,6 +440,13 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "has device annotation"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord> <http://www.w3.org/2000/01/rdf-schema#label> "has echo word" .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEndingLine
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEndingLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -609,17 +622,24 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhyme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhyme> <http://www.w3.org/2000/01/rdf-schema#label> "has rhyme"@en .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the instance of Word for a further linguistic analysis/division by words.\n\nFor example, the line \"From fairest creatures we desire increase,\" from the first sonnet by Shakespeare has \"increase\" as rhyming word."@en .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord> <http://www.w3.org/2000/01/rdf-schema#label> "has rhyme word"@en .
+# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch> <http://www.w3.org/2000/01/rdf-schema#label> "has rhyme match" .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the instance of Word for a further linguistic analysis/division by words.\n\nFor example, the line \"From fairest creatures we desire increase,\" from the first sonnet by Shakespeare has \"increase\" as rhyming word."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord> <http://www.w3.org/2000/01/rdf-schema#label> "has rhyming word"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanza
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -699,6 +719,12 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is annotation of"@en .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn> <http://www.w3.org/2000/01/rdf-schema#label> "is call in" .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallOf
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
@@ -713,6 +739,12 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is device annotation of"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn> <http://www.w3.org/2000/01/rdf-schema#label> "is echo in" .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoOf
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -973,6 +1005,12 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRedactionPatternOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRedactionPatternOf> <http://www.w3.org/2000/01/rdf-schema#label> "is redaction pattern of"@en .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf> <http://www.w3.org/2000/01/rdf-schema#label> "is rhyme match of" .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> .
@@ -981,13 +1019,13 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf> <http://www.w3.org/2000/01/rdf-schema#label> "is rhyme of"@en .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the instance of Rhyme that contains the item at hand as its rhyme word.\n\nFor example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Hernández, in the first line, the word \"hortelano\" isRhymeWord. \"Hortelano\" rhymes with \"temprano\" in the third line."@en .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord> <http://www.w3.org/2000/01/rdf-schema#label> "is rhyme word"@en .
+# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the instance of Rhyme that contains the item at hand as its rhyme word.\n\nFor example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Hernández, in the first line, the word \"hortelano\" isRhymeWord. \"Hortelano\" rhymes with \"temprano\" in the third line."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn> <http://www.w3.org/2000/01/rdf-schema#label> "is rhyming word in"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isSchemePresentAt
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isSchemePresentAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1045,7 +1083,7 @@ _:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.es
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to the text under analysis (Redaction) from which the current cultural product has derived"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#"@en .
@@ -1697,7 +1735,7 @@ _:genid17 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching> <http://www.w3.org/2000/01/rdf-schema#range> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
@@ -1780,7 +1818,7 @@ _:genid23 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points to a cultural product (Intertextuality) which was a source for the work under analysis"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource> <http://www.w3.org/2000/01/rdf-schema#label> "used as source"@en .
@@ -1991,7 +2029,7 @@ _:genid24 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> .
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Word> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending> <http://purl.org/dc/elements/1.1/creator> "mluisadiez" .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending> <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -3088,9 +3126,11 @@ _:genid80 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> <http://purl.org/dc/elements/1.1/creator> "mluisadiez"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> <http://www.w3.org/2000/01/rdf-schema#comment> "Repetition of similar sounding words occurring at the end of lines in poems or songs"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme> <http://www.w3.org/2000/01/rdf-schema#label> "Rhyme"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch
+<http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -3331,9 +3371,9 @@ _:genid123 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/X
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#WordList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#WordList> <http://www.w3.org/2000/01/rdf-schema#label> "Word List"@en .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> <http://www.w3.org/2000/01/rdf-schema#label> "Manifestation"@en .
+# http://postdata.linhd.uned.es/ontology/postdata-transmission#Source
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en .
 # 
 # http://purl.org/ontology/olo/core#OrderedList
 <http://purl.org/ontology/olo/core#OrderedList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -11,6 +11,8 @@
 https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"""@en ,
                                                                                                                  """Bruno Sartini (Bolonia University)
 https://orcid.org/0000-0002-9152-4402"""@en ,
+                                                                                                                 """Elena González Blanco
+https://orcid.org/0000-0002-0448-1812"""@en ,
                                                                                                                  """Helena Bermúdez Sabel 
 https://orcid.org/0000-0001-7782-206X"""@en ,
                                                                                                                  """Javier de la Rosa (LINHD_POSTDATA-UNED)
@@ -29,10 +31,6 @@ http://orcid.org/0000-0002-9260-0753"""@en ,
 srosmu@gmail.com"""@en ,
                                                                                                                  """Aitor Díaz Medina
 https://www.linkedin.com/in/aitordiazmedina/""" ;
-                                                                   <http://purl.org/dc/elements/1.1/contributors> """Alvaro Pérez (LINHD_POSTDATA-UNED)
-https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"""@en ,
-                                                                                                                  """Bruno Sartini (Bolonia University)
-https://orcid.org/0000-0002-9152-4402"""@en ;
                                                                    <http://purl.org/dc/elements/1.1/creator> "POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”"@en ;
                                                                    <http://purl.org/dc/elements/1.1/date> "2020-20-01" ;
                                                                    <http://purl.org/dc/elements/1.1/description> """This ontology module provides classes and properties to describe the structure of a Redaction in the context of POSTDATA project. The structure of a Redaction follows a logical break down of its elements: stanzas, lines, words and syllables. It can be useful in applications that require the annotation or retrieval of specific structural elements, which can be characterised by their own features or by their positions in relation to other elements.
@@ -534,6 +532,14 @@ For example, the syllable \"ma\" belongs to the word \"Lágrima\"."""@en ;
                rdfs:label "has annotation"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord
+:hasCallWord rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isCallIn ;
+             rdfs:domain :RhymeMatch ;
+             rdfs:range :Word ;
+             rdfs:label "has call word" .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasDeviceAnnotation
 :hasDeviceAnnotation rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :hasAnnotation ;
@@ -541,6 +547,14 @@ For example, the syllable \"ma\" belongs to the word \"Lágrima\"."""@en ;
                      rdfs:domain :Scansion ;
                      rdfs:range :LiteraryDevice ;
                      rdfs:label "has device annotation"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord
+:hasEchoWord rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isEchoIn ;
+             rdfs:domain :RhymeMatch ;
+             rdfs:range :Word ;
+             rdfs:label "has echo word" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEndingLine
@@ -744,19 +758,27 @@ Let's take as example the first stanza of the sonnet XXIII by Garcilaso: \"En ta
           rdfs:label "has rhyme"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeWord
-:hasRhymeWord rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
-              owl:inverseOf :isRhymeWord ;
-              rdfs:domain :Rhyme ;
-              rdfs:range :Word ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
-              rdfs:comment """This property points to the instance of Word for a further linguistic analysis/division by words.
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch
+:hasRhymeMatch rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isRhymeMatchOf ;
+               rdfs:domain :Rhyme ;
+               rdfs:range :RhymeMatch ;
+               rdfs:label "has rhyme match" .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord
+:hasRhymingWord rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                owl:inverseOf :isRhymingWordIn ;
+                rdfs:domain :Rhyme ;
+                rdfs:range :Word ;
+                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
+                <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
+                rdfs:comment """This property points to the instance of Word for a further linguistic analysis/division by words.
 
 For example, the line \"From fairest creatures we desire increase,\" from the first sonnet by Shakespeare has \"increase\" as rhyming word."""@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "has rhyme word"@en .
+                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+                rdfs:label "has rhyming word"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanza
@@ -849,6 +871,13 @@ The Stanza Pattern \"ABBA\" analyses the first stanza of the poem \"Osé y temí
                 rdfs:label "is annotation of"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn
+:isCallIn rdf:type owl:ObjectProperty ;
+          rdfs:domain :Word ;
+          rdfs:range :RhymeMatch ;
+          rdfs:label "is call in" .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallOf
 :isCallOf rdf:type owl:ObjectProperty ;
           rdfs:domain :Word ;
@@ -867,6 +896,13 @@ For example, \"escriba\" is call of \"arriba\", if we consider the lines \"Éras
                       rdfs:domain :LiteraryDevice ;
                       rdfs:range :Scansion ;
                       rdfs:label "is device annotation of"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn
+:isEchoIn rdf:type owl:ObjectProperty ;
+          rdfs:domain :Word ;
+          rdfs:range :RhymeMatch ;
+          rdfs:label "is echo in" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoOf
@@ -1176,6 +1212,13 @@ For example, the metrical Pattern of the poem \"Amadís de Gaula a don Quijote d
                       rdfs:label "is redaction pattern of"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf
+:isRhymeMatchOf rdf:type owl:ObjectProperty ;
+                rdfs:domain :RhymeMatch ;
+                rdfs:range :Rhyme ;
+                rdfs:label "is rhyme match of" .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf
 :isRhymeOf rdf:type owl:ObjectProperty ;
            rdfs:domain :Rhyme ;
@@ -1187,15 +1230,15 @@ For example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Herná
            rdfs:label "is rhyme of"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeWord
-:isRhymeWord rdf:type owl:ObjectProperty ;
-             rdfs:domain :Word ;
-             rdfs:range :Rhyme ;
-             rdfs:comment """This property points to the instance of Rhyme that contains the item at hand as its rhyme word.
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn
+:isRhymingWordIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Word ;
+                 rdfs:range :Rhyme ;
+                 rdfs:comment """This property points to the instance of Rhyme that contains the item at hand as its rhyme word.
 
 For example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Hernández, in the first line, the word \"hortelano\" isRhymeWord. \"Hortelano\" rhymes with \"temprano\" in the third line."""@en ;
-             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-             rdfs:label "is rhyme word"@en .
+                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
+                 rdfs:label "is rhyming word in"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isSchemePresentAt
@@ -1261,7 +1304,7 @@ For example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Herná
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUsedSourceIn
 :isUsedSourceIn rdf:type owl:ObjectProperty ;
                 owl:inverseOf :usesAsSource ;
-                rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> ;
+                rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> ;
                 rdfs:range :Intertextuality ;
                 rdfs:comment "This property points to the text under analysis (Redaction) from which the current cultural product has derived"@en ;
                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#"@en ;
@@ -2064,7 +2107,7 @@ For example, if we consider the first syllable of the word \"boca\" (i.e. \"bo\"
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching
 :typeOfRhymeMatching rdf:type owl:ObjectProperty ;
-                     rdfs:domain :Rhyme ;
+                     rdfs:domain :RhymeMatch ;
                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -2162,7 +2205,7 @@ For instance, if we consider the first stanza of the Inferno of the Divina Comme
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#usesAsSource
 :usesAsSource rdf:type owl:ObjectProperty ;
               rdfs:domain :Intertextuality ;
-              rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> ;
+              rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> ;
               rdfs:comment "This property points to a cultural product (Intertextuality) which was a source for the work under analysis"@en ;
               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#"@en ;
               rdfs:label "used as source"@en .
@@ -2421,7 +2464,7 @@ For example in the word \"mar\" in Spanish, the coda of the syllable is \"r\".""
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ending
 :ending rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:domain :Rhyme ;
+        rdfs:domain :Word ;
         rdfs:range xsd:string ;
         <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
         <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
@@ -3737,9 +3780,12 @@ Eg.: The complete distribution of accented syllables of a work"""@en ;
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme
 :Rhyme rdf:type owl:Class ;
-       <http://purl.org/dc/elements/1.1/creator> "mluisadiez"@en ;
        rdfs:comment "Repetition of similar sounding words occurring at the end of lines in poems or songs"@en ;
        rdfs:label "Rhyme"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch
+:RhymeMatch rdf:type owl:Class .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion
@@ -3984,9 +4030,9 @@ Eg.: The word “life”"""@en ;
           rdfs:label "Word List"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation
-<http://postdata.linhd.uned.es/ontology/postdata-transmission#Manifestation> rdf:type owl:Class ;
-                                                                             rdfs:label "Manifestation"@en .
+###  http://postdata.linhd.uned.es/ontology/postdata-transmission#Source
+<http://postdata.linhd.uned.es/ontology/postdata-transmission#Source> rdf:type owl:Class ;
+                                                                      rdfs:label "Source"@en .
 
 
 ###  http://purl.org/ontology/olo/core#OrderedList
