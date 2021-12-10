@@ -18,6 +18,8 @@ https://www.linkedin.com/in/aitordiazmedina/</dc:contributor>
 https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributor>
         <dc:contributor xml:lang="en">Bruno Sartini (Bolonia University)
 https://orcid.org/0000-0002-9152-4402</dc:contributor>
+        <dc:contributor xml:lang="en">Elena González Blanco
+https://orcid.org/0000-0002-0448-1812</dc:contributor>
         <dc:contributor xml:lang="en">Helena Bermúdez Sabel 
 https://orcid.org/0000-0001-7782-206X</dc:contributor>
         <dc:contributor xml:lang="en">Javier de la Rosa (LINHD_POSTDATA-UNED)
@@ -34,10 +36,6 @@ http://www.linkedin.com/in/omar-k-0959a8129</dc:contributor>
 http://orcid.org/0000-0002-9260-0753</dc:contributor>
         <dc:contributor xml:lang="en">Salvador Ros Muñoz (LINHD_POSTDATA-UNED)
 srosmu@gmail.com</dc:contributor>
-        <dc:contributors xml:lang="en">Alvaro Pérez (LINHD_POSTDATA-UNED)
-https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributors>
-        <dc:contributors xml:lang="en">Bruno Sartini (Bolonia University)
-https://orcid.org/0000-0002-9152-4402</dc:contributors>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <dc:date>2020-20-01</dc:date>
         <dc:description xml:lang="en">This ontology module provides classes and properties to describe the structure of a Redaction in the context of POSTDATA project. The structure of a Redaction follows a logical break down of its elements: stanzas, lines, words and syllables. It can be useful in applications that require the annotation or retrieval of specific structural elements, which can be characterised by their own features or by their positions in relation to other elements.
@@ -5729,9 +5727,9 @@ It marks the origin of the causality chain that results in a work’s coming int
 </rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R19i_was_realised_through">
-        <rdfs:label xml:lang="en">was realised through</rdfs:label>
         <rdfs:comment xml:lang="en">
 </rdfs:comment>
+        <rdfs:label xml:lang="en">was realised through</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R1_is_logical_successor_of">
         <rdfs:comment xml:lang="en">This property associates an instance of F1 Work which logically continues the content of another instance of F1 Work with the latter.
@@ -5957,7 +5955,6 @@ The property R3.1 has type: E55 Type allows for specifying the role played by th
         <rdfs:label xml:lang="en">realises</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R40_has_representative_expression">
-        <rdfs:label xml:lang="en">has representative expression</rdfs:label>
         <rdfs:comment xml:lang="en">This property identifies an instance of F22 Self-Contained Expression that has been chosen as the most characteristic expression of the instance of F1 Work of which it is an expression. There is no other semantic implication to this notion of being characteristic than to be an adequate candidate to uniquely identify the Work realized by it. Prototypically, this is the instance of F22 Self-Contained Expression that is deemed characteristic of an instance of F15 Complex Work.
 Typically, any expression that is not regarded as “representative” for the work it expresses, would require a controlled access point, with qualifiers specifying the differences between that expression and a representative expression, although this may not always be done in practice. The title of a Work may not be one taken from a representative expression.
 A given work can have more than one representative expression, provided the differences between these expressions are not deemed “substantial.” If the anticipated needs of users are not considered to call for bibliographic distinctions between variant expressions of a work, then even expressions that differ significantly from each other can be regarded as equally representative for the work. (See FRBR: Final Report, p. 19-20).
@@ -5965,6 +5962,7 @@ A given expression can be deemed representative for a work with regard to some o
 R40 has representative expression is a shortcut of the more developed path F1 Work R50i was assigned by F42 Representative Expression Assignment R51 assigned F2 Expression.
 
 </rdfs:comment>
+        <rdfs:label xml:lang="en">has representative expression</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R40i_is_representative_expression_for">
         <rdfs:label xml:lang="en">is representative expression for</rdfs:label>
@@ -6097,9 +6095,9 @@ This property is a shortcut of: F2 Expression P165i is incorporated in F24 Publi
         <rdfs:label xml:lang="en">was assigned by</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule">
-        <rdfs:label xml:lang="en">used rule</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates the event of assigning an instance of F13 Identifier with the instructions followed by an actor, such as a Bibliographic Agency, in creating that identifier.
 </rdfs:comment>
+        <rdfs:label xml:lang="en">used rule</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_in">
         <rdfs:label xml:lang="en">was the rule used in</rdfs:label>
