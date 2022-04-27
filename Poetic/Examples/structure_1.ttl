@@ -8,7 +8,7 @@
 @prefix pd: <http://postdata.linhd.uned.es/resource/> .
 @prefix pdk: <http://postdata.linhd.uned.es/kos/> .
 
-pd:Redaction_1 a pdc:Redaction;
+pd:Scansion_1 a pdp:Scansion;
 	pdp:hasStanza pd:Stanza_1.
 
 pd:Stanza_1 a pdp:Stanza;
