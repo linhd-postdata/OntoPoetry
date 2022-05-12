@@ -7,6 +7,7 @@
 @base <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> .
 
 <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> rdf:type owl:Ontology ;
+                                                                   <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                                    <http://purl.org/dc/elements/1.1/contributor> """Alvaro Pérez (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"""@en ,
                                                                                                                  """Elena González-Blanco
@@ -124,6 +125,14 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                                                                      rdfs:label "is agent role of"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsFirstGrammaticalSyllable
+:affectsFirstGrammaticalSyllable rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf :isFirstGrammaticalSyllableAffectedBy ;
+                                 rdfs:domain :Metaplasm ;
+                                 rdfs:range :GrammaticalSyllable ;
+                                 rdfs:label "affects frist grammatical syllable" .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#affectsFirstWord
 :affectsFirstWord rdf:type owl:ObjectProperty ;
                   owl:inverseOf :isFirstWordAffectedBy ;
@@ -157,6 +166,11 @@ For example, if we consider the words \"sparse il\" in the line from the sonnet 
 :analyses rdf:type owl:ObjectProperty ;
           owl:inverseOf :isAnalysedBy ;
           rdfs:domain :AnalyticalUnit ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :AnalyticalUnit
+                                     :Word
+                                   )
+                     ] ;
           rdfs:label "analyses" .
 
 
@@ -208,10 +222,13 @@ For example, if we consider the words \"sparse il\" in the line from the sonnet 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#clausula
 :clausula rdf:type owl:ObjectProperty ;
           rdfs:domain :Foot ;
-          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                       owl:hasValue <http://postdata.linhd.uned.es/kos/clausula>
+          rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                              owl:hasValue <http://postdata.linhd.uned.es/kos/clausula>
+                                            ]
+                                          ) ;
+                       rdf:type owl:Class
                      ] ;
           rdfs:comment """The categorisation of the item according to the rhythmic ending of a line  determined by the number of unstressed syllables following the last stressed one. This property is both valid for accentual and syllabic versification, so possible values include: masculine (zero syllables), femenine (one), dactylic, proparoxitone, etc.
 
@@ -222,11 +239,14 @@ For example, if we consider the final foot of the line from sonnet I by Shakespe
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#clausulaSchemeType
 :clausulaSchemeType rdf:type owl:ObjectProperty ;
-                    rdfs:domain :StanzaPattern ;
-                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                 owl:hasValue <http://postdata.linhd.uned.es/kos/clausulaScheme-type>
+                    rdfs:domain :Stanza ;
+                    rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                        owl:hasValue <http://postdata.linhd.uned.es/kos/clausulaScheme-type>
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
                                ] ;
                     rdfs:comment """Categorisation of the stanza according to the distribution of clausulae/gender of rhymes (eg. “classic”, “heterogonique”, etc.).
 
@@ -257,11 +277,14 @@ For example, if we consider the LinePattern \"-+-+-+-+-+\" of the line \"From fa
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#feetType
 :feetType rdf:type owl:ObjectProperty ;
-          rdfs:domain :LinePattern ;
-          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                       owl:hasValue <http://postdata.linhd.uned.es/kos/feet-type>
+          rdfs:domain :Line ;
+          rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                              owl:hasValue <http://postdata.linhd.uned.es/kos/feet-type>
+                                            ]
+                                          ) ;
+                       rdf:type owl:Class
                      ] ;
           rdfs:comment """Categorisation of the stanza or line according to the type of feet.
 
@@ -276,8 +299,6 @@ For example, if we consider the first line of the sonnet I by Shakespeare \"From
            owl:inverseOf :firstFootOf ;
            rdfs:domain :FootList ;
            rdfs:range :Foot ;
-           <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-           <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
            rdfs:comment """This property points to the first Foot of the line.
 
 For example, if we consider the first line of the sonnet I by Shakespeare \"From fairest creatures we desire increase\", this has |from fai| as first foot.""" ;
@@ -481,10 +502,13 @@ For example, if we consider the fifth stanza of the poem \"Ho bisogno di silenzi
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#footType
 :footType rdf:type owl:ObjectProperty ;
           rdfs:domain :Foot ;
-          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                     [ rdf:type owl:Restriction ;
-                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                       owl:hasValue <http://postdata.linhd.uned.es/kos/foot-type>
+          rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                              owl:hasValue <http://postdata.linhd.uned.es/kos/foot-type>
+                                            ]
+                                          ) ;
+                       rdf:type owl:Class
                      ] ;
           rdfs:comment """Type of foot (e.g. iamb).
 
@@ -497,7 +521,8 @@ For example, if we consider the final foot of the verse from sonnet I by Shakesp
 :generated rdf:type owl:ObjectProperty ;
            owl:inverseOf :isGeneratedBy ;
            rdfs:domain :ScansionProcess ;
-           rdfs:range :Scansion .
+           rdfs:range :Scansion ;
+           rdfs:label "generated" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#grammaticalSyllable
@@ -527,12 +552,28 @@ For example, the syllable \"ma\" belongs to the word \"Lágrima\"."""@en ;
 :hasAnnotation rdf:type owl:ObjectProperty ;
                owl:inverseOf :isAnnotationOf ;
                rdfs:domain :Scansion ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( :LiteraryDevice
+                                          :Rhyme
+                                          <http://purl.org/ontology/olo/core#OrderedList>
+                                        )
+                          ] ;
                rdfs:label "has annotation"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallLine
+:hasCallLine rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasRhymingLine ;
+             owl:inverseOf :isCallLineIn ;
+             rdfs:domain :RhymeMatch ;
+             rdfs:range :Line ;
+             rdfs:label "has call line"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCallWord
 :hasCallWord rdf:type owl:ObjectProperty ;
-             owl:inverseOf :isCallIn ;
+             rdfs:subPropertyOf :hasRhymingWord ;
+             owl:inverseOf :isCallWordIn ;
              rdfs:domain :RhymeMatch ;
              rdfs:range :Word ;
              rdfs:label "has call word" .
@@ -547,9 +588,19 @@ For example, the syllable \"ma\" belongs to the word \"Lágrima\"."""@en ;
                      rdfs:label "has device annotation"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoLine
+:hasEchoLine rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasRhymingLine ;
+             owl:inverseOf :isEchoLineIn ;
+             rdfs:domain :RhymeMatch ;
+             rdfs:range :Line ;
+             rdfs:label "has echo line"@en .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasEchoWord
 :hasEchoWord rdf:type owl:ObjectProperty ;
-             owl:inverseOf :isEchoIn ;
+             rdfs:subPropertyOf :hasRhymingWord ;
+             owl:inverseOf :isEchoWordIn ;
              rdfs:domain :RhymeMatch ;
              rdfs:range :Word ;
              rdfs:label "has echo word" .
@@ -576,7 +627,7 @@ For example, the syllable \"ma\" belongs to the word \"Lágrima\"."""@en ;
 :hasFootList rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasList ;
              owl:inverseOf :isFootListOf ;
-             rdfs:domain :LinePattern ;
+             rdfs:domain :Line ;
              rdfs:range :FootList ;
              rdfs:label "has foot list"@en .
 
@@ -619,22 +670,10 @@ For example, the syllable \"ma\" belongs to the word \"Lágrima\"."""@en ;
              rdfs:label "has line list"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasLinePattern
-:hasLinePattern rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :hasPattern ;
-                owl:inverseOf :isLinePatternOf ;
-                rdfs:domain :Line ;
-                rdfs:range :LinePattern ;
-                rdfs:comment """This property points to an instance of Line about which the item at hand presents analytical information.
-
-For example, the Line Pattern \"---+-+---+-\" analyses the first line of the poem \"Osé y temí, mas pudo la osadía tanto\" by Fernando de Herrera."""@en ;
-                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                rdfs:label "has line pattern"@en .
-
-
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasList
 :hasList rdf:type owl:ObjectProperty ;
          owl:inverseOf :isListOf ;
+         rdfs:domain <http://purl.org/ontology/olo/core#Slot> ;
          rdfs:range <http://purl.org/ontology/olo/core#OrderedList> ;
          rdfs:label "has list"@en .
 
@@ -679,7 +718,7 @@ For example, the Line Pattern \"---+-+---+-\" analyses the first line of the poe
 :hasMoraList rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :hasList ;
              owl:inverseOf :isMoraListOf ;
-             rdfs:domain :LinePattern ;
+             rdfs:domain :Line ;
              rdfs:range :MoraList ;
              rdfs:label "has mora list"@en .
 
@@ -687,29 +726,9 @@ For example, the Line Pattern \"---+-+---+-\" analyses the first line of the poe
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPart
 :hasPart rdf:type owl:ObjectProperty ;
          owl:inverseOf :isPartOf ;
-         rdfs:domain :StructuralUnit ;
-         rdfs:range :StructuralUnit ;
+         rdfs:domain <http://purl.org/ontology/olo/core#Slot> ;
+         rdfs:range <http://purl.org/ontology/olo/core#Slot> ;
          rdfs:label "has part"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPattern
-:hasPattern rdf:type owl:ObjectProperty ;
-            owl:inverseOf :isPatternOf ;
-            rdfs:range :Pattern ;
-            rdfs:comment """This property points to an instance of Redaction in which a WorkPattern, StanzaPattern or LinePattern presents analytical information about the work as a whole, the stanzas or the lines, respectively.
-
-For example, all the metrical information contained in the WorkPattern, the StanzaPattern or the LinePattern analyses the poem in its present Redaction. As a result, all this metrical data is bound to change if a different Redaction of the poem is used. For example, if we take Herrera's poem \"Oh soberbia y cruel en tu belleza\", the LinePattern of the nith line in the 1582 version is \"-+-+---+-+-\", while in the 1619 version the line changes and consequently shows a new LinePattern: \"-+---+---+-\"""" ;
-            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-            rdfs:label "has pattern"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPatternAnnotation
-:hasPatternAnnotation rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :hasAnnotation ;
-                      owl:inverseOf :isPatternAnnotationOf ;
-                      rdfs:domain :Scansion ;
-                      rdfs:range :Pattern ;
-                      rdfs:label "has pattern annotation"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPunctuation
@@ -732,28 +751,13 @@ For example, all the metrical information contained in the WorkPattern, the Stan
                     rdfs:label "has punctuation list"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRedactionPattern
-:hasRedactionPattern rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :hasPattern ;
-                     owl:inverseOf :isRedactionPatternOf ;
-                     rdfs:domain :Scansion ;
-                     rdfs:range :RedactionPattern ;
-                     rdfs:label "has redaction pattern"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhyme
-:hasRhyme rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          owl:inverseOf :isRhymeOf ;
-          rdfs:domain :StructuralUnit ;
-          rdfs:range :Rhyme ;
-          <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-          <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
-          rdfs:comment """This property points to an instance of Rhyme that is contained in the current item under analysis.
-
-Let's take as example the first stanza of the sonnet XXIII by Garcilaso: \"En tanto que de rosa y de azucena\\ se muestra la color en vuestro gesto,\\ y que vuestro mirar ardiente, honesto,\\con clara luz la tempestad serena;\". This stanza presents rhyme between the ending word of the first line and the last word of the fourth line, that is, between \"azucena\" and \"serena\"."""@en ;
-          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-          rdfs:label "has rhyme"@en .
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeAnnotation
+:hasRhymeAnnotation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasAnnotation ;
+                    owl:inverseOf :isRhymeAnnotationOf ;
+                    rdfs:domain :Scansion ;
+                    rdfs:range :Rhyme ;
+                    rdfs:label "has rhyme annotation" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymeMatch
@@ -764,14 +768,20 @@ Let's take as example the first stanza of the sonnet XXIII by Garcilaso: \"En ta
                rdfs:label "has rhyme match" .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingLine
+:hasRhymingLine rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isRhymingLineIn ;
+                rdfs:domain :RhymeMatch ;
+                rdfs:range :Line ;
+                rdfs:label "has rhyming line" .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRhymingWord
 :hasRhymingWord rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf owl:topObjectProperty ;
                 owl:inverseOf :isRhymingWordIn ;
-                rdfs:domain :Rhyme ;
+                rdfs:domain :RhymeMatch ;
                 rdfs:range :Word ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
                 rdfs:comment """This property points to the instance of Word for a further linguistic analysis/division by words.
 
 For example, the line \"From fairest creatures we desire increase,\" from the first sonnet by Shakespeare has \"increase\" as rhyming word."""@en ;
@@ -797,19 +807,6 @@ For example, the line \"From fairest creatures we desire increase,\" from the fi
                rdfs:comment "This property points to the Stanza List that conforms a Redaction."@en ;
                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#" ;
                rdfs:label "has stanza list"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStanzaPattern
-:hasStanzaPattern rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :hasPattern ;
-                  owl:inverseOf :isStanzaPatternOf ;
-                  rdfs:domain :Stanza ;
-                  rdfs:range :StanzaPattern ;
-                  rdfs:comment """This property points to an instance of Stanza about which the item at hand presents analytical information.
-
-The Stanza Pattern \"ABBA\" analyses the first stanza of the poem \"Osé y temí, mas pudo la osadía\" by Fernando de Herrera."""@en ;
-                  rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                  rdfs:label "has stanza pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasStartingLine
@@ -859,21 +856,33 @@ The Stanza Pattern \"ABBA\" analyses the first stanza of the poem \"Osé y temí
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnalysedBy
 :isAnalysedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :AnalyticalUnit
+                                          :Word
+                                        )
+                          ] ;
               rdfs:range :AnalyticalUnit ;
               rdfs:label "is analysed by" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isAnnotationOf
 :isAnnotationOf rdf:type owl:ObjectProperty ;
-                rdfs:domain :Scansion ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :LiteraryDevice
+                                            :Rhyme
+                                            <http://purl.org/ontology/olo/core#OrderedList>
+                                          )
+                            ] ;
+                rdfs:range :Scansion ;
                 rdfs:label "is annotation of"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallIn
-:isCallIn rdf:type owl:ObjectProperty ;
-          rdfs:domain :Word ;
-          rdfs:range :RhymeMatch ;
-          rdfs:label "is call in" .
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallLineIn
+:isCallLineIn rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isRhymingLineIn ;
+              rdfs:domain :Line ;
+              rdfs:range :RhymeMatch ;
+              rdfs:label "is call line in"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallOf
@@ -888,6 +897,15 @@ For example, \"escriba\" is call of \"arriba\", if we consider the lines \"Éras
           rdfs:label "is call of"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isCallWordIn
+:isCallWordIn rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isRhymingWordIn ;
+              rdfs:domain :Word ;
+              rdfs:range :RhymeMatch ;
+              rdfs:comment "This property relates a word with a rhyme match in which acts as the call word" ;
+              rdfs:label "is call word in" .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isDeviceAnnotationOf
 :isDeviceAnnotationOf rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :isAnnotationOf ;
@@ -896,11 +914,12 @@ For example, \"escriba\" is call of \"arriba\", if we consider the lines \"Éras
                       rdfs:label "is device annotation of"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoIn
-:isEchoIn rdf:type owl:ObjectProperty ;
-          rdfs:domain :Word ;
-          rdfs:range :RhymeMatch ;
-          rdfs:label "is echo in" .
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoLineIn
+:isEchoLineIn rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isRhymingLineIn ;
+              rdfs:domain :Line ;
+              rdfs:range :RhymeMatch ;
+              rdfs:label "is echo line in"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoOf
@@ -912,6 +931,15 @@ For example, \"escriba\" is call of \"arriba\", if we consider the lines \"Éras
 For example, \"arriba\" is echo of \"escriba\", if we consider the lines \"Érase un elefante boca arriba,/ Érase una nariz sayón y escriba,\" from the poem \"A un hombre de gran nariz\" by Quevedo."""@en ;
           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
           rdfs:label "is echo of"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEchoWordIn
+:isEchoWordIn rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isRhymingWordIn ;
+              rdfs:domain :Word ;
+              rdfs:range :RhymeMatch ;
+              rdfs:comment "This property relates a word with a rhyme match in which acts as the echo word" ;
+              rdfs:label "is echo word in" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEmployedIn
@@ -952,6 +980,13 @@ For example, if we consider the LinePattern \"-+-+-+-+-+\" of the line \"From fa
                    rdfs:label "is figure present at"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstGrammaticalSyllableAffectedBy
+:isFirstGrammaticalSyllableAffectedBy rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :GrammaticalSyllable ;
+                                      rdfs:range :Metaplasm ;
+                                      rdfs:label "is first grammatical syllable affected by" .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isFirstWordAffectedBy
 :isFirstWordAffectedBy rdf:type owl:ObjectProperty ;
                        rdfs:domain :Word ;
@@ -971,7 +1006,7 @@ For example, if we consider the LinePattern \"-+-+-+-+-+\" of the line \"From fa
 :isFootListOf rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :isListOf ;
               rdfs:domain :FootList ;
-              rdfs:range :LinePattern ;
+              rdfs:range :Line ;
               rdfs:label "is foot list of"@en .
 
 
@@ -1071,14 +1106,6 @@ For example, \"tampoco\" isLemma in the line \"Si no eres par, tampoco le has te
           rdfs:label "is line of"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isLinePatternOf
-:isLinePatternOf rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :isPatternOf ;
-                 rdfs:domain :LinePattern ;
-                 rdfs:range :Line ;
-                 rdfs:label "is line pattern of"@en .
-
-
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListAnnotationOf
 :isListAnnotationOf rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :isAnnotationOf ;
@@ -1090,22 +1117,20 @@ For example, \"tampoco\" isLemma in the line \"Si no eres par, tampoco le has te
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isListOf
 :isListOf rdf:type owl:ObjectProperty ;
           rdfs:domain <http://purl.org/ontology/olo/core#OrderedList> ;
+          rdfs:range <http://purl.org/ontology/olo/core#Slot> ;
           rdfs:label "is list of"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMentionedIn
 :isMentionedIn rdf:type owl:ObjectProperty ;
                owl:inverseOf :mentions ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( <http://postdata.linhd.uned.es/ontology/postdata-core#Agent>
+                                           <http://postdata.linhd.uned.es/ontology/postdata-core#Place>
+                                         )
+                           ] ;
                rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt> ;
                rdfs:label "is mentioned in" .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMetaplasmPresentedAt
-:isMetaplasmPresentedAt rdf:type owl:ObjectProperty ;
-                        owl:inverseOf :presentsMetaplasm ;
-                        rdfs:domain :Metaplasm ;
-                        rdfs:range :Line ;
-                        rdfs:label "is metaplasm presented at"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isMetricalSyllableAnalysedBy
@@ -1136,7 +1161,7 @@ For example, \"tampoco\" isLemma in the line \"Si no eres par, tampoco le has te
 :isMoraListOf rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :isListOf ;
               rdfs:domain :MoraList ;
-              rdfs:range :LinePattern ;
+              rdfs:range :Line ;
               rdfs:label "is mora list of"@en .
 
 
@@ -1153,26 +1178,6 @@ For example, \"tampoco\" isLemma in the line \"Si no eres par, tampoco le has te
           rdfs:domain <http://purl.org/ontology/olo/core#Slot> ;
           rdfs:range <http://purl.org/ontology/olo/core#Slot> ;
           rdfs:label "is part of"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternAnnotationOf
-:isPatternAnnotationOf rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :isAnnotationOf ;
-                       rdfs:domain :Pattern ;
-                       rdfs:range :Scansion ;
-                       rdfs:label "is pattern annotation of"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPatternOf
-:isPatternOf rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain :Pattern ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
-             rdfs:comment """This property points to an item (Pattern) that contains analytical content about the current instance of Redaction or about its stanzas or lines.
-
-For example, the metrical Pattern of the poem \"Amadís de Gaula a don Quijote de La Mancha\" by Cervantes can be analysed, for instance, using the Redaction provided by the Corpus of Golden-Age Spanish Sonnets."""@en ;
-             rdfs:label "is pattern of"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isPlaceMentionedIn
@@ -1202,12 +1207,12 @@ For example, the metrical Pattern of the poem \"Amadís de Gaula a don Quijote d
                  rdfs:label "is punctuation of"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRedactionPatternOf
-:isRedactionPatternOf rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :isPatternOf ;
-                      rdfs:domain :RedactionPattern ;
-                      rdfs:range :Scansion ;
-                      rdfs:label "is redaction pattern of"@en .
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeAnnotationOf
+:isRhymeAnnotationOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :isAnnotationOf ;
+                     rdfs:domain :Rhyme ;
+                     rdfs:range :Scansion ;
+                     rdfs:label "is rhyme annotation of" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeMatchOf
@@ -1217,21 +1222,25 @@ For example, the metrical Pattern of the poem \"Amadís de Gaula a don Quijote d
                 rdfs:label "is rhyme match of" .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymeOf
-:isRhymeOf rdf:type owl:ObjectProperty ;
-           rdfs:domain :Rhyme ;
-           rdfs:range :StructuralUnit ;
-           rdfs:comment """This property points to the text (instance of Redaction, Line or Stanza) which contains the current item under analysis.
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymePresentAt
+:isRhymePresentAt rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :presentsRhyme ;
+                  rdfs:domain :Rhyme ;
+                  rdfs:range :Line ;
+                  rdfs:label "is rhyme present at" .
 
-For example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Hernández, the rhyme \"ento\" isPresentIn the seventh and ninth lines of the poem."""@en ;
-           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-           rdfs:label "is rhyme of"@en .
+
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingLineIn
+:isRhymingLineIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Line ;
+                 rdfs:range :RhymeMatch ;
+                 rdfs:label "is rhyming line in" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRhymingWordIn
 :isRhymingWordIn rdf:type owl:ObjectProperty ;
                  rdfs:domain :Word ;
-                 rdfs:range :Rhyme ;
+                 rdfs:range :RhymeMatch ;
                  rdfs:comment """This property points to the instance of Rhyme that contains the item at hand as its rhyme word.
 
 For example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Hernández, in the first line, the word \"hortelano\" isRhymeWord. \"Hortelano\" rhymes with \"temprano\" in the third line."""@en ;
@@ -1244,6 +1253,7 @@ For example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Herná
                    rdfs:subPropertyOf :isFigurePresentAt ;
                    owl:inverseOf :presentsScheme ;
                    rdfs:domain :Scheme ;
+                   rdfs:range <http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt> ;
                    rdfs:label "is scheme present at"@en .
 
 
@@ -1263,14 +1273,6 @@ For example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Herná
             rdfs:domain :Stanza ;
             rdfs:range :Scansion ;
             rdfs:label "is stanza of"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStanzaPatternOf
-:isStanzaPatternOf rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :isPatternOf ;
-                   rdfs:domain :StanzaPattern ;
-                   rdfs:range :Stanza ;
-                   rdfs:label "is stanza pattern of"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isStartingLineOf
@@ -1314,6 +1316,7 @@ For example, if we consider the poem \"Elegía a Ramón Sijé\" by Miguel Herná
                   rdfs:subPropertyOf :isAnalysedBy ;
                   rdfs:domain :Word ;
                   rdfs:range :AnalyticalUnit ;
+                  rdfs:comment "This property relates a word with the analytical units that analyse it" ;
                   rdfs:label "is word analysed by"@en .
 
 
@@ -1533,6 +1536,11 @@ For example, in the poem \"Mientras por competir por tu cabello\", the line \"en
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#mentions
 :mentions rdf:type owl:ObjectProperty ;
           rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt> ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( <http://postdata.linhd.uned.es/ontology/postdata-core#Agent>
+                                     <http://postdata.linhd.uned.es/ontology/postdata-core#Place>
+                                   )
+                     ] ;
           rdfs:comment """Agent or Place that is mentioned on the line
 
 Example: The line from the poem \"Piedra negra sobre una piedra blanca\" by César Vallejo \"Me moriré en París con aguacero,\" has mention to the Place \"Paris\""""@en ;
@@ -1566,11 +1574,14 @@ Example: For example, the line \"Granada, calle de Elvira,\" from the poem \"Gra
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalCategory
 :metricalCategory rdf:type owl:ObjectProperty ;
-                  rdfs:domain :RedactionPattern ;
-                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                               owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-category>
+                  rdfs:domain :Scansion ;
+                  rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                      owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-category>
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
                              ] ;
                   rdfs:comment """Major category to identify the metrical type (e.g. fixed forms vs strophic).
 
@@ -1581,11 +1592,14 @@ For example, if we consider the sonnet by Garcilaso \"Soneto XVII\", metricalCat
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalComplexity
 :metricalComplexity rdf:type owl:ObjectProperty ;
-                    rdfs:domain :RedactionPattern ;
-                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                 owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-complexity>
+                    rdfs:domain :Scansion ;
+                    rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                        owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-complexity>
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
                                ] ;
                     rdfs:comment """Categorisation depending on the number of syllables: usually, less or more than eight.
 
@@ -1596,11 +1610,14 @@ For example, if we consider the sonnet by Garcilaso \"Soneto XVII\", metricalCom
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalContext
 :metricalContext rdf:type owl:ObjectProperty ;
-                 rdfs:domain :RedactionPattern ;
-                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                              owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-context>
+                 rdfs:domain :Scansion ;
+                 rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                     owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-context>
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
                             ] ;
                  rdfs:comment """Categorisation depending on whether all lines have the same number of syllables.
 
@@ -1628,11 +1645,14 @@ For example, if we consider the sonnet by Garcilaso \"Soneto XVII\", metricalCon
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalType
 :metricalType rdf:type owl:ObjectProperty ;
-              rdfs:domain :StanzaPattern ;
-              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                           owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-type>
+              rdfs:domain :Stanza ;
+              rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                  owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-type>
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
                          ] ;
               rdfs:comment """Categorisation of the stanza/line  grouping or work according to metrics. E.g. “sapphic stanza”.
 
@@ -1653,7 +1673,6 @@ For example, \"By taking as example the poem \"La torre de Monterrey a la luz de
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#moraList
 :moraList rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://purl.org/ontology/olo/core#ordered_list> ;
-          owl:inverseOf <http://purl.org/ontology/olo/core#slot> ;
           rdfs:domain :Mora ;
           rdfs:range :MoraList ;
           rdfs:label "mora list"@en .
@@ -1680,8 +1699,6 @@ For example, if we consider the first foot of the first line of the sonnet I by 
                       owl:inverseOf :previousFootBeforeCaesura ;
                       rdfs:domain :Foot ;
                       rdfs:range :Foot ;
-                      <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                      <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
                       rdfs:comment """This property points to the next instance of Foot when this is positioned after a caesura.
 
 For example, consider the first line of the sonnet by the Dutch Renaissance poet P.C. Hooft \"Leitsterren van mijn hoop, planeten van mijn jeucht\". Given that this iambic alexandrine is divided into six feet (noted here as I) and exhibits a caesura (noted here as ||) after the first three feet as follows: |Leitster| ren van| mijn hoop||, plane| ten van| mijn jeucht|. In this case, previousFootBeforeCaesura is \"plane\"."""@en ;
@@ -1778,10 +1795,13 @@ For example, if the poem under analysis is \"Romance sonámbulo\" and we have al
 :partOfSpeech rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :Word ;
-              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                           owl:hasValue <http://postdata.linhd.uned.es/kos/part-of-speech>
+              rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                  owl:hasValue <http://postdata.linhd.uned.es/kos/part-of-speech>
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
                          ] ;
               rdfs:comment """The category or type of a Word. Words in the same category (or, more generally, of lexical items) have similar grammatical properties. Commonly listed  parts of speech are noun, verb, adjective, adverb, pronoun, preposition, conjunction, interjection, and sometimes numeral, article, or determiner. We exclude punctuations from the possible values as we employ the Punctuation class for this purpose
 
@@ -1811,14 +1831,11 @@ For example, if we take the poem \"Autorretrato\" by Antonio Machado, the word \
                          rdfs:label "presents intertextuality"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsMetaplasm
-:presentsMetaplasm rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Line ;
-                   rdfs:range :Metaplasm ;
-                   rdfs:comment """A metaplasm is presented in Line.
-
-For example, the line from the sonnet I from the Canzoniere by Petrarca, namely \"Voi ch'ascoltate in rime sparse il suono\", presentsMetaplasm, because synaloepha occurs between \"-te\" (\"ascoltate\") and \"in\" and \"-se\" (\"sparse\") and \"il\"."""@en ;
-                   rdfs:label "presents metaplasm"@en .
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsRhyme
+:presentsRhyme rdf:type owl:ObjectProperty ;
+               rdfs:domain :Line ;
+               rdfs:range :Rhyme ;
+               rdfs:label "presents rhyme" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#presentsScheme
@@ -1962,10 +1979,13 @@ For example, if we consider the token \"month\", the line \"April is the cruelle
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhetoricalOperation
 :rhetoricalOperation rdf:type owl:ObjectProperty ;
                      rdfs:domain :FigureOfSpeech ;
-                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                  owl:hasValue <http://postdata.linhd.uned.es/kos/rhetorical-operation>
+                     rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                         owl:hasValue <http://postdata.linhd.uned.es/kos/rhetorical-operation>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                      rdfs:comment "Classification categories of speech figures in relation to rhetorical operations: addition, omission, transposition and permutation"@en ;
                      rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#"@en ;
@@ -1974,11 +1994,14 @@ For example, if we consider the token \"month\", the line \"April is the cruelle
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeDispositionType
 :rhymeDispositionType rdf:type owl:ObjectProperty ;
-                      rdfs:domain :StanzaPattern ;
-                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                   owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeDisposition-type>
+                      rdfs:domain :Stanza ;
+                      rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                          owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeDisposition-type>
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
                                  ] ;
                       rdfs:comment """Categorisation of the stanza according to the diposition of the rhymes (eg. “cross”, “pair”).
 
@@ -1987,24 +2010,8 @@ For example, if we consider the first stanza of the sonnet XXIII by Garcilaso: \
                       rdfs:label "rhyme disposition type"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeMatchingType
-:rhymeMatchingType rdf:type owl:ObjectProperty ;
-                   rdfs:domain :StructuralUnit ;
-                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
-                              ] ;
-                   rdfs:comment """Categorisation of the stanza or  work according to the degree in which the different rhyming sounds match (e.g. assonant, consonant...).
-
-For example, if we consider the first stanza of the sonnet XXIII by Garcilaso: \"En tanto que de rosa y de azucena\\ se muestra la color en vuestro gesto,\\ y que vuestro mirar ardiente, honesto,\\con clara luz la tempestad serena;\" rhymeMatching is \"perfect rhyme\"."""@en ;
-                   rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                   rdfs:label "presents rhyme matching"@en .
-
-
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymesWith
-:rhymesWith rdf:type owl:ObjectProperty ,
-                     owl:ReflexiveProperty ;
+:rhymesWith rdf:type owl:ObjectProperty ;
             rdfs:domain :StructuralUnit ;
             rdfs:range :StructuralUnit ;
             rdfs:comment """This property points to an instance of Line that rhymes with the current Line under analysis.
@@ -2042,10 +2049,13 @@ For example, the line \"veo llegar la corta vida mía\" from the poem \"A la peq
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfAcrostic
 :typeOfAcrostic rdf:type owl:ObjectProperty ;
                 rdfs:domain :Acrostic ;
-                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                             owl:hasValue <http://postdata.linhd.uned.es/kos/type-of-acrostic>
+                rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                    owl:hasValue <http://postdata.linhd.uned.es/kos/type-of-acrostic>
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
                            ] ;
                 rdfs:label "type of acrostic"@en .
 
@@ -2053,10 +2063,13 @@ For example, the line \"veo llegar la corta vida mía\" from the poem \"A la peq
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfEnjambment
 :typeOfEnjambment rdf:type owl:ObjectProperty ;
                   rdfs:domain :Enjambment ;
-                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                               owl:hasValue :type-of-enjambment
+                  rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                      owl:hasValue :type-of-enjambment
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
                              ] ;
                   rdfs:label "type of enjambment" .
 
@@ -2064,10 +2077,13 @@ For example, the line \"veo llegar la corta vida mía\" from the poem \"A la peq
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfIntertextuality
 :typeOfIntertextuality rdf:type owl:ObjectProperty ;
                        rdfs:domain :Intertextuality ;
-                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                    owl:hasValue <http://postdata.linhd.uned.es/kos/type-of-intertextuality>
+                       rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                           owl:hasValue <http://postdata.linhd.uned.es/kos/type-of-intertextuality>
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
                                   ] ;
                        rdfs:comment "Categorisation of the work under analysis depending on the relationship between this work and other texts. E.g. “contrafactum”, “de seguir”, etc."@en ;
                        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#"@en ;
@@ -2077,10 +2093,13 @@ For example, the line \"veo llegar la corta vida mía\" from the poem \"A la peq
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfMetaplasm
 :typeOfMetaplasm rdf:type owl:ObjectProperty ;
                  rdfs:domain :Metaplasm ;
-                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                              owl:hasValue <http://postdata.linhd.uned.es/kos/metaplasm-type>
+                 rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                     owl:hasValue <http://postdata.linhd.uned.es/kos/metaplasm-type>
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
                             ] ;
                  rdfs:comment """Type of Metaplasm.
 
@@ -2091,8 +2110,7 @@ For example, if we consider the two words \"sparse il\" in the line from the son
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfNucleus
 :typeOfNucleus rdf:type owl:ObjectProperty ;
                rdfs:domain :GrammaticalSyllable ;
-               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                          [ rdf:type owl:Restriction ;
+               rdfs:range [ rdf:type owl:Restriction ;
                             owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
                             owl:hasValue <http://postdata.linhd.uned.es/kos/nucleus-type>
                           ] ;
@@ -2103,13 +2121,30 @@ For example, if we consider the first syllable of the word \"boca\" (i.e. \"bo\"
                rdfs:label "type of nucleus"@en .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfPause
+:typeOfPause rdf:type owl:ObjectProperty ;
+             rdfs:domain :Line ;
+             rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                 owl:hasValue :pause-type
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+             rdfs:label "type of pause" .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching
 :typeOfRhymeMatching rdf:type owl:ObjectProperty ;
                      rdfs:domain :RhymeMatch ;
-                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                  owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
+                     rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                         owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                      rdfs:comment """Explain the degree in which the different rhyming sounds match (e.g. assonant, consonant, perfect, imperfect, half-rhyme...).
 
@@ -2121,10 +2156,13 @@ For example, if we consider the rhyme \"scoloraro-legaro\" in the sonnet III fro
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfScansion
 :typeOfScansion rdf:type owl:ObjectProperty ;
                 rdfs:domain :Scansion ;
-                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                             owl:hasValue :scansion-type
+                rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                    owl:hasValue :scansion-type
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
                            ] ;
                 rdfs:comment "Specifies if the annotation is manual or automatic." ;
                 rdfs:label "type of scansion" .
@@ -2133,10 +2171,13 @@ For example, if we consider the rhyme \"scoloraro-legaro\" in the sonnet III fro
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfScheme
 :typeOfScheme rdf:type owl:ObjectProperty ;
               rdfs:domain :Scheme ;
-              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                           owl:hasValue <http://postdata.linhd.uned.es/kos/type-of-scheme>
+              rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                  owl:hasValue <http://postdata.linhd.uned.es/kos/type-of-scheme>
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
                          ] ;
               rdfs:label "type of scheme"@en .
 
@@ -2144,10 +2185,13 @@ For example, if we consider the rhyme \"scoloraro-legaro\" in the sonnet III fro
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfStanza
 :typeOfStanza rdf:type owl:ObjectProperty ;
               rdfs:domain :Stanza ;
-              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                           owl:hasValue <http://postdata.linhd.uned.es/kos/stanza-type>
+              rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                  owl:hasValue <http://postdata.linhd.uned.es/kos/stanza-type>
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
                          ] ;
               rdfs:comment """Type of Stanza, but not in relation to its metrics. E.g. tornada, refrain.
 
@@ -2159,10 +2203,13 @@ For instance, the stanza \"Bailada, ten ta carrera/ e digues a la tan bella/ que
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfStanzaEdition
 :typeOfStanzaEdition rdf:type owl:ObjectProperty ;
                      rdfs:domain :Stanza ;
-                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                  owl:hasValue <http://postdata.linhd.uned.es/kos/stanzaEdition-type>
+                     rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                         owl:hasValue <http://postdata.linhd.uned.es/kos/stanzaEdition-type>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                      rdfs:comment """The type of the text provided in the Stanza. 
 Eg.: Diplomatic edition, critical edition, translation
@@ -2175,10 +2222,13 @@ For instance, if we consider the first stanza of the Inferno of the Divina Comme
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfTrope
 :typeOfTrope rdf:type owl:ObjectProperty ;
              rdfs:domain :Trope ;
-             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                          owl:hasValue <http://postdata.linhd.uned.es/kos/type-of-trope>
+             rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                 owl:hasValue <http://postdata.linhd.uned.es/kos/type-of-trope>
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
                         ] ;
              rdfs:label "type of trope"@en .
 
@@ -2214,8 +2264,6 @@ For instance, if we consider the first stanza of the Inferno of the Divina Comme
               rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :ScansionProcess ;
               rdfs:range :MetricalEncoding ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T20:30:43Z"^^xsd:dateTime ;
               rdfs:comment """This property points to the instance of MetricalEncoding in which the conventions implemented in the item at hand are explained.
 
 For example, in the poem \"Amadís de Gaula a don Quijote de La Mancha\", the presented metrical Pattern uses the following MetricalEncoding: the symbol \"+\" for stressed syllables and the symbol \"-\" for unstressed ones.""" ;
@@ -2225,11 +2273,14 @@ For example, in the poem \"Amadís de Gaula a don Quijote de La Mancha\", the pr
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#versificationType
 :versificationType rdf:type owl:ObjectProperty ;
-                   rdfs:domain :RedactionPattern ;
-                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                owl:hasValue <http://postdata.linhd.uned.es/kos/versification-type>
+                   rdfs:domain :Scansion ;
+                   rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                       owl:hasValue <http://postdata.linhd.uned.es/kos/versification-type>
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
                               ] ;
                    rdfs:comment """Type of metre: accentual verse, accentual-syllabic verse, syllabic verse, quantitative verse, etc.
 
@@ -2297,7 +2348,8 @@ For example, the token \"April\" belongs to the line \"April is the cruellest mo
 ###  http://purl.org/ontology/olo/core#next
 <http://purl.org/ontology/olo/core#next> rdf:type owl:ObjectProperty ;
                                          rdfs:domain <http://purl.org/ontology/olo/core#Slot> ;
-                                         rdfs:range <http://purl.org/ontology/olo/core#Slot> .
+                                         rdfs:range <http://purl.org/ontology/olo/core#Slot> ;
+                                         rdfs:label "next" .
 
 
 ###  http://purl.org/ontology/olo/core#ordered_list
@@ -2334,7 +2386,8 @@ owl:topObjectProperty rdfs:domain owl:Thing .
 <http://postdata.linhd.uned.es/ontology/postdata-core#text> rdf:type owl:DatatypeProperty ;
                                                             rdfs:domain <http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject> ;
                                                             rdfs:range xsd:string ;
-                                                            rdfs:comment "Full content of the literary resource. For example, the content of the  acrostic is  the letters that compose it." .
+                                                            rdfs:comment "Full content of the literary resource. For example, the content of the  acrostic is  the letters that compose it." ;
+                                                            rdfs:label "text" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#absoluteLineNumber
@@ -2352,9 +2405,8 @@ For example, if we take the line \"segura playa i peligroso puerto\" of the poem
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#accentedVowels
 :accentedVowels rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :LinePattern ;
+                rdfs:domain :Line ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                 rdfs:comment """Stressed vowels in the order in which they occur in the text.
 
 If we consider, for example, the line \"Suspiros y risas, colores y notas.\", from the first of the \"Rimas\" by Bécquer, the accentedVowels are: i i e o."""@en ;
@@ -2365,9 +2417,8 @@ If we consider, for example, the line \"Suspiros y risas, colores y notas.\", fr
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#accentedVowelsPattern
 :accentedVowelsPattern rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf owl:topDataProperty ;
-                       rdfs:domain :LinePattern ;
+                       rdfs:domain :Line ;
                        rdfs:range xsd:string ;
-                       <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                        rdfs:comment """Stressed vowels in a line, in alphabetical order to show sound repetitions.
 
 For instance, if we consider the line from the 12th of the \"Rimas\" by Bécquer, namely \"Verdes como el mar, te quejas;\", accentedVowelsPattern is: a a e e e e e o o."""@en ;
@@ -2377,7 +2428,7 @@ For instance, if we consider the line from the 12th of the \"Rimas\" by Bécquer
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#altMoraeMetricalScheme
 :altMoraeMetricalScheme rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :LinePattern ;
+                        rdfs:domain :Line ;
                         rdfs:range xsd:string ;
                         rdfs:comment """Alternative morae metrical schemaes.
 
@@ -2389,9 +2440,8 @@ For example, in the corpus of Middle High German, the line \"ein ritter sô gel�
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#altPatterningMetricalScheme
 :altPatterningMetricalScheme rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf owl:topDataProperty ;
-                             rdfs:domain :LinePattern ;
+                             rdfs:domain :Line ;
                              rdfs:range xsd:string ;
-                             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                              rdfs:comment """Distribution of stresses/long syllables, but, for instance, with the addition of punctuation marks to present word boundaries in the line.
 
 For example, if we consider the line \"From fairest creatures we desire increase,\" from the first sonnet by Shakespeare, altPatterningMetricalScheme is \"-.+|-.+|-.+|.-+|.-+\" in which full stop indicates word boundary and \"|\" foot boundary.""" ;
@@ -2401,9 +2451,8 @@ For example, if we consider the line \"From fairest creatures we desire increase
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#altRhymeScheme
 :altRhymeScheme rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :StanzaPattern ;
+                rdfs:domain :Stanza ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                 rdfs:comment """An alternative rhyme scheme (usually in relation with an alternative metrical scheme).
 
 If we take as example the fourth stanza of the poem \"A mal estrany es la pena estranya\" by Ausiàs March (\"Envers alguns aço miracle par,\\ mas si·ns membram de Arnau Daniell\\ e de aquells que la terra·ls es vel, \\ sabrem Amor vers nos que pot mostrar.\\ Cella que am en egual de la vida, \\ mostre ’vorrir en fets y en continent:\\ quant li so prop, e d’ella sbayment,\\ ab continent de aver l’avorrida.\") we can use an altRhymeScheme which uses capitalisation to indicate femenine rhymes: abbaCddC.""" ;
@@ -2411,25 +2460,23 @@ If we take as example the fourth stanza of the poem \"A mal estrany es la pena e
                 rdfs:label "alt rhyme scheme"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#altSyllabicMetricalScheme
-:altSyllabicMetricalScheme rdf:type owl:DatatypeProperty ;
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#altSyllabicMetricalLength
+:altSyllabicMetricalLength rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf owl:topDataProperty ;
-                           rdfs:domain :LinePattern ;
+                           rdfs:domain :Line ;
                            rdfs:range xsd:string ;
-                           <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                            rdfs:comment """Alternative syllabic metrical schemes (e.g. long lines with caesura opposite to short lines).
 
 If we consider, for instance, the second line of the poem \"Te recuerdo como eras en el último otoño\" by Pablo Neruda, that is, \"Eras la boina gris y el corazón en calma\", this line has an altCountingMetricalScheme considering a caesura after \"gris\". As a result, altCountingMetricalScheme would be 7+7= 14, instead of 15."""@en ;
                            rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                           rdfs:label "alt syllabic metrical scheme"@en .
+                           rdfs:label "alt syllabic metrical length"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#clausulaScheme
 :clausulaScheme rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :StanzaPattern ;
+                rdfs:domain :Stanza ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                 rdfs:comment """Pattern of clausulae, that is, the ending of a line determined by the number of unstressed syllables following the last stressed one.
 
 For example, if we consider the second stanza from the poem \"Acaso...\" by Antonio Machado: \"Brotaban verdes hojas \\ de las hinchadas yemas del ramaje, \\ y flores amarillas, blancas, rojas, /\\alegraban la mancha del paisaje.\"the clausulaScheme is: 4 feminine endings."""@en ;
@@ -2452,7 +2499,7 @@ For example in the word \"mar\" in Spanish, the coda of the syllable is \"r\".""
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#content
 :content rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain :StructuralUnit ;
+         rdfs:domain :AnalyticalUnit ;
          rdfs:range xsd:string ;
          rdfs:comment "Full textual content of a structural element (Redaction, Line, Stanza, Word or Syllable)"@en ;
          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#" ;
@@ -2464,8 +2511,6 @@ For example in the word \"mar\" in Spanish, the coda of the syllable is \"r\".""
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :Word ;
         rdfs:range xsd:string ;
-        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-        <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
         rdfs:comment """Contents from the last stressed vowel of the rhyme to its end.
 
 For instance, if we consider the rhyme word \"vida\" from the poem \"Morir soñando\" by Unamuno, ending is \"ida\"."""@en ;
@@ -2476,10 +2521,8 @@ For instance, if we consider the rhyme word \"vida\" from the poem \"Morir soña
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#finalConsonant
 :finalConsonant rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :Rhyme ;
+                rdfs:domain :RhymeMatch ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                 rdfs:comment """Last consonant of rhyming word.
 
 For example, if we consider the rhyming word \"infinito\" in the poem by Quevedo \"A un hombre de gran nariz\", which rhymes with \"frito\", the final consonant of the rhyming word is \"t\".""" ;
@@ -2509,9 +2552,8 @@ For example, if we consider the line \"Sous le flambeau d’Amour, des éternell
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#grammaticalStressPattern
 :grammaticalStressPattern rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf owl:topDataProperty ;
-                          rdfs:domain :LinePattern ;
+                          rdfs:domain :Line ;
                           rdfs:range xsd:string ;
-                          <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                           rdfs:comment """Pattern based on disposition of the expected stresses according to grammar rules. This includes the distribution of weak and strong positions.
 
 For instance, if we consider the line \"Piedra soy en sufrir pena y cuidado\" from the homonym poem by Quevedo, grammaticalStressPattern is \"+-+--++---+-\" (while the metrical pattern would be +-+--+--+-, e.g. in the grammatical pattern both \"sufrir\" and \"pena\" have a stressed syllables, while in the metrical pattern \"sufrir\" is not stressed).""" ;
@@ -2535,10 +2577,8 @@ For example, in the Spanish word \"recordar\", the syllable \"cor\" is the secon
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasAnacrusis
 :hasAnacrusis rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain :LinePattern ;
+              rdfs:domain :Line ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
               rdfs:comment """If the line has one or more unstressed syllables at the beginning of a line of verse, before the reckoning of the normal meter begins.
 
 For instance, if we consider the line \"El que alaba la vida de la Corte\" from the sonnet by Cristóbal de Mesa, has Anacrusis is \"Yes\".""" ;
@@ -2549,9 +2589,8 @@ For instance, if we consider the line \"El que alaba la vida de la Corte\" from 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasCaesura
 :hasCaesura rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
-            rdfs:domain :LinePattern ;
+            rdfs:domain :Line ;
             rdfs:range xsd:boolean ;
-            <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
             rdfs:comment """Whether it contains any lines with a pause/break near its middle.
 
 If we consider, for example, the line \"Suspiros y risas, colores y notas.\", from the first of the \"Rimas\" by Bécquer, hasCaesura is negative because the line has no caesura.""" ;
@@ -2559,25 +2598,18 @@ If we consider, for example, the line \"Suspiros y risas, colores y notas.\", fr
             rdfs:label "has caesura"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasMetaplasm
-:hasMetaplasm rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain :LinePattern ;
-              rdfs:range xsd:boolean ;
-              rdfs:comment """If the line, word or syllable is affected by a metaplasm.
-
-If we consider, for example, the line from the first sonnet from the \"Canzoniere\" by Petrarca, namely \"Voi ch'ascoltate in rime sparse il suono\", hasMetaplasm is \"Yes\" because synaloepha occurs between \"-te\" (\"ascoltate\") and \"in\" and \"-se\" (\"sparse\") and \"il\"."""@en ;
-              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-              rdfs:label "has metaplasm"@en .
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPause
+:hasPause rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Line ;
+          rdfs:range xsd:boolean ;
+          rdfs:label "has pause" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasRefrain
 :hasRefrain rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
-            rdfs:domain :RedactionPattern ;
+            rdfs:domain :Scansion ;
             rdfs:range xsd:boolean ;
-            <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-            <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
             rdfs:comment """Whether the work has a refrain.
 
 For instance, if we consider the poem \"Señora de hermosura\" by Juan del Encina, hasRefrain would be affirmative, since it has a refrain.""" ;
@@ -2587,9 +2619,8 @@ For instance, if we consider the poem \"Señora de hermosura\" by Juan del Encin
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#initialPhonemesPattern
 :initialPhonemesPattern rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf owl:topDataProperty ;
-                        rdfs:domain :LinePattern ;
+                        rdfs:domain :Line ;
                         rdfs:range xsd:string ;
-                        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                         rdfs:comment """Initial phonemes of each word in a line, in alphabetical order to show sound repetitions.
 
 If we consider, for example, the line \"Suspiros y risas, colores y notas.\", from the first of the \"Rimas\" by Bécquer, initialPhonemesPattern is: [k ii n r s]."""@en ;
@@ -2599,12 +2630,7 @@ If we consider, for example, the line \"Suspiros y risas, colores y notas.\", fr
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#initialPhonemesPatternByManner
 :initialPhonemesPatternByManner rdf:type owl:DatatypeProperty ;
-                                rdfs:domain :LinePattern ,
-                                            [ rdf:type owl:Restriction ;
-                                              owl:onProperty :initialPhonemesPatternByManner ;
-                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                              owl:onDataRange xsd:string
-                                            ] ;
+                                rdfs:domain :Line ;
                                 rdfs:range xsd:string ;
                                 rdfs:comment """Initial phonemes of each word in a line represented by manner, in alphabetical order to show sound repetitions.
 
@@ -2616,9 +2642,8 @@ If we consider, for example, the line \"Suspiros y risas, colores y notas.\", fr
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#interStrophicRelations
 :interStrophicRelations rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf owl:topDataProperty ;
-                        rdfs:domain :RedactionPattern ;
+                        rdfs:domain :Scansion ;
                         rdfs:range xsd:string ;
-                        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                         <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                         rdfs:comment """Type of technique used to related stanzas by the repetition of sounds.
 
@@ -2632,7 +2657,6 @@ For instance, the tercets of the Sonnet XI by Garcilaso are \"tercetos encadenad
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :Foot ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
               rdfs:comment """Whether the instance at hand is the last foot of the line or hemistich and is lacking one syllable.
 
 If we consider, for instance, the foot \"shed\" of the line \"Stood a lowly cattle shed\" from the poem \"Once in Royal David's city\" by Cecil Frances Alexander, isCatalectic is \"Yes\" because the foot lacks one syllable. In fact, the line would be expected to be of eight syllables, as the previous line, and instead has one syllable missing. Compare the two lines: \"Once in Royal David's city\" (8 syllables) / \"Stood a lowly cattle shed,\" (7 syllables)."""@en ;
@@ -2640,26 +2664,11 @@ If we consider, for instance, the foot \"shed\" of the line \"Stood a lowly catt
               rdfs:label "is catalectic"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isEcho
-:isEcho rdf:type owl:DatatypeProperty ;
-        rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:domain :Rhyme ;
-        rdfs:range xsd:boolean ;
-        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-        <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
-        rdfs:comment """Whether the word in a rhyming pair under analysis is the first one (false) or the second (true).
-
-If we consider, for instance, the word \"scoloraro\" in the first line of the sonnet III from Petrarch's \"Canzoniere\", isEcho is \"False\". In fact, the echo would be \"legaro\", as can be observed in the following lines: \"Era il giorno ch’al sol si scoloraro/ per la pietà del suo factore i rai,/ quando i' fui preso, et non me ne guardai,/ché i be' vostr'occhi, Donna, mi legaro\"."""@en ;
-        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-        rdfs:label "is echo"@en .
-
-
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isHypermetre
 :isHypermetre rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain :LinePattern ;
+              rdfs:domain :Line ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
               rdfs:comment """It has one or more syllables in addition to those found in a standard metrical unit or line of verse.
 
@@ -2673,7 +2682,6 @@ For instance, if we consider the line \"intorno la croce.\" from the poem \"La f
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :Foot ;
                  rdfs:range xsd:boolean ;
-                 <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
                  rdfs:comment """Whether the instance at hand is the last foot of the line or hemistich and it contains extra syllables.
 
 If we consider, for instance, the foot \"From fai\" in the line \"From fairest creatures we desire increase,\" from the first sonnet by Shakespeare, isHypermetrical is \"No\" because that foot is part of the metrical pattern of the line: from FAI | rest CREA | tures WE | deSIRE | inCREASE."""@en ;
@@ -2684,9 +2692,8 @@ If we consider, for instance, the foot \"From fai\" in the line \"From fairest c
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isHypometre
 :isHypometre rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain :LinePattern ;
+             rdfs:domain :Line ;
              rdfs:range xsd:boolean ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
              rdfs:comment """It has one or more syllables less than to those found in a standard metrical unit or line of verse.
 
@@ -2700,7 +2707,6 @@ For instance, if we consider the line \"e benedico quel dolce varco\" from the s
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :Foot ;
              rdfs:range xsd:boolean ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
              rdfs:comment """Whether in comparison to the other lines, the current foot breaks a regular pattern.
 
 If we consider, for instance, the first foot of the line \"Pity the world, or else this glutton be,\" from the first sonnet by Shakespeare, isIrregular is \"Yes\" because the sonnet is in iambic pentameters but the first foot of this line, namely \"Pity\", is a trochee. The metrical scansion of the line is: PIty | the WORLD | or ELSE | this GLUT | ton Be."""@en ;
@@ -2711,10 +2717,8 @@ If we consider, for instance, the first foot of the line \"Pity the world, or el
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isIsometric
 :isIsometric rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain :RedactionPattern ;
+             rdfs:domain :Scansion ;
              rdfs:range xsd:boolean ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
              rdfs:comment """Whether the work is monometric, that is, if all lines have the same metrical analysis.
 
 If we consider, for example, the sonnet III from the \"Canzoniere\" by Petrarca, isIsometric is \"Yes\" because all lines are hendecasyllables, hence, they have the same metrical analysis.""" ;
@@ -2725,10 +2729,8 @@ If we consider, for example, the sonnet III from the \"Canzoniere\" by Petrarca,
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isIsostrophic
 :isIsostrophic rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
-               rdfs:domain :RedactionPattern ;
+               rdfs:domain :Scansion ;
                rdfs:range xsd:boolean ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                rdfs:comment """Whether all stanzas are metrically equivalent.
 
 If we consider for example the poem \"Canción de otoño en primavera\" by Rubén Darío, isIsostrophic is \"Yes\" because all stanzas of the poem have the same length and the same metrical characteristics.""" ;
@@ -2762,10 +2764,8 @@ If we consider, for example, the first stanza of the poem \"Caracola\" by Federi
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isRegular
 :isRegular rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf owl:topDataProperty ;
-           rdfs:domain :LinePattern ;
+           rdfs:domain :Line ;
            rdfs:range xsd:boolean ;
-           <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-           <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
            rdfs:comment """Regular metrics.
 
 For example, if we take as example the poem \"Osé y temí mas pudo la osadía\" by Fernando de Herrera, LinePattern isRegular since it is a sonnet and all the lines are hendecasyllables."""@en ;
@@ -2788,10 +2788,8 @@ For example, if we take the syllable \"-ñar\" word \"soñar\" in the line \"So�
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#isUnissonant
 :isUnissonant rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain :RedactionPattern ;
+              rdfs:domain :Scansion ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
               rdfs:comment """Whether all stanzas have the same rhyme.
 
 If we take as example the poem \"Cortesamen vuoill comensar\" by the trobador Marcabru, isUnissonant is true, since all the stanzas have the same rhyme.""" ;
@@ -2812,13 +2810,31 @@ For example, for the verbal forms \"querer\", \"querremos\" and \"quería\", the
        rdfs:seeAlso "https://simple.wikipedia.org/wiki/Lemma_(linguistics)" .
 
 
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lineMaxLength
+:lineMaxLength rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Line ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The maximum number of metrical syllables that may occur for a line considering all the metaplasms that provoke a single grammatical syllables to be considered as two metrical ones." ;
+               rdfs:label "line max length" .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#lineMinLength
+:lineMinLength rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Line ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The minimum number of metrical syllables that may occur for a line considering all the metaplasms that may join grammatical syllables into metrical ones" ;
+               rdfs:label "line min length" .
+
+
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#metricalNotes
 :metricalNotes rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
-               rdfs:domain :Pattern ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :AnalyticalUnit
+                                           :StructuralUnit
+                                         )
+                           ] ;
                rdfs:range xsd:string ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                rdfs:comment """Metrical commentary.
 
 For example, the poem \"A creer devemos que todo pecado\" contains the following metrical commentary in the Cantigas de Santa María for Singers Database: \"Synaeresis, which is common in forms of the verb veer (= \"to see\"), is required here to reduce viía to two metrical syllables (contrast line 24 where it has its natural three). The compressed syllable vii- benefits from a long note  in the music, however\"""" ;
@@ -2855,7 +2871,7 @@ For example, the symbol \"+\" is used as metricalSymbol of an stressed syllable.
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#moraeMetricalScheme
 :moraeMetricalScheme rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :LinePattern ;
+                     rdfs:domain :Line ;
                      rdfs:range xsd:string ;
                      rdfs:comment """Metrical scheme according to the number of morae.
 
@@ -2904,14 +2920,11 @@ If we consider the first line of the first sonnet by Shakespeare, namely \"From 
                                                  owl:topDataProperty ;
                               rdfs:domain :GrammaticalSyllableList ;
                               rdfs:range xsd:positiveInteger ;
-                              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                               rdfs:comment "The exact number of syllables of a Word, that is, without paying attention to any metrical phenomena that may affect the counting"@en ,
                                            """The exact number of syllables, that is, without paying attention to any metrical phenomena that may affect the counting.
 
 If we consider the first hendecasyllable line of the sonnet I by Petrarca, namely \"Voi ch'ascoltate in rime sparse il suono\", and disregard any metrical phenomena (e.g. synaloepha), numberOfSyllables is: 13."""@en ;
-                              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ,
-                                               "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#" ;
+                              rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#" ;
                               rdfs:label "number of grammatical syllables"@en .
 
 
@@ -3023,10 +3036,8 @@ For example, a possible paraphrasis of the famous first tercet of Dante's \"Divi
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#patterningMetricalScheme
 :patterningMetricalScheme rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf owl:topDataProperty ;
-                          rdfs:domain :LinePattern ;
+                          rdfs:domain :Line ;
                           rdfs:range xsd:string ;
-                          <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                          <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                           rdfs:comment """Metrical scheme for quantitative, tonal, accentual or accentual-syllabic metre.
 
 If we consider the line \"From fairest creatures we desire increase,\" from the first sonnet by Shakespeare, patterningMetricalScheme is: -+-+-+-+-+""" ;
@@ -3037,10 +3048,8 @@ If we consider the line \"From fairest creatures we desire increase,\" from the 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#phonemePattern
 :phonemePattern rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :LinePattern ;
+                rdfs:domain :Line ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                 rdfs:comment """All phonemes in a line represented by their nearest written equivalents. They could be arranged in alphabetical order to show sound repetitions.
 
 If we take, for example, the line \"Si quejas y lamentos pueden tanto,\" from the sonnet \"Si quejas y lamentos puedan tanto\" by Garcilaso, the phonemePattern is \"aaa d eeee ii k l m nnn oo p sss ttt w x\""""@en ;
@@ -3051,10 +3060,8 @@ If we take, for example, the line \"Si quejas y lamentos pueden tanto,\" from th
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#phonemePatternByManner
 :phonemePatternByManner rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf owl:topDataProperty ;
-                        rdfs:domain :LinePattern ;
+                        rdfs:domain :Line ;
                         rdfs:range xsd:string ;
-                        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                        <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                         rdfs:comment """All phonemes in a line represented by manner of articulation. They could be arranged in alphabetical order to show sound repetitions. The coding scheme presented in one of the databases stands for the different manners of articulation of consonants, and at the same time groups together front and back vowels.
 
 If we take, for example, the line \"Si quejas y lamentos pueden tanto,\" from the sonnet \"Si quejas y lamentos puedan tanto\" by Garcilaso, the phonemePatternByManner is: fricative, front vowel, stop, front vowel, fricative, front vowel, fricative, front vowel, liquid, front vowel, stop, front vowel, stop, stop, back vowel, fricative, stop, back vowel, front vowel, fricative, front vowel, nasal, stop, front vowel, stop, stop, back vowel."""@en ;
@@ -3067,26 +3074,21 @@ If we take, for example, the line \"Si quejas y lamentos pueden tanto,\" from th
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain :AnalyticalUnit ;
                        rdfs:range xsd:string ;
-                       <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                       <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                        rdfs:comment """Phonetic transcription
 
 For example, in the case of the Spanish word \"novio\", the phonetic transcription is ['nɔ.βjo]."""@en ,
                                     """Phonetic transcription.
 
 If we consider, as an example, the line \"Soñar la muerte no es matar el sueño\" from the poem \"Morir soñando\" by Unamuno, phoneticTranscription is: /so'ɲar la 'mwerte no es ma'tar el 'sweɲo/."""@en ;
-                       rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ,
-                                        "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#" ;
+                       rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#" ;
                        rdfs:label "phonetic transcription"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#prefinalConsonants
 :prefinalConsonants rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf owl:topDataProperty ;
-                    rdfs:domain :Rhyme ;
+                    rdfs:domain :RhymeMatch ;
                     rdfs:range xsd:string ;
-                    <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                    <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                     rdfs:comment """Consonants between the stressed vowel and the last consonant.
 
 For example, in the rhyme \"doliente-accidente\" (rhyme between the first and the fourth line) from the sonnet XXXVIII by Fernando de Herrera, the prefinalConsonant is \"n\"."""@en ;
@@ -3116,10 +3118,8 @@ For example, in the rhyme \"doliente-accidente\" (rhyme between the first and th
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeGrapheme
 :rhymeGrapheme rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
-               rdfs:domain :Rhyme ;
+               rdfs:domain :RhymeMatch ;
                rdfs:range xsd:string ;
-               <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                rdfs:comment """Grapheme that represents the rhyming sounds.
 
 If we consider, as an example, the rhyme \"infinito-frito\" in the poem by Quevedo \"A un hombre de gran nariz\", rhyme grapheme is \"ito\"."""@en ;
@@ -3132,8 +3132,6 @@ If we consider, as an example, the rhyme \"infinito-frito\" in the poem by Queve
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain :Rhyme ;
             rdfs:range xsd:string ;
-            <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-            <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
             rdfs:comment """String used to identify the item at hand (usually, “a”, “b”, “c”, etc.).
 
 For instance, \"A\" is the label used to mark the rhyme between the first and fourth line of the first stanza of the sonnet III from Petrarcha's \"Canzoniere\", namely \"Era il giorno ch’al sol si scoloraro/ [...] /ché i be’ vostr’occhi, donna, mi legaro.\"."""@en ;
@@ -3144,10 +3142,8 @@ For instance, \"A\" is the label used to mark the rhyme between the first and fo
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymePhoneme
 :rhymePhoneme rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain :Rhyme ;
+              rdfs:domain :RhymeMatch ;
               rdfs:range xsd:string ;
-              <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-              <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
               rdfs:comment """Phonetic transcription of the rhyming sounds.
 
 For instance, if we consider the rhyme \"strife-life\" from the 55th Psalm by Mary Alcock, rhymePhoneme is /aɪf/."""@en ;
@@ -3158,10 +3154,8 @@ For instance, if we consider the rhyme \"strife-life\" from the 55th Psalm by Ma
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeScheme
 :rhymeScheme rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain :StanzaPattern ;
+             rdfs:domain :Stanza ;
              rdfs:range xsd:string ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
              rdfs:comment """A rhyme scheme is the pattern of rhymes at the end of each line of a poem or song. It is usually referred to by using letters to indicate which lines rhyme; lines designated with the same letter all rhyme with each other.
 
 If we consider the first stanza of the sonnet III from Petrarcha's \"Canzoniere\", namely \"Era il giorno ch’al sol si scoloraro / per la pietà del suo factore i rai, / quando i’ fui preso, et non me ne guardai, /ché i be’ vostr’occhi, donna, mi legaro.\". rhymeScheme is: \"ABBA\".""" ;
@@ -3172,10 +3166,8 @@ If we consider the first stanza of the sonnet III from Petrarcha's \"Canzoniere\
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#rhymeTypeProportion
 :rhymeTypeProportion rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
-                     rdfs:domain :RedactionPattern ;
+                     rdfs:domain :Scansion ;
                      rdfs:range xsd:string ;
-                     <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                     <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                      rdfs:comment """Proportion of the feminine/masculine rhymes of the poem.
 
 If we consider, as an example, the sonnet I by Shakespeare, all rhymes are masculine rhymes: \"From fairest creatures we desire increase,/ That thereby beauty's rose might never die, /But as the riper should by time decease, /His tender heir might bear his memory:/ But thou contracted to thine own bright eyes,/ Feed'st thy light's flame with self-substantial fuel,/ Making a famine where abundance lies,/ Thy self thy foe, to thy sweet self too cruel:/ Thou that art now the world's fresh ornament,/ And only herald to the gaudy spring,/ Within thine own bud buriest thy content,/ And, tender churl, mak'st waste in niggarding:/  Pity the world, or else this glutton be,/ To eat the world's due, by the grave and thee.\". Consequently, the rhymeTypeProportion will be \"100% masculine rhymes\".""" ;
@@ -3186,10 +3178,8 @@ If we consider, as an example, the sonnet I by Shakespeare, all rhymes are mascu
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#scannedLine
 :scannedLine rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain :LinePattern ;
+             rdfs:domain :Line ;
              rdfs:range xsd:string ;
-             <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
              rdfs:comment """A line metrically analysed, marked up in terms of syllable division and accent.
 
 If we consider, as an example, the line \"From fairest creatures we desire increase,\" from the first sonnet by Shakespeare, scannedLine is \"from FAI.|rest. CREA.|tures. WE.| de.SIRE.| in.CREASE.\""""@en ;
@@ -3242,17 +3232,16 @@ If we take, for instance, the word \"esperanza\", stressPosition is 2, because s
                 rdfs:label "stress position"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#syllabicMetricalScheme
-:syllabicMetricalScheme rdf:type owl:DatatypeProperty ;
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#syllabicMetricalLength
+:syllabicMetricalLength rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf owl:topDataProperty ;
-                        rdfs:domain :LinePattern ;
-                        rdfs:range xsd:string ;
-                        <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
+                        rdfs:domain :Line ;
+                        rdfs:range xsd:integer ;
                         rdfs:comment """Metrical scheme according to the number of syllables.
 
 For instance, if we consider the line \"From fairest creatures we desire increase,\" from the first sonnet by Shakespeare and analyse them only in terms of number of syllables, syllabicMetricalScheme is: 10 syllables."""@en ;
                         rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-prosodicElements"@en ;
-                        rdfs:label "syllabic metrical scheme"@en .
+                        rdfs:label "syllabic metrical length"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#symbolExplanation
@@ -3281,10 +3270,8 @@ For instance, if we take the Spanish word \"viaje\" the English translation woul
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#vowelTypeScheme
 :vowelTypeScheme rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
-                 rdfs:domain :LinePattern ;
+                 rdfs:domain :Line ;
                  rdfs:range xsd:string ;
-                 <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                 <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:39:21Z"^^xsd:dateTime ;
                  rdfs:comment """Linguistic properties of the vowels of the line.
 
 If we consider, for instance, the line \"Morir soñando, sí, mas si se sueña\" from the poem \"Morir soñando\" by Unamuno, vowelTypeScheme is: monophthong back close-mid, monophthong front close, monophthong back close-mid, monophthong front open, monophthong back close-mid, monophthong front close, monophthong front open, monophthong front close, monophthong front close-mid, diphthong labio-velar approximant + front close-mid vowel, monophthong front open."""@en ;
@@ -3295,7 +3282,7 @@ If we consider, for instance, the line \"Morir soñando, sí, mas si se sueña\"
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#weight
 :weight rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:domain :MetricalSyllable ;
+        rdfs:domain :AnalyticalUnit ;
         rdfs:range xsd:string ;
         rdfs:comment """Pattern according to the number and/or duration of segments in the syllabic rime, that is, the nucleus and coda.
 
@@ -3333,11 +3320,10 @@ For example, in the poem \"Suspiro y pruebo con la voz doliente\" by Fernando de
 
 
 ###  http://purl.org/ontology/olo/core#length
-<http://purl.org/ontology/olo/core#length> rdf:type owl:DatatypeProperty .
-
-
-###  http://www.w3.org/2002/07/owl#topDataProperty
-owl:topDataProperty rdfs:subPropertyOf owl:topDataProperty .
+<http://purl.org/ontology/olo/core#length> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://purl.org/ontology/olo/core#OrderedList> ;
+                                           rdfs:range xsd:positiveInteger ;
+                                           rdfs:label "length" .
 
 
 #################################################################
@@ -3345,7 +3331,8 @@ owl:topDataProperty rdfs:subPropertyOf owl:topDataProperty .
 #################################################################
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-core#Agent
-<http://postdata.linhd.uned.es/ontology/postdata-core#Agent> rdf:type owl:Class .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Agent> rdf:type owl:Class ;
+                                                             rdfs:label "Agent" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole
@@ -3354,12 +3341,14 @@ owl:topDataProperty rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-core#Event
-<http://postdata.linhd.uned.es/ontology/postdata-core#Event> rdf:type owl:Class .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Event> rdf:type owl:Class ;
+                                                             rdfs:label "Event" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt
 <http://postdata.linhd.uned.es/ontology/postdata-core#Excerpt> rdf:type owl:Class ;
-                                                               rdfs:subClassOf <http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject> .
+                                                               rdfs:subClassOf <http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject> ;
+                                                               rdfs:label "Excerpt" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject
@@ -3368,7 +3357,8 @@ owl:topDataProperty rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-core#Place
-<http://postdata.linhd.uned.es/ontology/postdata-core#Place> rdf:type owl:Class .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Place> rdf:type owl:Class ;
+                                                             rdfs:label "Place" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-core#Redaction
@@ -3377,19 +3367,9 @@ owl:topDataProperty rdfs:subPropertyOf owl:topDataProperty .
                                                                                    owl:onProperty :firstLine ;
                                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                                    owl:onClass :Line
-                                                                                 ] ,
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty :rhymeMatchingType ;
-                                                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                   owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                                        owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                                                                        owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
-                                                                                                                      ]
-                                                                                                                    ) ;
-                                                                                                 rdf:type owl:Class
-                                                                                               ]
-                                                                                 ] .
+                                                                                 ] ;
+                                                                 rdfs:comment "Def" ;
+                                                                 rdfs:label "Redaction" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Acrostic
@@ -3411,7 +3391,8 @@ owl:topDataProperty rdfs:subPropertyOf owl:topDataProperty .
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Enjambment
 :Enjambment rdf:type owl:Class ;
-            rdfs:subClassOf :LiteraryDevice .
+            rdfs:subClassOf :LiteraryDevice ;
+            rdfs:label "Enjambment" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#FigureOfSpeech
@@ -3493,7 +3474,6 @@ Eg.: The word ignite is composed of two syllables: ig and nite."""@en ;
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Intertextuality
 :Intertextuality rdf:type owl:Class ;
                  rdfs:subClassOf :LiteraryDevice ;
-                 <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
                  rdfs:comment "Shared textual materials between two or more contemporary texts; Text from which information or ideas are derived for the composition of the Opus/Redaction;Text that took information or ideas from the Opus/Redaction" ;
                  rdfs:label "Intertextuality"@en .
 
@@ -3502,19 +3482,8 @@ Eg.: The word ignite is composed of two syllables: ig and nite."""@en ;
 :Line rdf:type owl:Class ;
       rdfs:subClassOf :StructuralUnit ,
                       <http://purl.org/ontology/olo/core#Slot> ,
-                      owl:Thing ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :isPatternOf ;
-                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onClass :LinePattern
-                      ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :absoluteLineNumber ;
-                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onDataRange xsd:string
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :content ;
                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                         owl:onDataRange xsd:string
                       ] ,
@@ -3538,72 +3507,6 @@ Eg.: “As armas e os barões assinalados” - from Os Lusíadas"""@en ;
           rdfs:comment "A Line List is an ordered list of slots of type Line that is used to represent the contents of a Redaction. Any Redaction has a Line List composed by a minimum of one Line."@en ;
           rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#" ;
           rdfs:label "Line List"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LinePattern
-:LinePattern rdf:type owl:Class ;
-             rdfs:subClassOf :Pattern ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :feetType ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                    owl:hasValue <http://postdata.linhd.uned.es/kos/feet-type>
-                                                                  ]
-                                                                ) ;
-                                             rdf:type owl:Class
-                                           ]
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :accentedVowels ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:string
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :altPatterningMetricalScheme ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:string
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :altSyllabicMetricalScheme ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:string
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :grammaticalStressPattern ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:string
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasAnacrusis ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:boolean
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasCaesura ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:boolean
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :metricalNotes ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:string
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :patterningMetricalScheme ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:string
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :syllabicMetricalScheme ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:string
-                             ] ;
-             <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
-             rdfs:comment """The prosodic analysis using a Line as the unit of reference
-Eg.: The number of syllables of the Line"""@en ;
-             rdfs:label "Line Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#LiteraryDevice
@@ -3663,19 +3566,10 @@ Eg.: The definition of the plus sign to encode strong positions."""@en ;
           rdfs:label "Mora List"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Pattern
-:Pattern rdf:type owl:Class .
-
-
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Punctuation
 :Punctuation rdf:type owl:Class ;
              rdfs:subClassOf :StructuralUnit ,
-                             <http://purl.org/ontology/olo/core#Slot> ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :content ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:string
-                             ] ;
+                             <http://purl.org/ontology/olo/core#Slot> ;
              rdfs:comment """Specific markings, signs and symbols that are used in and around sentences to give them structure and to allow for correct understanding and comprehension.
 
 Eg.: the colon \":\""""@en ;
@@ -3692,90 +3586,6 @@ Eg.: the colon \":\""""@en ;
                  rdfs:label "Punctuation List"@en .
 
 
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RedactionPattern
-:RedactionPattern rdf:type owl:Class ;
-                  rdfs:subClassOf :Pattern ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :metricalType ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                         owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-type>
-                                                                       ]
-                                                                     ) ;
-                                                  rdf:type owl:Class
-                                                ]
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :rhymeMatchingType ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                         owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
-                                                                       ]
-                                                                     ) ;
-                                                  rdf:type owl:Class
-                                                ]
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :altPatterningMetricalScheme ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:string
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :altRhymeScheme ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:string
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :altSyllabicMetricalScheme ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:string
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :grammaticalStressPattern ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:string
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasAnacrusis ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:boolean
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasCaesura ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:boolean
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :metricalNotes ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:string
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :patterningMetricalScheme ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:string
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :rhymeScheme ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:string
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :syllabicMetricalScheme ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onDataRange xsd:string
-                                  ] ;
-                  <http://purl.org/dc/elements/1.1/creator> "mluisadiez" ;
-                  <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
-                  rdfs:comment """The prosodic analysis using a Redaction as the unit of reference
-Eg.: The complete distribution of accented syllables of a work"""@en ;
-                  rdfs:label "Redaction Pattern"@en .
-
-
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Rhyme
 :Rhyme rdf:type owl:Class ;
        rdfs:comment "Repetition of similar sounding words occurring at the end of lines in poems or songs"@en ;
@@ -3783,12 +3593,14 @@ Eg.: The complete distribution of accented syllables of a work"""@en ;
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#RhymeMatch
-:RhymeMatch rdf:type owl:Class .
+:RhymeMatch rdf:type owl:Class ;
+            rdfs:label "Rhyme Match" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Scansion
 :Scansion rdf:type owl:Class ;
-          rdfs:comment "Event scansion is performed by some agent (person or computer software) taking a redaction as input and generates a set of lists and patterns for the elements of analysis considered."@en .
+          rdfs:comment "Event scansion is performed by some agent (person or computer software) taking a redaction as input and generates a set of lists and patterns for the elements of analysis considered."@en ;
+          rdfs:label "Scansion" .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#ScansionProcess
@@ -3807,39 +3619,6 @@ Eg.: The complete distribution of accented syllables of a work"""@en ;
 :Stanza rdf:type owl:Class ;
         rdfs:subClassOf :StructuralUnit ,
                         <http://purl.org/ontology/olo/core#Slot> ,
-                        owl:Thing ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :firstLine ;
-                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onClass :Line
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :lastLine ;
-                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onClass :Line
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :isPatternOf ;
-                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onClass :Pattern
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :rhymeMatchingType ;
-                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                               owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
-                                                             ]
-                                                           ) ;
-                                        rdf:type owl:Class
-                                      ]
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :content ;
-                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onDataRange xsd:string
-                        ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :paraphrasis ;
                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -3866,103 +3645,6 @@ Novo Reino, que tanto sublimaram;"""@en ;
             rdfs:comment "A Stanza List is an ordered list of slots of type Stanza that is used to represent the contents of a Redaction. Any Redaction has a Stanza List composed by a minimum of one Stanza."@en ;
             rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#" ;
             rdfs:label "Stanza List"@en .
-
-
-###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StanzaPattern
-:StanzaPattern rdf:type owl:Class ;
-               rdfs:subClassOf :Pattern ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :clausulaSchemeType ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                      owl:hasValue <http://postdata.linhd.uned.es/kos/clausulaScheme-type>
-                                                                    ]
-                                                                  ) ;
-                                               rdf:type owl:Class
-                                             ]
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :feetType ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                      owl:hasValue <http://postdata.linhd.uned.es/kos/feet-type>
-                                                                    ]
-                                                                  ) ;
-                                               rdf:type owl:Class
-                                             ]
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :metricalType ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                      owl:hasValue <http://postdata.linhd.uned.es/kos/metrical-type>
-                                                                    ]
-                                                                  ) ;
-                                               rdf:type owl:Class
-                                             ]
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :rhymeMatchingType ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                      owl:hasValue <http://postdata.linhd.uned.es/kos/rhymeMatching-type>
-                                                                    ]
-                                                                  ) ;
-                                               rdf:type owl:Class
-                                             ]
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :altPatterningMetricalScheme ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:string
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :altRhymeScheme ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:string
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :altSyllabicMetricalScheme ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:string
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :hasCaesura ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:boolean
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :metricalNotes ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:string
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :patterningMetricalScheme ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:string
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :rhymeScheme ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:string
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :syllabicMetricalScheme ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:string
-                               ] ;
-               <http://purl.org/dc/elements/1.1/date> "2018-06-16T18:37:24Z"^^xsd:dateTime ;
-               rdfs:comment """The prosodic analysis using a Stanza as the unit of reference
-Eg.: The number of lines of a Stanza or its categorisation according to metrics (such as “quatrain”)"""@en ;
-               rdfs:label "Stanza Pattern"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#StructuralUnit
@@ -3992,11 +3674,6 @@ Eg.: The number of lines of a Stanza or its categorisation according to metrics 
                         owl:onProperty :isInflectedForm ;
                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                         owl:onClass :Word
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :content ;
-                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onDataRange xsd:string
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :lemma ;
@@ -4038,7 +3715,8 @@ Eg.: The word “life”"""@en ;
 
 
 ###  http://purl.org/ontology/olo/core#Slot
-<http://purl.org/ontology/olo/core#Slot> rdf:type owl:Class .
+<http://purl.org/ontology/olo/core#Slot> rdf:type owl:Class ;
+                                         rdfs:label "Slot" .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
@@ -4161,6 +3839,10 @@ Eg.: The word “life”"""@en ;
 ###  http://postdata.linhd.uned.es/kos/versification-type
 <http://postdata.linhd.uned.es/kos/versification-type> rdf:type owl:NamedIndividual ,
                                                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#pause-type
+:pause-type rdf:type owl:NamedIndividual .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#scansion-type

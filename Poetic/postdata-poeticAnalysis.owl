@@ -2813,6 +2813,26 @@ For example, if we consider the first syllable of the word &quot;boca&quot; (i.e
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfPause -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfPause">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#pause-type"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>type of pause</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#typeOfRhymeMatching">
@@ -3429,6 +3449,16 @@ For instance, if we consider the line &quot;El que alaba la vida de la Corte&quo
 If we consider, for example, the line &quot;Suspiros y risas, colores y notas.&quot;, from the first of the &quot;Rimas&quot; by Bécquer, hasCaesura is negative because the line has no caesura.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://postdata.linhd.uned.es/ontology/postdata-prosodicElements</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">has caesura</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPause -->
+
+    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#hasPause">
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#Line"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>has pause</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5100,6 +5130,12 @@ Eg.: The word “life”</rdfs:comment>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#pause-type -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#pause-type"/>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#scansion-type -->
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#scansion-type">
@@ -5288,9 +5324,9 @@ It marks the origin of the causality chain that results in a work’s coming int
 </rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R19i_was_realised_through">
+        <rdfs:label xml:lang="en">was realised through</rdfs:label>
         <rdfs:comment xml:lang="en">
 </rdfs:comment>
-        <rdfs:label xml:lang="en">was realised through</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R1_is_logical_successor_of">
         <rdfs:comment xml:lang="en">This property associates an instance of F1 Work which logically continues the content of another instance of F1 Work with the latter.
@@ -5656,9 +5692,9 @@ This property is a shortcut of: F2 Expression P165i is incorporated in F24 Publi
         <rdfs:label xml:lang="en">was assigned by</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule">
-        <rdfs:label xml:lang="en">used rule</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates the event of assigning an instance of F13 Identifier with the instructions followed by an actor, such as a Bibliographic Agency, in creating that identifier.
 </rdfs:comment>
+        <rdfs:label xml:lang="en">used rule</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_in">
         <rdfs:label xml:lang="en">was the rule used in</rdfs:label>
@@ -5686,9 +5722,9 @@ This property is a shortcut of: F2 Expression P165i is incorporated in F24 Publi
 </rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55_has_nomen_form">
-        <rdfs:label xml:lang="en">has nomen form</rdfs:label>
         <rdfs:comment xml:lang="en">This property associates an instance of F35 Nomen Use Statement with the instance of E55 Type that characterizes the Nomen referred to in the Nomen Use Statement, such as abbreviation, full name etc. In the case of abbreviations, the source of this form may or may not be explicitly mentioned.
 </rdfs:comment>
+        <rdfs:label xml:lang="en">has nomen form</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R55i_is_nomen_form_in">
         <rdfs:label xml:lang="en">is nomen form in</rdfs:label>
