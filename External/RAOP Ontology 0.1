@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+   <!ENTITY rdf   "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+   <!ENTITY rdfs  "http://www.w3.org/2000/01/rdf-schema#" >
+   <!ENTITY raop  "http://bakulf.github.io/raop/0.1#" >
+   <!ENTITY dc    "http://purl.org/dc/elements/1.1/" >
+   <!ENTITY foaf  "http://xmlns.com/foaf/0.1/" >
+   <!ENTITY owl  "http://www.w3.org/2002/07/owl#" >
+]>
+
+<rdf:RDF
+   xmlns:rdf="&rdf;"
+   xmlns:rdfs="&rdfs;"
+   xmlns:raop="&raop;"
+   xmlns:dc="&dc;"
+   xmlns:foaf="&foaf;"
+   xmlns:owl ="&owl;"
+>
+
+  <rdf:Description rdf:about="&raop;">
+    <dc:creator>Andrea Marchesini</dc:creator>
+    <dc:creator>Tiziana Mancinelli</dc:creator>
+    <dc:rights>Copyright &#169; 2014-2015 Andrea Marchesini and Tiziana Mancinelli</dc:rights>
+    <dc:title>RAOP: Rethorical Annotation Ontology Project</dc:title>
+    <dc:format>application/dc+xml</dc:format>
+    <foaf:maker rdf:nodeID="tiziana_mancinelli" />
+    <foaf:maker rdf:nodeID="andrea_marchesini" />
+    <rdf:type rdf:resource="&owl;Ontology" />
+  </rdf:Description>
+
+
+  <rdf:Description rdf:nodeID="andrea_marchesini">
+    <foaf:name>Andrea Marchesini</foaf:name>
+    <rdfs:seeAlso rdf:resource="http://www.autistici.org/bakunin/foaf.rdf" />
+    <rdf:type rdf:resource="&foaf;Person" />
+  </rdf:Description>
+
+  <rdf:Description rdf:nodeID="tiziana_mancinelli">
+    <foaf:name>Tiziana Mancinelli</foaf:name>
+    <rdf:type rdf:resource="&foaf;Person" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Document">
+    <rdfs:label>Document</rdfs:label>
+    <rdfs:comment>which is an abstraction, created by or for a community of readers – 'an abstract class defining any kinds of publishing work'</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <owl:equivalentClass>
+      <owl:Class rdf:about="http://xmlns.com/foaf/spec/#term_Document" rdfs:label="foaf:Document" />
+    </owl:equivalentClass>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Word">
+    <rdfs:label>Word</rdfs:label>
+    <rdfs:comment>which is, at the moment, the smallest meaningful element of speech or writing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Group">
+    <rdfs:label>Group</rdfs:label>
+    <rdfs:comment>which represents a number of items (groups, words, phonemes, syllables) gathered and classed together. It is useful to define properties of rhetorical annotations.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Phoneme">
+    <rdfs:label>Phoneme</rdfs:label>
+    <rdfs:comment>Any of the perceptually distinct units of sound in a specified language that distinguish one word from another.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Syllable">
+    <rdfs:label>Syllable</rdfs:label>
+    <rdfs:comment>A unit of pronunciation having one vowel sound, with or without surrounding consonants, forming the whole or a part of a word.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;RethoricalDevice">
+    <rdfs:label>Rethorical Device</rdfs:label>
+    <rdfs:comment>Figures  of speech, or, as they are often called, rhetorical figures, are an  artful deviation1 from the ordinary manner of speaking, used in order to  impress an audience.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;FigureOfSpeech">
+    <rdfs:label>Figure of Speech</rdfs:label>
+    <rdfs:comment>which employ repetition – repetition of words or sounds in a specific pattern - are often used to gain attention, create an emphasis or, amplify a meaning.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;FigureOfThought">
+    <rdfs:label>Figure of Thought</rdfs:label>
+    <rdfs:comment>Those rhetorical figures are a method of presenting ideas, feelings and concepts in an artful way</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Trope">
+    <rdfs:label>Trope</rdfs:label>
+    <rdfs:comment>They are a deviation from the ordinary meaning of words in their literal principal form.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;FigureCategory">
+    <rdfs:label>Category of the Figure</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;AdditionCategory">
+    <rdfs:label>Category Additional</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureCategory" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;OmissionCategory">
+    <rdfs:label>Category Omission</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureCategory" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;TranspositionCategory">
+    <rdfs:label>Category Transposition</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureCategory" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;PermutationCategory">
+    <rdfs:label>Category Permutation</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureCategory" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;SyntacticalFigure">
+    <rdfs:label>Syntactical Figure</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureCategory" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;SemanticItem">
+    <rdfs:label>Semantic Item</rdfs:label>
+    <rdfs:comment>Add a semantic realm to the world</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Anaphora">
+    <rdfs:label>Anaphora</rdfs:label>
+    <rdfs:comment>Repetition of the same word or group of words at the beginning of successive clauses, sentences, or lines.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Assonance">
+    <rdfs:label>Assonance</rdfs:label>
+    <rdfs:comment>Repetition of similar vowel sounds, preceded and followed by different consonants, in the stressed syllables of adjacent words.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Alliteration">
+    <rdfs:label>Alliteration</rdfs:label>
+    <rdfs:comment>Repetition of the same letter or sound within nearby words. Most often, repeated initial consonants.
+
+Note: The term "alliteratio" was coined by Giovanni Pontano in 1519 as a further specification of the term annominatio. Current usage of this term is in its most restricted sense (repeated initial consonants), aligning it with the vice known as homoeoprophoron or paroemion.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Epistrophe">
+    <rdfs:label>Epistrophe</rdfs:label>
+    <rdfs:comment>Ending a series of lines, phrases, clauses, or sentences with the same word or words.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Epanalepsis">
+    <rdfs:label>Epanalepsis</rdfs:label>
+    <rdfs:comment>Repetition of the same word or clause after intervening matter. More strictly, repetition at the end of  a line, phrase, or clause of the word or words that occurred at the  beginning of the same line, phrase, or clause.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Metaphor">
+    <rdfs:label>Metaphor</rdfs:label>
+    <rdfs:comment>A comparison made by referring to one thing as another.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;Trope" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Metonymy">
+    <rdfs:label>Metonymy</rdfs:label>
+    <rdfs:comment>Reference to something or someone by naming one of its attributes.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;Trope" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Onomatopoeia">
+    <rdfs:label>Onomatopoeia</rdfs:label>
+    <rdfs:comment>Using or inventing a word whose sound imitates that which it names (the union of phonetics and semantics).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Oxymoron">
+    <rdfs:label>Oxymoron</rdfs:label>
+    <rdfs:comment>A figure of speech in which apparently contradictory terms appear in conjunction</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Paronomasia">
+    <rdfs:label>Paronomasia</rdfs:label>
+    <rdfs:comment>Using words that sound alike but that differ in meaning (punning).  The Ad Herennium author further specifies that this is brought about through various kinds of metaplasm.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Polyptoton">
+    <rdfs:label>Polyptoton</rdfs:label>
+    <rdfs:comment>Repeating a word, but in a different form. Using a cognate of a given word in close proximity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Polysyndeton">
+    <rdfs:label>Polysyndeton</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Rhyme">
+    <rdfs:label>Rhyme</rdfs:label>
+    <rdfs:comment>Correspondence of sound between words or the endings of words, especially when these are used at the ends of lines of poetry.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+    <rdf:type rdf:resource="&raop;SyntacticalFigure" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Simile">
+    <rdfs:label>Simile</rdfs:label>
+    <rdfs:comment>An explicit comparison, often (but not necessarily) employing "like" or "as."</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;Trope" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Synecdoche">
+    <rdfs:label>Synecdoche</rdfs:label>
+    <rdfs:comment>A whole is represented by naming one of its parts (genus named for species), or vice versa (species named for genus).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;Trope" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;Synesthesia">
+    <rdfs:label>Synesthesia</rdfs:label>
+    <rdfs:comment>In semantics and cognitive linguistics, a metaphorical process by which one sense modality is described or characterized in terms of another, such as a bright sound or a quiet color.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Class" />
+    <rdf:type rdf:resource="&owl;Class" />
+    <rdfs:subClassOf rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:subClassOf rdf:resource="&raop;FigureOfSpeech" />
+    <rdf:type rdf:resource="&raop;AdditionCategory" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;value">
+    <rdfs:label>Has a literal value</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;Word" />
+    <rdfs:domain rdf:resource="&raop;Phoneme" />
+    <rdfs:domain rdf:resource="&raop;Syllable" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;syllables">
+    <rdfs:label>Has a list of syllables</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;Word" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;phonemes">
+    <rdfs:label>Has a list of phonemes</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;Word" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;items">
+    <rdfs:label>Has a list of items</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;Group" />
+    <rdfs:range rdf:resource="&raop;Group" />
+    <rdfs:range rdf:resource="&raop;Word" />
+    <rdfs:range rdf:resource="&raop;Phoneme" />
+    <rdfs:range rdf:resource="&raop;Syllable" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;category">
+    <rdfs:label>Has category</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;RethoricalDevice" />
+    <rdfs:range rdf:resource="&raop;FigureCategory" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;soundElements">
+    <rdfs:label>Has a list of sound elements</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;FigureOfSpeech" />
+    <rdfs:range rdf:resource="&raop;Group" />
+    <rdfs:range rdf:resource="&raop;Word" />
+    <rdfs:range rdf:resource="&raop;Phoneme" />
+    <rdfs:range rdf:resource="&raop;Syllable" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;interpretation">
+    <rdfs:label>The interpretation of this rethorical device</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;Metaphor" />
+    <rdfs:domain rdf:resource="&raop;Metonymy" />
+    <rdfs:domain rdf:resource="&raop;Synecdoche" />
+    <rdfs:domain rdf:resource="&raop;Simile" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;comparison">
+    <rdfs:label>Estimate similarities between two resources</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;Simile" />
+    <rdfs:domain rdf:resource="&raop;Metaphor" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;subject">
+    <rdfs:label>The subject</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;Simile" />
+    <rdfs:domain rdf:resource="&raop;Metaphor" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;linkingContent">
+    <rdfs:label>What connects the subject and the comparison nodes</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;Simile" />
+    <rdfs:domain rdf:resource="&raop;Metaphor" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;sense">
+    <rdfs:label>Has a particular meaning regarding a sense domain</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;SemanticItem" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;sentence">
+    <rdfs:label>The sentence of the rethorical device</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;Metaphor" />
+    <rdfs:domain rdf:resource="&raop;Metonymy" />
+    <rdfs:domain rdf:resource="&raop;Synecdoche" />
+    <rdfs:domain rdf:resource="&raop;Simile" />
+    <rdfs:range rdf:resource="&raop;Group" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&raop;semanticItems">
+    <rdfs:label>Has a list of semantic items</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&raop;" />
+    <rdf:type rdf:resource="&rdfs;Property" />
+    <rdf:type rdf:resource="&owl;InverseFunctionalProperty" />
+    <rdf:type rdf:resource="&owl;ObjectProperty" />
+    <rdfs:domain rdf:resource="&raop;FigureOfThought" />
+    <rdfs:range rdf:resource="&raop;Group" />
+    <rdfs:range rdf:resource="&raop;Word" />
+  </rdf:Description>
+
+
+
+</rdf:RDF>

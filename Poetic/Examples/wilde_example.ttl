@@ -9,9 +9,16 @@
 @prefix pdk: <http://postdata.linhd.uned.es/kos/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-pd:Redaction_1 pdp:hasStanza pd:Stanza_1, pd:Stanza_2, pd:Stanza_3;
-	a pdc:Redaction;
+
+pd:Redaction_1 a pdc:Redaction;
+	pdp:wasInputFor pd:ScansionProcess_1;
 	pdc:title "Les silhouettes".
+
+pd:ScansionProcess_1 a pdp:ScansionProcess;
+	pdp:generated pd:Scansion_1.
+
+pd:Scansion_1 pdp:hasStanza pd:Stanza_1, pd:Stanza_2, pd:Stanza_3;
+	a pdp:Scansion.
 
 pd:Stanza_1 pdp:stanzaNumber "1"^^xsd:nonNegativeInteger;
 	a pdc:Stanza;

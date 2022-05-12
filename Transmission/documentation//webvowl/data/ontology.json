@@ -1,0 +1,3123 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://iflastandards.info/ns/fr/frbr/frbroo", "http://postdata.linhd.uned.es/ontology/postdata-core", "http://www.w3.org/2000/01/rdf-schema", "http://postdata.linhd.uned.es/ontology/postdata-transmission", "http://www.w3.org/2001/XMLSchema", "http://www.cidoc-crm.org/cidoc-crm", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "postdata-transmission-elements ontology"
+    },
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#",
+    "version" : "V2.0",
+    "description" : {
+      "en" : "This ontology module enables the description of the different sources or manifestations of the textual editions of poetic works. It provides classes and properties to represent the ideal characteristics of publication products (bibliographic sources) as well as other unique physical editions of a poetic work such manuscripts (primary sources).\nThe ontology can be used to decribe the physical characteristics (material, condition, style, etc.) of sources, but also parts of sources corresponding to specific locations or sections. The physical objects described include specific bibliographic products (items) and reproductions (facsimiles). These, in addition to primary sources, may have certain rights, curators, and owners assigned."
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "en",
+        "value" : "2021-10-12",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "en",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Omar Khalil Gómez  (LINHD_POSTDATA-UNED)\nhttp://www.linkedin.com/in/omar-k-0959a8129",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Salvador Ros Muñoz (LINHD_POSTDATA-UNED)\nsrosmu@gmail.com",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Aitor Díaz Medina  (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/aitordiazmedina/",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Elena González-Blanco\nhttps://orcid.org/0000-0002-0448-1812",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Mirella De Sisto (LINHD_POSTDATA-UNED)\nmdesisto@scc.uned.es",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Alvaro Pérez (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Mª Luisa Díez Platas \nhttps://orcid.org/0000-0002-9416-3147",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Helena Bermúdez Sabel \nhttps://orcid.org/0000-0001-7782-206X",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Laura Hernández (LINHD_POSTDATA-UNED)\nhttps://orcid.org/0000-0003-3489-2193",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "pdt",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "POSTDATA Project\n\n“This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”\nPrincipal Investigator. Elena González Blanco -- https://orcid.org/0000-0002-0448-1812\nTechnical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "V2.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "postdata-transmission-elements ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "158",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "210",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Expression",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OWLClassImpl_8fa2b552_0357_457f_bab1_4d39a073e5a5",
+      "en" : "Collection"
+    },
+    "comment" : {
+      "en" : "A pdt:Collection is an aggregation of instances of pdt:InformationCarrier that are curated and preserved by some pdc:Agent.\n\nA Collection can be a set of physical manuscripts or exemplars (i.e. a corpus, a personal collection of books). For example, \"Gongocorpus\" is a pdt:Collection that collects physical electronic editions of Gongora's Poems.\n\nBeing a collection a physical aggregation, it has been aligned as a subclass of CIDOC CRM E78 Collection"
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Item",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Item",
+      "en" : "Item"
+    },
+    "id" : "7",
+    "superClasses" : [ "2", "8" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E26_Physical_Feature"
+    },
+    "subClasses" : [ "25" ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Redaction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Dimension",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dimension"
+    },
+    "id" : "27",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Agent",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F3",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F3"
+    },
+    "subClasses" : [ "53" ],
+    "attributes" : [ "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Right",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Right",
+      "en" : "Right"
+    },
+    "id" : "3",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F4",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F4"
+    },
+    "subClasses" : [ "44" ],
+    "attributes" : [ "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F5",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F5"
+    },
+    "subClasses" : [ "7" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E57_Material",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E57_Material"
+    },
+    "subClasses" : [ "95" ],
+    "attributes" : [ "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#BibliographicSource",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BibliographicSource",
+      "en" : "Bibliographic Source"
+    },
+    "comment" : {
+      "en" : "A Bibliographic Source is a conceptual entity representing bibliographic products that are generated following a publication process. Instances of pdt:BibliographicSource represent the ideal physical properties of all the exemplars. Despite Bibliographic Sources are not physical objects per se (are not accessible), they encapsulate design properties of the physical carriers (layout, pages, desired material, etc.) and hence they can be \"physically\" described.\n\nAn object of type pdt:BibliographicSource embodies one or more textual editions (instances of pdc:Redaction). They mostly represent books that may gather several redactions or poems. In order to represent all the physical copies of the ideal manifestation, we associate this kind of source with instances of pdt:Item.\n\npdt:BibliographicSource is then considered an E73 Informatio Object, which is subclass of E90 Symbolic Object which represents conceptual objects subjected to rights and ownership. Instances of pdt:Item are aligned to E84 Information Carrier."
+    },
+    "id" : "53",
+    "superClasses" : [ "84", "128", "15" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F32",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F32"
+    },
+    "subClasses" : [ "54" ],
+    "attributes" : [ "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E78_Collection",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E78_Collection"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Source",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Source",
+      "en" : "Source"
+    },
+    "subClasses" : [ "44", "53" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Facsimile",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Facsimile",
+      "en" : "Facsimile"
+    },
+    "id" : "138",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "157",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E84_Information_Carrier",
+      "undefined" : "E84 Information Carrier"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "160",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#Activity",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "54", "35" ],
+    "attributes" : [ "external" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#TimeSpan",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeSpan"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#InformationCarrier",
+    "equivalent" : [ "158" ],
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationCarrier"
+    },
+    "subClasses" : [ "7", "44", "138" ],
+    "attributes" : [ "equivalent" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "169",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "170",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "171",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "175",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E3_Condition_State"
+    },
+    "subClasses" : [ "18" ],
+    "attributes" : [ "external" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "178",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpressionCreation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E63_Beginning_of_Existence"
+    },
+    "subClasses" : [ "35" ],
+    "attributes" : [ "external" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#PrimarySource",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrimarySource",
+      "en" : "Primary Source"
+    },
+    "id" : "44",
+    "superClasses" : [ "2", "86", "15" ]
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Feature",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Feature",
+      "en" : "Feature"
+    },
+    "id" : "25",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Procedure",
+    "equivalent" : [ "210" ],
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Procedure",
+      "en" : "Procedure"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#CarrierProduction",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CarrierProduction",
+      "en" : "Carrier Production"
+    },
+    "comment" : {
+      "en" : "Instances of pdt:CarrierProduction describe the activity performed by some agent when giving rise to a physical carrier for a textual edition of a poem.\n\nA Carrier Production has a set of pdc:AgentRole structures associated indicating the actors and the roles they performed during the participation in the event. The Carrier Production is then carried by taking a textual edition as input (an instance of pdc:Redaction) and generates an Information Carrier (an instance of pdt:InformationCarrier)\n\nAs a Carrier Production is an activity with input and output objects and participants, it is a subclass of E7 Activity. In addition, being it a type of event involving the creation of a carrier, it is also subclass of E63 Beginning of Existence."
+    },
+    "id" : "54",
+    "superClasses" : [ "145", "161" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E29_Design_or_Procedure"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "210"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E30_Right"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Material",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material",
+      "en" : "Material"
+    },
+    "id" : "95",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Reproduction",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reproduction",
+      "en" : "Reproduction"
+    },
+    "comment" : {
+      "en" : "A Reproduction is an activity in which some actor performs a copy of a physical edition to produce a facsimile. A reproduction of a facsimile is also another facsimile. \n\nInstances of pdt:Reproduction have agent-role structures associated (pdc:AgentRole) to indicate the type of role performed by an actor during the reproduction. Reproductions are associated to the carrier being reproduced (of type pdt:InformationCarrier) and generate the copy (instance of pdt:Facsimile) following a specific technique.\n\npdt:Reproduction is aligned to E7 Activity and to E63 Beginning of Existence to indicate that it has input/output objects and it gices rise to a new object."
+    },
+    "id" : "35",
+    "superClasses" : [ "161", "180" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E73_Information_Object"
+    },
+    "subClasses" : [ "53" ],
+    "attributes" : [ "external" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "149",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "212",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "216",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#Condition",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "comment" : {
+      "en" : "A Condition is a state of a physical edition of a poem subjected to a period or time span. Hence, instances of pdt:Condition are related to pdt:InformationCarrier and pdc:TimeSpan.\n\npdt:Condition is aligned with CIDOC CRM E3 Condition State."
+    },
+    "id" : "18",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E54_Dimension"
+    },
+    "subClasses" : [ "27" ],
+    "attributes" : [ "external" ],
+    "id" : "38"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "166",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "168",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "213",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "208",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "215",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "217",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "218",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "223",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "224",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "222",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "226",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "225",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "219",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "220",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isSubjectTo",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isSubjectTo",
+      "undefined" : "is subject to"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/CLP46i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "CLP46i"
+    },
+    "domain" : "10",
+    "subproperty" : [ "11" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R27i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "R27i"
+    },
+    "domain" : "10",
+    "subproperty" : [ "13" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfWorks",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "numberOfWorks",
+      "undefined" : "number of works"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#conditionType",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "conditionType",
+      "undefined" : "condition type"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "Ex: Burned pages, highligthed text, included notes, etc."
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#writingMethod",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "writingMethod",
+      "undefined" : "writing method"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasValue",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "has value"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasKeeper",
+    "inverse" : "32",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasKeeper",
+      "undefined" : "has keeper"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionType",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "reproductionType",
+      "undefined" : "reproduction type"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "35",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R28i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "R28i"
+    },
+    "domain" : "10",
+    "subproperty" : [ "37" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasTimeSpan",
+    "inverse" : "41",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasTimeSpan",
+      "undefined" : "has time span"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#writingStyle",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "writingStyle",
+      "undefined" : "writing style"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCurator",
+    "inverse" : "46",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasCurator",
+      "undefined" : "has curator"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P4i_is_time-span_of"
+    },
+    "domain" : "10",
+    "subproperty" : [ "41" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarriedBy",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isCarriedBy",
+      "undefined" : "is carried by"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isDimensionOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isDimensionOf",
+      "undefined" : "is dimension of"
+    },
+    "superproperty" : [ "51" ],
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasSourceUsedBy",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "wasSourceUsedBy",
+      "undefined" : "was source used by"
+    },
+    "superproperty" : [ "55" ],
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isConditionOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isConditionOf",
+      "undefined" : "is condition of"
+    },
+    "superproperty" : [ "57" ],
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#siglum",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "siglum"
+    },
+    "domain" : "40",
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#alternativeTitle",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "alternativeTitle"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "alternative title"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#accessIdentifier",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "accessIdentifier",
+      "undefined" : "access identifier"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isExemplarOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "isExemplarOf",
+      "undefined" : "is exemplar of"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#appliesTo",
+    "inverse" : "1",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "appliesTo",
+      "undefined" : "applies to"
+    },
+    "superproperty" : [ "67" ],
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P52i_is_current_owner_of"
+    },
+    "domain" : "10",
+    "subproperty" : [ "69", "70" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P130_shows_features_of"
+    },
+    "domain" : "10",
+    "subproperty" : [ "64", "71" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#shouldBeComposedOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "shouldBeComposedOf",
+      "undefined" : "should be composed of"
+    },
+    "superproperty" : [ "73" ],
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P128_carries",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P128_carries"
+    },
+    "domain" : "10",
+    "subproperty" : [ "75" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R18i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "R18i"
+    },
+    "domain" : "10",
+    "subproperty" : [ "77" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasExemplar",
+    "inverse" : "64",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasExemplar",
+      "undefined" : "has exemplar"
+    },
+    "superproperty" : [ "79" ],
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P49i_is_former_or_current_keeper_of"
+    },
+    "domain" : "10",
+    "subproperty" : [ "32", "46" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCarrier",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "ownsCarrier",
+      "undefined" : "owns carrier"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isPossessedBy",
+    "inverse" : "82",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "isPossessedBy"
+    },
+    "superproperty" : [ "83" ],
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P128i_is_carried_by"
+    },
+    "domain" : "10",
+    "subproperty" : [ "48" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#produced",
+    "inverse" : "37",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "produced",
+      "undefined" : "produced"
+    },
+    "superproperty" : [ "88" ],
+    "domain" : "54",
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P33_used_specific_technique"
+    },
+    "domain" : "10",
+    "subproperty" : [ "21", "89", "90" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#createdSource",
+    "inverse" : "77",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "createdSource",
+      "undefined" : "created source"
+    },
+    "superproperty" : [ "92" ],
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#format",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "format"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P56_bears_feature",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P56_bears_feature"
+    },
+    "domain" : "10",
+    "subproperty" : [ "97" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P16_used_specific_object"
+    },
+    "domain" : "10",
+    "subproperty" : [ "99" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasProducedBy",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "wasProducedBy",
+      "undefined" : "was produced by"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P108i_was_produced_by"
+    },
+    "domain" : "10",
+    "subproperty" : [ "101" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P108_has_produced",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P108_has_produced"
+    },
+    "domain" : "10",
+    "subproperty" : [ "103" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#workNumber",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "workNumber",
+      "undefined" : "work number"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P16i_was_used_for"
+    },
+    "domain" : "10",
+    "subproperty" : [ "107" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#series",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "series",
+      "undefined" : "series"
+    },
+    "domain" : "53",
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#shouldBeDimensionOf",
+    "inverse" : "111",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "shouldBeDimensionOf",
+      "undefined" : "should be dimension of"
+    },
+    "superproperty" : [ "112" ],
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#shouldConsistOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "shouldConsistOf",
+      "undefined" : "should consist of"
+    },
+    "superproperty" : [ "114" ],
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#formsPartOf",
+    "inverse" : "116",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "formsPartOf",
+      "undefined" : "forms part of"
+    },
+    "superproperty" : [ "117" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#locus",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "locus",
+      "undefined" : "locus"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "P78_is_identified_by"
+    },
+    "domain" : "10",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "P149_is_identified_by"
+    },
+    "domain" : "10",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P75i_is_possessed_by",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P75i_is_possessed_by"
+    },
+    "domain" : "10",
+    "subproperty" : [ "81" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P56i_is_found_on",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P56i_is_found_on"
+    },
+    "domain" : "10",
+    "subproperty" : [ "125" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P104i_applies_to"
+    },
+    "domain" : "10",
+    "subproperty" : [ "66" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasGeneratedBy",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "wasGeneratedBy",
+      "undefined" : "was generated by"
+    },
+    "superproperty" : [ "100" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P90_has_value",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "P90_has_value"
+    },
+    "domain" : "10",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isComposedOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isComposedOf",
+      "undefined" : "is composed of"
+    },
+    "superproperty" : [ "129" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfFolios",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "numberOfFolios",
+      "undefined" : "number of folios"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#shouldBeCarriedBy",
+    "inverse" : "133",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "shouldBeCarriedBy",
+      "undefined" : "should be carried by"
+    },
+    "superproperty" : [ "134" ],
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P52_has_current_owner"
+    },
+    "domain" : "10",
+    "subproperty" : [ "136", "137" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isReproductionOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isReproductionOf",
+      "undefined" : "is reproduction of"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "138",
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasCarriedUsedBy",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "wasCarriedUsedBy",
+      "undefined" : "was carrier used by"
+    },
+    "superproperty" : [ "106" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#itemIdentifier",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "itemIdentifier",
+      "undefined" : "item identifier"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R26i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "R26i"
+    },
+    "domain" : "10",
+    "subproperty" : [ "52" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#facsimileNumber",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "142",
+    "label" : {
+      "IRI-based" : "facsimileNumber",
+      "undefined" : "facsimile number"
+    },
+    "domain" : "138",
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#usedSource",
+    "inverse" : "52",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "usedSource",
+      "undefined" : "used source"
+    },
+    "superproperty" : [ "144" ],
+    "domain" : "54",
+    "attributes" : [ "object" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P49_has_former_or_current_keeper"
+    },
+    "domain" : "10",
+    "subproperty" : [ "45", "30" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P46_is_composed_of"
+    },
+    "domain" : "10",
+    "subproperty" : [ "146", "116" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#function",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "function"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#editionNumber",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "149",
+    "label" : {
+      "IRI-based" : "editionNumber",
+      "undefined" : "edition number"
+    },
+    "domain" : "53",
+    "attributes" : [ "datatype" ],
+    "id" : "148"
+  }, {
+    "range" : "84",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R28",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "R28"
+    },
+    "domain" : "10",
+    "subproperty" : [ "87" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R27",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "R27"
+    },
+    "domain" : "10",
+    "subproperty" : [ "152" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R26",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "R26"
+    },
+    "domain" : "10",
+    "subproperty" : [ "143" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#shouldBeIncorporatedIn",
+    "inverse" : "113",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "shouldBeIncorporatedIn",
+      "undefined" : "should be incorporated in"
+    },
+    "superproperty" : [ "154" ],
+    "domain" : "95",
+    "attributes" : [ "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#ownsCollection",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "ownsCollection",
+      "undefined" : "owns collection"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "range" : "24",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/R18",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "R18"
+    },
+    "domain" : "10",
+    "subproperty" : [ "91" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P75_possesses",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P75_possesses"
+    },
+    "domain" : "10",
+    "subproperty" : [ "82" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P130i_features_are_also_found_on"
+    },
+    "domain" : "10",
+    "subproperty" : [ "78", "163" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#carries",
+    "inverse" : "48",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "carries",
+      "undefined" : "carries"
+    },
+    "superproperty" : [ "74" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#catalogueNumber",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "catalogueNumber",
+      "undefined" : "catalogue number"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P4_has_time-span"
+    },
+    "domain" : "10",
+    "subproperty" : [ "39" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P45_consists_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P45_consists_of"
+    },
+    "domain" : "10",
+    "subproperty" : [ "167" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectionOwnedBy",
+    "inverse" : "69",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "isCollectionOwnedBy",
+      "undefined" : "is collection owned by"
+    },
+    "superproperty" : [ "135" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P3_has_note",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "160",
+    "label" : {
+      "IRI-based" : "P3_has_note"
+    },
+    "domain" : "10",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasDimension",
+    "inverse" : "50",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasDimension",
+      "undefined" : "has dimension"
+    },
+    "superproperty" : [ "173" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/CLR6",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "CLR6"
+    },
+    "domain" : "10",
+    "subproperty" : [ "133" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfVolumes",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "171",
+    "label" : {
+      "IRI-based" : "numberOfVolumes",
+      "undefined" : "number of volumes"
+    },
+    "domain" : "53",
+    "attributes" : [ "datatype" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#wasRedactionUsedBy",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "wasRedactionUsedBy",
+      "undefined" : "was redaction used by"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P102_has_title",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "157",
+    "label" : {
+      "IRI-based" : "P102_has_title"
+    },
+    "domain" : "10",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P104_is_subject_to"
+    },
+    "domain" : "10",
+    "subproperty" : [ "1" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#volumeNumber",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "159",
+    "label" : {
+      "IRI-based" : "volumeNumber",
+      "undefined" : "volume number"
+    },
+    "domain" : "53",
+    "attributes" : [ "datatype" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#featureType",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "featureType",
+      "undefined" : "feature type"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "25",
+    "attributes" : [ "object" ],
+    "id" : "183"
+  }, {
+    "range" : "38",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "range" : "128",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "176",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasReproduction",
+    "inverse" : "71",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "138",
+    "label" : {
+      "IRI-based" : "hasReproduction",
+      "undefined" : "has reproduction"
+    },
+    "superproperty" : [ "79" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "163"
+  }, {
+    "range" : "2",
+    "domain" : "138",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "85",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isFeatureOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isFeatureOf",
+      "undefined" : "is feature of"
+    },
+    "superproperty" : [ "124" ],
+    "domain" : "25",
+    "attributes" : [ "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/CLR6i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "CLR6i"
+    },
+    "domain" : "10",
+    "subproperty" : [ "132" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "180",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfPages",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "177",
+    "label" : {
+      "IRI-based" : "numberOfPages",
+      "undefined" : "number of pages"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceType",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "sourceType",
+      "undefined" : "source type"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "15",
+    "comment" : {
+      "en" : "Example: Section, Chapter, Location"
+    },
+    "attributes" : [ "object" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#generated",
+    "inverse" : "101",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "generated"
+    },
+    "superproperty" : [ "102" ],
+    "domain" : "35",
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasUnit",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "has unit"
+    },
+    "superproperty" : [ "193" ],
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/CLP43",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "CLP43"
+    },
+    "domain" : "10",
+    "subproperty" : [ "111" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasFeature",
+    "inverse" : "125",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasFeature",
+      "undefined" : "has feature"
+    },
+    "superproperty" : [ "96" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/CLP46",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "CLP46"
+    },
+    "domain" : "10",
+    "subproperty" : [ "72" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "2",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/CLP45",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "CLP45"
+    },
+    "domain" : "10",
+    "subproperty" : [ "113" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "2",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#possesses",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "possesses"
+    },
+    "superproperty" : [ "162" ],
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P44i_is_condition_of"
+    },
+    "domain" : "10",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P57_has_number_of_parts",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "156",
+    "label" : {
+      "IRI-based" : "P57_has_number_of_parts"
+    },
+    "domain" : "10",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#printingMethod",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "printingMethod",
+      "undefined" : "printing method"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P43i_is_dimension_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P43i_is_dimension_of"
+    },
+    "domain" : "10",
+    "subproperty" : [ "50" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#mayFormPartOf",
+    "inverse" : "72",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "mayFormPartOf",
+      "undefined" : "may form part of"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "range" : "161",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "15",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#reproductionTechnique",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "reproductionTechnique",
+      "undefined" : "reproduction technique"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "35",
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "range" : "161",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "15",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "86",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "145",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "94",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P44_has_condition",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P44_has_condition"
+    },
+    "domain" : "10",
+    "subproperty" : [ "208" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "207"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#issueNumber",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "212",
+    "label" : {
+      "IRI-based" : "issueNumber",
+      "undefined" : "issue number"
+    },
+    "domain" : "53",
+    "attributes" : [ "datatype" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#sectionNumber",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "175",
+    "label" : {
+      "IRI-based" : "sectionNumber",
+      "undefined" : "section number"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "213"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#sourceIdentifier",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "169",
+    "label" : {
+      "IRI-based" : "sourceIdentifier",
+      "undefined" : "source identifier"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P91_has_unit"
+    },
+    "domain" : "10",
+    "subproperty" : [ "192" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCondition",
+    "inverse" : "56",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasCondition",
+      "undefined" : "has condition"
+    },
+    "superproperty" : [ "207" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#notes",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "216",
+    "label" : {
+      "IRI-based" : "notes"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#foliationType",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "foliationType",
+      "undefined" : "foliation type"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "217"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#collectionType",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "collectionType",
+      "en" : "collection type"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P2_has_type"
+    },
+    "domain" : "10",
+    "subproperty" : [ "191", "43", "17", "219", "220", "183", "93", "147", "34", "221", "217", "218" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P46i_forms_part_of"
+    },
+    "domain" : "10",
+    "subproperty" : [ "222", "115" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#title",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "170",
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCreatedSourceBy",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "isCreatedSourceBy",
+      "undefined" : "is created source by"
+    },
+    "superproperty" : [ "76" ],
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#editionCriteria",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "editionCriteria",
+      "undefined" : "edition criteria"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#shouldCarry",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "shouldCarry",
+      "undefined" : "should carry"
+    },
+    "superproperty" : [ "174" ],
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isKeeperOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "isKeeperOf",
+      "undefined" : "is keeper of"
+    },
+    "superproperty" : [ "80" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#usedRedaction",
+    "inverse" : "13",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "usedRedaction",
+      "undefined" : "used redaction"
+    },
+    "superproperty" : [ "151" ],
+    "domain" : "54",
+    "attributes" : [ "object" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P45i_is_incorporated_in",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P45i_is_incorporated_in"
+    },
+    "domain" : "10",
+    "subproperty" : [ "225" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "224"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#consistsOf",
+    "inverse" : "225",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "consistsOf",
+      "undefined" : "consists of"
+    },
+    "superproperty" : [ "166" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCollectedIn",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "isCollectedIn",
+      "undefined" : "is collected in"
+    },
+    "superproperty" : [ "117" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#shouldHaveDimension",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "shouldHaveDimension",
+      "undefined" : "should have dimension"
+    },
+    "superproperty" : [ "194" ],
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "P43_has_dimension"
+    },
+    "domain" : "10",
+    "subproperty" : [ "172" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCuratorOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "isCuratorOf",
+      "undefined" : "is curator of"
+    },
+    "superproperty" : [ "80" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#numberOfHands",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "178",
+    "label" : {
+      "IRI-based" : "numberOfHands",
+      "undefined" : "number of hands"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "226"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isIncorporatedIn",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isIncorporatedIn",
+      "undefined" : "is incorporated in"
+    },
+    "superproperty" : [ "224" ],
+    "domain" : "95",
+    "attributes" : [ "object" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#hasCollected",
+    "inverse" : "222",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasCollected",
+      "undefined" : "has collected"
+    },
+    "superproperty" : [ "129" ],
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isCarrierOwnedBy",
+    "inverse" : "70",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "isCarrierOwnedBy",
+      "undefined" : "is carrier owned by"
+    },
+    "superproperty" : [ "135" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/CLP43i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "CLP43i"
+    },
+    "domain" : "10",
+    "subproperty" : [ "110" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/CLP45i",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "CLP45i"
+    },
+    "domain" : "10",
+    "subproperty" : [ "153" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#language",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "language"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "219"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#isTimeSpanOf",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "isTimeSpanOf",
+      "undefined" : "is time span of"
+    },
+    "superproperty" : [ "47" ],
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#editionType",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "editionType",
+      "undefined" : "edition type"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "220"
+  }, {
+    "iri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission#usedCarrier",
+    "inverse" : "107",
+    "baseIri" : "http://postdata.linhd.uned.es/ontology/postdata-transmission",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "usedCarrier",
+      "undefined" : "used carrier"
+    },
+    "superproperty" : [ "98" ],
+    "domain" : "35",
+    "attributes" : [ "object" ],
+    "id" : "99"
+  } ]
+}

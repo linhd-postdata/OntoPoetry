@@ -10,10 +10,9 @@
 
 pd:SC a pdp:Scansion;
 	pdp:hasDeviceAnnotation pd:D_1, pd:D_2;
-	pdp:hasPatternAnnotation pd:SP_1, pd:LP_1, pd:LP_2.
+	pdp:hasRhymeAnnotation pd:R_1, pd:R_2.
 
 pd:D_1 a pdp:LiteraryDevice.
 pd:D_2 a pdp:LiteraryDevice.
-pd:SP_1 a pdp:StanzaPattern.
-pd:LP_1 a pdp:LinePattern.
-pd:LP_2 a pdp:LinePattern.
+pd:R_1 a pdp:Rhyme.
+pd:R_2 a pdp:Rhyme.

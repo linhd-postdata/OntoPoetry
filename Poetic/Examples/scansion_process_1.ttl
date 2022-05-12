@@ -18,20 +18,25 @@ pdk:SPA a skos:Concept;
 
 pd:AR1 a pdc:AgentRole;
 	pdc:hasAgent pd:AG1;
-	pdc:roleFunction pdk:Annotator.
+	pdc:roleFunction pdk:Annotator, pdk:Tagger.
 
 pd:AR2 a pdc:AgentRole;
 	pdc:hasAgent pd:AG2;
-	pdc:roleFunction pdk:Tagger.
+	pdc:roleFunction pdk:Reviewer.
 
 pd:AG1 a pdc:Agent;
 	rdfs:label "Rantanplan v.0.7.1".
 
-pd:AG2 a pdc:Agent;
-	rdfs:label "Spacy v.2.2.4".
+pd:AG2 a pdc:Agent, pdc:Person;
+	rdfs:label "Jose Manuel".
 
 pd:RED a pdc:Redaction;
 	pdc:title "Sonnet XI".
 
 pd:SC a pdp:Scansion;
 	pdp:typeOfScansion pdk:AutomaticScansion.
+
+pdk:Annotator a skos:Concept.
+pdk:Tagger a skos:Concept.
+pdk:Reviewer a skos:Concept.
+

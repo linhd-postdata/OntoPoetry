@@ -1,0 +1,63 @@
+@prefix mv: <http://eccenca.com/mobivoc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pdc:   <http://postdata.linhd.uned.es/ontology/postdata-core#> .
+@prefix pdp: <http://postdata.linhd.uned.es/ontology/postdata-poeticAnalysis#> .
+@prefix pd: <http://postdata.linhd.uned.es/resource/> .
+@prefix pdk: <http://postdata.linhd.uned.es/kos/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pd:Stanza_1 a pdp:Stanza;
+	pdp:content """Supiro [..] accidente.""";
+	pdp:stanzaNumber 1;
+	pdp:hasLine pd:Line_1, pd:Line_4;
+	pdp:rhymeDispositionType pdk:Cuarteto;
+	pdp:rhymeScheme "ABBA".
+
+pd:StanzaPattern_1 a pdp:StanzaPattern;
+	pdp:rhymeDispositionType pdk:Cuarteto;
+	pdp:rhymeScheme "ABBA".
+
+pdk:Cuarteto a skos:Concept;
+	rdfs:label "Cuarteto"@es;
+	rdfs:label "Quatrain"@en.
+
+pd:Line_1 a pdp:Line;
+	pdp:presentsRhyme pd:Rhyme_1;
+	pdp:content """Suspiro y pruebo con la voz doliente""";
+	pdp:absoluteLineNumber 1;
+	pdp:hasWord pd:Word_1_7.
+
+pd:Line_4 a pdp:Line;
+	pdp:presentsRhyme pd:Rhyme_1;
+	pdp:content """y el mal renueva siempre su accidente.""";
+	pdp:absoluteLineNumber 4;
+	pdp:hasWord pd:Word_4_7.
+
+pd:Rhyme_1 a pdp:Rhyme;
+	pdp:hasRhymeMatch pd:RhymeMatch_1;
+	pdp:rhymeLabel "A".
+
+pd:RhymeMatch_1 a pdp:RhymeMatch;
+	pdp:hasEchoWord pd:Word_1_7;
+	pdp:hasCallWord pd:Word_4_7;
+	pdp:typeOfRhymeMatching pdk:Consonant;
+	pdp:rhymePhoneme "/ente/";
+	pdp:rhymeGrapheme "ente";
+	pdp:prefinalConsonants "n";
+	pdp:finalConsonant "t".
+
+pdk:Consonant a skos:Concept;
+	rdfs:label "Consonant rhyme".
+
+pd:Word_1_7 a pdp:Word;
+	pdp:wordNumber 7;
+	pdp:content "doliente";
+	pdp:isCallOf pd:Word_4_7.
+
+pd:Word_4_7 a pdp:Word;
+	pdp:content "accidente";
+	pdp:wordNumber 7;
+	pdp:isEchoOf pd:Word_1_7.

@@ -22,7 +22,6 @@
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#">
         <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dc:contributor xml:lang="scc.uned.es">Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto</dc:contributor>
         <dc:contributor>Aitor Díaz Medina (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/aitordiazmedina/</dc:contributor>
         <dc:contributor>Alvaro Pérez (LINHD_POSTDATA-UNED) 
@@ -35,6 +34,7 @@ https://orcid.org/0000-0001-7782-206X</dc:contributor>
 https://www.linkedin.com/in/versae/</dc:contributor>
         <dc:contributor>Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)
 https://orcid.org/0000-0003-3489-2193</dc:contributor>
+        <dc:contributor>Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto@scc.uned.es</dc:contributor>
         <dc:contributor>Mª Luisa Díez Platas
 https://orcid.org/0000-0002-9416-3147</dc:contributor>
         <dc:contributor>Omar Khalil Gómez (LINHD_POSTDATA-UNED)
@@ -1056,17 +1056,30 @@ srosmu@gmail.com</dc:contributor>
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition -->
 
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit">
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:label>has edition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasFragment"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Excerpt"/>
-        <rdfs:comment xml:lang="en">Relates a Redaction with its closing words (usually, the last verse). There is only one explicit per Redaction.nnTaking as example the poem &quot;Canary&quot; by Rita Dove, the last verse, &quot;If you can&apos;t be free, be a mystery&quot;, would be the &quot;explicit&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a Redaction with its closing words (usually, the last verse). There is only one explicit per Redaction.nnTaking as example the poem &quot;Canary&quot; by Rita Dove, the last verse, &quot;If you can&apos;t be free, be a mystery&quot;, would be the &quot;excipit&quot;.</rdfs:comment>
         <rdfs:isDefinedBy>http://postdata.linhd.uned.es/ontology/postdata-core/</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">has explicit</rdfs:label>
+        <rdfs:label xml:lang="en">has excipit</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1242,6 +1255,32 @@ srosmu@gmail.com</dc:contributor>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P15i_influenced"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception"/>
+        <rdfs:label>influenced ideas in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
+        <rdfs:label>influences are found on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#initiated -->
 
 
@@ -1251,20 +1290,6 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:comment xml:lang="en">This property associates the first conception of a work and the work itself that ensued from a given initial idea.</rdfs:comment>
         <rdfs:label xml:lang="en">initiated</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isAbout -->
-
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isAbout">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P129_is_about"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
-        <rdfs:comment xml:lang="en">This property documents that an E89 Propositional Object has as subject an instance of E1 CRM Entity.</rdfs:comment>
-        <rdfs:label xml:lang="en">is about</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1353,6 +1378,18 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:comment xml:lang="en">This property associates an instance of F1 Work which modifies the content of another instance of F1 Work with the latter.</rdfs:comment>
         <rdfs:label xml:lang="en">is derivative of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:label>is edition of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1528,19 +1565,6 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:comment xml:lang="en">Inverse property of pdc:hasSample.</rdfs:comment>
         <rdfs:label xml:lang="en">is sample of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
-        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
-        <rdfs:comment xml:lang="en">Inverse property of pdc:isAbout.</rdfs:comment>
-        <rdfs:label xml:lang="en">is subject of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1816,6 +1840,18 @@ srosmu@gmail.com</dc:contributor>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
+        <rdfs:label>shows influences of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#socialStatus -->
 
 
@@ -2009,6 +2045,18 @@ srosmu@gmail.com</dc:contributor>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception"/>
+        <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
+        <rdfs:label>was influenced by ideas of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy -->
 
 
@@ -2090,6 +2138,13 @@ srosmu@gmail.com</dc:contributor>
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"/>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on -->
 
 
@@ -2143,6 +2198,20 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P15i_influenced -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P15i_influenced"/>
     
 
 
@@ -2492,7 +2561,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#additionalName">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>An additional name, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name.nnTaking as example the writer Charlotte Brontë, an &quot;additionalName&quot; would be her alias: &quot;Currell Bell&quot;.</rdfs:comment>
@@ -2505,7 +2574,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#address">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Contains a postal address for an organisation. There can only be one address per Organization.nnTaking as example Cervantes&apos; poem &quot;Amadís de Gaula a Don Quijote de la Mancha&quot;, TEI-annotated in the ADSO corpus, the publisher would be &quot;Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)&quot;, and its address would be &quot;carretera San Vicente s/n 03690 San Vicente del Raspeig, Alicante (Spain)&quot;.</rdfs:comment>
@@ -2518,7 +2587,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#alternativeName">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Alternative name that references the current Person. A person may have zero or several alternative names.nnTaking as example the character &quot;Aldonza Lorenzo&quot; from the Quixote, an &quot;alternativeName&quot; could be &quot;Dulcinea&quot;.</rdfs:comment>
@@ -2531,7 +2600,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#alternativeTitle">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P102_has_title"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Other known denominations of a Poetic Work or a Redaction.nnTaking as example the &quot;Poema de Mio Cid&quot;, an &quot;alternativeTitle&quot; would be &quot;Cantar de Mio Cid&quot;.</rdfs:comment>
@@ -2571,7 +2640,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#coordinates">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The specific gedesic coordinates of a place.</rdfs:comment>
@@ -2584,7 +2653,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#date">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Relates a Time-Span with a single value of xsd:date when the Time-Span can be associated to a specific date. This results in a vague application of dates, but we should use P81a and P81b to describe ranges of dates more precisely</rdfs:comment>
@@ -2610,7 +2679,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#forename">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>It contains a forename, given or baptismal name.nnTaking as example the poet &quot;Antonio Machado&quot;, his &quot;forename&quot; would be &quot;Antonio&quot;.</rdfs:comment>
@@ -2623,7 +2692,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#genName">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>It contains a name component used to distinguish otherwise similar names on the basis of the relative age or generation of the Person named.nnTaking as example the person &quot;Felipe II&quot;, &quot;genName&quot; is &quot;II&quot;.</rdfs:comment>
@@ -2632,11 +2701,48 @@ srosmu@gmail.com</dc:contributor>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle">
+        <rdfs:comment>This datatype property associates a textual title to human-made things, material or immaterial.
+
+This property corresponds to the adaptation of CIDOC CRM Object Property P102 has title, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided.</rdfs:comment>
+        <rdfs:label>has title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isAbout -->
+
+
+    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isAbout">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property relates an instance of Propositional Object with a set of keywords representing topics that this object is about.</rdfs:comment>
+        <rdfs:label>is about</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy -->
+
+
+    <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy">
+        <rdfs:label>This property describes the naming or identification of any item by a name or another identifier.
+
+This property corresponds to the adaptation of CIDOC CRM Object Property P1 s identified by, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided.</rdfs:label>
+        <rdfs:label>is identified by</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#name -->
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#name">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Contains a proper noun or noun phrase that refers the current Person.nnTaking as example the full name of Federico García Lorca, &quot;name&quot; would be &quot;Federico del Sagrado Corazón de Jesús García Lorca&quot;.</rdfs:comment>
@@ -2649,7 +2755,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#nameLink">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>A connecting phrase or link used within a name of a Person but not regarded as part of it.nnTaking as example the writer “Hildegard von Bingen”, her “nameLink” would be “von”.</rdfs:comment>
@@ -2662,7 +2768,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment>Number of total lines comprising the Ensemble.nnTaking as example La vida es sueño by Calderón de la Barca, number of lines is 3319.</rdfs:comment>
@@ -2675,7 +2781,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment>Number of plays of an Ensemble</rdfs:comment>
@@ -2688,7 +2794,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment>Number of poems of an Ensemble</rdfs:comment>
@@ -2701,7 +2807,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#originalName">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Name of a Place as it appears in the source text</rdfs:comment>
@@ -2714,7 +2820,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#originalTitle">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P102_has_title"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The identifying name of a Redaction or Poetic Work as it appears in its primary source. There is at most one possible original title.</rdfs:comment>
@@ -2727,7 +2833,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#penName">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>A fictitious name, especially a pen name. A variant name.nnThis property is used to describe an Agent Role entity as the pen name may vary for the same Agent in different Redactions.</rdfs:comment>
@@ -2753,7 +2859,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#positionName">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Contains a name component which indicates that a referent Person has a particular role or position in society, such as an official title or rank.nnFor example, if we consider the poet &quot;Sir Philip Sidney&quot;, his position name is &quot;sir&quot;.</rdfs:comment>
@@ -2766,7 +2872,8 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Number that identifies the Redaction inside an Ensemble. There can only be one value associated for each Redaction.</rdfs:comment>
         <rdfs:label>redaction number</rdfs:label>
@@ -2778,7 +2885,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#subtitle">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P102_has_title"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -2792,7 +2899,7 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#surname">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Contains a family (inherited) name, as opposed to a given, baptismal, or nick name of a Person.nnTaking as example the poet Dante Alighieri, &quot;surname&quot; is &quot;Alighieri&quot;.</rdfs:comment>
@@ -2819,33 +2926,12 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#title">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P102_has_title"/>
+        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The title of a Poetic Work or a Redaction</rdfs:comment>
         <rdfs:label xml:lang="en">title</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P102_has_title -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P102_has_title"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"/>
     
 
 
@@ -2863,20 +2949,6 @@ srosmu@gmail.com</dc:contributor>
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by"/>
-    
-
-
     <!-- http://www.cidoc-crm.org/cidoc-crm/P81a_end_of_the_begin -->
 
 
@@ -2888,13 +2960,6 @@ srosmu@gmail.com</dc:contributor>
 
 
     <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P81b_begin_of_the_end"/>
-    
-
-
-    <!-- http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by"/>
     
 
 
@@ -3026,7 +3091,7 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Event"/>
         <rdfs:comment xml:lang="en">This class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented.
 
-This class has been cloned from E7 Activity.</rdfs:comment>
+This class is equivalent to E7 Activity.</rdfs:comment>
         <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
     
@@ -3104,7 +3169,7 @@ This class has been cloned from E7 Activity.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#IndividualWork"/>
         <rdfs:comment xml:lang="en">This class comprises works whose essence is the selection and/or arrangement of expressions of one or more other works. This does not make the contents of the aggregated expressions part of this work, but only part of the resulting expression. F17 Aggregation Work may include additional original parts. An expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. A new version of an aggregate work does not make the resulting complex work an aggregate work as well. The inclusion of expressions from a complex work in an aggregation work does not make the aggregation work itself complex.
 
-This class has been cloned from F17 Aggregation Work.</rdfs:comment>
+This class is equivalent to F17 Aggregation Work.</rdfs:comment>
         <rdfs:label xml:lang="en">Aggregation Work</rdfs:label>
     </owl:Class>
     
@@ -3118,7 +3183,7 @@ This class has been cloned from F17 Aggregation Work.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Activity"/>
         <rdfs:comment xml:lang="en">This class comprises the actions of making assertions about properties of an object or any relation between two items or concepts.
 
-This class has been cloned from E13 Attribute Assignment.</rdfs:comment>
+This class is equivalent to E13 Attribute Assignment.</rdfs:comment>
         <rdfs:label xml:lang="en">Attribute Assignment</rdfs:label>
     </owl:Class>
     
@@ -3132,7 +3197,7 @@ This class has been cloned from E13 Attribute Assignment.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Event"/>
         <rdfs:comment xml:lang="en">This class comprises the births of human beings. E67 Birth is a biological event focussing on the context of people coming into life. (E63 Beginning of Existence comprises the coming into life of any living beings).
 
-This class has been cloned from E67 Birth.</rdfs:comment>
+This class is equivalent to E67 Birth.</rdfs:comment>
         <rdfs:label xml:lang="en">Birth</rdfs:label>
     </owl:Class>
     
@@ -3166,7 +3231,7 @@ This class has been cloned from E67 Birth.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject"/>
         <rdfs:comment xml:lang="en">This class comprises fictional or iconographic individuals or groups of individual appearing in works in a way relevant as subjects.
 
-This class has been cloned from F38 Character</rdfs:comment>
+This class is equivalent to F38 Character</rdfs:comment>
         <rdfs:label xml:lang="en">Character</rdfs:label>
     </owl:Class>
     
@@ -3179,7 +3244,7 @@ This class has been cloned from F38 Character</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:comment xml:lang="en">This class comprises works that have more than one work as members.
 
-This class has been cloned from F15 Complex Work.</rdfs:comment>
+This class is equivalent to F15 Complex Work.</rdfs:comment>
         <rdfs:label xml:lang="en">Complex Work</rdfs:label>
     </owl:Class>
     
@@ -3193,7 +3258,7 @@ This class has been cloned from F15 Complex Work.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
         <rdfs:comment xml:lang="en">This class comprises non-material products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation or historical implication. The production of such information may have been supported by the use of technical devices such as cameras or computers.
 
-This class has been cloned from E28 Conceptual Object</rdfs:comment>
+This class is equivalent to E28 Conceptual Object</rdfs:comment>
         <rdfs:label xml:lang="en">Conceptual Object</rdfs:label>
     </owl:Class>
     
@@ -3270,7 +3335,7 @@ This class has been cloned from E28 Conceptual Object</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Event"/>
         <rdfs:comment xml:lang="en">This class comprises the deaths of human beings.
 
-This class has been cloned from E69 Death.</rdfs:comment>
+This class is equivalent to E69 Death.</rdfs:comment>
         <rdfs:label xml:lang="en">Death</rdfs:label>
     </owl:Class>
     
@@ -3281,6 +3346,7 @@ This class has been cloned from E69 Death.</rdfs:comment>
 
     <owl:Class rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble">
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AggregationWork"/>
+        <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PoeticWork"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines"/>
@@ -3317,7 +3383,7 @@ This class has been cloned from E69 Death.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Period"/>
         <rdfs:comment xml:lang="en">This class comprises changes of states in cultural, social or physical systems, regardless of scale, brought about by a series or group of coherent physical, cultural, technological or legal phenomena.
 
-This class has been cloned from E5 Event.</rdfs:comment>
+This class is equivalent to E5 Event.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core/"/>
         <rdfs:label xml:lang="en">Event</rdfs:label>
     </owl:Class>
@@ -3331,7 +3397,7 @@ This class has been cloned from E5 Event.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:comment xml:lang="en">This class comprises the intellectual or artistic realisations of works in the form of identifiable immaterial objects, such as texts, poems, jokes, musical or choreographic notations, movement pattern, sound pattern, images, multimedia objects, or any combination of such forms that have objectively recognisable structures.
 
-This class has been cloned from F2 Expression.</rdfs:comment>
+This class is equivalent to F2 Expression.</rdfs:comment>
         <rdfs:label xml:lang="en">Expression</rdfs:label>
     </owl:Class>
     
@@ -3344,7 +3410,7 @@ This class has been cloned from F2 Expression.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Activity"/>
         <rdfs:comment xml:lang="en">This class comprises activities that result in instances of F2 Expression coming into existence
 
-This class has been cloned from F28 Expression Creation.</rdfs:comment>
+This class is equivalent to F28 Expression Creation.</rdfs:comment>
         <rdfs:label xml:lang="en">Expression Creation</rdfs:label>
     </owl:Class>
     
@@ -3357,7 +3423,7 @@ This class has been cloned from F28 Expression Creation.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Expression"/>
         <rdfs:comment xml:lang="en">This class comprises parts of Expressions and these parts are not Self-contained Expressions themselves.
 
-This class has been cloned from F23 Expression Fragment.</rdfs:comment>
+This class is equivalent to F23 Expression Fragment.</rdfs:comment>
         <rdfs:label xml:lang="en">Expression Fragment</rdfs:label>
     </owl:Class>
     
@@ -3370,7 +3436,7 @@ This class has been cloned from F23 Expression Fragment.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:comment xml:lang="en">This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts.
 
-This class has been cloned from F14 Individual Work.</rdfs:comment>
+This class is equivalent to F14 Individual Work.</rdfs:comment>
         <rdfs:label xml:lang="en">Individual Work</rdfs:label>
     </owl:Class>
     
@@ -3385,7 +3451,7 @@ This class has been cloned from F14 Individual Work.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class comprises identifiable immaterial items, such as a poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units.
 The encoding structure known as a &quot;named graph&quot; also falls under this class, so that each &quot;named graph&quot; is an instance of an E73 Information Object.
 
-This class has been cloned from E33 Linguistic Object</rdfs:comment>
+This class is equivalent to E33 Linguistic Object</rdfs:comment>
         <rdfs:label xml:lang="en">Linguistic Object</rdfs:label>
     </owl:Class>
     
@@ -3399,7 +3465,7 @@ This class has been cloned from E33 Linguistic Object</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Activity"/>
         <rdfs:comment xml:lang="en">This class comprises actions measuring physical properties and other values that can be determined by a systematic procedure.
 
-This class has been cloned from E16 Measurement.</rdfs:comment>
+This class is equivalent to E16 Measurement.</rdfs:comment>
         <rdfs:label xml:lang="en">Measurement</rdfs:label>
     </owl:Class>
     
@@ -3426,7 +3492,7 @@ This class has been cloned from E16 Measurement.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
         <rdfs:comment xml:lang="en">This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space.
 
-This class has been cloned from E4 Period.</rdfs:comment>
+This class is equivalent to E4 Period.</rdfs:comment>
         <rdfs:label xml:lang="en">Period</rdfs:label>
     </owl:Class>
     
@@ -3440,7 +3506,7 @@ This class has been cloned from E4 Period.</rdfs:comment>
         <rdfs:comment rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core/"/>
         <rdfs:comment xml:lang="en">This class comprises real persons who live or are assumed to have lived.
 
-This class has been cloned from F10 Person.</rdfs:comment>
+This class is equivalent to F10 Person.</rdfs:comment>
         <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
     
@@ -3453,7 +3519,7 @@ This class has been cloned from F10 Person.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
         <rdfs:comment xml:lang="en">This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter.
 
-This class has been cloned from F9 Place.</rdfs:comment>
+This class is equivalent to F9 Place.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core/"/>
         <rdfs:label xml:lang="en">Place</rdfs:label>
     </owl:Class>
@@ -3538,7 +3604,7 @@ For example, Os Lusíadas by Luis Vaz de Camões; La Commedia by Dante; the poem
         <rdfs:comment xml:lang="en">This class comprises immaterial items, including but not limited to stories, plots, procedural prescriptions, algorithms, laws of physics or images that are, or represent in some sense, sets of propositions about real or imaginary things and that are documented as single units or serve as topic of discourse.
 This class also comprises items that are &quot;about&quot; something in the sense of a subject. In the wider sense, this class includes expressions of psychological value such as non-figural art and musical themes. However, conceptual items such as types and classes are not instances of E89 Propositional Object. This should not be confused with the definition of a type, which is indeed an instance of E89 Propositional Object.
 
-This class has been cloned from E89 Propositional Object</rdfs:comment>
+This class is equivalent to E89 Propositional Object</rdfs:comment>
         <rdfs:label xml:lang="en">Propositional Object</rdfs:label>
     </owl:Class>
     
@@ -3651,7 +3717,7 @@ Eg.: The palaeographic edition of A solis ortu usque ad occidua preserved in Lat
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Expression"/>
         <rdfs:comment xml:lang="en">This class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole.
 
-This class has been cloned from F22 Self Contained Expression.</rdfs:comment>
+This class is equivalent to F22 Self Contained Expression.</rdfs:comment>
         <rdfs:label xml:lang="en">Self Contained Expression</rdfs:label>
     </owl:Class>
     
@@ -3664,7 +3730,7 @@ This class has been cloned from F22 Self Contained Expression.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:comment xml:lang="en">This class comprises the sums of concepts which appear in the course of the coherent evolution of an original idea into one or more expressions that are dominated by the original idea.
 
-This class has been cloned from F1 Work.</rdfs:comment>
+This class is equivalent to F1 Work.</rdfs:comment>
         <rdfs:label xml:lang="en">Work</rdfs:label>
     </owl:Class>
     
@@ -3677,7 +3743,7 @@ This class has been cloned from F1 Work.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Activity"/>
         <rdfs:comment xml:lang="en">This class comprises the births of original ideas. It marks the initiation of the creation of a work.
 
-This class has been cloned from F27 Work Conception.</rdfs:comment>
+This class is equivalent to F27 Work Conception.</rdfs:comment>
         <rdfs:label xml:lang="en">Work Conception</rdfs:label>
     </owl:Class>
     
@@ -3691,7 +3757,7 @@ This class has been cloned from F27 Work Conception.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
         <rdfs:comment xml:lang="en">This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration.
 
-This class has been cloned from E52 Time-Span.</rdfs:comment>
+This class is equivalent to E52 Time-Span.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-dates"/>
         <rdfs:label xml:lang="en">Time Span</rdfs:label>
     </owl:Class>
@@ -5063,13 +5129,13 @@ This class has been cloned from E52 Time-Span.</rdfs:comment>
         <skos:prefLabel xml:lang="ar">تعليم ثانوي</skos:prefLabel>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     
 

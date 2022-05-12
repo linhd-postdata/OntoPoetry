@@ -1,12 +1,12 @@
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto"@scc.uned.es .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Aitor Díaz Medina (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/aitordiazmedina/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Alvaro Pérez (LINHD_POSTDATA-UNED) \nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Elena González-Blanco\nhttps://orcid.org/0000-0002-0448-1812" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Helena Bermúdez Sabel\nhttps://orcid.org/0000-0001-7782-206X" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)\nhttps://orcid.org/0000-0003-3489-2193" .
+<http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto@scc.uned.es" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Mª Luisa Díez Platas\nhttps://orcid.org/0000-0002-9416-3147" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Omar Khalil Gómez (LINHD_POSTDATA-UNED)\nhttp://www.linkedin.com/in/omar-k-0959a8129" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#> <http://purl.org/dc/elements/1.1/contributor> "Oscar Corcho (Universidad Politécnica de Madrid)\nhttp://orcid.org/0000-0002-9260-0753" .
@@ -577,15 +577,23 @@ _:genid12 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasDerivative> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of pdc:isDerivativeOf."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasDerivative> <http://www.w3.org/2000/01/rdf-schema#label> "has derivative"@en .
 # 
-# http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#hasFragment> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#Excerpt> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Redaction with its closing words (usually, the last verse). There is only one explicit per Redaction.nnTaking as example the poem \"Canary\" by Rita Dove, the last verse, \"If you can't be free, be a mystery\", would be the \"explicit\"."@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-core/" .
-<http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit> <http://www.w3.org/2000/01/rdf-schema#label> "has explicit"@en .
+# http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition> <http://www.w3.org/2000/01/rdf-schema#label> "has edition" .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#hasFragment> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.co-ode.org/ontologies/ont.owl#Excerpt> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Redaction with its closing words (usually, the last verse). There is only one explicit per Redaction.nnTaking as example the poem \"Canary\" by Rita Dove, the last verse, \"If you can't be free, be a mystery\", would be the \"excipit\"."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-core/" .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit> <http://www.w3.org/2000/01/rdf-schema#label> "has excipit"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#hasFragment
 <http://postdata.linhd.uned.es/ontology/postdata-core#hasFragment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -698,6 +706,22 @@ _:genid12 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 <http://postdata.linhd.uned.es/ontology/postdata-core#incorporates> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F22 Self-Contained Expression with an instance of F2 Expression that was included in it and that is a realisation of an independent work. The incorporated expression may be self-contained or fragmentary."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#incorporates> <http://www.w3.org/2000/01/rdf-schema#label> "incorporates"@en .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P15i_influenced> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn> <http://www.w3.org/2000/01/rdf-schema#label> "influenced ideas in" .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn> <http://www.w3.org/2000/01/rdf-schema#label> "influences are found on" .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-core#initiated
 <http://postdata.linhd.uned.es/ontology/postdata-core#initiated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#initiated> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy> .
@@ -705,15 +729,6 @@ _:genid12 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 <http://postdata.linhd.uned.es/ontology/postdata-core#initiated> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#initiated> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates the first conception of a work and the work itself that ensued from a given initial idea."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#initiated> <http://www.w3.org/2000/01/rdf-schema#label> "initiated"@en .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-core#isAbout
-<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.cidoc-crm.org/cidoc-crm/P129_is_about> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2002/07/owl#inverseOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2000/01/rdf-schema#comment> "This property documents that an E89 Propositional Object has as subject an instance of E1 CRM Entity."@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "is about"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf
 <http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -773,6 +788,13 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://postdata.linhd.uned.es/ontology/postdata-core#isDerivativeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isDerivativeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an instance of F1 Work which modifies the content of another instance of F1 Work with the latter."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isDerivativeOf> <http://www.w3.org/2000/01/rdf-schema#label> "is derivative of"@en .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf
+<http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is edition of" .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf
 <http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -883,14 +905,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://postdata.linhd.uned.es/ontology/postdata-core#isSampleOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isSampleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of pdc:hasSample."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#isSampleOf> <http://www.w3.org/2000/01/rdf-schema#label> "is sample of"@en .
-# 
-# http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf
-<http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of pdc:isAbout."@en .
-<http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf> <http://www.w3.org/2000/01/rdf-schema#label> "is subject of"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#isSynthesisOf
 <http://postdata.linhd.uned.es/ontology/postdata-core#isSynthesisOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1068,6 +1082,13 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://postdata.linhd.uned.es/ontology/postdata-core#roleFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://postdata.linhd.uned.es/ontology/postdata-core/" .
 <http://postdata.linhd.uned.es/ontology/postdata-core#roleFunction> <http://www.w3.org/2000/01/rdf-schema#label> "role function"@en .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf
+<http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf> <http://www.w3.org/2000/01/rdf-schema#label> "shows influences of" .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-core#socialStatus
 <http://postdata.linhd.uned.es/ontology/postdata-core#socialStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#socialStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
@@ -1188,6 +1209,13 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 <http://postdata.linhd.uned.es/ontology/postdata-core#wasDeathOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an E69 Death event to the E21 Person that died."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#wasDeathOf> <http://www.w3.org/2000/01/rdf-schema#label> "was death of"@en .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf
+<http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf> <http://www.w3.org/2000/01/rdf-schema#label> "was influenced by ideas of" .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy
 <http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
@@ -1227,6 +1255,9 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of
 <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of
+<http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on
 <http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
@@ -1250,6 +1281,12 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of
 <http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by
+<http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P15i_influenced
+<http://www.cidoc-crm.org/cidoc-crm/P15i_influenced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/P2_has_type
 <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1445,7 +1482,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#additionalName
 <http://postdata.linhd.uned.es/ontology/postdata-core#additionalName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#additionalName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#additionalName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#additionalName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#additionalName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#additionalName> <http://www.w3.org/2000/01/rdf-schema#comment> "An additional name, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name.nnTaking as example the writer Charlotte Brontë, an \"additionalName\" would be her alias: \"Currell Bell\"." .
@@ -1453,7 +1490,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#address
 <http://postdata.linhd.uned.es/ontology/postdata-core#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#address> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#address> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Place> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#address> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains a postal address for an organisation. There can only be one address per Organization.nnTaking as example Cervantes' poem \"Amadís de Gaula a Don Quijote de la Mancha\", TEI-annotated in the ADSO corpus, the publisher would be \"Natural Language Processing Group. Department of Software and Computing Systems. University of Alicante (Spain)\", and its address would be \"carretera San Vicente s/n 03690 San Vicente del Raspeig, Alicante (Spain)\"." .
@@ -1461,7 +1498,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#alternativeName
 <http://postdata.linhd.uned.es/ontology/postdata-core#alternativeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#alternativeName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#alternativeName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#alternativeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#alternativeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#alternativeName> <http://www.w3.org/2000/01/rdf-schema#comment> "Alternative name that references the current Person. A person may have zero or several alternative names.nnTaking as example the character \"Aldonza Lorenzo\" from the Quixote, an \"alternativeName\" could be \"Dulcinea\"." .
@@ -1469,7 +1506,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#alternativeTitle
 <http://postdata.linhd.uned.es/ontology/postdata-core#alternativeTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#alternativeTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#alternativeTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#alternativeTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#alternativeTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#alternativeTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Other known denominations of a Poetic Work or a Redaction.nnTaking as example the \"Poema de Mio Cid\", an \"alternativeTitle\" would be \"Cantar de Mio Cid\"." .
@@ -1494,7 +1531,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#coordinates
 <http://postdata.linhd.uned.es/ontology/postdata-core#coordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#coordinates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#coordinates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#coordinates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Place> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#coordinates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#coordinates> <http://www.w3.org/2000/01/rdf-schema#comment> "The specific gedesic coordinates of a place."@en .
@@ -1502,7 +1539,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#date
 <http://postdata.linhd.uned.es/ontology/postdata-core#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#date> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Time-Span with a single value of xsd:date when the Time-Span can be associated to a specific date. This results in a vague application of dates, but we should use P81a and P81b to describe ranges of dates more precisely"@en .
@@ -1518,7 +1555,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#forename
 <http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#forename> <http://www.w3.org/2000/01/rdf-schema#comment> "It contains a forename, given or baptismal name.nnTaking as example the poet \"Antonio Machado\", his \"forename\" would be \"Antonio\"." .
@@ -1526,15 +1563,33 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#genName
 <http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#comment> "It contains a name component used to distinguish otherwise similar names on the basis of the relative age or generation of the Person named.nnTaking as example the person \"Felipe II\", \"genName\" is \"II\"." .
 <http://postdata.linhd.uned.es/ontology/postdata-core#genName> <http://www.w3.org/2000/01/rdf-schema#label> "gen name" .
 # 
+# http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "This datatype property associates a textual title to human-made things, material or immaterial.\n\nThis property corresponds to the adaptation of CIDOC CRM Object Property P102 has title, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided." .
+<http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has title" .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-core#isAbout
+<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an instance of Propositional Object with a set of keywords representing topics that this object is about." .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "is about" .
+# 
+# http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy
+<http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "This property describes the naming or identification of any item by a name or another identifier.\n\nThis property corresponds to the adaptation of CIDOC CRM Object Property P1 s identified by, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided." .
+<http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is identified by" .
+# 
 # http://postdata.linhd.uned.es/ontology/postdata-core#name
 <http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains a proper noun or noun phrase that refers the current Person.nnTaking as example the full name of Federico García Lorca, \"name\" would be \"Federico del Sagrado Corazón de Jesús García Lorca\"." .
@@ -1542,7 +1597,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#nameLink
 <http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#nameLink> <http://www.w3.org/2000/01/rdf-schema#comment> "A connecting phrase or link used within a name of a Person but not regarded as part of it.nnTaking as example the writer “Hildegard von Bingen”, her “nameLink” would be “von”." .
@@ -1550,7 +1605,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of total lines comprising the Ensemble.nnTaking as example La vida es sueño by Calderón de la Barca, number of lines is 3319." .
@@ -1558,7 +1613,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of plays of an Ensemble" .
@@ -1566,7 +1621,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of poems of an Ensemble" .
@@ -1574,7 +1629,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#originalName
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a Place as it appears in the source text" .
@@ -1582,7 +1637,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#originalTitle
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#originalTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#originalTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#originalTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifying name of a Redaction or Poetic Work as it appears in its primary source. There is at most one possible original title." .
@@ -1590,7 +1645,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#penName
 <http://postdata.linhd.uned.es/ontology/postdata-core#penName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#penName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#penName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#penName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#penName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#penName> <http://www.w3.org/2000/01/rdf-schema#comment> "A fictitious name, especially a pen name. A variant name.nnThis property is used to describe an Agent Role entity as the pen name may vary for the same Agent in different Redactions." .
@@ -1606,7 +1661,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#positionName
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#positionName> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains a name component which indicates that a referent Person has a particular role or position in society, such as an official title or rank.nnFor example, if we consider the poet \"Sir Philip Sidney\", his position name is \"sir\"." .
@@ -1614,14 +1669,15 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber
 <http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Redaction> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number that identifies the Redaction inside an Ensemble. There can only be one value associated for each Redaction." .
 <http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber> <http://www.w3.org/2000/01/rdf-schema#label> "redaction number" .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#subtitle
 <http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#subtitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
@@ -1630,7 +1686,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#surname
 <http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#Person> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#surname> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains a family (inherited) name, as opposed to a given, baptismal, or nick name of a Person.nnTaking as example the poet Dante Alighieri, \"surname\" is \"Alighieri\"." .
@@ -1647,20 +1703,11 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#title
 <http://postdata.linhd.uned.es/ontology/postdata-core#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#title> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of a Poetic Work or a Redaction"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#title> <http://www.w3.org/2000/01/rdf-schema#label> "title"@en .
-# 
-# http://www.cidoc-crm.org/cidoc-crm/P102_has_title
-<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by
-<http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by
-<http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content
 <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1668,20 +1715,11 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 # http://www.cidoc-crm.org/cidoc-crm/P3_has_note
 <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
-# http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension
-<http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by
-<http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # http://www.cidoc-crm.org/cidoc-crm/P81a_end_of_the_begin
 <http://www.cidoc-crm.org/cidoc-crm/P81a_end_of_the_begin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # http://www.cidoc-crm.org/cidoc-crm/P81b_begin_of_the_end
 <http://www.cidoc-crm.org/cidoc-crm/P81b_begin_of_the_end> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by
-<http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # 
 # 
@@ -1744,7 +1782,7 @@ _:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://postdata.linhd.uned.e
 <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Event> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented.\n\nThis class has been cloned from E7 Activity."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented.\n\nThis class is equivalent to E7 Activity."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Agent
@@ -1801,21 +1839,21 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://postdata.linhd.uned.es/ontology/postdata-core#AggregationWork
 <http://postdata.linhd.uned.es/ontology/postdata-core#AggregationWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#AggregationWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#IndividualWork> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#AggregationWork> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises works whose essence is the selection and/or arrangement of expressions of one or more other works. This does not make the contents of the aggregated expressions part of this work, but only part of the resulting expression. F17 Aggregation Work may include additional original parts. An expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. A new version of an aggregate work does not make the resulting complex work an aggregate work as well. The inclusion of expressions from a complex work in an aggregation work does not make the aggregation work itself complex.\n\nThis class has been cloned from F17 Aggregation Work."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#AggregationWork> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises works whose essence is the selection and/or arrangement of expressions of one or more other works. This does not make the contents of the aggregated expressions part of this work, but only part of the resulting expression. F17 Aggregation Work may include additional original parts. An expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. A new version of an aggregate work does not make the resulting complex work an aggregate work as well. The inclusion of expressions from a complex work in an aggregation work does not make the aggregation work itself complex.\n\nThis class is equivalent to F17 Aggregation Work."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#AggregationWork> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregation Work"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment
 <http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the actions of making assertions about properties of an object or any relation between two items or concepts.\n\nThis class has been cloned from E13 Attribute Assignment."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the actions of making assertions about properties of an object or any relation between two items or concepts.\n\nThis class is equivalent to E13 Attribute Assignment."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute Assignment"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Birth
 <http://postdata.linhd.uned.es/ontology/postdata-core#Birth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Birth> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E67_Birth> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Birth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Event> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Birth> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the births of human beings. E67 Birth is a biological event focussing on the context of people coming into life. (E63 Beginning of Existence comprises the coming into life of any living beings).\n\nThis class has been cloned from E67 Birth."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Birth> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the births of human beings. E67 Birth is a biological event focussing on the context of people coming into life. (E63 Beginning of Existence comprises the coming into life of any living beings).\n\nThis class is equivalent to E67 Birth."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Birth> <http://www.w3.org/2000/01/rdf-schema#label> "Birth"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity
@@ -1832,20 +1870,20 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://postdata.linhd.uned.es/ontology/postdata-core#Character
 <http://postdata.linhd.uned.es/ontology/postdata-core#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises fictional or iconographic individuals or groups of individual appearing in works in a way relevant as subjects.\n\nThis class has been cloned from F38 Character"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises fictional or iconographic individuals or groups of individual appearing in works in a way relevant as subjects.\n\nThis class is equivalent to F38 Character"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#ComplexWork
 <http://postdata.linhd.uned.es/ontology/postdata-core#ComplexWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ComplexWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#ComplexWork> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises works that have more than one work as members.\n\nThis class has been cloned from F15 Complex Work."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#ComplexWork> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises works that have more than one work as members.\n\nThis class is equivalent to F15 Complex Work."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ComplexWork> <http://www.w3.org/2000/01/rdf-schema#label> "Complex Work"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject
 <http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises non-material products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation or historical implication. The production of such information may have been supported by the use of technical devices such as cameras or computers.\n\nThis class has been cloned from E28 Conceptual Object"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises non-material products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation or historical implication. The production of such information may have been supported by the use of technical devices such as cameras or computers.\n\nThis class is equivalent to E28 Conceptual Object"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject> <http://www.w3.org/2000/01/rdf-schema#label> "Conceptual Object"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#CreatorRole
@@ -1907,12 +1945,13 @@ _:genid53 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://postdata.linhd.uned.es/ontology/postdata-core#Death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Death> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E69_Death> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Death> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Event> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Death> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the deaths of human beings.\n\nThis class has been cloned from E69 Death."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Death> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the deaths of human beings.\n\nThis class is equivalent to E69 Death."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Death> <http://www.w3.org/2000/01/rdf-schema#label> "Death"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble
 <http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#AggregationWork> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#PoeticWork> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
 _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines> .
@@ -1936,46 +1975,46 @@ _:genid56 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Period> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises changes of states in cultural, social or physical systems, regardless of scale, brought about by a series or group of coherent physical, cultural, technological or legal phenomena.\n\nThis class has been cloned from E5 Event."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises changes of states in cultural, social or physical systems, regardless of scale, brought about by a series or group of coherent physical, cultural, technological or legal phenomena.\n\nThis class is equivalent to E5 Event."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://postdata.linhd.uned.es/ontology/postdata-core/> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Expression
 <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the intellectual or artistic realisations of works in the form of identifiable immaterial objects, such as texts, poems, jokes, musical or choreographic notations, movement pattern, sound pattern, images, multimedia objects, or any combination of such forms that have objectively recognisable structures.\n\nThis class has been cloned from F2 Expression."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the intellectual or artistic realisations of works in the form of identifiable immaterial objects, such as texts, poems, jokes, musical or choreographic notations, movement pattern, sound pattern, images, multimedia objects, or any combination of such forms that have objectively recognisable structures.\n\nThis class is equivalent to F2 Expression."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> <http://www.w3.org/2000/01/rdf-schema#label> "Expression"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation
 <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises activities that result in instances of F2 Expression coming into existence\n\nThis class has been cloned from F28 Expression Creation."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises activities that result in instances of F2 Expression coming into existence\n\nThis class is equivalent to F28 Expression Creation."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation> <http://www.w3.org/2000/01/rdf-schema#label> "Expression Creation"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionFragment
 <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionFragment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionFragment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionFragment> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises parts of Expressions and these parts are not Self-contained Expressions themselves.\n\nThis class has been cloned from F23 Expression Fragment."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionFragment> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises parts of Expressions and these parts are not Self-contained Expressions themselves.\n\nThis class is equivalent to F23 Expression Fragment."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionFragment> <http://www.w3.org/2000/01/rdf-schema#label> "Expression Fragment"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#IndividualWork
 <http://postdata.linhd.uned.es/ontology/postdata-core#IndividualWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#IndividualWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Work> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#IndividualWork> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts.\n\nThis class has been cloned from F14 Individual Work."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#IndividualWork> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts.\n\nThis class is equivalent to F14 Individual Work."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#IndividualWork> <http://www.w3.org/2000/01/rdf-schema#label> "Individual Work"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject
 <http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises identifiable immaterial items, such as a poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units.\nThe encoding structure known as a \"named graph\" also falls under this class, so that each \"named graph\" is an instance of an E73 Information Object.\n\nThis class has been cloned from E33 Linguistic Object"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises identifiable immaterial items, such as a poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units.\nThe encoding structure known as a \"named graph\" also falls under this class, so that each \"named graph\" is an instance of an E73 Information Object.\n\nThis class is equivalent to E33 Linguistic Object"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject> <http://www.w3.org/2000/01/rdf-schema#label> "Linguistic Object"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Measurement
 <http://postdata.linhd.uned.es/ontology/postdata-core#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Measurement> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E16_Measurement> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises actions measuring physical properties and other values that can be determined by a systematic procedure.\n\nThis class has been cloned from E16 Measurement."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises actions measuring physical properties and other values that can be determined by a systematic procedure.\n\nThis class is equivalent to E16 Measurement."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Organisation
@@ -1990,20 +2029,20 @@ _:genid56 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://postdata.linhd.uned.es/ontology/postdata-core#Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Period> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Period> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Period> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space.\n\nThis class has been cloned from E4 Period."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Period> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space.\n\nThis class is equivalent to E4 Period."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Period> <http://www.w3.org/2000/01/rdf-schema#label> "Period"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Person
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Agent> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#comment> <http://postdata.linhd.uned.es/ontology/postdata-core/> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises real persons who live or are assumed to have lived.\n\nThis class has been cloned from F10 Person."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises real persons who live or are assumed to have lived.\n\nThis class is equivalent to F10 Person."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Place
 <http://postdata.linhd.uned.es/ontology/postdata-core#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter.\n\nThis class has been cloned from F9 Place."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter.\n\nThis class is equivalent to F9 Place."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://postdata.linhd.uned.es/ontology/postdata-core/> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
 # 
@@ -2068,7 +2107,7 @@ _:genid72 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises immaterial items, including but not limited to stories, plots, procedural prescriptions, algorithms, laws of physics or images that are, or represent in some sense, sets of propositions about real or imaginary things and that are documented as single units or serve as topic of discourse.\nThis class also comprises items that are \"about\" something in the sense of a subject. In the wider sense, this class includes expressions of psychological value such as non-figural art and musical themes. However, conceptual items such as types and classes are not instances of E89 Propositional Object. This should not be confused with the definition of a type, which is indeed an instance of E89 Propositional Object.\n\nThis class has been cloned from E89 Propositional Object"@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises immaterial items, including but not limited to stories, plots, procedural prescriptions, algorithms, laws of physics or images that are, or represent in some sense, sets of propositions about real or imaginary things and that are documented as single units or serve as topic of discourse.\nThis class also comprises items that are \"about\" something in the sense of a subject. In the wider sense, this class includes expressions of psychological value such as non-figural art and musical themes. However, conceptual items such as types and classes are not instances of E89 Propositional Object. This should not be confused with the definition of a type, which is indeed an instance of E89 Propositional Object.\n\nThis class is equivalent to E89 Propositional Object"@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> <http://www.w3.org/2000/01/rdf-schema#label> "Propositional Object"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Redaction
@@ -2149,26 +2188,26 @@ _:genid90 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression
 <http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Expression> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole.\n\nThis class has been cloned from F22 Self Contained Expression."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole.\n\nThis class is equivalent to F22 Self Contained Expression."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Self Contained Expression"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#Work
 <http://postdata.linhd.uned.es/ontology/postdata-core#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#Work> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the sums of concepts which appear in the course of the coherent evolution of an original idea into one or more expressions that are dominated by the original idea.\n\nThis class has been cloned from F1 Work."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#Work> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the sums of concepts which appear in the course of the coherent evolution of an original idea into one or more expressions that are dominated by the original idea.\n\nThis class is equivalent to F1 Work."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#Work> <http://www.w3.org/2000/01/rdf-schema#label> "Work"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception
 <http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#Activity> .
-<http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the births of original ideas. It marks the initiation of the creation of a work.\n\nThis class has been cloned from F27 Work Conception."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the births of original ideas. It marks the initiation of the creation of a work.\n\nThis class is equivalent to F27 Work Conception."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception> <http://www.w3.org/2000/01/rdf-schema#label> "Work Conception"@en .
 # 
 # http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan
 <http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> .
 <http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity> .
-<http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration.\n\nThis class has been cloned from E52 Time-Span."@en .
+<http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration.\n\nThis class is equivalent to E52 Time-Span."@en .
 <http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://postdata.linhd.uned.es/ontology/postdata-dates> .
 <http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan> <http://www.w3.org/2000/01/rdf-schema#label> "Time Span"@en .
 # 
@@ -3032,9 +3071,9 @@ _:genid90 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <http://vocabularies.unesco.org/thesaurus/concept9291> <http://www.w3.org/2004/02/skos/core#prefLabel> "Среднее образование"@ru .
 <http://vocabularies.unesco.org/thesaurus/concept9291> <http://www.w3.org/2004/02/skos/core#prefLabel> "تعليم ثانوي"@ar .
 # 
-_:genid91 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid92 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid93 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid91 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid92 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid93 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 # 
 # 
 # #################################################################

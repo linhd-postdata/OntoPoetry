@@ -629,19 +629,19 @@
 }, {
   "@id" : "_:genid91",
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid92",
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid93",
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
   } ]
 }, {
@@ -2224,9 +2224,6 @@
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@language" : "scc.uned.es",
-    "@value" : "Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto"
-  }, {
     "@value" : "Aitor Díaz Medina (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/aitordiazmedina/"
   }, {
     "@value" : "Alvaro Pérez (LINHD_POSTDATA-UNED) \nhttps://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/"
@@ -2238,6 +2235,8 @@
     "@value" : "Javier de la Rosa (LINHD_POSTDATA-UNED)\nhttps://www.linkedin.com/in/versae/"
   }, {
     "@value" : "Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)\nhttps://orcid.org/0000-0003-3489-2193"
+  }, {
+    "@value" : "Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto@scc.uned.es"
   }, {
     "@value" : "Mª Luisa Díez Platas\nhttps://orcid.org/0000-0002-9416-3147"
   }, {
@@ -2277,7 +2276,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented.\n\nThis class has been cloned from E7 Activity."
+    "@value" : "This class comprises actions intentionally carried out by instances of E39 Actor that result in changes of state in the cultural, social, or physical systems documented.\n\nThis class is equivalent to E7 Activity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2338,7 +2337,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises works whose essence is the selection and/or arrangement of expressions of one or more other works. This does not make the contents of the aggregated expressions part of this work, but only part of the resulting expression. F17 Aggregation Work may include additional original parts. An expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. A new version of an aggregate work does not make the resulting complex work an aggregate work as well. The inclusion of expressions from a complex work in an aggregation work does not make the aggregation work itself complex.\n\nThis class has been cloned from F17 Aggregation Work."
+    "@value" : "This class comprises works whose essence is the selection and/or arrangement of expressions of one or more other works. This does not make the contents of the aggregated expressions part of this work, but only part of the resulting expression. F17 Aggregation Work may include additional original parts. An expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. A new version of an aggregate work does not make the resulting complex work an aggregate work as well. The inclusion of expressions from a complex work in an aggregation work does not make the aggregation work itself complex.\n\nThis class is equivalent to F17 Aggregation Work."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2352,7 +2351,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises the actions of making assertions about properties of an object or any relation between two items or concepts.\n\nThis class has been cloned from E13 Attribute Assignment."
+    "@value" : "This class comprises the actions of making assertions about properties of an object or any relation between two items or concepts.\n\nThis class is equivalent to E13 Attribute Assignment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2369,7 +2368,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises the births of human beings. E67 Birth is a biological event focussing on the context of people coming into life. (E63 Beginning of Existence comprises the coming into life of any living beings).\n\nThis class has been cloned from E67 Birth."
+    "@value" : "This class comprises the births of human beings. E67 Birth is a biological event focussing on the context of people coming into life. (E63 Beginning of Existence comprises the coming into life of any living beings).\n\nThis class is equivalent to E67 Birth."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2410,7 +2409,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises fictional or iconographic individuals or groups of individual appearing in works in a way relevant as subjects.\n\nThis class has been cloned from F38 Character"
+    "@value" : "This class comprises fictional or iconographic individuals or groups of individual appearing in works in a way relevant as subjects.\n\nThis class is equivalent to F38 Character"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2424,7 +2423,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises works that have more than one work as members.\n\nThis class has been cloned from F15 Complex Work."
+    "@value" : "This class comprises works that have more than one work as members.\n\nThis class is equivalent to F15 Complex Work."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2438,7 +2437,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises non-material products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation or historical implication. The production of such information may have been supported by the use of technical devices such as cameras or computers.\n\nThis class has been cloned from E28 Conceptual Object"
+    "@value" : "This class comprises non-material products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation or historical implication. The production of such information may have been supported by the use of technical devices such as cameras or computers.\n\nThis class is equivalent to E28 Conceptual Object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2491,7 +2490,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises the deaths of human beings.\n\nThis class has been cloned from E69 Death."
+    "@value" : "This class comprises the deaths of human beings.\n\nThis class is equivalent to E69 Death."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2530,6 +2529,8 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#AggregationWork"
   }, {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#PoeticWork"
+  }, {
     "@id" : "_:genid54"
   }, {
     "@id" : "_:genid55"
@@ -2541,7 +2542,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises changes of states in cultural, social or physical systems, regardless of scale, brought about by a series or group of coherent physical, cultural, technological or legal phenomena.\n\nThis class has been cloned from E5 Event."
+    "@value" : "This class comprises changes of states in cultural, social or physical systems, regardless of scale, brought about by a series or group of coherent physical, cultural, technological or legal phenomena.\n\nThis class is equivalent to E5 Event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core/"
@@ -2561,7 +2562,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises the intellectual or artistic realisations of works in the form of identifiable immaterial objects, such as texts, poems, jokes, musical or choreographic notations, movement pattern, sound pattern, images, multimedia objects, or any combination of such forms that have objectively recognisable structures.\n\nThis class has been cloned from F2 Expression."
+    "@value" : "This class comprises the intellectual or artistic realisations of works in the form of identifiable immaterial objects, such as texts, poems, jokes, musical or choreographic notations, movement pattern, sound pattern, images, multimedia objects, or any combination of such forms that have objectively recognisable structures.\n\nThis class is equivalent to F2 Expression."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2575,7 +2576,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises activities that result in instances of F2 Expression coming into existence\n\nThis class has been cloned from F28 Expression Creation."
+    "@value" : "This class comprises activities that result in instances of F2 Expression coming into existence\n\nThis class is equivalent to F28 Expression Creation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2589,7 +2590,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises parts of Expressions and these parts are not Self-contained Expressions themselves.\n\nThis class has been cloned from F23 Expression Fragment."
+    "@value" : "This class comprises parts of Expressions and these parts are not Self-contained Expressions themselves.\n\nThis class is equivalent to F23 Expression Fragment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2603,7 +2604,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts.\n\nThis class has been cloned from F14 Individual Work."
+    "@value" : "This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts.\n\nThis class is equivalent to F14 Individual Work."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2617,7 +2618,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises identifiable immaterial items, such as a poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units.\nThe encoding structure known as a \"named graph\" also falls under this class, so that each \"named graph\" is an instance of an E73 Information Object.\n\nThis class has been cloned from E33 Linguistic Object"
+    "@value" : "This class comprises identifiable immaterial items, such as a poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units.\nThe encoding structure known as a \"named graph\" also falls under this class, so that each \"named graph\" is an instance of an E73 Information Object.\n\nThis class is equivalent to E33 Linguistic Object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2634,7 +2635,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises actions measuring physical properties and other values that can be determined by a systematic procedure.\n\nThis class has been cloned from E16 Measurement."
+    "@value" : "This class comprises actions measuring physical properties and other values that can be determined by a systematic procedure.\n\nThis class is equivalent to E16 Measurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2670,7 +2671,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space.\n\nThis class has been cloned from E4 Period."
+    "@value" : "This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space.\n\nThis class is equivalent to E4 Period."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2689,7 +2690,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core/"
   }, {
     "@language" : "en",
-    "@value" : "This class comprises real persons who live or are assumed to have lived.\n\nThis class has been cloned from F10 Person."
+    "@value" : "This class comprises real persons who live or are assumed to have lived.\n\nThis class is equivalent to F10 Person."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2703,7 +2704,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter.\n\nThis class has been cloned from F9 Place."
+    "@value" : "This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter.\n\nThis class is equivalent to F9 Place."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core/"
@@ -2745,7 +2746,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises immaterial items, including but not limited to stories, plots, procedural prescriptions, algorithms, laws of physics or images that are, or represent in some sense, sets of propositions about real or imaginary things and that are documented as single units or serve as topic of discourse.\nThis class also comprises items that are \"about\" something in the sense of a subject. In the wider sense, this class includes expressions of psychological value such as non-figural art and musical themes. However, conceptual items such as types and classes are not instances of E89 Propositional Object. This should not be confused with the definition of a type, which is indeed an instance of E89 Propositional Object.\n\nThis class has been cloned from E89 Propositional Object"
+    "@value" : "This class comprises immaterial items, including but not limited to stories, plots, procedural prescriptions, algorithms, laws of physics or images that are, or represent in some sense, sets of propositions about real or imaginary things and that are documented as single units or serve as topic of discourse.\nThis class also comprises items that are \"about\" something in the sense of a subject. In the wider sense, this class includes expressions of psychological value such as non-figural art and musical themes. However, conceptual items such as types and classes are not instances of E89 Propositional Object. This should not be confused with the definition of a type, which is indeed an instance of E89 Propositional Object.\n\nThis class is equivalent to E89 Propositional Object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2801,7 +2802,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole.\n\nThis class has been cloned from F22 Self Contained Expression."
+    "@value" : "This class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole.\n\nThis class is equivalent to F22 Self Contained Expression."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2815,7 +2816,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises the sums of concepts which appear in the course of the coherent evolution of an original idea into one or more expressions that are dominated by the original idea.\n\nThis class has been cloned from F1 Work."
+    "@value" : "This class comprises the sums of concepts which appear in the course of the coherent evolution of an original idea into one or more expressions that are dominated by the original idea.\n\nThis class is equivalent to F1 Work."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2829,7 +2830,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises the births of original ideas. It marks the initiation of the creation of a work.\n\nThis class has been cloned from F27 Work Conception."
+    "@value" : "This class comprises the births of original ideas. It marks the initiation of the creation of a work.\n\nThis class is equivalent to F27 Work Conception."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2854,7 +2855,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#address",
@@ -2872,7 +2873,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#alternativeName",
@@ -2890,7 +2891,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#alternativeTitle",
@@ -2908,7 +2909,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P102_has_title"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#assessedCertainty",
@@ -3165,7 +3166,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#createdExpressionFromExpressionCreation",
@@ -3228,7 +3229,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#dedicatedTo",
@@ -3357,7 +3358,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#function",
@@ -3395,7 +3396,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#gender",
@@ -3618,11 +3619,29 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isDerivativeOf"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasExplicit",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasEdition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has edition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relates a Redaction with its closing words (usually, the last verse). There is only one explicit per Redaction.nnTaking as example the poem \"Canary\" by Rita Dove, the last verse, \"If you can't be free, be a mystery\", would be the \"explicit\"."
+    "@value" : "Relates a Redaction with its closing words (usually, the last verse). There is only one explicit per Redaction.nnTaking as example the poem \"Canary\" by Rita Dove, the last verse, \"If you can't be free, be a mystery\", would be the \"excipit\"."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
@@ -3632,7 +3651,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has explicit"
+    "@value" : "has excipit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.co-ode.org/ontologies/ont.owl#Excerpt"
@@ -3859,6 +3878,15 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isTimeSpanOf"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This datatype property associates a textual title to human-made things, material or immaterial.\n\nThis property corresponds to the adaptation of CIDOC CRM Object Property P102 has title, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has title"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasTranslation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3928,6 +3956,42 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIncorporatedIn"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#influencedIdeasIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "influenced ideas in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P15i_influenced"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#influencesAreFoundOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "influences are found on"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#initiated",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3949,26 +4013,21 @@
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isAbout",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This property documents that an E89 Propositional Object has as subject an instance of E1 CRM Entity."
+    "@value" : "This property relates an instance of Propositional Object with a set of keywords representing topics that this object is about."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
     "@value" : "is about"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P129_is_about"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf"
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P3_has_note"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isActorOf",
@@ -4096,6 +4155,21 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Work"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isEditionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is edition of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4134,6 +4208,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R15i"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "This property describes the naming or identification of any item by a name or another identifier.\n\nThis property corresponds to the adaptation of CIDOC CRM Object Property P1 s identified by, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided."
+  }, {
+    "@value" : "is identified by"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIncipitOf",
@@ -4373,26 +4455,6 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isFragmentOf"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isSubjectOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Inverse property of pdc:isAbout."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is subject of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"
-  } ]
-}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isSynthesisOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4581,7 +4643,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#nameLink",
@@ -4599,7 +4661,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#narratedBy",
@@ -4680,7 +4742,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P3_has_note"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays",
@@ -4698,7 +4760,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P3_has_note"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems",
@@ -4716,7 +4778,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P3_has_note"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#occupation",
@@ -4754,7 +4816,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#originalTitle",
@@ -4772,7 +4834,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P102_has_title"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#penName",
@@ -4790,7 +4852,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#poeticType",
@@ -4853,7 +4915,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#realisedThroughExpressionCreation",
@@ -4923,6 +4985,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Number that identifies the Redaction inside an Ensemble. There can only be one value associated for each Redaction."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "redaction number"
   } ],
@@ -4930,7 +4995,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#religiousAffiliation",
@@ -4981,6 +5046,21 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#showsInfluencesOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "shows influences of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#socialStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5021,7 +5101,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P102_has_title"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#surname",
@@ -5039,7 +5119,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#text",
@@ -5082,7 +5162,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P102_has_title"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#tookPlaceAt",
@@ -5326,6 +5406,21 @@
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of"
   } ]
 }, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#wasInfluencedByIdeasOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "was influenced by ideas of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by"
+  } ]
+}, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -5367,7 +5462,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration.\n\nThis class has been cloned from E52 Time-Span."
+    "@value" : "This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration.\n\nThis class is equivalent to E52 Time-Span."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-dates"
@@ -5806,9 +5901,6 @@
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P100i_died_in",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P102_has_title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -5821,11 +5913,11 @@
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on",
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P131_is_identified_by",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
@@ -5848,8 +5940,11 @@
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P149_is_identified_by",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P15i_influenced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -5878,9 +5973,6 @@
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P41i_was_classified_by",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -5905,9 +5997,6 @@
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P73i_is_translation_of",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P78_is_identified_by",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -5921,9 +6010,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P81b_begin_of_the_end",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "http://www.cidoc-crm.org/cidoc-crm/P87_is_identified_by",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life",
