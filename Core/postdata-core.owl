@@ -12,6 +12,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:regap="http://metadataregistry.org/uri/profile/regap/"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -21,6 +22,7 @@
      xmlns:postdata-core="http://postdata.linhd.uned.es/ontology/postdata-core#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#">
+        <owl:versionIRI rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#2.0.0"/>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aitor Díaz Medina (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/aitordiazmedina/</dc:contributor>
@@ -28,6 +30,7 @@ https://www.linkedin.com/in/aitordiazmedina/</dc:contributor>
 https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elena González-Blanco
 https://orcid.org/0000-0002-0448-1812</dc:contributor>
+        <dc:contributor>Elena de Mar Jiménez García</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helena Bermúdez Sabel
 https://orcid.org/0000-0001-7782-206X</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Javier de la Rosa (LINHD_POSTDATA-UNED)
@@ -42,11 +45,11 @@ http://www.linkedin.com/in/omar-k-0959a8129</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho (Universidad Politécnica de Madrid)
 http://orcid.org/0000-0002-9260-0753</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salvador Ros Muñoz (UNED)
-srosmu@gmail.com</dc:contributor>
+sros@scc.uned.es</dc:contributor>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-26</dc:date>
-        <dc:description xml:lang="en">This ontology is the core of the POSTDATA network of ontologies. As such, it contains the most relevant classes and properties that allow representing poetic works and their characteristics. Besides, it contains common classes and properties that are used in many other ontologies in the network, such as those related to the representation of persons, organisations, events, places and roles that persons and organisations play in poetic works.</dc:description>
-        <dc:title xml:lang="en">POSTDATA core ontology</dc:title>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">April 2022</dc:date>
+        <dc:description xml:lang="en">This ontology is the core of the Ontopoetry, the last version of POSTDATA ontology. As such, it contains the most relevant classes and properties that allow representing poetic works and their characteristics and  those related to the representation of persons, organisations, events, places and roles that persons and organisations play in poetic works.</dc:description>
+        <dc:title xml:lang="en">Ontopoetry core ontology</dc:title>
         <terms:publisher xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”n        Principal Investigator. Elena González Blanco -- &lt;https://orcid.org/0000-0002-0448-1812&gt;n        Technical Director. Salvador Ros Muñoz -- &lt;https://orcid.org/0000-0001-6330-4958&gt;</terms:publisher>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pdc</vann:preferredNamespacePrefix>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V2.0</owl:versionInfo>
@@ -77,6 +80,24 @@ srosmu@gmail.com</dc:contributor>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#broader -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#broader"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#definition"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#example"/>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasActor -->
 
     <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasActor">
@@ -85,11 +106,59 @@ srosmu@gmail.com</dc:contributor>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasTopConcept -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasTopConcept"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#inScheme"/>
+    
+
+
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isActorOf -->
 
     <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isActorOf">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P02i_is_range_of"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#narrower -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#narrower"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#notation"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#note"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#prefLabel"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#scopeNote"/>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#topConceptOf -->
+
+    <owl:AnnotationProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#topConceptOf"/>
     
 
 
@@ -246,8 +315,8 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.europeana.eu/schemas/edm/userTag -->
 
     <owl:AnnotationProperty rdf:about="http://www.europeana.eu/schemas/edm/userTag">
-        <rdfs:label xml:lang="en">User Tag</rdfs:label>
         <definition xml:lang="en">This is a tag created by a user through the Europeana interface.</definition>
+        <rdfs:label xml:lang="en">User Tag</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
     </owl:AnnotationProperty>
     
@@ -270,12 +339,12 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <definition xml:lang="en">An alternative lexical label for a resource.</definition>
+        <example xml:lang="en">Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel).</example>
         <rdfs:comment xml:lang="en">The range of skos:altLabel is the class of RDF plain literals.</rdfs:comment>
         <rdfs:comment xml:lang="en">skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">alternative label</rdfs:label>
-        <definition xml:lang="en">An alternative lexical label for a resource.</definition>
-        <example xml:lang="en">Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel).</example>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
@@ -284,9 +353,9 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
+        <definition xml:lang="en">A note about a modification to a concept.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">change note</rdfs:label>
-        <definition xml:lang="en">A note about a modification to a concept.</definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
     
@@ -295,9 +364,9 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <definition xml:lang="en">A statement or formal explanation of the meaning of a concept.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
-        <definition xml:lang="en">A statement or formal explanation of the meaning of a concept.</definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
     
@@ -306,9 +375,9 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+        <definition xml:lang="en">A note for an editor, translator or maintainer of the vocabulary.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">editorial note</rdfs:label>
-        <definition xml:lang="en">A note for an editor, translator or maintainer of the vocabulary.</definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
     
@@ -317,9 +386,9 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example">
+        <definition xml:lang="en">An example of the use of a concept.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">example</rdfs:label>
-        <definition xml:lang="en">An example of the use of a concept.</definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
     
@@ -334,11 +403,11 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#hiddenLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hiddenLabel">
+        <definition xml:lang="en">A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations.</definition>
         <rdfs:comment xml:lang="en">The range of skos:hiddenLabel is the class of RDF plain literals.</rdfs:comment>
         <rdfs:comment xml:lang="en">skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">hidden label</rdfs:label>
-        <definition xml:lang="en">A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations.</definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
@@ -347,9 +416,9 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote">
+        <definition xml:lang="en">A note about the past state/use/meaning of a concept.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">history note</rdfs:label>
-        <definition xml:lang="en">A note about the past state/use/meaning of a concept.</definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
     
@@ -364,10 +433,10 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#note -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note">
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <rdfs:label xml:lang="en">note</rdfs:label>
         <definition xml:lang="en">A general note, for any purpose.</definition>
         <scopeNote xml:lang="en">This property may be used directly, or as a super-property for more specific note types.</scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">note</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -375,12 +444,12 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <definition xml:lang="en">The preferred lexical label for a resource, in a given language.</definition>
         <rdfs:comment xml:lang="en">A resource has no more than one value of skos:prefLabel per language tag, and no more than one value of skos:prefLabel without language tag.</rdfs:comment>
         <rdfs:comment xml:lang="en">The range of skos:prefLabel is the class of RDF plain literals.</rdfs:comment>
         <rdfs:comment xml:lang="en">skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwisen      disjoint properties.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">preferred label</rdfs:label>
-        <definition xml:lang="en">The preferred lexical label for a resource, in a given language.</definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
@@ -389,9 +458,9 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+        <definition xml:lang="en">A note that helps to clarify the meaning and/or the use of a concept.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">scope note</rdfs:label>
-        <definition xml:lang="en">A note that helps to clarify the meaning and/or the use of a concept.</definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
     
@@ -513,7 +582,9 @@ srosmu@gmail.com</dc:contributor>
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R19 -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R19"/>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R19">
+        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#createdWorkByExpressionCreation"/>
+    </owl:ObjectProperty>
     
 
 
@@ -755,7 +826,6 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#createdWorkByExpressionCreation -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#createdWorkByExpressionCreation">
-        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R19"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#realisedThroughExpressionCreation"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
@@ -870,6 +940,7 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasAgent -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasAgent">
+        <owl:equivalentProperty rdf:resource="http:/stampasonto#P02_has_range"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"/>
@@ -883,7 +954,7 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasAgentRole -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasAgentRole">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of"/>
+        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isAgentRoleOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Activity"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole"/>
@@ -975,7 +1046,7 @@ srosmu@gmail.com</dc:contributor>
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasExcipit">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasFragment"/>
-        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf"/>
+        <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isExcipit"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Excerpt"/>
         <rdfs:comment xml:lang="en">Relates a Redaction with its closing words (usually, the last verse). There is only one explicit per Redaction.nnTaking as example the poem &quot;Canary&quot; by Rita Dove, the last verse, &quot;If you can&apos;t be free, be a mystery&quot;, would be the &quot;excipit&quot;.</rdfs:comment>
@@ -1195,7 +1266,7 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isAgentRoleOf -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isAgentRoleOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P01_has_domain"/>
+        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P01_has_domain"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Activity"/>
         <rdfs:comment rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core/"/>
@@ -1273,14 +1344,14 @@ srosmu@gmail.com</dc:contributor>
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isExcipit -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isExplicitOf">
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isExcipit">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isFragmentOf"/>
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Excerpt"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
-        <rdfs:comment xml:lang="en">Inverse property of pdc:hasExplicit.</rdfs:comment>
-        <rdfs:label xml:lang="en">is explicit of</rdfs:label>
+        <rdfs:comment xml:lang="en">Inverse property of pdc:hasExcipit.</rdfs:comment>
+        <rdfs:label xml:lang="en">is excipit of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1668,7 +1739,7 @@ srosmu@gmail.com</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#roleFunction -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#roleFunction">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of"/>
+        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14.1_in_the_role_of"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole"/>
         <rdfs:range>
             <owl:Class>
@@ -2149,9 +2220,9 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#mappingRelation"/>
         <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <definition xml:lang="en">skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">has broader match</rdfs:label>
-        <definition xml:lang="en">skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</definition>
     </owl:ObjectProperty>
     
 
@@ -2161,11 +2232,11 @@ srosmu@gmail.com</dc:contributor>
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
         <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+        <definition xml:lang="en">Relates a concept to a concept that is more general in meaning.</definition>
+        <scopeNote xml:lang="en">By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</scopeNote>
         <rdfs:comment xml:lang="en">Broader concepts are typically rendered as parents in a concept hierarchy (tree).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">has broader</rdfs:label>
-        <definition xml:lang="en">Relates a concept to a concept that is more general in meaning.</definition>
-        <scopeNote xml:lang="en">By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</scopeNote>
     </owl:ObjectProperty>
     
 
@@ -2176,10 +2247,10 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
         <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <rdfs:label xml:lang="en">has broader transitive</rdfs:label>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:broaderTransitive is a transitive superproperty of skos:broader.</definition>
         <scopeNote xml:lang="en">By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application.</scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">has broader transitive</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2189,9 +2260,9 @@ srosmu@gmail.com</dc:contributor>
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#mappingRelation"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <definition xml:lang="en">skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of &quot;compound errors&quot; when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">has close match</rdfs:label>
-        <definition xml:lang="en">skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of &quot;compound errors&quot; when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property.</definition>
     </owl:ObjectProperty>
     
 
@@ -2202,10 +2273,10 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#closeMatch"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <definition xml:lang="en">skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.</definition>
         <rdfs:comment xml:lang="en">skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">has exact match</rdfs:label>
-        <definition xml:lang="en">skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch.</definition>
     </owl:ObjectProperty>
     
 
@@ -2214,10 +2285,10 @@ srosmu@gmail.com</dc:contributor>
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <rdfs:label xml:lang="en">is in scheme</rdfs:label>
         <definition xml:lang="en">Relates a resource (for example a concept) to a concept scheme in which it is included.</definition>
         <scopeNote xml:lang="en">A concept may be a member of more than one concept scheme.</scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">is in scheme</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2226,10 +2297,10 @@ srosmu@gmail.com</dc:contributor>
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#mappingRelation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+        <definition xml:lang="en">Relates two concepts coming, by convention, from different schemes, and that have comparable meanings</definition>
         <rdfs:comment xml:lang="en">These concept mapping relations mirror semantic relations, and the data model defined below is similar (with the exception of skos:exactMatch) to the data model defined for semantic relations. A distinct vocabulary is provided for concept mapping relations, to provide a convenient way to differentiate links within a concept scheme from links between concept schemes. However, this pattern of usage is not a formal requirement of the SKOS data model, and relies on informal definitions of best practice.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">is in mapping relation with</rdfs:label>
-        <definition xml:lang="en">Relates two concepts coming, by convention, from different schemes, and that have comparable meanings</definition>
     </owl:ObjectProperty>
     
 
@@ -2239,9 +2310,9 @@ srosmu@gmail.com</dc:contributor>
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#mappingRelation"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+        <definition xml:lang="en">skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">has narrower match</rdfs:label>
-        <definition xml:lang="en">skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</definition>
     </owl:ObjectProperty>
     
 
@@ -2250,11 +2321,11 @@ srosmu@gmail.com</dc:contributor>
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
+        <definition xml:lang="en">Relates a concept to a concept that is more specific in meaning.</definition>
+        <scopeNote xml:lang="en">By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</scopeNote>
         <rdfs:comment xml:lang="en">Narrower concepts are typically rendered as children in a concept hierarchy (tree).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">has narrower</rdfs:label>
-        <definition xml:lang="en">Relates a concept to a concept that is more specific in meaning.</definition>
-        <scopeNote xml:lang="en">By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources.</scopeNote>
     </owl:ObjectProperty>
     
 
@@ -2264,10 +2335,10 @@ srosmu@gmail.com</dc:contributor>
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowerTransitive">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <rdfs:label xml:lang="en">has narrower transitive</rdfs:label>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:narrowerTransitive is a transitive superproperty of skos:narrower.</definition>
         <scopeNote xml:lang="en">By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application.</scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">has narrower transitive</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2277,10 +2348,10 @@ srosmu@gmail.com</dc:contributor>
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <definition xml:lang="en">Relates a concept to a concept with which there is an associative semantic relationship.</definition>
         <rdfs:comment xml:lang="en">skos:related is disjoint with skos:broaderTransitive</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">has related</rdfs:label>
-        <definition xml:lang="en">Relates a concept to a concept with which there is an associative semantic relationship.</definition>
     </owl:ObjectProperty>
     
 
@@ -2291,9 +2362,9 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#mappingRelation"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <definition xml:lang="en">skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">has related match</rdfs:label>
-        <definition xml:lang="en">skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes.</definition>
     </owl:ObjectProperty>
     
 
@@ -2303,10 +2374,10 @@ srosmu@gmail.com</dc:contributor>
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#semanticRelation">
         <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <rdfs:label xml:lang="en">is in semantic relation with</rdfs:label>
         <definition xml:lang="en">Links a concept to a concept related by meaning.</definition>
         <scopeNote xml:lang="en">This property should not be used directly, but as a super-property for all properties denoting a relationship of meaning between concepts.</scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">is in semantic relation with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2317,9 +2388,17 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <definition xml:lang="en">Relates a concept to the concept scheme that it is a top level concept of.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">is top concept in scheme</rdfs:label>
-        <definition xml:lang="en">Relates a concept to the concept scheme that it is a top level concept of.</definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http:/stampasonto#P02_has_range -->
+
+    <owl:ObjectProperty rdf:about="http:/stampasonto#P02_has_range">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salvador</dc:creator>
     </owl:ObjectProperty>
     
 
@@ -2341,7 +2420,7 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An additional name, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name.nnTaking as example the writer Charlotte Brontë, an &quot;additionalName&quot; would be her alias: &quot;Currell Bell&quot;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An additional name, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name. Taking as example the writer Charlotte Brontë, an &quot;additionalName&quot; would be her alias: &quot;Currell Bell&quot;.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">additional name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2365,7 +2444,7 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternative name that references the current Person. A person may have zero or several alternative names.nnTaking as example the character &quot;Aldonza Lorenzo&quot; from the Quixote, an &quot;alternativeName&quot; could be &quot;Dulcinea&quot;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternative name that references the current Person. A person may have zero or several alternative names. Taking as example the character &quot;Aldonza Lorenzo&quot; from the Quixote, an &quot;alternativeName&quot; could be &quot;Dulcinea&quot;.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2401,7 +2480,8 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">An account of a Person&apos;s life written, composed, or produced by another.nnTaking as example the poet Antonio Machado, &quot;biography&quot; could be: &quot;Antonio Cipriano José María y Francisco de Santa Ana Machado y Ruiz (26 July 1875 – 22 February 1939), known as Antonio Machado, was a Spanish poet and one of the leading figures of the Spanish literary movement known as the Generation of &apos;98. His work, initially modernist, evolved towards an intimate form of symbolism with romantic traits. He gradually developed a style characterised by both an engagement with humanity on one side and an almost Taoist contemplation of existence on the other, a synthesis that according to Machado echoed the most ancient popular wisdom. In Gerardo Diego&apos;s words, Machado &quot;spoke in verse and lived in poetry.&quot;&quot; (example extracted from Wikipedia).</rdfs:comment>
+        <rdfs:comment xml:lang="en">An account of a Person&apos;s life written, composed, or produced by another.nnTaking as example the poet Antonio Machado, &quot;biography&quot; could be: &quot;Antonio Cipriano José María y Francisco de Santa Ana Machado y Ruiz (26 July 1875 – 22 February 1939), known as Antonio Machado, was a Spanish poet and one of the leading figures of the Spanish literary movement known as the Generation of &apos;98. His work, initially modernist, evolved towards an intimate form of symbolism with romantic traits. He gradually developed a style characterised by both an engagement with humanity on one side and an almost Taoist contemplation of existence on the other, a synthesis that according to Machado echoed the most ancient popular wisdom. In Gerardo Diego&apos;s words, Machado &quot;spoke in verse and lived in poetry.&quot;&quot; (example extracted from Wikipedia).
+Or Carlos Hernández, writes a biography of Federico García Lorca, &quot;La huella de Lorca&quot;, Norma Editorial, 2011. In the work, through true stories and testimonies about the poet from Granada, he reconstructs the figure of García Lorca through the eyes of those who shared his life and death.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://postdata.linhd.uned.es/ontology/postdata-core/</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">biography</rdfs:label>
     </owl:DatatypeProperty>
@@ -2450,7 +2530,7 @@ srosmu@gmail.com</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It contains a forename, given or baptismal name.nnTaking as example the poet &quot;Antonio Machado&quot;, his &quot;forename&quot; would be &quot;Antonio&quot;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It contains a forename. This property refers to the first or baptismal name, the formal and legald enomination by which we are known and apperas in the official documents.Taking as example the poet &quot;Antonio Machado&quot;, his &quot;forename&quot; would be &quot;Antonio&quot;.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">forename</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2482,7 +2562,7 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P102 ha
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isAbout -->
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isAbout">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>This property relates an instance of Propositional Object with a set of keywords representing topics that this object is about.</rdfs:comment>
@@ -2508,7 +2588,7 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contains a proper noun or noun phrase that refers the current Person.nnTaking as example the full name of Federico García Lorca, &quot;name&quot; would be &quot;Federico del Sagrado Corazón de Jesús García Lorca&quot;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contains a proper noun or noun phrase that refers the current Person. Taking as example the full name of Federico García Lorca, &quot;name&quot; would be &quot;Federico del Sagrado Corazón de Jesús García Lorca&quot;.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2529,7 +2609,7 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines -->
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#numberOfLines">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+        <rdfs:subPropertyOf rdf:resource="http:/stampasonto#P43_has_dimension"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of total lines comprising the Ensemble.nnTaking as example La vida es sueño by Calderón de la Barca, number of lines is 3319.</rdfs:comment>
@@ -2541,7 +2621,7 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays -->
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPlays">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+        <rdfs:subPropertyOf rdf:resource="http:/stampasonto#P43_has_dimension"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of plays of an Ensemble</rdfs:comment>
@@ -2553,7 +2633,7 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems -->
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#numberOfPoems">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+        <rdfs:subPropertyOf rdf:resource="http:/stampasonto#P43_has_dimension"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Ensemble"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of poems of an Ensemble</rdfs:comment>
@@ -2566,9 +2646,9 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#originalName">
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of a Place as it appears in the source text</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of a Place as it appears in the source text. It refers to a place recognized in a poetic text, for example in the Poem of Mio Cid we find reference to places such as Burgos or Valencia.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">original name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2580,7 +2660,8 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The identifying name of a Redaction or Poetic Work as it appears in its primary source. There is at most one possible original title.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The identifying name of a Redaction or Poetic Work as it appears in its primary source. There is at most one possible original title.
+ In the &quot;Cantigas de Santa Maria&quot;, the original manuscript is called &quot;Cantigas de Santa Maria madre de Dios ruega por nosotros pecadores&quot;.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">original title</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2592,7 +2673,8 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fictitious name, especially a pen name. A variant name.nnThis property is used to describe an Agent Role entity as the pen name may vary for the same Agent in different Redactions.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fictitious name, pseudonym. especially a pen name. A variant name. 
+Example. Pablo Neruda is pseudonym of Ricardo Eliécer Neftali Reyes Basoalto. The sisters Charlotte, Emily and Anne Bronte, began to publish their creations under the pseudonym Currer, Ellis and Acton Bell, for reasons of the time and not for anonymity.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pen name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2625,7 +2707,7 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber -->
 
     <owl:DatatypeProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#redactionNumber">
-        <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
+        <rdfs:subPropertyOf rdf:resource="http:/stampasonto#P43_has_dimension"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number that identifies the Redaction inside an Ensemble. There can only be one value associated for each Redaction.</rdfs:comment>
@@ -2641,7 +2723,8 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A secondary, usually explanatory title</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A secondary, usually explanatory title.
+ La Celestina, subtitle Tragicomedy of Calisto and Melibea</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subtitle</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2653,7 +2736,7 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contains a family (inherited) name, as opposed to a given, baptismal, or nick name of a Person.nnTaking as example the poet Dante Alighieri, &quot;surname&quot; is &quot;Alighieri&quot;.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property makes reference to the anthroponymic name of the family with which persons are fistinguished. Contains a family (inherited) name, as opposed to a given, baptismal, or nick name of a Person.nnTaking as example the poet Dante Alighieri, &quot;surname&quot; is &quot;Alighieri&quot;.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surname</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2678,7 +2761,8 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasTitle"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PropositionalObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The title of a Poetic Work or a Redaction</rdfs:comment>
+        <rdfs:comment xml:lang="en">The title of a Poetic Work or a Redaction.
+when we refer to the work of Fedérico García Lorca, &quot;Poeta in New York&quot;,</rdfs:comment>
         <rdfs:label xml:lang="en">title</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2686,13 +2770,21 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content -->
 
-    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content"/>
+    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content">
+        <definition>This datatype property associates a text
+
+This property corresponds to the adaptation of CIDOC CRM Object Property P190 has symbolic content, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided.</definition>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/P3_has_note -->
 
-    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P3_has_note">
+        <definition>This datatype property associates brief text
+
+This property corresponds to the adaptation of CIDOC CRM Object Property P3 has note, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided.</definition>
+    </owl:DatatypeProperty>
     
 
 
@@ -2705,6 +2797,17 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P1 s id
     <!-- http://www.cidoc-crm.org/cidoc-crm/P81b_begin_of_the_end -->
 
     <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P81b_begin_of_the_end"/>
+    
+
+
+    <!-- http:/stampasonto#P43_has_dimension -->
+
+    <owl:DatatypeProperty rdf:about="http:/stampasonto#P43_has_dimension">
+        <definition>This datatype property associates  quantity
+
+This property corresponds to the adaptation of CIDOC CRM Object Property P43 has dimension, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided.</definition>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salvador</dc:creator>
+    </owl:DatatypeProperty>
     
 
 
@@ -3556,7 +3659,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/PC14_Carried_Out_By -->
 
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/PC14_Carried_Out_By"/>
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/PC14_Carried_Out_By">
+        <rdfs:subClassOf rdf:resource="http:/stampasonto#PC0_Type_CRM_Property"/>
+    </owl:Class>
     
 
 
@@ -3571,16 +3676,24 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thing</rdfs:label>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <rdfs:subClassOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#ConceptualObject"/>
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
         <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <definition xml:lang="en">An idea or notion; a unit of thought.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concept</rdfs:label>
-        <definition xml:lang="en">An idea or notion; a unit of thought.</definition>
     </owl:Class>
     
 
@@ -3588,11 +3701,20 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
         <definition xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</definition>
         <example xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.</example>
         <scopeNote xml:lang="en">A concept scheme may be defined to include concepts from different sources.</scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/stampasonto#PC0_Type_CRM_Property -->
+
+    <owl:Class rdf:about="http:/stampasonto#PC0_Type_CRM_Property">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salvador</dc:creator>
     </owl:Class>
     
 
@@ -3612,10 +3734,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/certainty">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-22</terms:date>
-        <terms:title xml:lang="en">Controlled vocabulary about certainty degree</terms:title>
-        <terms:title xml:lang="es">Vocabulario controlado sobre grados de certeza</terms:title>
         <definition xml:lang="en">Controlled vocabulary about certainty degree</definition>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/certainty/definitely"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/certainty/definitely-not"/>
@@ -3623,6 +3741,10 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/certainty/probably"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/certainty/probably-not"/>
         <prefLabel xml:lang="en">Certainty Scheme</prefLabel>
+        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-22</terms:date>
+        <terms:title xml:lang="en">Controlled vocabulary about certainty degree</terms:title>
+        <terms:title xml:lang="es">Vocabulario controlado sobre grados de certeza</terms:title>
         <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
@@ -3632,12 +3754,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/character-type">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <definition xml:lang="en">Thesaurus about character types</definition>
+        <prefLabel xml:lang="en">Character type scheme</prefLabel>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre tipos de rol</terms:title>
         <terms:title xml:lang="en">Thesaurus about character types</terms:title>
-        <definition xml:lang="en">Thesaurus about character types</definition>
-        <prefLabel xml:lang="en">Character type scheme</prefLabel>
     </owl:NamedIndividual>
     
 
@@ -3646,16 +3768,16 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/designation-type">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
-        <terms:title xml:lang="es">Tesauro sobre tipos de nombre</terms:title>
-        <terms:title xml:lang="en">Thesaurus about type of name</terms:title>
         <definition xml:lang="en">Thesaurus about type of name</definition>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/certainty/designation-type/allonym"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/designation-type/heteronym"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/designation-type/orthonym"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/designation-type/pseudonym"/>
         <prefLabel xml:lang="en">Designation Type Scheme</prefLabel>
+        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
+        <terms:title xml:lang="es">Tesauro sobre tipos de nombre</terms:title>
+        <terms:title xml:lang="en">Thesaurus about type of name</terms:title>
         <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
@@ -3665,12 +3787,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/education-level">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <definition xml:lang="en">Thesaurus about education levels. It includes all the concepts that are narrower to UNESCOTHES Educational Levels Concept (http://skos.um.es/unescothes/C01252)</definition>
+        <prefLabel xml:lang="en">Education Level Scheme</prefLabel>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre nivel educativo</terms:title>
         <terms:title xml:lang="en">Thesaurus about education level</terms:title>
-        <definition xml:lang="en">Thesaurus about education levels. It includes all the concepts that are narrower to UNESCOTHES Educational Levels Concept (http://skos.um.es/unescothes/C01252)</definition>
-        <prefLabel xml:lang="en">Education Level Scheme</prefLabel>
         <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
@@ -3680,10 +3802,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/gender">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
-        <terms:title xml:lang="es">Tesauro sobre géneros</terms:title>
-        <terms:title xml:lang="en">Thesaurus about genders</terms:title>
         <definition xml:lang="en">Thesaurus about genders</definition>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/gender/female"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/gender/male"/>
@@ -3691,6 +3809,10 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/gender/transgender"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/gender/unknown"/>
         <prefLabel xml:lang="en">Gender Scheme</prefLabel>
+        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
+        <terms:title xml:lang="es">Tesauro sobre géneros</terms:title>
+        <terms:title xml:lang="en">Thesaurus about genders</terms:title>
         <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
@@ -3700,12 +3822,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/genre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <definition xml:lang="en">Thesaurus about literary genres</definition>
+        <prefLabel xml:lang="en">Genre Scheme</prefLabel>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre géneros literario</terms:title>
         <terms:title xml:lang="en">Thesaurus about literary genres</terms:title>
-        <definition xml:lang="en">Thesaurus about literary genres</definition>
-        <prefLabel xml:lang="en">Genre Scheme</prefLabel>
         <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
@@ -3715,12 +3837,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <definition xml:lang="en">Thesaurus about labels of a time frame for grouping certain works</definition>
+        <prefLabel xml:lang="en">Literary Period Scheme</prefLabel>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre etiquuets de periodos temporales para agrupar ciertas obras</terms:title>
         <terms:title xml:lang="en">Thesaurus about labels of a time frame for grouping certain works</terms:title>
-        <definition xml:lang="en">Thesaurus about labels of a time frame for grouping certain works</definition>
-        <prefLabel xml:lang="en">Literary Period Scheme</prefLabel>
     </owl:NamedIndividual>
     
 
@@ -3730,9 +3852,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period-renaissance">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
         <prefLabel xml:lang="es">Renacimiento</prefLabel>
         <prefLabel xml:lang="en">Renaissance</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
     </owl:NamedIndividual>
     
 
@@ -3741,12 +3863,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/poetic-type">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <definition xml:lang="en">Thesaurus about major literary genre of the compositions</definition>
+        <prefLabel xml:lang="en">Poetic Type Scheme</prefLabel>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre el género literario principal de la obra</terms:title>
         <terms:title xml:lang="en">Thesaurus about major literary genre of the compositions. </terms:title>
-        <definition xml:lang="en">Thesaurus about major literary genre of the compositions</definition>
-        <prefLabel xml:lang="en">Poetic Type Scheme</prefLabel>
         <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
@@ -3756,14 +3878,14 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/religious-affiliation">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-29</terms:date>
-        <terms:title xml:lang="es">Tesauro sobre afiliaciones religiosas</terms:title>
-        <terms:title xml:lang="es">Thesaurus about religious affiliations</terms:title>
         <definition xml:lang="en">Thesaurus about religious affiliations</definition>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation/christian"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation/unaffiliated"/>
         <prefLabel xml:lang="en">Religious Affiliation Scheme</prefLabel>
+        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-29</terms:date>
+        <terms:title xml:lang="es">Tesauro sobre afiliaciones religiosas</terms:title>
+        <terms:title xml:lang="es">Thesaurus about religious affiliations</terms:title>
         <prov:wasAttributedTo rdf:resource="http://www.linkedin.com/in/ocorcho"/>
     </owl:NamedIndividual>
     
@@ -3773,10 +3895,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/role-function">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
-        <terms:title xml:lang="es">Tesauro sobre el papel específico representado por un agente en una obra</terms:title>
-        <terms:title xml:lang="en">Thesaurus about specific function performed by some agent on a work</terms:title>
         <definition xml:lang="en">Thesaurus about specific function performed by some agent on a work</definition>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/role-function/actor"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/role-function/arranger"/>
@@ -3785,6 +3903,10 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/role-function/sponsor"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/role-function/transcriptor"/>
         <prefLabel xml:lang="en">Role Function Scheme</prefLabel>
+        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
+        <terms:title xml:lang="es">Tesauro sobre el papel específico representado por un agente en una obra</terms:title>
+        <terms:title xml:lang="en">Thesaurus about specific function performed by some agent on a work</terms:title>
         <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
@@ -3794,12 +3916,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <definition xml:lang="en">Thesaurus about the socialstatus of a person</definition>
+        <prefLabel xml:lang="en">Social Status Scheme</prefLabel>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre el statuus social de una persona</terms:title>
         <terms:title xml:lang="en">Thesaurus about the socialstatus of a person</terms:title>
-        <definition xml:lang="en">Thesaurus about the socialstatus of a person</definition>
-        <prefLabel xml:lang="en">Social Status Scheme</prefLabel>
     </owl:NamedIndividual>
     
 
@@ -3808,15 +3930,15 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/textual-element-type">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
-        <terms:title xml:lang="es">Tesauro sobre tipos de elementos textuales</terms:title>
-        <terms:title xml:lang="en">Thesaurus about type of textual element</terms:title>
         <definition xml:lang="en">Thesaurus about type of textual element</definition>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/textual-element-type/chapter"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/textual-element-type/epilogue"/>
         <hasTopConcept rdf:resource="http://postdata.linhd.uned.es/kos/textual-element-type/prologue"/>
         <prefLabel xml:lang="en">Textual Element Type Scheme</prefLabel>
+        <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
+        <terms:title xml:lang="es">Tesauro sobre tipos de elementos textuales</terms:title>
+        <terms:title xml:lang="en">Thesaurus about type of textual element</terms:title>
         <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
@@ -3887,8 +4009,8 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/certainty/designation-type/allonym">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/designation-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/designation-type"/>
         <prefLabel xml:lang="en">Allonym</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/designation-type"/>
     </owl:NamedIndividual>
     
 
@@ -3898,9 +4020,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/character-type/donor">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
         <prefLabel xml:lang="es">Donante del objeto mágico</prefLabel>
         <prefLabel xml:lang="en">Donor</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
     </owl:NamedIndividual>
     
 
@@ -3910,9 +4032,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/character-type/falsehero">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
         <prefLabel xml:lang="en">False Hero</prefLabel>
         <prefLabel xml:lang="es">Falso héroe</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
     </owl:NamedIndividual>
     
 
@@ -3922,9 +4044,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/character-type/helper">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
         <prefLabel xml:lang="es">Auxiliar</prefLabel>
         <prefLabel xml:lang="en">Helper</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
     </owl:NamedIndividual>
     
 
@@ -3934,9 +4056,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/character-type/hero">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
         <prefLabel xml:lang="en">Hero</prefLabel>
         <prefLabel xml:lang="es">Héroe</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
     </owl:NamedIndividual>
     
 
@@ -3946,9 +4068,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/character-type/princess">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
         <prefLabel xml:lang="es">Princesa</prefLabel>
         <prefLabel xml:lang="en">Princess</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
     </owl:NamedIndividual>
     
 
@@ -3958,9 +4080,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/character-type/princessfather">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
         <prefLabel xml:lang="en">Princess&apos; Father</prefLabel>
         <prefLabel xml:lang="es">Rey o mandatario</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
     </owl:NamedIndividual>
     
 
@@ -3970,9 +4092,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/character-type/villain">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
         <prefLabel xml:lang="es">Agresor</prefLabel>
         <prefLabel xml:lang="en">Villain</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/character-type"/>
     </owl:NamedIndividual>
     
 
@@ -3994,9 +4116,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/designation-type/orthonym">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/designation-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/designation-type"/>
         <prefLabel xml:lang="en">Orthonym</prefLabel>
         <prefLabel xml:lang="es">Ortónimo</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/designation-type"/>
     </owl:NamedIndividual>
     
 
@@ -4018,9 +4140,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/gender/female">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
         <prefLabel xml:lang="en">Female</prefLabel>
         <prefLabel xml:lang="es">Mujer</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
     </owl:NamedIndividual>
     
 
@@ -4030,9 +4152,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/gender/male">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
         <prefLabel xml:lang="es">Hombre</prefLabel>
         <prefLabel xml:lang="en">Male</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
     </owl:NamedIndividual>
     
 
@@ -4042,9 +4164,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/gender/other">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
         <prefLabel xml:lang="en">Other</prefLabel>
         <prefLabel xml:lang="es">Otro</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
     </owl:NamedIndividual>
     
 
@@ -4054,9 +4176,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/gender/transgender">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
         <prefLabel xml:lang="en">Transgender</prefLabel>
         <prefLabel xml:lang="es">Transgénero</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
     </owl:NamedIndividual>
     
 
@@ -4066,9 +4188,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/gender/unknown">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
         <prefLabel xml:lang="es">Desconocido</prefLabel>
         <prefLabel xml:lang="en">Unknown</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/gender"/>
     </owl:NamedIndividual>
     
 
@@ -4078,9 +4200,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period/baroque">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
         <prefLabel xml:lang="en">Baroque</prefLabel>
         <prefLabel xml:lang="es">Barroco</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
     </owl:NamedIndividual>
     
 
@@ -4090,9 +4212,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period/classical-antiquity">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
         <prefLabel xml:lang="es">Antigüedad Clásica</prefLabel>
         <prefLabel xml:lang="en">Classical Antiquity</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
     </owl:NamedIndividual>
     
 
@@ -4102,9 +4224,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period/enlightenment">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
         <prefLabel xml:lang="en">Enlightenment</prefLabel>
         <prefLabel xml:lang="es">Ilustración</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
     </owl:NamedIndividual>
     
 
@@ -4114,9 +4236,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period/middle-ages">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
         <prefLabel xml:lang="es">Edad Media</prefLabel>
         <prefLabel xml:lang="en">Middle Ages</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
     </owl:NamedIndividual>
     
 
@@ -4126,9 +4248,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period/modernism">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
         <prefLabel xml:lang="en">Modernism</prefLabel>
         <prefLabel xml:lang="es">Modernismo</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
     </owl:NamedIndividual>
     
 
@@ -4138,9 +4260,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period/realism">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
         <prefLabel xml:lang="en">Realism</prefLabel>
         <prefLabel xml:lang="es">Realismo</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
     </owl:NamedIndividual>
     
 
@@ -4150,9 +4272,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period/romanticism">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
         <prefLabel xml:lang="en">Romanticism</prefLabel>
         <prefLabel xml:lang="es">Romanticismo</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
     </owl:NamedIndividual>
     
 
@@ -4162,9 +4284,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period/vanguardism">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
         <prefLabel xml:lang="es">Vanguardias</prefLabel>
         <prefLabel xml:lang="en">Vanguardism</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
     </owl:NamedIndividual>
     
 
@@ -4354,9 +4476,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/beggar">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="en">Beggar</prefLabel>
         <prefLabel xml:lang="es">Pobre</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4366,8 +4488,8 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/hidalgo">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="es">Hildago</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4377,9 +4499,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/knight">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="es">Caballero</prefLabel>
         <prefLabel xml:lang="en">Knight</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4389,9 +4511,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/mechanical-arts">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="en">Mechanical arts</prefLabel>
         <prefLabel xml:lang="es">Oficial</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4401,9 +4523,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/nobleman">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="es">Noble</prefLabel>
         <prefLabel xml:lang="en">Nobleman</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4413,9 +4535,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/priest">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="es">Clérigo</prefLabel>
         <prefLabel xml:lang="en">Priest</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4425,9 +4547,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/public-position">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="es">Cargo público</prefLabel>
         <prefLabel xml:lang="en">Public position</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4437,9 +4559,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/scholar">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="es">Letrado</prefLabel>
         <prefLabel xml:lang="en">Scholar</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4449,9 +4571,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/servant">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="es">Criado</prefLabel>
         <prefLabel xml:lang="en">Servant</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4461,9 +4583,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/soldier">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="es">Soldado</prefLabel>
         <prefLabel xml:lang="en">Soldier</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4473,9 +4595,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/social-status/writer">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
         <prefLabel xml:lang="es">Escritor</prefLabel>
         <prefLabel xml:lang="en">Writer</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/social-status"/>
     </owl:NamedIndividual>
     
 
@@ -4509,9 +4631,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/textual-element-type/poem">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/textual-element-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/textual-element-type"/>
         <prefLabel xml:lang="en">Poem</prefLabel>
         <prefLabel xml:lang="es">Poema</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/textual-element-type"/>
     </owl:NamedIndividual>
     
 
@@ -4533,9 +4655,9 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/textual-element-type/stanza">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/textual-element-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/textual-element-type"/>
         <prefLabel xml:lang="es">Estrofa</prefLabel>
         <prefLabel xml:lang="en">Stanza</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/textual-element-type"/>
     </owl:NamedIndividual>
     
 
@@ -4566,12 +4688,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept12949">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
         <prefLabel xml:lang="en">Moslems</prefLabel>
         <prefLabel xml:lang="fr">Musulman</prefLabel>
         <prefLabel xml:lang="es">Musulmán</prefLabel>
         <prefLabel xml:lang="ru">Мусульмане</prefLabel>
         <prefLabel xml:lang="ar">مسلمون</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
     </owl:NamedIndividual>
     
 
@@ -4581,12 +4703,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept1485">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
         <prefLabel xml:lang="fr">Enseignement supérieur</prefLabel>
         <prefLabel xml:lang="es">Enseñanza superior</prefLabel>
         <prefLabel xml:lang="en">Higher education</prefLabel>
         <prefLabel xml:lang="ru">Высшее образование</prefLabel>
         <prefLabel xml:lang="ar">تعليم عالي</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
     </owl:NamedIndividual>
     
 
@@ -4596,12 +4718,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept2493">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/poetic-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/poetic-type"/>
         <prefLabel xml:lang="es">Poesía</prefLabel>
         <prefLabel xml:lang="en">Poetry</prefLabel>
         <prefLabel xml:lang="fr">Poésie</prefLabel>
         <prefLabel xml:lang="ru">Поэзия</prefLabel>
         <prefLabel xml:lang="ar">شعر</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/poetic-type"/>
     </owl:NamedIndividual>
     
 
@@ -4611,12 +4733,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept2533">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
         <prefLabel xml:lang="en">Jews</prefLabel>
         <prefLabel xml:lang="es">Judío</prefLabel>
         <prefLabel xml:lang="fr">Juif</prefLabel>
         <prefLabel xml:lang="ru">Евреи</prefLabel>
         <prefLabel xml:lang="ar">يهود</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
     </owl:NamedIndividual>
     
 
@@ -4626,12 +4748,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept4777">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
         <prefLabel xml:lang="fr">Saint</prefLabel>
         <prefLabel xml:lang="en">Saints</prefLabel>
         <prefLabel xml:lang="es">Santo</prefLabel>
         <prefLabel xml:lang="ru">Святые</prefLabel>
         <prefLabel xml:lang="ar">قديسون</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
     </owl:NamedIndividual>
     
 
@@ -4641,12 +4763,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept4979">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
         <prefLabel xml:lang="fr">Chef religieux</prefLabel>
         <prefLabel xml:lang="es">Jefe religioso</prefLabel>
         <prefLabel xml:lang="en">Religious leaders</prefLabel>
         <prefLabel xml:lang="ru">Религиозные лидеры</prefLabel>
         <prefLabel xml:lang="ar">زعماء دينيون</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
     </owl:NamedIndividual>
     
 
@@ -4656,12 +4778,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept5081">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
         <prefLabel xml:lang="en">Early childhood education</prefLabel>
         <prefLabel xml:lang="es">Educación de la primera infancia</prefLabel>
         <prefLabel xml:lang="fr">Éducation de la prime enfance</prefLabel>
         <prefLabel xml:lang="ru">Раннее детское образование</prefLabel>
         <prefLabel xml:lang="ar">تعليم في مرحلة الطفولة المبكرة</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
     </owl:NamedIndividual>
     
 
@@ -4671,12 +4793,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept5426">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
         <prefLabel xml:lang="en">Clergy</prefLabel>
         <prefLabel xml:lang="fr">Clergé</prefLabel>
         <prefLabel xml:lang="es">Clero</prefLabel>
         <prefLabel xml:lang="ru">Духовенство</prefLabel>
         <prefLabel xml:lang="ar">رجال الدين</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/religious-affiliation"/>
     </owl:NamedIndividual>
     
 
@@ -4686,12 +4808,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept8399">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/poetic-type"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/poetic-type"/>
         <prefLabel xml:lang="en">Drama</prefLabel>
         <prefLabel xml:lang="es">Drama</prefLabel>
         <prefLabel xml:lang="fr">Drame</prefLabel>
         <prefLabel xml:lang="ru">Драма</prefLabel>
         <prefLabel xml:lang="ar">دراما</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/poetic-type"/>
     </owl:NamedIndividual>
     
 
@@ -4701,12 +4823,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept9290">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
         <prefLabel xml:lang="fr">Enseignement primaire</prefLabel>
         <prefLabel xml:lang="es">Enseñanza primaria</prefLabel>
         <prefLabel xml:lang="en">Primary education</prefLabel>
         <prefLabel xml:lang="ru">Начальное образование</prefLabel>
         <prefLabel xml:lang="ar">تعليم ابتدائي</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
     </owl:NamedIndividual>
     
 
@@ -4716,12 +4838,12 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept9291">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
         <prefLabel xml:lang="fr">Enseignement secondaire</prefLabel>
         <prefLabel xml:lang="es">Enseñanza secundaria</prefLabel>
         <prefLabel xml:lang="en">Secondary education</prefLabel>
         <prefLabel xml:lang="ru">Среднее образование</prefLabel>
         <prefLabel xml:lang="ar">تعليم ثانوي</prefLabel>
+        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
     </owl:NamedIndividual>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:maxQualifiedCardinality>
@@ -4760,11 +4882,8 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <definition xml:lang="en">The value for this element is added by the Data Ingestion Team as part of the ingestion process, based on the language of the data provider.</definition>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.europeana.eu/schemas/edm/unstored">
-        <rdfs:label xml:lang="en">Unstored</rdfs:label>
         <definition xml:lang="en">This is a container element which includes all relevant information thatnotherwise cannot be mapped to another element in the ESE.</definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thing</rdfs:label>
+        <rdfs:label xml:lang="en">Unstored</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#moreinfo">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
