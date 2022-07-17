@@ -24,25 +24,25 @@
     <owl:Ontology rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#">
         <owl:versionIRI rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#2.0.0"/>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aitor Díaz Medina (LINHD_POSTDATA-UNED)
+        <dc:contributor>Aitor Díaz Medina (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/aitordiazmedina/</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alvaro Pérez (LINHD_POSTDATA-UNED) 
+        <dc:contributor>Alvaro Pérez (LINHD_POSTDATA-UNED) 
 https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elena González-Blanco
+        <dc:contributor>Elena González-Blanco
 https://orcid.org/0000-0002-0448-1812</dc:contributor>
         <dc:contributor>Elena de Mar Jiménez García</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helena Bermúdez Sabel
+        <dc:contributor>Helena Bermúdez Sabel
 https://orcid.org/0000-0001-7782-206X</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Javier de la Rosa (LINHD_POSTDATA-UNED)
+        <dc:contributor>Javier de la Rosa (LINHD_POSTDATA-UNED)
 https://www.linkedin.com/in/versae/</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)
+        <dc:contributor>Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)
 https://orcid.org/0000-0003-3489-2193</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto@scc.uned.es</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mª Luisa Díez Platas
+        <dc:contributor>Mª Luisa Díez Platas
 https://orcid.org/0000-0002-9416-3147</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Omar Khalil Gómez (LINHD_POSTDATA-UNED)
+        <dc:contributor>Omar Khalil Gómez (LINHD_POSTDATA-UNED)
 http://www.linkedin.com/in/omar-k-0959a8129</dc:contributor>
-        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho (Universidad Politécnica de Madrid)
+        <dc:contributor>Oscar Corcho (Universidad Politécnica de Madrid)
 http://orcid.org/0000-0002-9260-0753</dc:contributor>
         <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salvador Ros Muñoz (UNED)
 sros@scc.uned.es</dc:contributor>
@@ -51,8 +51,8 @@ sros@scc.uned.es</dc:contributor>
         <dc:description xml:lang="en">This ontology is the core of the Ontopoetry, the last version of POSTDATA ontology. As such, it contains the most relevant classes and properties that allow representing poetic works and their characteristics and  those related to the representation of persons, organisations, events, places and roles that persons and organisations play in poetic works.</dc:description>
         <dc:title xml:lang="en">Ontopoetry core ontology</dc:title>
         <terms:publisher xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”n        Principal Investigator. Elena González Blanco -- &lt;https://orcid.org/0000-0002-0448-1812&gt;n        Technical Director. Salvador Ros Muñoz -- &lt;https://orcid.org/0000-0001-6330-4958&gt;</terms:publisher>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pdc</vann:preferredNamespacePrefix>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V2.0</owl:versionInfo>
+        <vann:preferredNamespacePrefix>pdc</vann:preferredNamespacePrefix>
+        <owl:versionInfo>V2.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -508,17 +508,13 @@ sros@scc.uned.es</dc:contributor>
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R10 -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R10">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasWork"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R10"/>
     
 
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R10i -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R10i">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isWorkOf"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R10i"/>
     
 
 
@@ -550,41 +546,31 @@ sros@scc.uned.es</dc:contributor>
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R16 -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R16">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#initiated"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R16"/>
     
 
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R16i -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R16i">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R16i"/>
     
 
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R17 -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R17">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#createdExpressionFromExpressionCreation"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R17"/>
     
 
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R17i -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R17i">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#wasCreatedByExpressionCreationForExpression"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R17i"/>
     
 
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R19 -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R19">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#createdWorkByExpressionCreation"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R19"/>
     
 
 
@@ -596,25 +582,19 @@ sros@scc.uned.es</dc:contributor>
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R2 -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R2">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isDerivativeOf"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R2"/>
     
 
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R2i -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R2i">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasDerivative"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R2i"/>
     
 
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R3 -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R3">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isRealisedInSelfContainedExpression"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R3"/>
     
 
 
@@ -640,17 +620,13 @@ sros@scc.uned.es</dc:contributor>
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R40 -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R40">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#hasRepresentativeExpression"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R40"/>
     
 
 
     <!-- http://iflastandards.info/ns/fr/frbr/frbroo/R40i -->
 
-    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R40i">
-        <owl:equivalentProperty rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isRepresentativeExpressionFor"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/R40i"/>
     
 
 
@@ -693,7 +669,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#assigned -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#assigned">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P141_assigned"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P141_assigned"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#wasAssignedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
@@ -706,7 +682,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#assignedAttributeTo -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#assignedAttributeTo">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#wasAttributedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
@@ -787,7 +763,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#broughtIntoLife -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#broughtIntoLife">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#wasBorn"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Birth"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
@@ -814,6 +790,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#createdExpressionFromExpressionCreation -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#createdExpressionFromExpressionCreation">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R17"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#wasCreatedByExpressionCreationForExpression"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Expression"/>
@@ -826,6 +803,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#createdWorkByExpressionCreation -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#createdWorkByExpressionCreation">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R19"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#realisedThroughExpressionCreation"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
@@ -852,7 +830,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#diedIn -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#diedIn">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P100i_died_in"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P100i_died_in"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#wasDeathOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Death"/>
@@ -1021,6 +999,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasDerivative -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasDerivative">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R2i"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isDerivativeOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
@@ -1085,7 +1064,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasLanguage -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasLanguage">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P72_has_language"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P72_has_language"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isLanguageOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1125,6 +1104,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasRepresentativeExpression -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasRepresentativeExpression">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R40"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isRepresentativeExpressionFor"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression"/>
@@ -1166,7 +1146,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasTimeSpan -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasTimeSpan">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isTimeSpanOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Period"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan"/>
@@ -1193,6 +1173,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#hasWork -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#hasWork">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R10"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isWorkOf"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#ComplexWork"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
@@ -1242,6 +1223,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#initiated -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#initiated">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R16"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
@@ -1254,6 +1236,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isAgentOf">
+        <owl:equivalentProperty rdf:resource="http:/stampasonto#P02i_is_range_of"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Agent"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AgentRole"/>
         <rdfs:comment xml:lang="en">This property relates an Agent with the Agent Role entity that describes a role for that Agent in the context of a Poetic Work, Redaction or Ensemble.nnThis property emerges by reusing the agent-role Ontology Design Pattern:n- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owln- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl</rdfs:comment>
@@ -1325,6 +1308,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isDerivativeOf -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isDerivativeOf">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R2"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:comment xml:lang="en">This property associates an instance of F1 Work which modifies the content of another instance of F1 Work with the latter.</rdfs:comment>
@@ -1408,7 +1392,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isLanguageOf -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isLanguageOf">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P72i_is_language_of"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P72i_is_language_of"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#LinguisticObject"/>
         <rdfs:comment xml:lang="en">Inverse property of pdc:hasLanguage.</rdfs:comment>
@@ -1459,6 +1443,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isRealisedInSelfContainedExpression -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isRealisedInSelfContainedExpression">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R3"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#realisesWork"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression"/>
@@ -1486,6 +1471,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isRepresentativeExpressionFor -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isRepresentativeExpressionFor">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R40i"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#SelfContainedExpression"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:comment xml:lang="en">Inverse property of pdc:hasRepresentativeExpression.</rdfs:comment>
@@ -1535,7 +1521,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isTimeSpanOf -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isTimeSpanOf">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-dates#TimeSpan"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Period"/>
         <rdfs:comment xml:lang="en">Inverse property for pdc:hasTimeSpan.</rdfs:comment>
@@ -1560,6 +1546,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#isWorkOf -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#isWorkOf">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R10i"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#ComplexWork"/>
         <rdfs:comment xml:lang="en">Inverse property of pdc:hasWork.</rdfs:comment>
@@ -1792,8 +1779,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#tookPlaceAt -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#tookPlaceAt">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
         <owl:inverseOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#witnessed"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Period"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
@@ -1896,7 +1882,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#wasAssignedBy -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#wasAssignedBy">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment"/>
         <rdfs:comment xml:lang="en">Inverse property of pdc:assigned.</rdfs:comment>
@@ -1908,7 +1894,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#wasAttributedBy -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#wasAttributedBy">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#CRM_Entity"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#AttributeAssignment"/>
     </owl:ObjectProperty>
@@ -1918,7 +1904,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#wasBorn -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#wasBorn">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P98i_was_born"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P98i_was_born"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Birth"/>
         <rdfs:comment xml:lang="en">Inverse property of pdc:broughtIntoLife.</rdfs:comment>
@@ -1930,6 +1916,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#wasCreatedByExpressionCreationForExpression -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#wasCreatedByExpressionCreationForExpression">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R17i"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Expression"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#ExpressionCreation"/>
         <rdfs:comment xml:lang="en">Inverse property of pdc:createdExpressionFromExpressionCreation.</rdfs:comment>
@@ -1941,7 +1928,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#wasDeathOf -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#wasDeathOf">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Death"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:comment xml:lang="en">This property links an E69 Death event to the E21 Person that died.</rdfs:comment>
@@ -1964,6 +1951,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#wasInitiatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://iflastandards.info/ns/fr/frbr/frbroo/R16i"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Work"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#WorkConception"/>
         <rdfs:comment xml:lang="en">Inverse property of pdc:initiated.</rdfs:comment>
@@ -1975,7 +1963,7 @@ sros@scc.uned.es</dc:contributor>
     <!-- http://postdata.linhd.uned.es/ontology/postdata-core#witnessed -->
 
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#witnessed">
-        <owl:equivalentProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
         <rdfs:range rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Period"/>
         <rdfs:comment xml:lang="en">Inverse property of pdc:tookPlaceAt.</rdfs:comment>
@@ -2403,6 +2391,14 @@ sros@scc.uned.es</dc:contributor>
     
 
 
+    <!-- http:/stampasonto#P02i_is_range_of -->
+
+    <owl:ObjectProperty rdf:about="http:/stampasonto#P02i_is_range_of">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salvador</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2494,7 +2490,7 @@ Or Carlos Hernández, writes a biography of Federico García Lorca, &quot;La hue
         <rdfs:subPropertyOf rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#isIdentifiedBy"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The specific gedesic coordinates of a place.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The specific geodesic coordinates of a place.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coordinates</rdfs:label>
     </owl:DatatypeProperty>
     
