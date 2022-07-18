@@ -690,9 +690,25 @@ sros@scc.uned.es</dc:contributor>
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#audicenceEducationLevel -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#audience -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audicenceEducationLevel">
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audience">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#audience"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#audienceEducationLevel -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audienceEducationLevel">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -702,20 +718,8 @@ sros@scc.uned.es</dc:contributor>
                 <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/education-level"/>
             </owl:Restriction>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">Level of education of the recipients of a Redaction.nnTaking as example the play &quot;La segunda Celestina&quot; (Agustín de Salazar), &quot;audienceEducationLevel&quot; would be a learned audience.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Level of education of the recipients of a Redaction. Taking as example the play &quot;La segunda Celestina&quot; (Agustín de Salazar), &quot;audienceEducationLevel&quot; would be a learned audience.</rdfs:comment>
         <rdfs:label xml:lang="en">audience education level</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#audience -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audience">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en">The meant readership, viewers or listeners of a Redaction. There is at most one possible value for audience.nnTaking as example the play &quot;La segunda Celestina&quot;, &quot;audience&quot; would be the Spanish Queen and the people in the court attending the Queen&apos;s birthday celebrations.</rdfs:comment>
-        <rdfs:label xml:lang="en">audience</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -754,6 +758,7 @@ sros@scc.uned.es</dc:contributor>
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#authorship">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PoeticWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:label xml:lang="en">This property is used to give the possiblity to explicitly state that the authorship of a Poetic Work is anonymous.</rdfs:label>
         <rdfs:label xml:lang="en">auhtorship</rdfs:label>
     </owl:ObjectProperty>
@@ -846,7 +851,7 @@ sros@scc.uned.es</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en">An ethnic group; a social group that shares a common and distinctive culture, religion, language, or the like.nnTaking as Person example the poet &quot;Antonio Enríquez Gómez&quot;, his &quot;ethnicity&quot; would be &quot;crypto-Jewish&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An ethnic group; a social group that shares a common and distinctive culture, religion, language, or the like. Taking as Person example the poet &quot;Antonio Enríquez Gómez&quot;, his &quot;ethnicity&quot; would be &quot;crypto-Jewish&quot;.</rdfs:comment>
         <rdfs:label xml:lang="en">ethnicity</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1580,6 +1585,12 @@ sros@scc.uned.es</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#PoeticWork"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
+            </owl:Restriction>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">The literary tradition assigned to a Poetic Work. There might be several values for this property.nnTaking as example the theatre play &quot;La vida es sueño&quot; by Calderón de la Barca, &quot;literary Tradition&quot; is &quot;Baroque&quot;.</rdfs:comment>
         <rdfs:label xml:lang="en">literary tradition</rdfs:label>
     </owl:ObjectProperty>
@@ -1630,7 +1641,7 @@ sros@scc.uned.es</dc:contributor>
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en">An ethnic group forming a part of one or more political nations that is assigned to a Person.nnTaking as example, the poet “Antonio Machado”, his “nationality” would be “Spanish”.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An ethnic group forming a part of one or more political nations that is assigned to a Person. Taking as example, the poet “Antonio Machado”, his “nationality” would be “Spanish”.</rdfs:comment>
         <rdfs:label xml:lang="en">nationality</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1832,6 +1843,7 @@ sros@scc.uned.es</dc:contributor>
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#typeOfEvent">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">The type of event, for instance its modality (real, fictional...).</rdfs:comment>
         <rdfs:label xml:lang="en">type of event</rdfs:label>
     </owl:ObjectProperty>
@@ -1843,6 +1855,7 @@ sros@scc.uned.es</dc:contributor>
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#typeOfPlace">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">Type of Place (e.g. fictional)</rdfs:comment>
         <rdfs:label xml:lang="en">type of place</rdfs:label>
     </owl:ObjectProperty>
@@ -1854,6 +1867,7 @@ sros@scc.uned.es</dc:contributor>
     <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#typeOfRedaction">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">The type of the text provided in the RedactionnEg.: Diplomatic edition, critical edition, translation</rdfs:comment>
         <rdfs:label xml:lang="en">type of redaction</rdfs:label>
     </owl:ObjectProperty>
@@ -1974,13 +1988,17 @@ sros@scc.uned.es</dc:contributor>
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/P01_has_domain -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P01_has_domain"/>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P01_has_domain">
+        <dc:description>auxiliary property</dc:description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of -->
 
-    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of"/>
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P01i_is_domain_of">
+        <dc:description>auxialiry property</dc:description>
+    </owl:ObjectProperty>
     
 
 
@@ -2386,7 +2404,8 @@ sros@scc.uned.es</dc:contributor>
     <!-- http:/stampasonto#P02_has_range -->
 
     <owl:ObjectProperty rdf:about="http:/stampasonto#P02_has_range">
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salvador</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])</dc:creator>
+        <dc:description>auxiliary property</dc:description>
     </owl:ObjectProperty>
     
 
@@ -2394,7 +2413,8 @@ sros@scc.uned.es</dc:contributor>
     <!-- http:/stampasonto#P02i_is_range_of -->
 
     <owl:ObjectProperty rdf:about="http:/stampasonto#P02i_is_range_of">
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salvador</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])</dc:creator>
+        <dc:description>Auxiliary property</dc:description>
     </owl:ObjectProperty>
     
 
@@ -3657,6 +3677,7 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/PC14_Carried_Out_By">
         <rdfs:subClassOf rdf:resource="http:/stampasonto#PC0_Type_CRM_Property"/>
+        <dc:description>Auxiliary Class</dc:description>
     </owl:Class>
     
 
@@ -3710,7 +3731,8 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
 
     <owl:Class rdf:about="http:/stampasonto#PC0_Type_CRM_Property">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salvador</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])</dc:creator>
+        <dc:description>Auxiliary class</dc:description>
     </owl:Class>
     
 
@@ -3741,7 +3763,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-22</terms:date>
         <terms:title xml:lang="en">Controlled vocabulary about certainty degree</terms:title>
         <terms:title xml:lang="es">Vocabulario controlado sobre grados de certeza</terms:title>
-        <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
 
@@ -3774,7 +3795,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre tipos de nombre</terms:title>
         <terms:title xml:lang="en">Thesaurus about type of name</terms:title>
-        <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
 
@@ -3784,12 +3804,11 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/education-level">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <definition xml:lang="en">Thesaurus about education levels. It includes all the concepts that are narrower to UNESCOTHES Educational Levels Concept (http://skos.um.es/unescothes/C01252)</definition>
-        <prefLabel xml:lang="en">Education Level Scheme</prefLabel>
+        <prefLabel xml:lang="en">author-education-level</prefLabel>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre nivel educativo</terms:title>
         <terms:title xml:lang="en">Thesaurus about education level</terms:title>
-        <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
 
@@ -3809,7 +3828,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre géneros</terms:title>
         <terms:title xml:lang="en">Thesaurus about genders</terms:title>
-        <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
 
@@ -3824,7 +3842,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre géneros literario</terms:title>
         <terms:title xml:lang="en">Thesaurus about literary genres</terms:title>
-        <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
 
@@ -3843,18 +3860,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     
 
 
-    <!-- http://postdata.linhd.uned.es/kos/literary-period-renaissance -->
-
-    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period-renaissance">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <prefLabel xml:lang="es">Renacimiento</prefLabel>
-        <prefLabel xml:lang="en">Renaissance</prefLabel>
-        <topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://postdata.linhd.uned.es/kos/poetic-type -->
 
     <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/poetic-type">
@@ -3865,7 +3870,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre el género literario principal de la obra</terms:title>
         <terms:title xml:lang="en">Thesaurus about major literary genre of the compositions. </terms:title>
-        <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
 
@@ -3882,7 +3886,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-29</terms:date>
         <terms:title xml:lang="es">Tesauro sobre afiliaciones religiosas</terms:title>
         <terms:title xml:lang="es">Thesaurus about religious affiliations</terms:title>
-        <prov:wasAttributedTo rdf:resource="http://www.linkedin.com/in/ocorcho"/>
     </owl:NamedIndividual>
     
 
@@ -3935,7 +3938,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-27</terms:date>
         <terms:title xml:lang="es">Tesauro sobre tipos de elementos textuales</terms:title>
         <terms:title xml:lang="en">Thesaurus about type of textual element</terms:title>
-        <prov:wasAttributedTo rdf:resource="https://www.linkedin.com/in/m-luisa-diez-platas-05710614"/>
     </owl:NamedIndividual>
     
 
@@ -4679,6 +4681,14 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     
 
 
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#audience -->
+
+    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audience">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://vocabularies.unesco.org/thesaurus/concept12949 -->
 
     <owl:NamedIndividual rdf:about="http://vocabularies.unesco.org/thesaurus/concept12949">
@@ -4864,6 +4874,13 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
     <rdf:Description rdf:about="http://iflastandards.info/ns/fr/frbr/frbroo/">
         <note xml:lang="en">Element set of the Functional Requirements for Bibliographic Records object-oriented extension to the the CIDOC Conceptual Reference Model (CRM)</note>
         <dc:title xml:lang="en">FRBRoo model</dc:title>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audience">
+        <prefLabel xml:lang="en">audience</prefLabel>
+        <rdfs:comment xml:lang="en">The meant readership, viewers or listeners of a Redaction. There is at most one possible value for audience.Taking as example the play &quot;La segunda Celestina&quot;, &quot;audience&quot; would be the Spanish Queen and the people in the court attending the Queen&apos;s birthday celebrations.</rdfs:comment>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])</dc:creator>
+        <dc:title xml:lang="en">Thesaurus about audience type</dc:title>
+        <rdfs:label xml:lang="en">audience</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://schema.org/endDate">
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://schema.org/endDate</rdfs:isDefinedBy>

@@ -33,15 +33,15 @@ https://orcid.org/0000-0001-7782-206X</dc:contributor>
 https://www.linkedin.com/in/versae/</dc:contributor>
         <dc:contributor>Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)
 https://orcid.org/0000-0003-3489-2193</dc:contributor>
-        <dc:contributor>Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto@scc.uned.es</dc:contributor>
+        <dc:contributor xml:lang="scc.uned.es">Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto</dc:contributor>
         <dc:contributor>Mª Luisa Díez Platas
 https://orcid.org/0000-0002-9416-3147</dc:contributor>
         <dc:contributor>Omar Khalil Gómez (LINHD_POSTDATA-UNED)
 http://www.linkedin.com/in/omar-k-0959a8129</dc:contributor>
         <dc:contributor>Oscar Corcho (Universidad Politécnica de Madrid)
 http://orcid.org/0000-0002-9260-0753</dc:contributor>
-        <dc:contributor>Salvador Ros Muñoz (UNED)
-srosmu@gmail.com</dc:contributor>
+        <dc:contributor xml:lang="gmail.com">Salvador Ros Muñoz (UNED)
+srosmu</dc:contributor>
         <dc:creator xml:lang="en">POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”</dc:creator>
         <dc:date>2021-11-26</dc:date>
         <dc:description xml:lang="en">This ontology is the core of the POSTDATA network of ontologies. As such, it contains the most relevant classes and properties that allow representing poetic works and their characteristics. Besides, it contains common classes and properties that are used in many other ontologies in the network, such as those related to the representation of persons, organisations, events, places and roles that persons and organisations play in poetic works.</dc:description>
@@ -642,9 +642,21 @@ srosmu@gmail.com</dc:contributor>
     
 
 
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#audicenceEducationLevel -->
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#audience -->
 
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audicenceEducationLevel">
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audience">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">The meant readership, viewers or listeners of a Redaction. There is at most one possible value for audience.nnTaking as example the play &quot;La segunda Celestina&quot;, &quot;audience&quot; would be the Spanish Queen and the people in the court attending the Queen&apos;s birthday celebrations.</rdfs:comment>
+        <rdfs:label xml:lang="en">audience</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#audienceEducationLevel -->
+
+    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audienceEducationLevel">
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
         <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -656,18 +668,6 @@ srosmu@gmail.com</dc:contributor>
         </rdfs:range>
         <rdfs:comment xml:lang="en">Level of education of the recipients of a Redaction.nnTaking as example the play &quot;La segunda Celestina&quot; (Agustín de Salazar), &quot;audienceEducationLevel&quot; would be a learned audience.</rdfs:comment>
         <rdfs:label xml:lang="en">audience education level</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/ontology/postdata-core#audience -->
-
-    <owl:ObjectProperty rdf:about="http://postdata.linhd.uned.es/ontology/postdata-core#audience">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
-        <rdfs:domain rdf:resource="http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en">The meant readership, viewers or listeners of a Redaction. There is at most one possible value for audience.nnTaking as example the play &quot;La segunda Celestina&quot;, &quot;audience&quot; would be the Spanish Queen and the people in the court attending the Queen&apos;s birthday celebrations.</rdfs:comment>
-        <rdfs:label xml:lang="en">audience</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3619,18 +3619,6 @@ This class is equivalent to E52 Time-Span.</rdfs:comment>
         <terms:title xml:lang="en">Thesaurus about labels of a time frame for grouping certain works</terms:title>
         <skos:definition xml:lang="en">Thesaurus about labels of a time frame for grouping certain works</skos:definition>
         <skos:prefLabel xml:lang="en">Literary Period Scheme</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://postdata.linhd.uned.es/kos/literary-period-renaissance -->
-
-    <owl:NamedIndividual rdf:about="http://postdata.linhd.uned.es/kos/literary-period-renaissance">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:inScheme rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <skos:topConceptOf rdf:resource="http://postdata.linhd.uned.es/kos/literary-period"/>
-        <skos:prefLabel xml:lang="es">Renacimiento</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">Renaissance</skos:prefLabel>
     </owl:NamedIndividual>
     
 
