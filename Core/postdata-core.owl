@@ -2797,7 +2797,8 @@ This property corresponds to the adaptation of CIDOC CRM Object Property P190 ha
     <!-- http://www.cidoc-crm.org/cidoc-crm/P3_has_note -->
 
     <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P3_has_note">
-        <definition>This datatype property associates brief text
+        <definition>Auxiliary Property
+This datatype property associates brief text
 
 This property corresponds to the adaptation of CIDOC CRM Object Property P3 has note, which has been decalred as datatype property as part of the re-engineering process to the RDF data model. Hence, no direct alignment is provided.</definition>
     </owl:DatatypeProperty>
