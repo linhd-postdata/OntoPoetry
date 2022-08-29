@@ -1,0 +1,11 @@
+ The richness, variety, and different study`s perspectives that scholars find in their studies is a 
+ highly complex challenge but this challenge is even more noticed in the poetry genre,where each poetic 
+ tradition has independently developed its analytical terminology and methodology.
+Ontopoetry  addresses the construction of a poetry ontology to express the scholar´s knowledge and has been developed
+   following NeOn methodology.
+It has been structured in three modules:
+    a) core, 
+    b) poetic analysis and 
+    c) transmission, covering the essential aspects in a poetry literary study. 
+Here we present core module, its classes and relationships and the design decisions taken during 
+the process. OntoPoetry core module has been aligned with FRBRoo ontology guaranteeing its interoperability.
