@@ -1,0 +1,45 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<http://postdata.linhd.uned.es/ontology/postdata-core#2.0.0> a prov:Entity;
+	 dc:title "Ontopoetry core ontology";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo :agent8;
+	 prov:wasAttributedTo :agent9;
+	 prov:wasAttributedTo :agent10;
+	 prov:wasAttributedTo :agent11;
+	 prov:wasAttributedTo :agent12;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://postdata.linhd.uned.es/ontology/postdata-core#>;
+.
+:agent0 a prov:Agent; foaf:name "POSTDATA Project “This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement Nº [679528])”".
+:agent1 a prov:Agent; foaf:name "Aitor Díaz Medina (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/aitordiazmedina/".
+:agent2 a prov:Agent; foaf:name "Alvaro Pérez (LINHD_POSTDATA-UNED) 
+https://www.linkedin.com/in/álvaro-pérez-pozo-ab241154/".
+:agent3 a prov:Agent; foaf:name "Elena González-Blanco
+https://orcid.org/0000-0002-0448-1812".
+:agent4 a prov:Agent; foaf:name "Elena de Mar Jiménez García".
+:agent5 a prov:Agent; foaf:name "Helena Bermúdez Sabel
+https://orcid.org/0000-0001-7782-206X".
+:agent6 a prov:Agent; foaf:name "Javier de la Rosa (LINHD_POSTDATA-UNED)
+https://www.linkedin.com/in/versae/".
+:agent7 a prov:Agent; foaf:name "Laura Hernández Lorenzo (LINHD_POSTDATA-UNED)
+https://orcid.org/0000-0003-3489-2193".
+:agent8 a prov:Agent; foaf:name "Mirella De Sisto (LINHD_POSTDATA-UNED) nmdesisto@scc.uned.es".
+:agent9 a prov:Agent; foaf:name "Mª Luisa Díez Platas
+https://orcid.org/0000-0002-9416-3147".
+:agent10 a prov:Agent; foaf:name "Omar Khalil Gómez (LINHD_POSTDATA-UNED)
+http://www.linkedin.com/in/omar-k-0959a8129".
+:agent11 a prov:Agent; foaf:name "Oscar Corcho (Universidad Politécnica de Madrid)
+http://orcid.org/0000-0002-9260-0753".
+:agent12 a prov:Agent; foaf:name "Salvador Ros Muñoz (UNED)
+sros@scc.uned.es".
