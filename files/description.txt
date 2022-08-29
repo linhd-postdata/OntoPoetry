@@ -1,0 +1,6 @@
+﻿  The Ontopoetry Core Module is a CIDOC CRM/FRBRoo reuse and specialization departing from the Postdata core Ontology V1 by following the methodology explained in Section §4. We selected FRBRoo 3.0  and CIDOC CRM 7.2.1  as the base ontologies for the reusability. While CIDOC CRM provides mechanisms to represent cultural objects according to a precise, logical foundation, FRBRoo extends the previous model by integrating requirements from the bibliographic domain. The specialization with FRBRoo is done by including classes and properties as subclasses or sub-properties whenever there is the need to specialize the ontology. We directly reuse the rest of the elements from FRBRoo whenever they cover the EPDM or Postdata Ontology V1 information needs by declaring equivalent classes or properties. Therefore, we will refer to FRBRoo classes or CIDOC CRM classes even if the former extends the latter model. . 
+  As CIDOC CRM and FRBRoo are conceptual models that do not completely follow the RDF data model, we had to modify the properties or classes of these models during the modelling process. 
+  We also have described a set of controlled vocabularies. You can check it in
+  
+   https://github.com/linhd-postdata/skos-codelists
+
